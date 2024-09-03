@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_Wed</name>
+   <tag></tag>
+   <elementGuidId>f18a9510-cf45-4160-97be-3ab5ad99dce7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='daysContainer']/div[3]/button/p</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;Wed 31&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>9b725b7e-ce06-4968-84d9-fe8969907545</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>text-xs font-semibold</value>
+      <webElementGuid>7e0e28aa-134d-4468-9fa4-d6ffa8b3c92b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Wed</value>
+      <webElementGuid>c73660cf-e8e4-4419-bff1-b1e579156cd7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;daysContainer&quot;)/div[@class=&quot;flex items-end&quot;]/button[@class=&quot;flex h-12 w-12 flex-col items-center justify-center rounded-full border border-black p-3 false&quot;]/p[@class=&quot;text-xs font-semibold&quot;]</value>
+      <webElementGuid>b2d96cb4-4aa1-4dc2-a781-5690d97d0a30</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='daysContainer']/div[3]/button/p</value>
+      <webElementGuid>66747d1f-cef9-47d5-9b6b-48c080275413</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Week Ending:'])[1]/following::p[5]</value>
+      <webElementGuid>824b2659-d6b5-4d5f-b5a9-79b0ba6f76e4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Home'])[1]/following::p[5]</value>
+      <webElementGuid>618ad1b7-4d16-4753-8329-0881315ff246</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Wed']/parent::*</value>
+      <webElementGuid>a8a66af6-b6f0-46d8-b8be-456ca035a641</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/button/p</value>
+      <webElementGuid>95078740-6ba4-47cd-9287-6769f2a5c412</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[(text() = 'Wed' or . = 'Wed')]</value>
+      <webElementGuid>360dad4c-1b84-4cf2-80e4-d49cb236d8af</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

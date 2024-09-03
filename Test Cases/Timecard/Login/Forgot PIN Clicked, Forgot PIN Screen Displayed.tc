@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Forgot PIN Clicked, Forgot PIN Screen Displayed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>28148de8-e435-4d34-817c-c39fe5fc77fa</testCaseGuid>
+</TestCaseEntity>

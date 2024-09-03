@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Forgot PIN, Blank Email Address, Error Message Diplayed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>dfaea228-d0d1-4367-854f-6a9678e7fcf7</testCaseGuid>
+</TestCaseEntity>

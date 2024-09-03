@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Invalid PIN Entered, Error Message Displayed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b08f8df7-ddda-4056-a794-b507ab9b4964</testCaseGuid>
+</TestCaseEntity>
