@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_FirstSchoolListed</name>
+   <tag></tag>
+   <elementGuidId>eaf73bf4-bd99-4c0d-9fc9-ac70cf253033</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>a.font-semibold.underline.underline-offset-4</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/main/main/div[3]/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot;Aina Haina Elementary&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>29ae4399-198d-4d3c-8b84-38e869dddd26</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>font-semibold underline underline-offset-4</value>
+      <webElementGuid>328637d5-8a0e-47c8-a302-8226b0b34e21</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>/timecard/review-timecard</value>
+      <webElementGuid>98643dde-fb65-429b-8bf8-1582b6b98ea6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Aina Haina Elementary</value>
+      <webElementGuid>159af044-26c3-43ba-bc74-b99fc942b479</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;layout&quot;]/main[@class=&quot;main-content&quot;]/main[@class=&quot;mt-2 px-3&quot;]/div[@class=&quot;flex flex-col gap-3&quot;]/a[@class=&quot;font-semibold underline underline-offset-4&quot;]</value>
+      <webElementGuid>efb85bb2-9314-40e7-b866-4cce34977fcf</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/main/main/div[3]/a</value>
+      <webElementGuid>ae3ae37f-1d1c-4ec9-bc64-acadfed24644</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Aina Haina Elementary')]</value>
+      <webElementGuid>72544135-d850-4832-a8e9-cfbb6c59d4e0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Week Ending:'])[1]/following::a[2]</value>
+      <webElementGuid>911081ba-a18a-4d54-83bc-14b084190e8f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Timecard'])[1]/following::a[2]</value>
+      <webElementGuid>aa0a7392-c82c-4206-ac4f-b28c52c59540</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Dole Middle'])[1]/preceding::a[1]</value>
+      <webElementGuid>161cf012-017f-465b-b33e-2fc42c983263</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='V1.0.7'])[1]/preceding::a[2]</value>
+      <webElementGuid>f00e74c4-e7be-4cb0-862f-9dda6adfe40e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Aina Haina Elementary']/parent::*</value>
+      <webElementGuid>0433e55b-3cef-4c16-a763-b801cea0a600</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, '/timecard/review-timecard')]</value>
+      <webElementGuid>d6b6d06c-5f7f-4797-9942-aa7077c239b0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/a</value>
+      <webElementGuid>f5afbd9a-b284-4147-83a8-d7eabbe5e05e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '/timecard/review-timecard' and (text() = 'Aina Haina Elementary' or . = 'Aina Haina Elementary')]</value>
+      <webElementGuid>5147287c-81e8-44c9-ac19-38658366de07</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

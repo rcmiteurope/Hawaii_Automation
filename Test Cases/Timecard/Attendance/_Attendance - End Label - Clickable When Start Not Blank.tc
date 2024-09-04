@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>I need to be able to click the End Time label if the start time isn't blank</description>
+   <name>_Attendance - End Label - Clickable When Start Not Blank</name>
+   <tag>#time</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b8247909-2453-4095-bbfa-d45b275b10e0</testCaseGuid>
+</TestCaseEntity>

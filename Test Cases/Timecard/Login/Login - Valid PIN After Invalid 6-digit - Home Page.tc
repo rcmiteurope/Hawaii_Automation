@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>When I have a failed 6-digit PIN login attempt followed by a valid 6-digit PIN attempt, I should see the Home page</description>
+   <name>Login - Valid PIN After Invalid 6-digit - Home Page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f4b179d9-d9c3-49fb-978d-433641e3dac1</testCaseGuid>
+</TestCaseEntity>

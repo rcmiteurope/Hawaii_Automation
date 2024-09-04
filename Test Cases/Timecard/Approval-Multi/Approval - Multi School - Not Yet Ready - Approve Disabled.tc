@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Approval - Multi School - Not Yet Ready - Approve Disabled</name>
+   <tag>#approval</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5a326bdd-b8ff-4838-a666-4de545d4842e</testCaseGuid>
+</TestCaseEntity>

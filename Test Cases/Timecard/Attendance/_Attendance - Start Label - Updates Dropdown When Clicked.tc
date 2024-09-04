@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>After I click the Start Time label, I need to see the same time displayed in the Start Time dropdown</description>
+   <name>_Attendance - Start Label - Updates Dropdown When Clicked</name>
+   <tag>#time</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>42c2204f-0738-426f-9324-647fd83ef99f</testCaseGuid>
+</TestCaseEntity>

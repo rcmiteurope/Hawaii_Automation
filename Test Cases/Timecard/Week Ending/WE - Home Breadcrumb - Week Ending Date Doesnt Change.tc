@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WE - Home Breadcrumb - Week Ending Date Doesnt Change</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9d0df3a8-ed5f-477d-a757-8d5f0147463c</testCaseGuid>
+</TestCaseEntity>

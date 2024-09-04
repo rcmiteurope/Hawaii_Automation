@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Approval - Single School - Approve Button Clickable</name>
+   <tag>#approval</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bd5a2fde-0a64-47c1-a5d8-c8a9afea3ccc</testCaseGuid>
+</TestCaseEntity>

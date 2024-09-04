@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>_Attendance - End Dropdown - Not Clickable When Approved Present</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1480c105-e777-4bcf-8553-1ff44157f191</testCaseGuid>
+</TestCaseEntity>

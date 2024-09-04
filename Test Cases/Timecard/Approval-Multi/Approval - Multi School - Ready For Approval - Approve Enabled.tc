@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Approval - Multi School - Ready For Approval - Approve Enabled</name>
+   <tag>#approval</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2dee2db2-3eec-4891-82fe-3358cbfcb9dc</testCaseGuid>
+</TestCaseEntity>

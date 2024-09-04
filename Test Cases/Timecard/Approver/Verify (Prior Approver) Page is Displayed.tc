@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify (Prior Approver) Page is Displayed</name>
+   <tag>#approval</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7c3366f1-8097-4d7b-949c-09dd0522cf3e</testCaseGuid>
+</TestCaseEntity>

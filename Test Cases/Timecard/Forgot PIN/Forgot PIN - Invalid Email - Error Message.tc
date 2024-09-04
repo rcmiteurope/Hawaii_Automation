@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>When I request a new PIN and enter an email address that does not exist in OSCER, I must receive a 'Something Wrong' error message</description>
+   <name>Forgot PIN - Invalid Email - Error Message</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>62dc52e1-85c9-4376-ba54-83efa9fe7a2d</testCaseGuid>
+</TestCaseEntity>

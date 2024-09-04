@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>_Attendance - End Label - Updates Dropdown When Clicked</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9be87478-473e-4da7-8231-cd1fe3e2952b</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Schedules - Not Scheduled (single student)</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0fd8b0ca-a1ea-40d9-bc5d-9b1c7c4d4d27</testCaseGuid>
+</TestCaseEntity>

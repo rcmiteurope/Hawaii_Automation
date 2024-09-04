@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Action Menu - Dropdown - Enabled if Master Checkbox Set</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c299c8e5-8a00-4291-aeb7-06834970c0de</testCaseGuid>
+</TestCaseEntity>

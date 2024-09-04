@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>When I enter an PIN with fewer than 6 digits, the OK button on the '6 digit PIN required' popup must be clickable</description>
+   <name>Login - 3-digit PIN - OK Clickable</name>
+   <tag>#login</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6a77d4dc-48a6-4f53-909f-a89e31e68d56</testCaseGuid>
+</TestCaseEntity>

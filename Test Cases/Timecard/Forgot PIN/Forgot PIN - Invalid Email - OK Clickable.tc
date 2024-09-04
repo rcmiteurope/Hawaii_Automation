@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>When I request a new PIN and enter an email address that does not exist in OSCER, the OK button on the 'Something Wrong' popup must be clickable</description>
+   <name>Forgot PIN - Invalid Email - OK Clickable</name>
+   <tag>#pin</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a0d6fd18-4ff9-4422-a9da-ef9001a6e8e4</testCaseGuid>
+</TestCaseEntity>

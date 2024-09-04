@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>I need to be able to click the End Time dropdown when the start time isn't blank</description>
+   <name>_Attendance - End Dropdown - Clickable When Start Not Blank</name>
+   <tag>#time</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>373d01ad-7c02-40a1-94a2-35fab4189977</testCaseGuid>
+</TestCaseEntity>
