@@ -8,23 +8,18 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 import internal.GlobalVariable as GlobalVariable
 
+//cess 9/5/24
+
 WebUI.openBrowser('')
 WebUI.setViewPortSize(GlobalVariable.spreadsheetWidth,GlobalVariable.spreadsheetHeight)
+
+
 
 // navigate to website (any dow is fine)  
 WebUI.navigateToUrl(GlobalVariable.scheduler_url)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-//WebElement weActionCheckbox = driver.findElement(By.xpath('//*[@id="root"]/main/div[3]/table/thead/tr/th[8]/span/input'))
-//weActionCheckbox.click()
+WebElement startTime = driver.findElement(By.xpath('//*[@id="root"]/main/div[3]/table/thead/tr/th[5]'))
 
-WebElement weActionDropdown = driver.findElement(By.xpath('//*[@id="root"]/main/div[3]/table/thead/tr/th[8]/span'))
-weActionDropdown.click()
-
-WebElement weActionMenu = driver.findElement(By.xpath('//*[@id=":re:"]'))
-TestObject toActionMenu = WebUI.convertWebElementToTestObject(weActionMenu)
-
-WebUI.verifyElementNotVisible(toActionMenu)
-
-//WebUI.closeBrowser()
+WebUI.closeBrowser()

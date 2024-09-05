@@ -126,7 +126,17 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>['Outer Island', 'Leeward', 'Windward', 'Central', 'Honolulu']</initValue>
+      <initValue>['Big Island', 'Leeward', 'Windward', 'Central', 'LMM', 'Kauai', 'Honolulu']</initValue>
       <name>islands</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Start'</initValue>
+      <name>startTime</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'End'</initValue>
+      <name>endTime</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

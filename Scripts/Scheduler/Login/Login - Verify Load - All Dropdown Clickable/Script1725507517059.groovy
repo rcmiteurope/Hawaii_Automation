@@ -11,20 +11,16 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.openBrowser('')
 WebUI.setViewPortSize(GlobalVariable.spreadsheetWidth,GlobalVariable.spreadsheetHeight)
 
+
 // navigate to website (any dow is fine)  
 WebUI.navigateToUrl(GlobalVariable.scheduler_url)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-//WebElement weActionCheckbox = driver.findElement(By.xpath('//*[@id="root"]/main/div[3]/table/thead/tr/th[8]/span/input'))
-//weActionCheckbox.click()
+WebElement AllDropdown = driver.findElement(By.xpath(' //*[@id="provider_filter_select"]'))
 
-WebElement weActionDropdown = driver.findElement(By.xpath('//*[@id="root"]/main/div[3]/table/thead/tr/th[8]/span'))
-weActionDropdown.click()
+TestObject toAllDropdown = WebUI.convertWebElementToTestObject(AllDropdown)
 
-WebElement weActionMenu = driver.findElement(By.xpath('//*[@id=":re:"]'))
-TestObject toActionMenu = WebUI.convertWebElementToTestObject(weActionMenu)
+WebUI.verifyElementClickable(toAllDropdown)
 
-WebUI.verifyElementNotVisible(toActionMenu)
-
-//WebUI.closeBrowser()
+WebUI.closeBrowser()

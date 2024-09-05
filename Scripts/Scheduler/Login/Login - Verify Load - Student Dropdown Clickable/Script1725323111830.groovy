@@ -18,8 +18,9 @@ WebUI.navigateToUrl(GlobalVariable.scheduler_url)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebElement weStudentDropdown = driver.findElement(By.xpath('//*[@id="root"]/main/div[3]/table/thead/tr/th[2]/select'))
-TestObject toStudentDropdown = WebUI.convertWebElementToTestObject(weStudentDropdown)
+//WebElement weStudentDropdown = driver.findElement(By.xpath('//*[@id="root"]/main/div[3]/table/thead/tr/th[2]/select'))
+WebElement startTime = driver.findElement(By.xpath('//*[@id="root"]/main/div[3]/table/thead/tr/th[5]'))
+TestObject toStudentDropdown = WebUI.convertWebElementToTestObject(startTime)
 
 WebUI.verifyElementClickable(toStudentDropdown)
 

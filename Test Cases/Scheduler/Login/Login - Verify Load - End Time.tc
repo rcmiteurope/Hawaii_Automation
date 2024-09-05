@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Login - Verify Load - List of Locations</name>
+   <name>Login - Verify Load - End Time</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>cd0f4360-b6f2-41ea-b0e1-672e5acac8a3</testCaseGuid>
+   <testCaseGuid>9091641f-c70f-4557-8221-aa7217703395</testCaseGuid>
 </TestCaseEntity>
