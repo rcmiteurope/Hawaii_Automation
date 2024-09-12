@@ -4,6 +4,7 @@ import org.openqa.selenium.By
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
@@ -39,25 +40,32 @@ List<WebElement> alreadyApprovedSiblings = alreadyApprovedHeader.findElements(By
 // get the Already Approved count from the heading's first <h1>
 alreadyApprovedCount = alreadyApprovedHeader.findElement(By.xpath('h1')).getText().find(/\d+/).toInteger()	// /\d+/ looks for the first number in the string
 
+alreadyApprovedPhysicalCount = 0
+
 if (alreadyApprovedCount == 0) {
 	
-	// verify there's no body 
-	WebUI.verifyEqual(alreadyApprovedSiblings.size(), 0)
+	// throw the error
+	KeywordUtil.markFailed('********* Can\'t perform this test because there are no students listed as Already Approved ************')
+
 
 } else {
 	
-	// grab the Already Approved body
-	WebElement alreadyApprovedBody = alreadyApprovedSiblings[0]
-	
 	// if the Already Approved body is closed (class hidden), click to open it
-	if (alreadyApprovedBody.getAttribute('class').contains('hidden')) {alreadyApprovedHeader.click()}
-	
-	// grab all the <tr> rows in the body's table
-	List<WebElement> rows = alreadyApprovedBody.findElements(By.xpath('descendant::tr'))
-	
-	// verify number of <tr> rows equals the number from the tab's label
-	WebUI.verifyEqual(alreadyApprovedCount.toInteger(), rows.size())
+	if (alreadyApprovedSiblings[0].getAttribute('class').contains('hidden')) {alreadyApprovedHeader.click()}
 
+	for (alreadyApprovedSibling in alreadyApprovedSiblings) {
+
+		// grab all the <tr> rows in the body's table
+		List<WebElement> rows = alreadyApprovedSibling.findElements(By.xpath('descendant::tr'))
+		
+		// count <tr>s
+		alreadyApprovedPhysicalCount += rows.size()
+	
+	}
+		
 }
+
+// verify number of <tr> rows equals the number from the tab's label
+WebUI.verifyEqual(alreadyApprovedCount.toInteger(), alreadyApprovedPhysicalCount)
 
 WebUI.closeBrowser()

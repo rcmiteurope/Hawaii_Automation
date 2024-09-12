@@ -36,6 +36,8 @@ List<WebElement> notYetReadySiblings = notYetReadyHeader.findElements(By.xpath("
 // get the Not Yet Ready count from the heading's first <h1>
 notYetReadyCount = notYetReadyHeader.findElement(By.xpath('h1')).getText().find(/\d+/).toInteger()	// /\d+/ looks for the first number in the string
 
+notYetReadyPhysicalCount = 0
+
 if (notYetReadyCount == 0) {
 	
 	// verify there's no body 
@@ -43,18 +45,22 @@ if (notYetReadyCount == 0) {
 
 } else {
 	
-	// grab the Not Yet Ready body
-	WebElement notYetReadyBody = notYetReadySiblings[0]
-	
 	// if the Not Yet Ready body is closed (class hidden), click to open it
-	if (notYetReadyBody.getAttribute('class').contains('hidden')) {notYetReadyHeader.click()}
-	
-	// grab all the <tr> rows in the body's table
-	List<WebElement> rows = notYetReadyBody.findElements(By.xpath('descendant::tr'))
-	
-	// verify number of <tr> rows equals the number from the tab's label
-	WebUI.verifyEqual(notYetReadyCount.toInteger(), rows.size())
+	if (notYetReadySiblings[0].getAttribute('class').contains('hidden')) {notYetReadyHeader.click()}
 
+	for (notYetReadySibling in notYetReadySiblings) {
+
+		// grab all the <tr> rows in the body's table
+		List<WebElement> rows = notYetReadySibling.findElements(By.xpath('descendant::tr'))
+		
+		// count <tr>s
+		notYetReadyPhysicalCount += rows.size()
+	
+	} 
+		
 }
+
+// verify number of <tr> rows equals the number from the tab's label
+WebUI.verifyEqual(notYetReadyCount.toInteger(), notYetReadyPhysicalCount)
 
 WebUI.closeBrowser()

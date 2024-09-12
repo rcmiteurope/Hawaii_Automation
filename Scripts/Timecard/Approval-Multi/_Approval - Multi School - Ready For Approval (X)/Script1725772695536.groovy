@@ -39,25 +39,31 @@ List<WebElement> readyForApprovalSiblings = readyForApprovalHeader.findElements(
 // get the Ready For Approval count from the heading's first <h1>
 readyForApprovalCount = readyForApprovalHeader.findElement(By.xpath('h1')).getText().find(/\d+/).toInteger()	// /\d+/ looks for the first number in the string
 
+readyForApprovalPhysicalCount = 0
+
 if (readyForApprovalCount == 0) {
 	
-	// verify there's no body 
-	WebUI.verifyEqual(readyForApprovalSiblings.size(), 0)
+	// throw the error
+	KeywordUtil.markFailed('********* Can\'t perform this test because there are no students listed as Ready for Approval ************')
 
 } else {
 	
-	// grab the Ready For Approval body
-	WebElement readyForApprovalBody = readyForApprovalSiblings[0]
-	
-	// if the Ready For Approval body is closed (class hidden), click to open it
-	if (readyForApprovalBody.getAttribute('class').contains('hidden')) {readyForApprovalHeader.click()}
-	
-	// grab all the <tr> rows in the body's table
-	List<WebElement> rows = readyForApprovalBody.findElements(By.xpath('descendant::tr'))
-	
-	// verify number of <tr> rows equals the number from the tab's label
-	WebUI.verifyEqual(readyForApprovalCount.toInteger(), rows.size())
+	// if the Ready for Approval body is closed (class hidden), click to open it
+	if (readyForApprovalSiblings[0].getAttribute('class').contains('hidden')) {readyForApprovalHeader.click()}
 
+	for (readyForApprovalSibling in readyForApprovalSiblings) {
+
+		// grab all the <tr> rows in the body's table
+		List<WebElement> rows = readyForApprovalSibling.findElements(By.xpath('descendant::tr'))
+		
+		// count <tr>s
+		readyForApprovalPhysicalCount += rows.size()
+	
+	}
+		
 }
+
+// verify number of <tr> rows equals the number from the tab's label
+WebUI.verifyEqual(readyForApprovalCount.toInteger(), readyForApprovalPhysicalCount)
 
 WebUI.closeBrowser()
