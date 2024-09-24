@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>New Test Case</name>
+   <name>Action Menu - Action Checkboxes - Cleared on Date Change</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>f2c2cfd3-a7d2-4a3f-9052-25049ce1c306</testCaseGuid>
+   <testCaseGuid>6682f1e6-b411-4d2c-859e-d77b1d7c12f4</testCaseGuid>
 </TestCaseEntity>

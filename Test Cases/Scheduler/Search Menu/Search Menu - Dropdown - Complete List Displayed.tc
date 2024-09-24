@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>test01</name>
+   <name>Search Menu - Dropdown - Complete List Displayed</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>db53a24f-63c8-4807-a0ee-451b78464143</testCaseGuid>
+   <testCaseGuid>e3acd383-46a6-4365-87de-66029d582a0c</testCaseGuid>
 </TestCaseEntity>

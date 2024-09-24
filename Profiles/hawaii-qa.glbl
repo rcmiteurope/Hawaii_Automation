@@ -127,7 +127,17 @@
    <GlobalVariableEntity>
       <description></description>
       <initValue>['Big Island', 'Leeward', 'Windward', 'Central', 'LMM', 'Kauai', 'Honolulu']</initValue>
-      <name>islands</name>
+      <name>regionMenuOptions</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>['Absent - Notice', 'Absent - NCNS', 'Waiting on Orders', 'Provider Call Out', 'Change Provider', 'Change Supervisor', 'Change Color']</initValue>
+      <name>actionMenuOptions</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>['Provider', 'Student', 'School', 'Date', 'Supervisor']</initValue>
+      <name>searchMenuOptions</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>

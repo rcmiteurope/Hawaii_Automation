@@ -18,7 +18,7 @@ WebDriver driver = DriverFactory.getWebDriver()
 WebUI.navigateToUrl(GlobalVariable.scheduler_url)
 
 // grab the list of islands from global variables
-List<String> islands = GlobalVariable.islands
+List<String> islands = GlobalVariable.regionMenuOptions
 
 // get list of locations
 List<WebElement> weLocations = driver.findElements(By.xpath('//*[@id="locations"]/descendant::li'))

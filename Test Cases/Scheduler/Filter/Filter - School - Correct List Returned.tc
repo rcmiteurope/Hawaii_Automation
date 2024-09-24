@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Action Menu - Dropdown - Disabled if Master Checkbox Clear</name>
+   <name>Filter - School - Correct List Returned</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>831e2ff8-8bc0-4999-b243-8043fa8ada27</testCaseGuid>
+   <testCaseGuid>3d060897-4caf-4776-87b3-ef0b02ab5e5e</testCaseGuid>
 </TestCaseEntity>

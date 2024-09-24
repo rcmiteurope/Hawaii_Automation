@@ -16,11 +16,14 @@ WebUI.navigateToUrl(GlobalVariable.scheduler_url)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebElement weActionDropdown = driver.findElement(By.xpath('//*[@id=":rr:"]'))
+// grab the action menu dropdown arrow; can't be directly clicked
+WebElement weActionMenuHandle = driver.findElement(By.xpath('//*[@id="actionmenu-handle"]'))
 
-TestObject toActionDropdown = WebUI.convertWebElementToTestObject(weActionDropdown)
-//
-WebUI.verifyElementNotClickable(toActionDropdown)
+// convert action menu dropdown element into a test object
+TestObject toActionMenuHandle = WebUI.convertWebElementToTestObject(weActionMenuHandle)
+
+// make sure the action menu dropdown is disabled when the "select all" checkbox is clear
+WebUI.verifyElementNotClickable(toActionMenuHandle)
 
 WebUI.closeBrowser()
 
