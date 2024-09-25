@@ -64,4 +64,24 @@
       <initValue>'august112024'</initValue>
       <name>sunday</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>1280</initValue>
+      <name>spreadsheetWidth</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>720</initValue>
+      <name>spreadsheetHeight</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://scheduler-qa.rcmt-timecard.com/'</initValue>
+      <name>scheduler_url</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>['Fri', 'Wed', 'Tue', 'Mon', 'Thu']</initValue>
+      <name>weekdays</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

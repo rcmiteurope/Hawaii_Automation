@@ -16,4 +16,38 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.By as By
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.WebElement as WebElement
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
+WebUI.openBrowser('')
+WebUI.setViewPortSize(GlobalVariable.spreadsheetWidth,GlobalVariable.spreadsheetHeight)
+
+// Get WebDriver instance
+WebDriver driver = DriverFactory.getWebDriver()
+
+// Navigate to URL
+WebUI.navigateToUrl(GlobalVariable.scheduler_url)
+
+// click the <label for> the horizontal toggle
+driver.findElement(By.xpath('//*[@id=":r0:"]/following-sibling::label')).click()
+
+// Find all elements with class name 'studentName'
+List<WebElement> student = driver.findElements(By.className('schoolName'))
+
+// Loop through each element and check if text is empty
+for (WebElement element : student) {
+    String text = element.getText().trim() // Get text and trim any whitespace
+
+    if (text.isEmpty()) {
+        WebUI.comment('Found an empty element.')
+        KeywordUtil.markFailed('Found an Empty Student Name')  // Fail the test if an empty element is found
+    } else {
+        WebUI.comment("Element text: $text") // Log the text if not empty
+    }
+}
+
+// Close browser
+WebUI.closeBrowser()
