@@ -126,7 +126,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>['Big Island', 'Leeward', 'Windward', 'Central', 'LMM', 'Kauai', 'Honolulu']</initValue>
+      <initValue>['Leeward', 'Windward', 'Central', 'Honolulu', 'Outer Island']</initValue>
       <name>islands</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
