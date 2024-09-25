@@ -18,6 +18,7 @@ WebUI.navigateToUrl(GlobalVariable.scheduler_url)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
+//WebElement weBookmark = driver.findElement(By.xpath('//*[@id="root"]/main/div[3]/table/thead/tr/th[6]'))
 WebElement weBookmark = driver.findElement(By.xpath('//*[@id="root"]/main/div[3]/table/thead/tr/th[6]'))
-
+ 
 WebUI.closeBrowser()

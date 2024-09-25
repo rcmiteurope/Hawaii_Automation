@@ -1,40 +1,32 @@
-import org.openqa.selenium.By as By
-import org.openqa.selenium.WebDriver as WebDriver
-import org.openqa.selenium.WebElement as WebElement
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import internal.GlobalVariable
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject // Import for findTestObject
 
 WebUI.openBrowser('')
 
+// Set viewport size
 WebUI.setViewPortSize(GlobalVariable.spreadsheetWidth, GlobalVariable.spreadsheetHeight)
 
-// navigate to website (any dow is fine)  
+// Navigate to the scheduler URL
 WebUI.navigateToUrl(GlobalVariable.scheduler_url)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebElement weHorizontal = driver.findElement(By.xpath('//*[@id="root"]/main/div[2]/div/div/label/div'))
+// Wait for the horizontal element to be visible
+WebUI.waitForElementVisible(findTestObject('Page_Scheduler/div_Horizontal'), 10) // Verify if the test object exists in the repository
 
-TestObject toHorizontal = WebUI.convertWebElementToTestObject(weHorizontal)
-
-WebUI.verifyElementClickable(toHorizontal)
-
+// Click the horizontal element
 WebUI.click(findTestObject('Page_Scheduler/div_Horizontal'))
 
-WebUI.getText(findTestObject('Page_Scheduler/th_Student  School'))
+// Get text from another element
+String text = WebUI.getText(findTestObject('Page_Scheduler/th_Student  School'))
 
+// Print the retrieved text
+println("Retrieved text: " + text)
+
+//WebUI.closeBrowser()

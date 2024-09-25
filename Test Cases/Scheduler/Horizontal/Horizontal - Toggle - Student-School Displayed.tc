@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Action Menu - Dropdown - Disabled if Master Checkbox Clear</name>
+   <name>Horizontal - Toggle - Student-School Displayed</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>831e2ff8-8bc0-4999-b243-8043fa8ada27</testCaseGuid>
+   <testCaseGuid>df83420e-abf0-4ad2-b4da-8efb40857297</testCaseGuid>
 </TestCaseEntity>

@@ -11,14 +11,14 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.openBrowser('')
 WebUI.setViewPortSize(GlobalVariable.spreadsheetWidth,GlobalVariable.spreadsheetHeight)
 
-//WebUI.authenticate(GlobalVariable.timecard_url, 'hawaii', 'hawaiircm', 0)
+//***** WAITING FOR ADDITION OF MISSING ELEMENT ID: date_filter_select 
 
 // navigate to website (any dow is fine)  
 WebUI.navigateToUrl(GlobalVariable.scheduler_url)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebElement weDateDropdown = driver.findElement(By.xpath('//*[@id="root"]/main/div[3]/table/thead/tr/th[3]/span/select'))
+WebElement weDateDropdown = driver.findElement(By.xpath('//*[@id=date_filter_select'))
 
 TestObject toDateDropdown = WebUI.convertWebElementToTestObject(weDateDropdown)
 
