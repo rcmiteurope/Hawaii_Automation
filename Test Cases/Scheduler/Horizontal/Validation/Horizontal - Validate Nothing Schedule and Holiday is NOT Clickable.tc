@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Horizontal - Validate Nothing Schedule and Holiday is NOT Clickable</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e7eb67e6-4ebd-4b36-8fe1-6a86d3a93ecc</testCaseGuid>
+</TestCaseEntity>
