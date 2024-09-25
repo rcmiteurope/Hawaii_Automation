@@ -141,6 +141,21 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
+      <initValue>['Student / School', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri']</initValue>
+      <name>horizontal_column_headings</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>['horizontal_schoolname', 'col_2_dayname', 'col_3_dayname', 'col_4_dayname', 'col_5_dayname', 'col_6_dayname']</initValue>
+      <name>horizontal_column_heading_ids</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>['School', 'Student', 'Date', '~', 'Provider']</initValue>
+      <name>vertical_column_headings</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
       <initValue>'Start'</initValue>
       <name>startTime</name>
    </GlobalVariableEntity>
