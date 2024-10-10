@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Horizontal - Verify Load - Horizontal Toggle Clickable</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5bacf6d3-f0b4-4176-8c02-b4e0b8d41ec2</testCaseGuid>
+</TestCaseEntity>

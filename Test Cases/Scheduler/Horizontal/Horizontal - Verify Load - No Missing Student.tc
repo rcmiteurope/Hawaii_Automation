@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Horizontal - Verify Load - No Missing Student</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>df63f86f-c096-45b5-a40b-d1ff78cf0bb4</testCaseGuid>
+</TestCaseEntity>
