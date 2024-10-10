@@ -15,7 +15,7 @@ WebUI.navigateToUrl((GlobalVariable.scheduler_url))
 WebDriver driver = DriverFactory.getWebDriver()
 
 // grab the <label for> the horizontal toggle
-WebElement weHorizontalToggle = driver.findElement(By.xpath('//*[@id=":r0:"]/following-sibling::label'))
+WebElement weHorizontalToggle = driver.findElement(By.xpath('//*[@id="horizontal_toggle"]/following-sibling::label'))
 TestObject toHorizontalToggle = WebUI.convertWebElementToTestObject(weHorizontalToggle)
 
 // make sure the toggle is clickable
