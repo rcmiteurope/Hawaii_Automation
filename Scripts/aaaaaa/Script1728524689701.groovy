@@ -21,7 +21,7 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://scheduler-qa.rcmt-timecard.com/')
 
-x`xxWebUI.selectOptionByValue(findTestObject('Object Repository/select_All Students Abe, Tyler Avilla, Linc_0e3850'), '{"id":1728,"firstname":"Nya","lastname":"Jay-Funaki","source":1}', 
+WebUI.selectOptionByValue(findTestObject('Object Repository/select_All Students Abe, Tyler Avilla, Linc_0e3850'), '{"id":1728,"firstname":"Nya","lastname":"Jay-Funaki","source":1}', 
     true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/select_TodayTomorrowThis WeekNext WeekOctob_108650'), '{"week_start":"2024-10-13","week_end":"2024-10-19","filter_type":0}', 
