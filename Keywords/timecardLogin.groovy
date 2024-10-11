@@ -36,10 +36,17 @@ public class timecard {
 	}
 
 	@Keyword
-	def setOptionSelected(String id, String label) {
+	def setOptionSelectedByLabel(String id, String label) {
 		WebElement webElement = driver.findElement(By.xpath('//*[@id="' + id + '"]'))
 		TestObject testObject = WebUI.convertWebElementToTestObject(webElement)
 		WebUI.selectOptionByLabel(testObject, label, false)
+	}
+
+	@Keyword
+	def setOptionSelectedByIndex(String id, int index) {
+		WebElement webElement = driver.findElement(By.xpath('//*[@id="' + id + '"]'))
+		TestObject testObject = WebUI.convertWebElementToTestObject(webElement)
+		WebUI.selectOptionByIndex(testObject, index)
 	}
 
 	@Keyword

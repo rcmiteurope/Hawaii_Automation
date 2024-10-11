@@ -64,4 +64,9 @@
       <initValue>'august112024'</initValue>
       <name>sunday</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://scheduler-qa.rcmt-timecard.com/\n'</initValue>
+      <name>scheduler_url</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
