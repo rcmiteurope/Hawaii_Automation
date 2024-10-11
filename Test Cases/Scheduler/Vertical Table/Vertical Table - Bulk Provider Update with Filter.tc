@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Vertical Table - Bulk Provider Update with Filter</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4b00f7a9-ed1b-4470-a7f9-c7ba57403c94</testCaseGuid>
+</TestCaseEntity>

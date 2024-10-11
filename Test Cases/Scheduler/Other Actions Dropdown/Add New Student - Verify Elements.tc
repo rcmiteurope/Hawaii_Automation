@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Add New Student - Verify Elements</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c007e7bd-d69d-4bfe-b1be-0681dac7401b</testCaseGuid>
+</TestCaseEntity>

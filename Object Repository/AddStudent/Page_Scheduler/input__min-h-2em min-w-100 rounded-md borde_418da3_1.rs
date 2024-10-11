@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input__min-h-2em min-w-100 rounded-md borde_418da3_1</name>
+   <tag></tag>
+   <elementGuidId>e798a5ce-aab7-41e1-983f-7d6e8592c2b7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//input[@value=''])[3]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div >> internal:has-text=/^Last Name:\*$/ >> internal:role=textbox</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>66dac868-c050-41d0-b343-481c2bf96f1f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
+      <webElementGuid>aef3af86-b8dc-478c-bd02-b55efb48e7fb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>min-h-[2em] min-w-[100%] rounded-md border border-black focus:outline-none</value>
+      <webElementGuid>466d41ee-d866-4589-9d99-a38358a0e767</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;filter-wrapper&quot;)/div[@class=&quot;fixed inset-0 flex items-center justify-center&quot;]/dialog[@class=&quot;dialog max-w-[400px] border-4 border-solid border-black&quot;]/div[@class=&quot;w-full px-10 pb-6&quot;]/div[@class=&quot;mb-4&quot;]/input[@class=&quot;min-h-[2em] min-w-[100%] rounded-md border border-black focus:outline-none&quot;]</value>
+      <webElementGuid>2654ca7e-80b9-44e4-835f-ce2d4543ce81</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//input[@value=''])[3]</value>
+      <webElementGuid>db8c5e88-6f98-4948-b353-7f283d17e069</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='filter-wrapper']/div/dialog/div[2]/div[2]/input</value>
+      <webElementGuid>e97c1244-aaa7-4052-80d6-71b9101ddc86</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div[2]/input</value>
+      <webElementGuid>486f1bd6-9676-493d-9cf1-6397ff301a12</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'text']</value>
+      <webElementGuid>4f4557ce-02e1-4b4c-b01a-a45216938567</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
