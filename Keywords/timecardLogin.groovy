@@ -50,13 +50,6 @@ public class timecard {
 	}
  
 	@Keyword
-	def setOptionSelectedByIndex(String id, int index) {
-		WebElement webElement = driver.findElement(By.xpath('//*[@id="' + id + '"]'))
-		TestObject testObject = WebUI.convertWebElementToTestObject(webElement)
-		WebUI.selectOptionByIndex(testObject, index)
-	}
-
-	@Keyword
 	def isNotApproved(String dow) {
 		WebElement bubble = WebUI.findWebElement(findTestObject('Object Repository/HTA/button_' + dow.substring(0,3).toLowerCase()))
 		def int numberOfSiblings = bubble.findElements(By.xpath("following-sibling::*")).size()
