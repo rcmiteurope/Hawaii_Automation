@@ -1,12 +1,12 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import org.openqa.selenium.By
-
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
@@ -16,12 +16,30 @@ public class timecard {
 
 	def WebDriver driver = DriverFactory.getWebDriver()
 
+
 	@Keyword
 	def isApproved(String dow) {
 		WebElement bubble = WebUI.findWebElement(findTestObject('Object Repository/HTA/button_' + dow.substring(0,3).toLowerCase()))
 		def int numberOfSiblings = bubble.findElements(By.xpath("following-sibling::*")).size()
 		boolean rc = (numberOfSiblings != 0)
 		return rc
+	}
+
+	@Keyword
+	def verifyOptionSelected(String id, String label) {
+		WebElement webElement = driver.findElement(By.xpath('//*[@id="' + id + '"]'))
+		TestObject testObject = WebUI.convertWebElementToTestObject(webElement)
+		if (!WebUI.verifyOptionSelectedByLabel(testObject, label, false, 0)) {
+			// raise an error
+			KeywordUtil.markFailed('********* the selected option in ' + id + ' is not ' + label + ' ************')
+		}
+	}
+
+	@Keyword
+	def setOptionSelected(String id, String label) {
+		WebElement webElement = driver.findElement(By.xpath('//*[@id="' + id + '"]'))
+		TestObject testObject = WebUI.convertWebElementToTestObject(webElement)
+		WebUI.selectOptionByLabel(testObject, label, false)
 	}
 
 	@Keyword
