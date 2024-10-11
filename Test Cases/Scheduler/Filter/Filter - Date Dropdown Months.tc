@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify Date Dropdown Displays List of Months on Click</description>
+   <name>Filter - Date Dropdown Months</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4489aa48-a308-49c0-bb26-09a36c7b038f</testCaseGuid>
+</TestCaseEntity>

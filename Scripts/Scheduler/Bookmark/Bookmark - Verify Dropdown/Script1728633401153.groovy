@@ -21,25 +21,11 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://scheduler-qa.rcmt-timecard.com/')
 
-WebUI.click(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/label_Not found_bg-white w-5 h-5 border bor_cc64be'))
+WebUI.click(findTestObject('Object Repository/Bookmark/Page_Scheduler/svg_Outer Island_bookmark-icon'))
 
-WebUI.click(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/p_OPEN'))
+WebUI.click(findTestObject('Object Repository/Bookmark/Page_Scheduler/button_OPEN for Today'))
 
-WebUI.click(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/input_Aina Haina_r12'))
-
-WebUI.verifyElementNotClickable(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/button_Provider'))
-
-WebUI.verifyElementNotClickable(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/button_Supervisor'))
-
-WebUI.verifyElementNotClickable(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/button_Remove Supervisor'))
-
-WebUI.verifyElementNotClickable(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/button_Absent - NCNS'))
-
-WebUI.verifyElementNotClickable(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/button_Absent - Notice'))
-
-WebUI.verifyElementNotClickable(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/button_Waiting For Order'))
-
-WebUI.verifyElementNotClickable(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/button_OPEN'))
+WebUI.verifyElementNotPresent(findTestObject('Object Repository/Bookmark/Page_Scheduler/bookmark_dropdown'), 0)
 
 WebUI.closeBrowser()
 

@@ -21,25 +21,23 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://scheduler-qa.rcmt-timecard.com/')
 
-WebUI.click(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/label_Not found_bg-white w-5 h-5 border bor_cc64be'))
+WebUI.verifyOptionSelectedByLabel(findTestObject('Object Repository/Filter Dropdown/Page_Scheduler/provider_filter'), 'All Provider', false,
+	20)
 
-WebUI.click(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/p_OPEN'))
+WebUI.selectOptionByLabel(findTestObject('Object Repository/Filter Dropdown/Page_Scheduler/provider_filter'), 'OPEN Only', false)
+WebUI.verifyOptionSelectedByLabel(findTestObject('Object Repository/Filter Dropdown/Page_Scheduler/provider_filter'), 'OPEN Only', false,
+	20)
 
-WebUI.click(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/input_Aina Haina_r12'))
+WebUI.selectOptionByLabel(findTestObject('Object Repository/Filter Dropdown/Page_Scheduler/provider_filter'), 'Holidays', false)
+WebUI.verifyOptionSelectedByLabel(findTestObject('Object Repository/Filter Dropdown/Page_Scheduler/provider_filter'), 'Holidays', false,
+	20)
 
-WebUI.verifyElementNotClickable(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/button_Provider'))
+WebUI.selectOptionByLabel(findTestObject('Object Repository/Filter Dropdown/Page_Scheduler/provider_filter'), 'Waiting On Orders', false)
+WebUI.verifyOptionSelectedByLabel(findTestObject('Object Repository/Filter Dropdown/Page_Scheduler/provider_filter'), 'Waiting On Orders', false,
+	20)
 
-WebUI.verifyElementNotClickable(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/button_Supervisor'))
-
-WebUI.verifyElementNotClickable(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/button_Remove Supervisor'))
-
-WebUI.verifyElementNotClickable(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/button_Absent - NCNS'))
-
-WebUI.verifyElementNotClickable(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/button_Absent - Notice'))
-
-WebUI.verifyElementNotClickable(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/button_Waiting For Order'))
-
-WebUI.verifyElementNotClickable(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/button_OPEN'))
+WebUI.selectOptionByLabel(findTestObject('Object Repository/Filter Dropdown/Page_Scheduler/provider_filter'), 'Student Absent', false)
+WebUI.verifyOptionSelectedByLabel(findTestObject('Object Repository/Filter Dropdown/Page_Scheduler/provider_filter'), 'Student Absent', false,
+	20)
 
 WebUI.closeBrowser()
-

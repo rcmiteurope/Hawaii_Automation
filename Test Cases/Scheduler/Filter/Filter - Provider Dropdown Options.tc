@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify Provider Dropdown Includes Options for &quot;All Provider&quot; &quot;Open Only,&quot; &quot;Holidays&quot;, &quot;Waiting on Orders&quot;, &quot;Student Absent&quot;</description>
+   <name>Filter - Provider Dropdown Options</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a925851c-4180-41a9-93d6-76544cda237c</testCaseGuid>
+</TestCaseEntity>

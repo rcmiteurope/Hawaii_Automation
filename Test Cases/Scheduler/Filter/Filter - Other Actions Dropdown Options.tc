@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify Other Action Dropdown Displays List of Actions on Click</description>
+   <name>Filter - Other Actions Dropdown Options</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8adfafbb-c696-48cb-9262-730665694b31</testCaseGuid>
+</TestCaseEntity>

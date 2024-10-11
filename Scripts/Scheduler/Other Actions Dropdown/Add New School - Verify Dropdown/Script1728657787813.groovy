@@ -17,25 +17,3 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('https://scheduler-qa.rcmt-timecard.com/')
-
-WebUI.click(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/label_Not found_bg-white w-5 h-5 border bor_cc64be'))
-
-WebUI.click(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/p_OPEN'))
-
-WebUI.verifyElementClickable(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/button_Provider'))
-
-WebUI.verifyElementClickable(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/button_Supervisor'))
-
-WebUI.verifyElementClickable(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/button_Remove Supervisor'))
-
-WebUI.verifyElementClickable(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/button_Absent - NCNS'))
-
-WebUI.verifyElementClickable(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/button_Absent - Notice'))
-
-WebUI.verifyElementClickable(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/button_Waiting For Order'))
-
-WebUI.verifyElementClickable(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/button_OPEN'))
-

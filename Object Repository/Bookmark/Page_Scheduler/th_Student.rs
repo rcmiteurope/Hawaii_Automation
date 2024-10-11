@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>p_OPEN</name>
+   <name>th_Student</name>
    <tag></tag>
-   <elementGuidId>f967bb86-9dd7-4c31-8742-a18e51839fee</elementGuidId>
+   <elementGuidId>62e6a643-f224-47fb-bb2f-b3136cd621cb</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//tr[@id='tr-main-0']/td[4]/div/p</value>
+         <value>//table[@id='vertical-table']/thead/tr/th[2]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -18,7 +18,7 @@
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>#tr-main-0 >> internal:text=&quot;OPEN&quot;i</value>
+         <value>th >> internal:has-text=&quot;Student&quot;i</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,71 +28,79 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>p</value>
-      <webElementGuid>0c5eaebe-36b5-49b3-8f88-37f56b816e0b</webElementGuid>
+      <value>th</value>
+      <webElementGuid>23a5022d-9175-4074-ab6b-b7bb4f2a2836</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>border-stone-700 border-2 w-[200px] bg-white p-2</value>
+      <webElementGuid>e6a90e34-7457-4dd3-8024-ffc2b51162e8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>OPEN</value>
-      <webElementGuid>9d503ef1-8f89-46bc-9790-0d9697187ada</webElementGuid>
+      <value>Student</value>
+      <webElementGuid>29ddb130-7c08-4888-aa81-1089c62f4a47</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;tr-main-0&quot;)/td[@class=&quot;border-2 border-gray-400 align-middle w-[3em]&quot;]/div[@class=&quot;h-full min-h-4 cursor-pointer text-center align-middle hover:brightness-[1.05] bg-yellow-400 text-red-600 font-semibold&quot;]/p[1]</value>
-      <webElementGuid>513cfd9c-1d4c-42e5-b11f-c0c65b958c2d</webElementGuid>
+      <value>id(&quot;vertical-table&quot;)/thead[@class=&quot;sticky top-0&quot;]/tr[1]/th[@class=&quot;border-stone-700 border-2 w-[200px] bg-white p-2&quot;]</value>
+      <webElementGuid>f3945b5a-7504-4522-98ba-20625e41df0b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='tr-main-0']/td[4]/div/p</value>
-      <webElementGuid>65348413-58f4-4d0a-af56-c191cb8ddae3</webElementGuid>
+      <value>//table[@id='vertical-table']/thead/tr/th[2]</value>
+      <webElementGuid>d20463f1-912e-425c-a6c4-5bfe27956096</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Aina Haina'])[2]/following::p[5]</value>
-      <webElementGuid>a4636a29-fe62-4b43-becf-45502aa72812</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='School'])[1]/following::th[1]</value>
+      <webElementGuid>ec632fb2-d22c-48c0-acf7-8e7d40a46d05</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Aina Haina'])[3]/preceding::p[8]</value>
-      <webElementGuid>baef13e1-a22d-4209-ad39-034c8b577e67</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Search...'])[1]/following::th[2]</value>
+      <webElementGuid>d4829798-b434-49d2-a291-0cdbada19fbc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='OPEN']/parent::*</value>
-      <webElementGuid>0766a288-74f2-4092-8846-8ddf15648de8</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Date'])[1]/preceding::th[1]</value>
+      <webElementGuid>01c808b0-66f4-4d54-8eb0-9e3995796673</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//td[4]/div/p</value>
-      <webElementGuid>1c70d217-0c8e-4bcb-bd21-16be0cf48c33</webElementGuid>
+      <value>//th[2]</value>
+      <webElementGuid>c9bd158e-7dc8-4d24-8f2d-b668c331445b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//p[(text() = 'OPEN' or . = 'OPEN')]</value>
-      <webElementGuid>e5ae54d0-47e8-47bc-acf0-1f0a3b9b46f5</webElementGuid>
+      <value>//th[(text() = 'Student' or . = 'Student')]</value>
+      <webElementGuid>d55814d2-e161-41ab-a6d0-ebb3c71fbb0d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

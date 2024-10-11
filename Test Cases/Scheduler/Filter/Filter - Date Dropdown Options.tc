@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify Date Filter Dropdown Includes Options for  &quot;Today&quot;, &quot;Tomorrow,&quot; &quot;This Week,&quot; &quot;Next Week,&quot;</description>
+   <name>Filter - Date Dropdown Options</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>60f3bdb2-a88b-41a3-95ba-995daf6de9e8</testCaseGuid>
+</TestCaseEntity>
