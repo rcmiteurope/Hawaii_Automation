@@ -17,3 +17,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://scheduler-qa.rcmt-timecard.com/')
+
+WebUI.click(findTestObject('Object Repository/Vertical Table/Page_Scheduler/input_Tue, 1015 0730 - 1415_master-checkbox_676fcd'))
+
+WebUI.executeJavaScript('document.getElementById("actionmenu-handle").click();', null)
+
+WebUI.executeJavaScript('document.getElementById("waiting-on-orders").click();', null)
+
+WebUI.verifyElementText(findTestObject('Object Repository/Vertical Table/Page_Scheduler/div_Waiting on Orders'), 'Waiting on Orders')
+
+WebUI.closeBrowser()
+

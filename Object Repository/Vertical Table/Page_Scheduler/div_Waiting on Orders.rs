@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Student Absent - Notice</name>
+   <name>div_Waiting on Orders</name>
    <tag></tag>
-   <elementGuidId>a2228844-9e98-4ce5-8993-95baad8676c0</elementGuidId>
+   <elementGuidId>1034c9c8-bb94-4da5-9244-dd9512d977f3</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//tr[@id='tr-main-0']/td[5]/div</value>
+         <value>//tr[@id='tr-main-12']/td[5]/div</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>div.providerName.table-cell.cursor-pointer.align-middle</value>
+         <value>td.border-stone-700.border-2.px-2.bg-gray-900.text-white > div.providerName.table-cell.cursor-pointer.align-middle</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>#tr-main-0 >> internal:text=&quot;Student Absent - Notice&quot;i</value>
+         <value>internal:text=&quot;Waiting on Orders&quot;s</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>02102a51-6b0e-4d7b-ad25-e29004ec32e7</webElementGuid>
+      <webElementGuid>1c7a9a95-c594-424c-aa3f-f2b636caeec1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,86 +37,86 @@
       <name>class</name>
       <type>Main</type>
       <value>providerName table-cell cursor-pointer align-middle</value>
-      <webElementGuid>0d96a0d0-518e-4f24-b463-9f61a9c09bba</webElementGuid>
+      <webElementGuid>bdacdfa5-3003-44cf-b227-cfb51562e170</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Student Absent - Notice</value>
-      <webElementGuid>b4d0ce20-1139-4246-ade9-16c00be368f1</webElementGuid>
+      <value>Waiting on Orders</value>
+      <webElementGuid>5d332be0-e5b6-41e7-a170-daef9205dc8a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;tr-main-0&quot;)/td[@class=&quot;border-stone-700 border-2 px-2  bg-gray-900 text-white&quot;]/div[@class=&quot;providerName table-cell cursor-pointer align-middle&quot;]</value>
-      <webElementGuid>dfad512b-27e8-44d4-81b5-0ff274e0b647</webElementGuid>
+      <value>id(&quot;tr-main-12&quot;)/td[@class=&quot;border-stone-700 border-2 px-2  bg-gray-900 text-white&quot;]/div[@class=&quot;providerName table-cell cursor-pointer align-middle&quot;]</value>
+      <webElementGuid>8975f730-ad6c-4be5-b2a6-b72e0addce3b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='tr-main-0']/td[5]/div</value>
-      <webElementGuid>7e2b9319-8776-4074-b53b-a370b2f51878</webElementGuid>
+      <value>//tr[@id='tr-main-12']/td[5]/div</value>
+      <webElementGuid>bd3c222a-bb4f-4387-aa1d-e3daefc5e63f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tue, 10/15 08:00 - 14:15'])[1]/following::div[2]</value>
-      <webElementGuid>6cad3e30-abe6-469d-b9d0-8c0bd0386ef2</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tue, 10/15 07:30 - 14:15'])[1]/following::div[2]</value>
+      <webElementGuid>9f682017-58c6-48fb-8052-dbd5d255598d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Jay-Funaki, Nya'])[2]/following::div[2]</value>
-      <webElementGuid>469261af-6dd6-4291-94be-2747808476d0</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Palacpac, Jumar'])[2]/following::div[2]</value>
+      <webElementGuid>d35df3fd-f63b-4e28-a314-892784d66aa5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Aina Haina'])[3]/preceding::div[1]</value>
-      <webElementGuid>885cbe0f-ec51-4b9f-ad1b-d65603f4a907</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hahaione Elementary'])[2]/preceding::div[1]</value>
+      <webElementGuid>fea9b398-8a69-4654-9573-e9033215ba7b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Wellbrock, Haliaalohaokalikolehua'])[2]/preceding::div[1]</value>
-      <webElementGuid>11536dec-a206-4edb-978e-01c3f35fc3fe</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hashemi, Jasmin'])[2]/preceding::div[1]</value>
+      <webElementGuid>b312f418-edd1-4304-b1a1-0e6845d9e506</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Student Absent - Notice']/parent::*</value>
-      <webElementGuid>65d0743e-e0e8-4d4c-a3ea-52c040919b5c</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Waiting on Orders']/parent::*</value>
+      <webElementGuid>fa70a065-a4ee-49a3-ac90-dc30cf1de63e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//td[5]/div</value>
-      <webElementGuid>3b25c835-244e-4367-8f41-615385b1af15</webElementGuid>
+      <value>//tr[14]/td[5]/div</value>
+      <webElementGuid>531172c7-8c12-4e60-9b45-34f07e75797f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[(text() = 'Student Absent - Notice' or . = 'Student Absent - Notice')]</value>
-      <webElementGuid>ec916fea-5564-486e-8146-2992fff070f5</webElementGuid>
+      <value>//div[(text() = 'Waiting on Orders' or . = 'Waiting on Orders')]</value>
+      <webElementGuid>50527859-121c-48af-98fd-0ac75a07ac67</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -21,11 +21,11 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://scheduler-qa.rcmt-timecard.com/')
 
-WebUI.click(findTestObject('Object Repository/Vertical Table/Page_Scheduler/input_Mon, 1014 0730 - 1330_master-checkbox_a6df69'))
+WebUI.click(findTestObject('Object Repository/Vertical Table/Page_Scheduler/input_Tue, 1015 0800 - 1415_master-checkbox_1dd056'))
 
-WebUI.click(findTestObject('Object Repository/Vertical Table/Page_Scheduler/button_Absent - Notice'))
+WebUI.executeJavaScript('document.getElementById("actionmenu-handle").click();', null)
+
+WebUI.executeJavaScript('document.getElementById("absent-notice").click();', null)
 
 WebUI.verifyElementText(findTestObject('Object Repository/Vertical Table/Page_Scheduler/div_Student Absent - Notice'), 'Student Absent - Notice')
-
-WebUI.closeBrowser()
 
