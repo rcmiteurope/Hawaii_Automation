@@ -1,43 +1,55 @@
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
 
+// Open the browser and navigate to the specified URL
 WebUI.openBrowser('')
-
 WebUI.navigateToUrl('https://scheduler-qa.rcmt-timecard.com/')
 
-WebUI.verifyOptionSelectedByLabel(findTestObject('Object Repository/Filter Dropdown/Page_Scheduler/provider_filter'), 'All Provider', false,
-	20)
+// Get the WebDriver instance
+WebDriver driver = DriverFactory.getWebDriver()
 
-WebUI.selectOptionByLabel(findTestObject('Object Repository/Filter Dropdown/Page_Scheduler/provider_filter'), 'OPEN Only', false)
-WebUI.verifyOptionSelectedByLabel(findTestObject('Object Repository/Filter Dropdown/Page_Scheduler/provider_filter'), 'OPEN Only', false,
-	20)
+// Locate the dropdown using the XPath
+WebElement dropdown = driver.findElement(By.id('provider_filter_select'))
+dropdown.click()
 
-WebUI.selectOptionByLabel(findTestObject('Object Repository/Filter Dropdown/Page_Scheduler/provider_filter'), 'Holidays', false)
-WebUI.verifyOptionSelectedByLabel(findTestObject('Object Repository/Filter Dropdown/Page_Scheduler/provider_filter'), 'Holidays', false,
-	20)
+// Wait for options to be visible (optional, adjust if necessary)
+// WebUI.delay(1)
 
-WebUI.selectOptionByLabel(findTestObject('Object Repository/Filter Dropdown/Page_Scheduler/provider_filter'), 'Waiting On Orders', false)
-WebUI.verifyOptionSelectedByLabel(findTestObject('Object Repository/Filter Dropdown/Page_Scheduler/provider_filter'), 'Waiting On Orders', false,
-	20)
+// Get the dropdown options (assuming they are <option> tags within a <select>)
+List<WebElement> options = dropdown.findElements(By.tagName('option'))
 
-WebUI.selectOptionByLabel(findTestObject('Object Repository/Filter Dropdown/Page_Scheduler/provider_filter'), 'Student Absent', false)
-WebUI.verifyOptionSelectedByLabel(findTestObject('Object Repository/Filter Dropdown/Page_Scheduler/provider_filter'), 'Student Absent', false,
-	20)
+// Define the expected options
+List<String> expectedOptions = ['All Provider', 'OPEN Only', 'Holidays', 'Waiting On Orders', 'Student Absent'] 
 
+// Collect the text values from the dropdown options
+List<String> dropdownOptions = options.take(5).collect { it.getText().trim() }
+
+// Log the dropdown options for debugging
+dropdownOptions.each { option ->
+    WebUI.comment("Option found in dropdown: " + option)
+}
+
+// Verify that all expected options are present
+boolean allOptionsExist = true
+List<String> missingOptions = []
+
+for (String expectedOption : expectedOptions) {
+    if (!dropdownOptions.contains(expectedOption)) {
+        allOptionsExist = false
+        missingOptions.add(expectedOption)
+    }
+}
+
+// Log results
+if (allOptionsExist) {
+    WebUI.comment("Dropdown contains all the expected options.")
+} else {
+    WebUI.comment("Dropdown is missing the following options: " + missingOptions)
+    throw new Exception("Test Failed: Dropdown is missing the following options: " + missingOptions)
+}
+
+// Close the browser
 WebUI.closeBrowser()

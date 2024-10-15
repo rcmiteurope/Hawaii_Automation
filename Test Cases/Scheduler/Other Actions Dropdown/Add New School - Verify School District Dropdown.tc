@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>Verify School District Dropdown Includes Island Options in &quot;Add New School&quot; Pop-Up Modal</description>
-   <name>Add New School - Verify Dropdown</name>
+   <name>Add New School - Verify School District Dropdown</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>

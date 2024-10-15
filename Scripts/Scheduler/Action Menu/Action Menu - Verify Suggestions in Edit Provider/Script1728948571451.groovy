@@ -17,3 +17,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://scheduler-qa.rcmt-timecard.com/')
+
+WebUI.click(findTestObject('Object Repository/Action Menu/Page_Scheduler/input_Tue, 1015 0800 - 1300_master-checkbox_4758ea'))
+
+WebUI.executeJavaScript('document.getElementById("actionmenu-handle").click();', null)
+
+//WebUI.click(findTestObject('Object Repository/Action Menu/Page_Scheduler/button_Edit Provider'))
+
+WebUI.executeJavaScript('document.getElementById("action-menu-edit-provider").click();', null)
+
+WebUI.verifyElementVisible(findTestObject('Object Repository/Action Menu/Page_Scheduler/div_SuggestionsABCDEFGHIJKLMNOPQRSTUVWXYZ'))
+
+WebUI.verifyElementVisible(findTestObject('Object Repository/Action Menu/Page_Scheduler/span_Suggestions'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.closeBrowser()
+
+
+

@@ -164,4 +164,9 @@
       <initValue>'End'</initValue>
       <name>endTime</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>0</initValue>
+      <name>providerID</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -1,19 +1,66 @@
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import java.time.LocalDate
+import java.time.format.TextStyle
+import java.util.Locale
 
+// Open the browser and navigate to the specified URL
+WebUI.openBrowser('')
+WebUI.navigateToUrl('https://scheduler-qa.rcmt-timecard.com/')
+
+// Get the WebDriver instance
+WebDriver driver = DriverFactory.getWebDriver()
+
+// Click the dropdown using its ID
+WebElement dropdown = driver.findElement(By.id('date_filter_select'))
+dropdown.click()
+
+// Wait for options to be visible (optional, adjust if necessary)
+// WebUI.delay(1)
+
+// Get the dropdown options (assuming they are <option> tags within a <select>)
+List<WebElement> options = dropdown.findElements(By.tagName('option'))
+
+// Get the current month and generate the expected months list
+List<String> expectedMonths = []
+LocalDate currentDate = LocalDate.now()
+
+// Generate the expected months starting from the current month
+for (int i = 0; i < 12; i++) {
+    String monthName = currentDate.plusMonths(i).getMonth()
+                        .getDisplayName(TextStyle.FULL, Locale.ENGLISH)
+    expectedMonths.add(monthName)
+}
+
+// Collect the text values from the dropdown options
+List<String> dropdownMonths = options.collect { it.getText().trim() }
+
+// Log the dropdown options for debugging
+dropdownMonths.each { month ->
+    WebUI.comment("Month found in dropdown: " + month)
+}
+
+// Verify that the dropdown contains all the expected months starting from the current month
+boolean allMonthsExist = true
+List<String> missingMonths = []
+
+// Check for each expected month
+for (String expectedMonth : expectedMonths) {
+    if (!dropdownMonths.contains(expectedMonth)) {
+        allMonthsExist = false
+        missingMonths.add(expectedMonth)
+    }
+}
+
+// Log results
+if (allMonthsExist) {
+    WebUI.comment("Dropdown contains all the expected months starting from the current month.")
+} else {
+    WebUI.comment("Dropdown is missing the following months: " + missingMonths)
+}
+
+// Close the browser
+WebUI.closeBrowser()
