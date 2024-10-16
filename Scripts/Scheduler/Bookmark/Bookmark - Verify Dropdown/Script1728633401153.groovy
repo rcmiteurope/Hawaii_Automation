@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://scheduler-qa.rcmt-timecard.com/')
+WebUI.navigateToUrl(GlobalVariable.scheduler_url)
 
 WebUI.click(findTestObject('Object Repository/Bookmark/Page_Scheduler/svg_Outer Island_bookmark-icon'))
 

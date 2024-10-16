@@ -26,7 +26,7 @@ import groovy.sql.Sql
 public class DatabaseConnection {
 
 	static Sql connectToDatabase() {
-		def dbUrl = 'jdbc:mysql://172.0.0.76:3306/client_services_qa' // Update accordingly
+		def dbUrl = 'jdbc:mysql://172.0.0.76:3306/client_services_qa' 
 		def dbUser = 'rcmadm'
 		def dbPassword = 'rcmtech123'
 		def dbDriver = 'com.mysql.cj.jdbc.Driver'

@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://scheduler-qa.rcmt-timecard.com/')
+WebUI.navigateToUrl(GlobalVariable.scheduler_url)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/select_All Students Abe, Tyler Avilla, Linc_0e3850'), '{"id":1728,"firstname":"Nya","lastname":"Jay-Funaki","source":1}', 
     true)

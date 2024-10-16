@@ -7,11 +7,9 @@ import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
-// Parameters for fetching schools
 def islandID = 1 
 def providerID = null
 
-// Fetch the SQL connection
 Sql sql = DatabaseConnection.connectToDatabase()
 
 List<String> expectedSchools = []
@@ -21,7 +19,7 @@ try {
     // SQL query to retrieve expected schools from the database
     String query = "CALL sp_scheduler_getSchools(?, ?)"
     
-    WebUI.comment("Calling stored procedure with islandID: ${islandID} and providerID: '${providerID}'")
+   // WebUI.comment("Calling stored procedure with islandID: ${islandID} and providerID: '${providerID}'")
     
     List<Map> rows = sql.rows(query, [islandID, providerID]) // Using named parameters
 
@@ -65,7 +63,7 @@ try {
 // Now verify the dropdown has the expected schools
 WebUI.openBrowser('') 
 
-WebUI.navigateToUrl('https://scheduler-qa.rcmt-timecard.com/') // Navigate to the URL
+WebUI.navigateToUrl(GlobalVariable.scheduler_url)
 
 // Get the WebDriver instance
 WebDriver driver = DriverFactory.getWebDriver()

@@ -26,7 +26,7 @@ import org.openqa.selenium.Keys as Keys
 // Open the browser and navigate to the specified URL
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://scheduler-qa.rcmt-timecard.com/')
+WebUI.navigateToUrl(GlobalVariable.scheduler_url)
 
 // Get the WebDriver instance
 WebDriver driver = DriverFactory.getWebDriver()

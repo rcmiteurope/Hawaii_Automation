@@ -68,7 +68,7 @@ try {
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://scheduler-qa.rcmt-timecard.com/') // Navigate to the URL
+WebUI.navigateToUrl(GlobalVariable.scheduler_url)
 
 // Get the WebDriver instance
 WebDriver driver = DriverFactory.getWebDriver()
