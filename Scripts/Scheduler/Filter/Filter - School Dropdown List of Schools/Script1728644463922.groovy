@@ -71,6 +71,8 @@ WebDriver driver = DriverFactory.getWebDriver()
 // Locate the school filter dropdown using its selector
 WebElement schoolFilterSelect = driver.findElement(By.xpath("//select[@id='school_filter_select']")) 
 
+schoolFilterSelect.click();
+
 // Get the dropdown options
 List<WebElement> dropdownOptions = schoolFilterSelect.findElements(By.tagName('option'))
 

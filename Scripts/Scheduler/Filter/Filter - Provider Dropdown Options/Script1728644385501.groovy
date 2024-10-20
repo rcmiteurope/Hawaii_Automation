@@ -3,6 +3,7 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.By
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
+import internal.GlobalVariable as GlobalVariable
 
 // Open the browser and navigate to the specified URL
 WebUI.openBrowser('')

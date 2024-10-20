@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement
 import java.time.LocalDate
 import java.time.format.TextStyle
 import java.util.Locale
+import internal.GlobalVariable as GlobalVariable
 
 // Open the browser and navigate to the specified URL
 WebUI.openBrowser('')
