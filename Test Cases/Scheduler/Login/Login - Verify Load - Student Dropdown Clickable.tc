@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Login - Verify Load - Student Dropdown Clickable</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>e5bf0472-e786-4093-8a67-7961b2a41b74</testCaseGuid>
-</TestCaseEntity>

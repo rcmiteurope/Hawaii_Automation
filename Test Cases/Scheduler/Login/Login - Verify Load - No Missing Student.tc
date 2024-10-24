@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Login - Verify Load - No Missing Student</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>1d82d20a-1106-47a8-9259-e194df05793a</testCaseGuid>
-</TestCaseEntity>
