@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://scheduler-qa.rcmt-timecard.com/')
+WebUI.navigateToUrl(GlobalVariable.scheduler_url)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/AddWorkorder/Page_Scheduler/select_Other ActionsAdd SchoolAdd StudentAd_8e5993'), 
     'add-workorder', true)

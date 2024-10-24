@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://scheduler-qa.rcmt-timecard.com/')
+WebUI.navigateToUrl(GlobalVariable.scheduler_url)
 
 WebUI.verifyElementText(findTestObject('Object Repository/Vertical Table/Page_Scheduler/td_Fri, 1011 0800 - 1415'), 'Fri, 10/11 08:00 - 14:15')
 
