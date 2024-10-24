@@ -17,15 +17,3 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('https://scheduler-qa.rcmt-timecard.com/')
-
-WebUI.click(findTestObject('Object Repository/Vertical Table/Page_Scheduler/input_Mon, 1014 0730 - 1330_master-checkbox_a6df69'))
-
-WebUI.click(findTestObject('Object Repository/Vertical Table/Page_Scheduler/button_Absent - Notice'))
-
-WebUI.verifyElementText(findTestObject('Object Repository/Vertical Table/Page_Scheduler/div_Student Absent - Notice'), 'Student Absent - Notice')
-
-WebUI.closeBrowser()
-
