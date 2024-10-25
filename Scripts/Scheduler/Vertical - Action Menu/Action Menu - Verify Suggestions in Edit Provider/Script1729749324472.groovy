@@ -16,12 +16,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.scheduler_url)
 
-WebUI.click(findTestObject('Object Repository/Action Menu/Page_Scheduler/input_Tue, 1015 0800 - 1300_master-checkbox_4758ea'))
+WebUI.click(new TestObject().addProperty('id', ConditionType.EQUALS, 'master-checkbox-toggle160314'))
 
 WebUI.executeJavaScript('document.getElementById("actionmenu-handle").click();', null)
 

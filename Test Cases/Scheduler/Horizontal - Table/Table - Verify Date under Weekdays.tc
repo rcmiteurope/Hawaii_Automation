@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Table - Verify Date under Weekdays</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f8e6983f-56f8-448b-ac9d-374721dd0e52</testCaseGuid>
+</TestCaseEntity>

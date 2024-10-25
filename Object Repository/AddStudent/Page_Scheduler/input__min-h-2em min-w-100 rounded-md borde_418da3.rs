@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//input[@value=''])[2]</value>
+         <value>//input[@value='E']</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>bd9d0178-570e-4f93-a461-675354a5143a</webElementGuid>
+      <webElementGuid>b5717fab-2763-4879-b19c-c6574b57cb76</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>d65d8962-b920-4d90-b598-0b780b5c955e</webElementGuid>
+      <webElementGuid>5d74a264-43ca-4429-ba0d-38df9dd8f150</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,15 @@
       <name>class</name>
       <type>Main</type>
       <value>min-h-[2em] min-w-[100%] rounded-md border border-black focus:outline-none</value>
-      <webElementGuid>75b81e1a-a855-43ac-bd6b-c435fa9c9d1b</webElementGuid>
+      <webElementGuid>ac3f5e6f-7cc8-41f1-8cdc-a172d574828b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>E</value>
+      <webElementGuid>3b6a33ec-a364-4b52-8a73-04c3046626f8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,15 +61,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;filter-wrapper&quot;)/div[@class=&quot;fixed inset-0 flex items-center justify-center&quot;]/dialog[@class=&quot;dialog max-w-[400px] border-4 border-solid border-black&quot;]/div[@class=&quot;w-full px-10 pb-6&quot;]/div[@class=&quot;mb-4&quot;]/input[@class=&quot;min-h-[2em] min-w-[100%] rounded-md border border-black focus:outline-none&quot;]</value>
-      <webElementGuid>a913d3e1-dcb7-4a20-bbf4-d286529f3454</webElementGuid>
+      <webElementGuid>b9891ec0-ef07-4ece-ba5f-2befdee99d46</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//input[@value=''])[2]</value>
-      <webElementGuid>2069ef92-8b21-4405-ba93-ddfa97f372a4</webElementGuid>
+      <value>//input[@value='E']</value>
+      <webElementGuid>eeedccec-d20d-499b-9a0c-7f6bf8271fc7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +77,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='filter-wrapper']/div/dialog/div[2]/div/input</value>
-      <webElementGuid>c0040880-7901-4296-87af-2132165c566f</webElementGuid>
+      <webElementGuid>5db4f36a-5a2b-4cbe-9f64-7f0cd11ebc9a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +85,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/input</value>
-      <webElementGuid>9476d30f-12ff-494d-a94d-8ad5fb4413eb</webElementGuid>
+      <webElementGuid>4f113b85-bf45-4d88-8a56-6d050e388faf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,6 +93,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'text']</value>
-      <webElementGuid>2e47dac1-2e01-413b-99f8-f25ae5828cbe</webElementGuid>
+      <webElementGuid>a76846c1-c721-4abd-bc19-d116626f930a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

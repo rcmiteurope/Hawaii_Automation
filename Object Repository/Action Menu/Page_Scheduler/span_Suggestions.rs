@@ -6,12 +6,12 @@
    <elementGuidId>35b9b569-f2e2-4f33-92d7-927d74fd1bfe</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#provider-suggestion > span</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//span[@id='provider-suggestion']/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#provider-suggestion > span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>06c4a438-58be-404b-bbb6-9f73d3d05857</webElementGuid>
+      <webElementGuid>f3cdff53-74cb-42c0-9905-53b43d58ef98</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Suggestions</value>
-      <webElementGuid>d60485a3-aa4e-4f3d-bbb5-a38e32bc4a75</webElementGuid>
+      <webElementGuid>3b4c0e18-ae7f-41da-83f2-a7d3d3902662</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;provider-suggestion&quot;)/span[1]</value>
-      <webElementGuid>a7bc15ee-caa4-49d7-bec8-f6a2601d7230</webElementGuid>
+      <webElementGuid>9c997eed-2e08-42ff-b369-69fbd2107449</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//span[@id='provider-suggestion']/span</value>
-      <webElementGuid>1b9bf079-ce00-40b8-96ab-a4156821c776</webElementGuid>
+      <webElementGuid>6b9ca4b2-af3b-4403-9b19-f690fe11a13c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Dismiss'])[2]/following::span[4]</value>
-      <webElementGuid>1d768f5d-e781-4899-982f-309f101e4f67</webElementGuid>
+      <webElementGuid>fd12dec0-4518-4a82-ac76-a551b9decd02</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Change Color'])[1]/following::span[4]</value>
-      <webElementGuid>37ddbdb8-6397-4fd0-8cbb-338ed11dbbf5</webElementGuid>
+      <webElementGuid>0f44adfe-15a2-48df-8e0a-d84fe44f405c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='AB'])[1]/preceding::span[4]</value>
-      <webElementGuid>4981c96b-b7fb-4f38-a422-2744a8d04f22</webElementGuid>
+      <webElementGuid>b22bf228-13b6-481c-a506-f7102befe2c3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CD'])[1]/preceding::span[4]</value>
-      <webElementGuid>e78e19d3-0811-4dd0-9e86-bf17b6b736de</webElementGuid>
+      <webElementGuid>6ec57515-c3ed-4a94-99c3-5e54c85881b3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Suggestions']/parent::*</value>
-      <webElementGuid>205bec04-bf7b-4f2a-b145-9a8305c79113</webElementGuid>
+      <webElementGuid>a8091a4f-524a-4c16-8df7-e87ea34bdc21</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/span/span</value>
-      <webElementGuid>3b81a5e5-5ade-41e6-903b-7499b2a62285</webElementGuid>
+      <webElementGuid>efc3d5a5-ce91-4209-a62a-51ff5a371d2c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +109,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Suggestions' or . = 'Suggestions')]</value>
-      <webElementGuid>3591300c-0377-47d7-826d-22225c986b44</webElementGuid>
+      <webElementGuid>fd18edad-926e-4af7-9193-2872c7240d36</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//input[@value=''])[4]</value>
+         <value>//input[@value='Er']</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -18,7 +18,7 @@
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>input[type=&quot;email&quot;]</value>
+         <value>div >> internal:has-text=/^First Name:\*$/ >> internal:role=textbox</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,15 +29,15 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>419341c4-126e-4d79-a099-cf4c0d7e9934</webElementGuid>
+      <webElementGuid>cdc01056-d696-41ee-a769-ba8ae7b2bd44</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
-      <value>email</value>
-      <webElementGuid>16e9377a-1f71-4a0e-a566-7aec7b297750</webElementGuid>
+      <value>text</value>
+      <webElementGuid>1a37a1cb-d0b0-44e0-bd31-23c8c308ac84</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,15 @@
       <name>class</name>
       <type>Main</type>
       <value>min-h-[2em] min-w-[100%] rounded-md border border-black focus:outline-none</value>
-      <webElementGuid>43035141-0f9c-4358-95e1-2766cf4660f6</webElementGuid>
+      <webElementGuid>f3c7a27b-0a1b-4524-be28-b02dd844459b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>Er</value>
+      <webElementGuid>97de9139-1784-4a57-83dc-bdbe1d25a359</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,38 +61,38 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;filter-wrapper&quot;)/div[@class=&quot;fixed inset-0 flex items-center justify-center&quot;]/dialog[@class=&quot;dialog max-w-[400px] border-4 border-solid border-black&quot;]/div[@class=&quot;w-full px-10 pb-6&quot;]/div[@class=&quot;mb-4&quot;]/input[@class=&quot;min-h-[2em] min-w-[100%] rounded-md border border-black focus:outline-none&quot;]</value>
-      <webElementGuid>5a591f12-de5e-4b45-b8b9-1d373897c238</webElementGuid>
+      <webElementGuid>a41f1fdc-1d01-4ebf-b790-694e8ebb4e47</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//input[@value=''])[4]</value>
-      <webElementGuid>a13bd928-c435-4eed-8118-6ea47544df2b</webElementGuid>
+      <value>//input[@value='Er']</value>
+      <webElementGuid>fcd603b5-80a3-4ae7-9c71-7a26363adc72</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='filter-wrapper']/div/dialog/div[2]/div[3]/input</value>
-      <webElementGuid>07357732-a852-4e72-9e0f-a89c22d9600e</webElementGuid>
+      <value>//div[@id='filter-wrapper']/div/dialog/div[2]/div/input</value>
+      <webElementGuid>a9e4ba9a-ae22-4e92-addb-da6d938906e5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/input</value>
-      <webElementGuid>4d546c32-0538-4707-ad2d-8a03f1bdfa57</webElementGuid>
+      <value>//div[2]/div/input</value>
+      <webElementGuid>ae0eb4b4-0963-4490-883a-13d1608c7c47</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@type = 'email']</value>
-      <webElementGuid>ff74b094-3484-4771-997f-cd98780cc8f0</webElementGuid>
+      <value>//input[@type = 'text']</value>
+      <webElementGuid>a3e64f37-47a4-4f64-87e2-713054894707</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

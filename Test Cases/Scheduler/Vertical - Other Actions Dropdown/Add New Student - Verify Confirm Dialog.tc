@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Add New Student - Verify Confirm Dialog</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c0e8473e-5581-45d7-8703-d2a96cc767fb</testCaseGuid>
+</TestCaseEntity>
