@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Search - Verify Correct Data in Search Bar Suggestions Based when searching for Supervisor</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7f6a1575-2f83-4652-8e38-7f524bea7ee3</testCaseGuid>
+</TestCaseEntity>

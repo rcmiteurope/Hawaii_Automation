@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Bookmark - Verify Dropdown Closes Automatically After Selecting a Bookmark</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8643bcf2-45c9-4993-bb13-3a19581938b4</testCaseGuid>
+</TestCaseEntity>

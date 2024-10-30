@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Horizontal - Verify Display of Corresponding Data Upon Clicking Central</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>af322741-fbb5-4b0c-b5be-6b9f038e1dfa</testCaseGuid>
+</TestCaseEntity>

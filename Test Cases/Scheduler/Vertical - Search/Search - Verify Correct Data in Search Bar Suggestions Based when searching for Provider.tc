@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Search - Verify Correct Data in Search Bar Suggestions Based when searching for Provider</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>58117c34-f37a-414b-b427-6d9072d4586d</testCaseGuid>
+</TestCaseEntity>

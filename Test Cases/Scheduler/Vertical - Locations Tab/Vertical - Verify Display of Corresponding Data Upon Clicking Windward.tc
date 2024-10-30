@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Vertical - Verify Display of Corresponding Data Upon Clicking Windward</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bdf8d968-af4b-4083-9ed0-de9b6876f540</testCaseGuid>
+</TestCaseEntity>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>Verify Date Dropdown Displays List of Months on Click</description>
-   <name>Filter - Date Dropdown Months</name>
+   <name>Filter - Verify Date Dropdown Displays List of Months on Click</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Search - Verify the Searched Date Filter</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b16991b6-b5c4-4746-aed2-1d9e42cc3e7b</testCaseGuid>
+</TestCaseEntity>

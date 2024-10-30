@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Search Menu - Dropdown - Complete List Displayed</name>
+   <name>Vertical - Verify List of Island</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>e3acd383-46a6-4365-87de-66029d582a0c</testCaseGuid>
+   <testCaseGuid>e1ad2739-c06e-4c8b-ae76-4e70fb78d487</testCaseGuid>
 </TestCaseEntity>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Filter - School Dropdown List of Schools</name>
+   <name>Search - Verify Search Bar</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>d2304872-ea2a-4b4c-95b1-43585a597337</testCaseGuid>
+   <testCaseGuid>4e098540-7b9b-431e-9a64-ac35c2f06d3f</testCaseGuid>
 </TestCaseEntity>
