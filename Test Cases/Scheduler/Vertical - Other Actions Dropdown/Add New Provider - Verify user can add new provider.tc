@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Add New Provider - Verify user can add new provider</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f36dfc11-4ad5-4473-b809-4d04a98b30cd</testCaseGuid>
+</TestCaseEntity>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Verify Ability to Select Items Using Checkbox</description>
-   <name>Vertical Table - Verify Checkbox</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>71dce4c9-9586-443b-bdd8-17a9a43b402e</testCaseGuid>
-</TestCaseEntity>

@@ -18,14 +18,27 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import org.openqa.selenium.WebElement as WebElement
+import org.openqa.selenium.Cookie as Cookie
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.WebDriver
+
 
 // Open browser and navigate to the page
 WebUI.openBrowser('')
-
 WebUI.navigateToUrl(GlobalVariable.scheduler_url) // Replace with your URL
 
+WebDriver driver = DriverFactory.getWebDriver()
+
+// Add authentication cookie
+Cookie authCookie = new Cookie('sc_auth_token', 'your_token_here')
+driver.manage().addCookie(authCookie)
+WebUI.refresh()
+
 // Fetch the list of student names from the table
-List<WebElement> studentElements = WebUI.findWebElements(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="vertical-table"]/tbody/tr/td[2]'), 10)
+List<WebElement> studentElements = WebUI.findWebElements(
+	new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="vertical-table"]/tbody/tr/td[2]'),
+	10
+)
 
 // Extract text from the elements and store it in a list
 List<String> studentNames = studentElements.collect { it.getText().trim() }
@@ -40,25 +53,39 @@ WebUI.comment('Expected Descending Order: ' + sortedDesc.toString())
 
 // Check if the table is already sorted in descending order
 if (studentNames == sortedDesc) {
-    WebUI.comment('✅ The table is already sorted in descending order.')
+	WebUI.comment('✅ The table is already sorted in descending order.')
 } else {
-    WebUI.comment('❌ The table is not sorted in descending order.')
+	WebUI.comment('❌ The table is not sorted in descending order.')
 
-    // Click to sort the table in descending order
-    WebUI.click(findTestObject('Object Repository/Vertical Table/Page_Scheduler/span_Student'))
+	// Click the sort button to attempt sorting in descending order
+	WebUI.click(findTestObject('Object Repository/Vertical Table/Page_Scheduler/span_Student'))
+	WebUI.delay(1)
 
-    // Add a short delay to allow the sorting to complete
-    WebUI.delay(4)
+	// Fetch the updated list of student names after the first click
+	studentElements = WebUI.findWebElements(
+		new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="vertical-table"]/tbody/tr/td[2]'),
+		10
+	)
+	studentNames = studentElements.collect { it.getText().trim() }
 
-    // Extract the text again to check the new order
-    studentElements = WebUI.findWebElements(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="vertical-table"]/tbody/tr/td[2]'), 10)
-    studentNames = studentElements.collect { it.getText().trim() }
+	// If still not sorted in descending order, click the sort button again
+	if (studentNames != sortedDesc) {
+		WebUI.comment('❌ The table is still not sorted in descending order. Clicking again to retry.')
+		WebUI.click(findTestObject('Object Repository/Vertical Table/Page_Scheduler/span_Student'))
+		WebUI.delay(1)
 
-    WebUI.comment('Student Names after clicking SVG: ' + studentNames.toString())
+		// Fetch the updated list of student names after the second click
+		studentElements = WebUI.findWebElements(
+			new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="vertical-table"]/tbody/tr/td[2]'),
+			10
+		)
+		studentNames = studentElements.collect { it.getText().trim() }
+	}
 
-    // Verify the table is now sorted in descending order
-    assert studentNames == sortedDesc : '❌ The table is not sorted in descending order.'
-    WebUI.comment('✅ The table is correctly sorted in descending order after clicking the SVG.')
+	// Verify the table is now sorted in descending order
+	WebUI.comment('Student Names after final click: ' + studentNames.toString())
+	assert studentNames == sortedDesc : '❌ The table is not sorted in descending order.'
+	WebUI.comment('✅ The table is correctly sorted in descending order.')
 }
 
 // Close the browser

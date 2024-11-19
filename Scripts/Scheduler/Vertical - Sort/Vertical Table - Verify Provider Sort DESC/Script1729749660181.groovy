@@ -18,14 +18,25 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import org.openqa.selenium.WebElement as WebElement
+import org.openqa.selenium.Cookie as Cookie
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.WebDriver
 
 // Open browser and navigate to the page
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.scheduler_url) // Replace with your URL
+ 
+WebDriver driver = DriverFactory.getWebDriver()
+
+Cookie authCookie = new Cookie('sc_auth_token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVyaWNhLkJvcnJvbWVvQHJjbXQuY29tIiwidXNlcklEIjo4LCJpYXQiOjE3MzE4NjExOTksImV4cCI6MTczMTk0NzU5OX0.QXNaXEWFidvJcgth3ij4mjy3MAHrRwv7buLh-2aaBhM')
+
+driver.manage().addCookie(authCookie)
+
+WebUI.refresh()
 
 // Fetch the list of provider names from the table
-List<WebElement> providerElements = WebUI.findWebElements(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="vertical-table"]/tbody/tr/td[3]'), 10) // Adjust XPath for provider name column
+List<WebElement> providerElements = WebUI.findWebElements(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="vertical-table"]/tbody/tr/td[4]'), 10) // Adjust XPath for provider name column
 
 // Extract text from the elements and store it in a list
 List<String> providerNames = providerElements.collect { it.getText().trim() }
@@ -51,7 +62,7 @@ if (providerNames == sortedDesc) {
     WebUI.delay(4)
 
     // Extract the text again to check the new order
-    providerElements = WebUI.findWebElements(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="vertical-table"]/tbody/tr/td[3]'), 10)
+    providerElements = WebUI.findWebElements(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="vertical-table"]/tbody/tr/td[4]'), 10)
     providerNames = providerElements.collect { it.getText().trim() }
 
     WebUI.comment('Provider Names after clicking SVG: ' + providerNames.toString())

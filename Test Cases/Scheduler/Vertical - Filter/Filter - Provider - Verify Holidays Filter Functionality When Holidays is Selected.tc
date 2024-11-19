@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Filter - Provider - Verify Holidays Filter Functionality When Holidays is Selected</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>388a4030-0e7b-4a9f-a6d7-b919f481365f</testCaseGuid>
+</TestCaseEntity>

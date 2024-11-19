@@ -169,4 +169,9 @@
       <initValue>0</initValue>
       <name>providerID</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>['Honolulu', 'Central', 'Leeward', 'Windward', 'Outer Island']</initValue>
+      <name>islands</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

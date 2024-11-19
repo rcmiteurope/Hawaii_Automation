@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Filter - Provider - Verify Open Only Filter Functionality When Open Only is Selected</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>275c8d35-1203-454d-acec-c32d8f6d793b</testCaseGuid>
+</TestCaseEntity>

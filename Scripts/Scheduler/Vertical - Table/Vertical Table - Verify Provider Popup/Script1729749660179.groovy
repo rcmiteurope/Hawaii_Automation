@@ -16,17 +16,27 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.webui.driver.DriverFactory
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import org.openqa.selenium.Cookie as Cookie
 
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.scheduler_url)
 
-WebUI.click(findTestObject('Object Repository/Vertical Table/Page_Scheduler/input_Tue, 1015 1415 - 1730_master-checkbox_b03bcc'))
+def driver = DriverFactory.getWebDriver()
 
-WebUI.executeJavaScript('document.getElementById("actionmenu-handle").click();', null)
+Cookie authCookie = new Cookie('sc_auth_token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVyaWNhLkJvcnJvbWVvQHJjbXQuY29tIiwidXNlcklEIjo4LCJpYXQiOjE3MzE4NjExOTksImV4cCI6MTczMTk0NzU5OX0.QXNaXEWFidvJcgth3ij4mjy3MAHrRwv7buLh-2aaBhM')
 
-WebUI.executeJavaScript('document.getElementById("absent-ncns").click();', null)
+driver.manage().addCookie(authCookie)
 
-WebUI.verifyElementText(findTestObject('Object Repository/Vertical Table/Page_Scheduler/div_Student Absent - NCNS'), 'Student Absent - NCNS')
+WebUI.refresh()
+
+WebUI.click(findTestObject('Object Repository/Vertical Table/Page_Scheduler/div_Borromeo, Erica'))
+
+WebUI.verifyElementText(findTestObject('Object Repository/Vertical Table/Page_Scheduler/label_Borromeo, Erica'), 'Borromeo, Erica')
 
 WebUI.closeBrowser()
+

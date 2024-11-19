@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Filter - Verify Provider Filter When a Specific Provider is Selected</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5490eaf8-b63c-4aae-a30b-9e0c3e8b4fbe</testCaseGuid>
+</TestCaseEntity>

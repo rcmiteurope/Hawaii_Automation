@@ -17,3 +17,22 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://scheduler-staging.rcmt-timecard.com/')
+
+WebUI.click(findTestObject('Object Repository/Vertical - Bookmark/Page_Scheduler/svg_Outer Island_bookmark-icon'))
+
+WebUI.verifyElementText(findTestObject('Object Repository/Vertical - Bookmark/Page_Scheduler/button_Home'), 'Home')
+
+WebUI.verifyElementText(findTestObject('Object Repository/Vertical - Bookmark/Page_Scheduler/button_OPEN for Today'), 'OPEN for Today')
+
+WebUI.verifyElementText(findTestObject('Object Repository/Vertical - Bookmark/Page_Scheduler/button_OPEN for Tomorrow'), 
+    'OPEN for Tomorrow')
+
+WebUI.verifyElementText(findTestObject('Object Repository/Vertical - Bookmark/Page_Scheduler/button_All Holidays'), 'All Holidays')
+
+WebUI.verifyElementText(findTestObject('Object Repository/Vertical - Bookmark/Page_Scheduler/button_Saved Bookmarks'), 'Saved Bookmarks')
+
+WebUI.closeBrowser()
+

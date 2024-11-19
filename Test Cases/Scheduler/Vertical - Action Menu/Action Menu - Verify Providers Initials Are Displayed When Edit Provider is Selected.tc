@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Action Menu - Verify Providers Initials Are Displayed When Edit Provider is Selected</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>27cc6491-c2ae-4e28-b19a-c2c0dd9cc5ad</testCaseGuid>
+</TestCaseEntity>

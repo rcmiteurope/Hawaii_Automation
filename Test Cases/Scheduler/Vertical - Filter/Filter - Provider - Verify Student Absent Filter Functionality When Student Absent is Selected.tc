@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Filter - Provider - Verify Student Absent Filter Functionality When Student Absent is Selected</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0e8de237-614f-467a-ac80-facc1f1a54b0</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>School - Correct List Returned</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3d060897-4caf-4776-87b3-ef0b02ab5e5e</testCaseGuid>
+</TestCaseEntity>

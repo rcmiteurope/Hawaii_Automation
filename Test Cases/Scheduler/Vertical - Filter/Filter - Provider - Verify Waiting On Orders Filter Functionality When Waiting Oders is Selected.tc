@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Filter - Provider - Verify Waiting On Orders Filter Functionality When Waiting Oders is Selected</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f117b358-1406-419d-8415-287982ed683e</testCaseGuid>
+</TestCaseEntity>

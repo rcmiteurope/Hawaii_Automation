@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Filter - Student - Verify All Students Filter When a All Students is Selected</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>824b6096-3d65-4336-a1d6-8c82daaa10fc</testCaseGuid>
+</TestCaseEntity>

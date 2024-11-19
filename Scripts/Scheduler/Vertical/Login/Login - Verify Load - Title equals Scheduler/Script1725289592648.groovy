@@ -6,6 +6,7 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Cookie as Cookie
 
 WebUI.openBrowser('')
 WebUI.setViewPortSize(GlobalVariable.spreadsheetWidth,GlobalVariable.spreadsheetHeight)
@@ -14,6 +15,13 @@ WebUI.setViewPortSize(GlobalVariable.spreadsheetWidth,GlobalVariable.spreadsheet
 
 // navigate to website (any dow is fine)  
 WebUI.navigateToUrl(GlobalVariable.scheduler_url)
+WebDriver driver = DriverFactory.getWebDriver()
+
+Cookie authCookie = new Cookie('sc_auth_token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVyaWNhLkJvcnJvbWVvQHJjbXQuY29tIiwidXNlcklEIjo4LCJpYXQiOjE3MzE4NjExOTksImV4cCI6MTczMTk0NzU5OX0.QXNaXEWFidvJcgth3ij4mjy3MAHrRwv7buLh-2aaBhM')
+
+driver.manage().addCookie(authCookie)
+
+WebUI.refresh()
 
 // grab the <Head><Title>
 String windowTitle = WebUI.getWindowTitle()

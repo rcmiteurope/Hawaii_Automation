@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Save Bookmark - Verify user can save a new Bookmark</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cc623873-5671-4aea-b194-5c903183d33d</testCaseGuid>
+</TestCaseEntity>

@@ -16,4 +16,27 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.support.ui.Select
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.By
+
+import org.openqa.selenium.Cookie
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl(GlobalVariable.scheduler_url)
+
+def driver = DriverFactory.getWebDriver()
+
+Cookie authCookie = new Cookie('sc_auth_token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVyaWNhLkJvcnJvbWVvQHJjbXQuY29tIiwidXNlcklEIjo4LCJpYXQiOjE3MzE4NjExOTksImV4cCI6MTczMTk0NzU5OX0.QXNaXEWFidvJcgth3ij4mjy3MAHrRwv7buLh-2aaBhM')
+driver.manage().addCookie(authCookie)
+
+new Select(driver.findElement(By.xpath("//select[@id='school_filter_select']"))).selectByVisibleText("Aliiolani Elementary")
+new Select(driver.findElement(By.xpath("//select[@id='student_filter_select']"))).selectByVisibleText("Avilla, Lincoln")
+
+WebUI.click(findTestObject('Object Repository/Vertical - Locations Tab/Page_Scheduler/div_Central'))
+
+assert new Select(driver.findElement(By.xpath("//select[@id='school_filter_select']"))).getFirstSelectedOption().getText() == "All Schools" : "School filter is not set to 'All Schools'"
+assert new Select(driver.findElement(By.xpath("//select[@id='student_filter_select']"))).getFirstSelectedOption().getText() == "All Students" : "Student filter is not set to 'All Students'"
 

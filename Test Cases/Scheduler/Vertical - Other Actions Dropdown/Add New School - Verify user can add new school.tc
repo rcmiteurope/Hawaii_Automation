@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Add New School - Verify user can add new school</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a5d7faa9-8e49-4637-9d74-d031085ee082</testCaseGuid>
+</TestCaseEntity>

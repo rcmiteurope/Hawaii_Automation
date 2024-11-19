@@ -21,6 +21,7 @@ import org.openqa.selenium.By as By
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
+import org.openqa.selenium.Cookie as Cookie
 
 // Open the browser
 WebUI.openBrowser('')
@@ -33,6 +34,12 @@ WebDriver driver = DriverFactory.getWebDriver()
 
 // Navigate to URL
 WebUI.navigateToUrl(GlobalVariable.scheduler_url)
+
+Cookie authCookie = new Cookie('sc_auth_token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVyaWNhLkJvcnJvbWVvQHJjbXQuY29tIiwidXNlcklEIjo4LCJpYXQiOjE3MzE4NjExOTksImV4cCI6MTczMTk0NzU5OX0.QXNaXEWFidvJcgth3ij4mjy3MAHrRwv7buLh-2aaBhM')
+
+driver.manage().addCookie(authCookie)
+
+WebUI.refresh()
 
 // Find all elements with class name 'studentName'
 List<WebElement> student = driver.findElements(By.className('studentName'))

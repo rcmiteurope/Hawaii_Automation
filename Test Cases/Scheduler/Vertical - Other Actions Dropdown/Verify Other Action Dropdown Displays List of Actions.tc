@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Other Action Dropdown Displays List of Actions</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5e4a2204-1dfa-4e18-b1e0-319f58fdaa2e</testCaseGuid>
+</TestCaseEntity>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Verify Provider Dropdown Includes List of Providers</description>
-   <name>Filter - Provider Dropdown List of Providers</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>c3da8808-0bef-47b4-bd1f-dbc5e70488c4</testCaseGuid>
-</TestCaseEntity>

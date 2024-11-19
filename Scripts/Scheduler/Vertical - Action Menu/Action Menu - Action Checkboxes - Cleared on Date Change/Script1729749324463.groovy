@@ -1,7 +1,7 @@
 import org.openqa.selenium.By
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
-
+import org.openqa.selenium.Cookie
 import com.kms.katalon.core.exception.StepFailedException
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.util.KeywordUtil
@@ -20,6 +20,9 @@ WebUI.navigateToUrl(GlobalVariable.scheduler_url)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
+Cookie authCookie = new Cookie('sc_auth_token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVyaWNhLkJvcnJvbWVvQHJjbXQuY29tIiwidXNlcklEIjo4LCJpYXQiOjE3MzE4NjExOTksImV4cCI6MTczMTk0NzU5OX0.QXNaXEWFidvJcgth3ij4mjy3MAHrRwv7buLh-2aaBhM')
+driver.manage().addCookie(authCookie)
+
 // click the select all checkbox
 driver.findElement(By.xpath('//*[@id="select-all-toggle"]')).click()
 
@@ -28,7 +31,7 @@ driver.findElement(By.xpath('//*[@id="select-all-toggle"]')).click()
 WebElement weDateFilterSelect = driver.findElement(By.xpath('//*[@id="date_filter_select"]'))
 TestObject toDateFilterSelect = WebUI.convertWebElementToTestObject(weDateFilterSelect)
 // select Tomorrow
-WebUI.selectOptionByValue(toDateFilterSelect, 'tomorrow', false)
+WebUI.selectOptionByLabel(toDateFilterSelect, 'Tomorrow', false)
 
 
 // check that the master action checkbox is cleared

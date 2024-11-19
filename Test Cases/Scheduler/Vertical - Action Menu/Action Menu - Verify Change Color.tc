@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Action Menu - Verify Change Color</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>d763c6d1-9424-45c3-91e4-c961cd1cc7fd</testCaseGuid>
-</TestCaseEntity>

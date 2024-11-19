@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Login - Verify Load - Start Time</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>16035998-0729-4482-9512-b0501d79b285</testCaseGuid>
-</TestCaseEntity>
