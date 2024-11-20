@@ -16,4 +16,34 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.Cookie as Cookie
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.WebDriver
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl(GlobalVariable.scheduler_url)
+
+WebDriver driver = DriverFactory.getWebDriver()
+
+Cookie authCookie = new Cookie('sc_auth_token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVyaWNhLkJvcnJvbWVvQHJjbXQuY29tIiwidXNlcklEIjo4LCJpYXQiOjE3MzE5ODYxMDEsImV4cCI6MTczNDU3ODEwMX0.AUWF2TrOJtXoWXnwJaA3MHQJ0iUgTpDUw2YrdjazB_Q')
+
+driver.manage().addCookie(authCookie)
+
+WebUI.refresh()
+
+TestObject bookmarkIcon = new TestObject()
+bookmarkIcon.addProperty('xpath', ConditionType.EQUALS, '//*[@id=":r3:"]')
+
+// Use the TestObject in WebUI.click()
+WebUI.click(bookmarkIcon)
+
+WebUI.click(findTestObject('Object Repository/Bookmark/Page_Scheduler/button_OPEN for Today'))
+
+WebUI.verifyElementNotPresent(findTestObject('Object Repository/Bookmark/Page_Scheduler/bookmark_dropdown'), 0)
+
+WebUI.closeBrowser()
 

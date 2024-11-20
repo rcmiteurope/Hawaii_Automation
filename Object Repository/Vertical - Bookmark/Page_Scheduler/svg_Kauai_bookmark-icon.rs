@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>svg_Outer Island_bookmark-icon</name>
+   <name>svg_Kauai_bookmark-icon</name>
    <tag></tag>
-   <elementGuidId>5484114f-ac8f-4dec-8d65-0547c374c65e</elementGuidId>
+   <elementGuidId>cd344f89-80e5-4bb9-b8ec-7f02a71f2dd2</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Outer Island'])[1]/following::*[name()='svg'][1]</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Kauai'])[1]/following::*[name()='svg'][1]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>svg</value>
-      <webElementGuid>9b80c82a-1888-4504-ab23-aae486c32ac7</webElementGuid>
+      <webElementGuid>52d49a60-50cc-46eb-902e-0867b2585627</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>stroke</name>
       <type>Main</type>
       <value>currentColor</value>
-      <webElementGuid>44d6fffe-4f4c-4442-8550-9acff617addb</webElementGuid>
+      <webElementGuid>5c6bac04-4138-475a-8b70-dce15b4686e7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>fill</name>
       <type>Main</type>
       <value>currentColor</value>
-      <webElementGuid>2a6f89d9-a509-416d-9fb7-46b751dad837</webElementGuid>
+      <webElementGuid>568d21d5-34a4-480c-baf3-0d18a864a7e7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>stroke-width</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>3b377989-d9e2-4de7-aa91-e7142dfbd307</webElementGuid>
+      <webElementGuid>b18c4ba0-8842-4608-8215-d1e82d64733f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>viewBox</name>
       <type>Main</type>
       <value>0 0 512 512</value>
-      <webElementGuid>c8ca7fc7-75ca-413b-8e0f-aa5a50a25b06</webElementGuid>
+      <webElementGuid>0f1dabd9-1c63-4d77-b38a-ad91f74c2dd0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -69,7 +69,7 @@
       <name>id</name>
       <type>Main</type>
       <value>bookmark-icon</value>
-      <webElementGuid>69856fe3-3735-4830-8103-a7355ecf4867</webElementGuid>
+      <webElementGuid>89940a9e-0a14-4742-9b49-0af902a57eaf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>class</name>
       <type>Main</type>
       <value>size-[1.5em]</value>
-      <webElementGuid>46de72ca-93d6-4548-bc46-dccb4e588693</webElementGuid>
+      <webElementGuid>19ab2677-053b-4139-8dbf-197e266bc171</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>height</name>
       <type>Main</type>
       <value>1em</value>
-      <webElementGuid>46ec731d-d38d-4308-8ec6-1b9088dfb2fd</webElementGuid>
+      <webElementGuid>869eef5d-c4a5-4fd6-8666-7b01699321d6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>width</name>
       <type>Main</type>
       <value>1em</value>
-      <webElementGuid>b12e2c72-5bba-4e3a-892c-00e9f72fa12b</webElementGuid>
+      <webElementGuid>3a06a75e-d4ac-447c-8716-e060d271794c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xmlns</name>
       <type>Main</type>
       <value>http://www.w3.org/2000/svg</value>
-      <webElementGuid>02e263a0-7925-42cb-8ad5-a0c7fffe3e8d</webElementGuid>
+      <webElementGuid>0766a6e9-7f30-4642-9ae6-acedd998777b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -109,23 +109,23 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;bookmark-icon&quot;)</value>
-      <webElementGuid>172ef8fd-e2d0-486d-9ecd-fdc60e1f2d05</webElementGuid>
+      <webElementGuid>392c3c7e-1bc9-4925-84e2-87fe34828890</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Outer Island'])[1]/following::*[name()='svg'][1]</value>
-      <webElementGuid>008115b0-5a61-45ef-9631-f81408dec1db</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Kauai'])[1]/following::*[name()='svg'][1]</value>
+      <webElementGuid>1a518289-eeb3-4aa1-b951-61db4949862c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Windward'])[1]/following::*[name()='svg'][1]</value>
-      <webElementGuid>c7781701-83ba-4c39-9181-12182b7aa12f</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Lanai'])[1]/following::*[name()='svg'][1]</value>
+      <webElementGuid>edbe3caa-3cbb-49e4-b3c5-18875acbd61d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -133,7 +133,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Search...'])[1]/preceding::*[name()='svg'][3]</value>
-      <webElementGuid>286fb301-90e1-42c6-82c4-96156cf78812</webElementGuid>
+      <webElementGuid>2e2de3cb-e1d1-4d39-af7c-cf13f98a67df</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -141,7 +141,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='School'])[1]/preceding::*[name()='svg'][4]</value>
-      <webElementGuid>2113a01d-34d9-48d4-8eed-199caa3cf734</webElementGuid>
+      <webElementGuid>67441dfc-4f40-43f1-af09-826d6d8bd623</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -149,6 +149,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//svg[@id = 'bookmark-icon']</value>
-      <webElementGuid>428552db-d87b-44a6-89e3-3bd3b625a860</webElementGuid>
+      <webElementGuid>93ca7fbb-dca7-4635-8e05-a3e8b3cdf88d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

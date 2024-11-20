@@ -1,19 +1,57 @@
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.Cookie
+import java.text.SimpleDateFormat
+import java.util.Date
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 
+// Open browser and navigate to the page
+WebUI.openBrowser('')
+WebUI.navigateToUrl(GlobalVariable.scheduler_url)
+
+// Add authentication cookie
+WebDriver driver = DriverFactory.getWebDriver()
+Cookie authCookie = new Cookie('sc_auth_token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVyaWNhLkJvcnJvbWVvQHJjbXQuY29tIiwidXNlcklEIjo4LCJpYXQiOjE3MzE5ODYxMDEsImV4cCI6MTczNDU3ODEwMX0.AUWF2TrOJtXoWXnwJaA3MHQJ0iUgTpDUw2YrdjazB_Q')
+driver.manage().addCookie(authCookie)
+WebUI.refresh()
+
+TestObject bookmarkIcon = new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id=":r3:"]')
+WebUI.click(bookmarkIcon)
+
+
+TestObject buttonElement = new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id=":r2:"]/button[2]')
+
+// Click the button
+WebUI.click(buttonElement)
+
+// Today's date for comparison (e.g., "11/19")
+String todayDate = new SimpleDateFormat("MM/dd").format(new Date())
+
+// Fetch all date values from the table column 3
+List<WebElement> dateElements = WebUI.findWebElements(
+    new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="vertical-table"]/tbody/tr/td[3]'),
+    10
+)
+
+// Verify all dates match today's date (only month and day)
+boolean allDatesMatch = dateElements.every { element ->
+    def fullText = element.getText().trim() // Example: "Tue, 11/19 14:15 - 17:30"
+    def datePart = fullText.split(", ")[1].split(" ")[0] // Extracts "11/19"
+    WebUI.comment('Checking date part: "' + datePart + '" against today: "' + todayDate + '"')
+    datePart == todayDate
+}
+
+if (allDatesMatch) {
+    WebUI.comment('✅ All dates in column 3 match today\'s date: ' + todayDate)
+} else {
+    WebUI.comment('❌ Not all dates in column 3 match today\'s date: ' + todayDate)
+    assert false : 'Some dates do not match today\'s date'
+}
+
+// Close the browser
+WebUI.closeBrowser()

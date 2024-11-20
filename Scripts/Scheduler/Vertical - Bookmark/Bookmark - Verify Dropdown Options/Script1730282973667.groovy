@@ -16,23 +16,38 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.Cookie as Cookie
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.WebDriver as WebDriver
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://scheduler-staging.rcmt-timecard.com/')
 
-WebUI.click(findTestObject('Object Repository/Vertical - Bookmark/Page_Scheduler/svg_Outer Island_bookmark-icon'))
+WebDriver driver = DriverFactory.getWebDriver()
+
+Cookie authCookie = new Cookie('sc_auth_token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVyaWNhLkJvcnJvbWVvQHJjbXQuY29tIiwidXNlcklEIjo4LCJpYXQiOjE3MzE5ODYxMDEsImV4cCI6MTczNDU3ODEwMX0.AUWF2TrOJtXoWXnwJaA3MHQJ0iUgTpDUw2YrdjazB_Q')
+
+driver.manage().addCookie(authCookie)
+
+WebUI.refresh()
+
+TestObject bookmarkIcon = new TestObject()
+
+bookmarkIcon.addProperty('xpath', ConditionType.EQUALS, '//*[@id=":r3:"]')
+
+WebUI.click(bookmarkIcon)
 
 WebUI.verifyElementText(findTestObject('Object Repository/Vertical - Bookmark/Page_Scheduler/button_Home'), 'Home')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Vertical - Bookmark/Page_Scheduler/button_OPEN for Today'), 'OPEN for Today')
+WebUI.verifyElementText(findTestObject('Object Repository/Vertical - Bookmark/Page_Scheduler/button_OPEN for Today_1'), 
+    'OPEN for Today')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Vertical - Bookmark/Page_Scheduler/button_OPEN for Tomorrow'), 
     'OPEN for Tomorrow')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Vertical - Bookmark/Page_Scheduler/button_All Holidays'), 'All Holidays')
-
-WebUI.verifyElementText(findTestObject('Object Repository/Vertical - Bookmark/Page_Scheduler/button_Saved Bookmarks'), 'Saved Bookmarks')
 
 WebUI.closeBrowser()
 

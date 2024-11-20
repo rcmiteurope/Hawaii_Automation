@@ -11,7 +11,6 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>cb5c6dfd-4150-484b-b197-11cbb030d0b2</webElementGuid>
+      <webElementGuid>c4b398ef-8ea8-4893-8e76-09504f903e6b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +36,7 @@
       <name>role</name>
       <type>Main</type>
       <value>menuitem</value>
-      <webElementGuid>ac521216-5e55-44c2-bf6b-9f09d531e057</webElementGuid>
+      <webElementGuid>3aa45270-d4e9-4907-8cf2-45daa3fea00b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +44,7 @@
       <name>aria-expanded</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>3b8eca1a-569b-4cfe-93c2-f06eb2a16199</webElementGuid>
+      <webElementGuid>68119406-895d-46cf-af7b-d20462e1208b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +52,7 @@
       <name>aria-haspopup</name>
       <type>Main</type>
       <value>menu</value>
-      <webElementGuid>e16ee163-206a-4c62-923b-f69668238763</webElementGuid>
+      <webElementGuid>af339e51-5133-4e6c-a873-f4d79b8d4855</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +60,7 @@
       <name>id</name>
       <type>Main</type>
       <value>:rr:</value>
-      <webElementGuid>a7820780-1a10-492a-be31-4a78556a3770</webElementGuid>
+      <webElementGuid>32d04692-6a39-40c6-a65c-c06c9b0a57bb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +68,7 @@
       <name>class</name>
       <type>Main</type>
       <value>w-full pt-[9px] pb-2 px-3 rounded-md text-start leading-tight cursor-pointer select-none transition-all hover:bg-blue-gray-50 hover:bg-opacity-80 focus:bg-blue-gray-50 focus:bg-opacity-80 active:bg-blue-gray-50 active:bg-opacity-80 hover:text-blue-gray-900 focus:text-blue-gray-900 active:text-blue-gray-900 outline-none flex items-center justify-between</value>
-      <webElementGuid>1b6b0b5c-631e-41e5-b016-504a069930fb</webElementGuid>
+      <webElementGuid>a9898ddb-c4d3-4813-b545-b389c076d71b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +76,7 @@
       <name>aria-controls</name>
       <type>Main</type>
       <value>:rq:</value>
-      <webElementGuid>40ae3c66-1b31-4089-af2e-97a7c749d167</webElementGuid>
+      <webElementGuid>07f3eae0-2ace-4cef-b5d9-22dc579c0adc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -85,7 +84,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Saved Bookmarks</value>
-      <webElementGuid>1f3ca909-144c-4ef0-b192-e99271edd93c</webElementGuid>
+      <webElementGuid>22bdf1bf-5250-4b1d-a415-e326041e214e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -93,7 +92,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;:rr:&quot;)</value>
-      <webElementGuid>17ff6e90-07ac-4242-9dad-7b93b2b03e74</webElementGuid>
+      <webElementGuid>2a5ffea4-e94d-47ec-91a2-23c8108e5826</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -101,7 +100,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//button[@id=':rr:']</value>
-      <webElementGuid>5126d966-a3a5-4a42-9a1a-e29564e3c4e5</webElementGuid>
+      <webElementGuid>b24b8559-504e-4381-a727-d5116402762f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +108,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id=':r2:']/button[5]</value>
-      <webElementGuid>56d42111-5cc7-499f-942e-335171be7bfd</webElementGuid>
+      <webElementGuid>0d6a7e39-0ca1-4aa0-a971-9302d8cddc92</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +116,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='All Holidays'])[1]/following::button[1]</value>
-      <webElementGuid>3679f6e8-4aad-4000-ae80-7fcd98857205</webElementGuid>
+      <webElementGuid>ad5f5f1e-5151-4452-9eea-b28482f4adb3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,7 +124,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='OPEN for Tomorrow'])[1]/following::button[2]</value>
-      <webElementGuid>60cae625-5568-44b0-8930-10bed97f0a61</webElementGuid>
+      <webElementGuid>0836d567-0d6b-4285-bb3c-2faba5b87092</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -133,7 +132,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Dismiss'])[2]/preceding::button[1]</value>
-      <webElementGuid>cdb3f372-1875-459c-9924-8583f68650c9</webElementGuid>
+      <webElementGuid>2c2c91c2-5076-40f8-87b1-b6bd9915fd75</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -141,7 +140,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='test'])[1]/preceding::button[4]</value>
-      <webElementGuid>d237edca-6ade-4519-966c-55b9110d1f40</webElementGuid>
+      <webElementGuid>23ac85f3-11e9-41e0-8cd9-a92c5d2ab162</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -149,7 +148,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Saved Bookmarks']/parent::*</value>
-      <webElementGuid>06acb131-65c3-4f06-8c8f-2c1be9d90827</webElementGuid>
+      <webElementGuid>dc86d008-0782-46eb-ae49-285c2a2255bc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -157,7 +156,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//button[5]</value>
-      <webElementGuid>c588457f-3aff-481d-a4eb-7b58e2feac55</webElementGuid>
+      <webElementGuid>5c072403-d553-4701-bb9d-16fc1e29a8bd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -165,6 +164,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@id = ':rr:' and (text() = 'Saved Bookmarks' or . = 'Saved Bookmarks')]</value>
-      <webElementGuid>4dedbb2d-bc4d-47ea-9d82-109e3e19e1d3</webElementGuid>
+      <webElementGuid>b3c988ed-d1c1-4ad7-a369-72fd30b693b6</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

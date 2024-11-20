@@ -28,7 +28,7 @@ WebUI.navigateToUrl(GlobalVariable.scheduler_url)
 
 def driver = DriverFactory.getWebDriver()
 
-Cookie authCookie = new Cookie('sc_auth_token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVyaWNhLkJvcnJvbWVvQHJjbXQuY29tIiwidXNlcklEIjo4LCJpYXQiOjE3MzE5ODU2MjQsImV4cCI6MTczMjA3MjAyNH0.E-SXO2It4u5nW4Oq-XqoBIPSiFpWEIl2weNP6ETRoUo')
+Cookie authCookie = new Cookie('sc_auth_token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVyaWNhLkJvcnJvbWVvQHJjbXQuY29tIiwidXNlcklEIjo4LCJpYXQiOjE3MzE5ODYxMDEsImV4cCI6MTczNDU3ODEwMX0.AUWF2TrOJtXoWXnwJaA3MHQJ0iUgTpDUw2YrdjazB_Q')
 
 driver.manage().addCookie(authCookie)
 WebUI.refresh()

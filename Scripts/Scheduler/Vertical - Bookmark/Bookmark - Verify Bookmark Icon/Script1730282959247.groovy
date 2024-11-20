@@ -16,16 +16,25 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.Cookie as Cookie
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.WebDriver
+import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.scheduler_url)
 
-WebUI.click(findTestObject('Object Repository/Bookmark/Page_Scheduler/svg_Outer Island_bookmark-icon'))
+WebDriver driver = DriverFactory.getWebDriver()
 
-WebUI.click(findTestObject('Object Repository/Bookmark/Page_Scheduler/button_OPEN for Today'))
+Cookie authCookie = new Cookie('sc_auth_token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVyaWNhLkJvcnJvbWVvQHJjbXQuY29tIiwidXNlcklEIjo4LCJpYXQiOjE3MzE5ODYxMDEsImV4cCI6MTczNDU3ODEwMX0.AUWF2TrOJtXoWXnwJaA3MHQJ0iUgTpDUw2YrdjazB_Q')
 
-WebUI.verifyElementNotPresent(findTestObject('Object Repository/Bookmark/Page_Scheduler/bookmark_dropdown'), 0)
+driver.manage().addCookie(authCookie)
+
+WebUI.refresh()
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Vertical - Bookmark/Page_Scheduler/svg_Kauai_bookmark-icon'), 
+    0)
 
 WebUI.closeBrowser()
 

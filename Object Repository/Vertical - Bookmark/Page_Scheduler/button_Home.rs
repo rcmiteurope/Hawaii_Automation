@@ -11,7 +11,6 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>7d3fb283-1de4-422e-8923-a2f5539e8e8b</webElementGuid>
+      <webElementGuid>935e1988-cdd1-45cc-aec6-cf72fd7a1306</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +36,7 @@
       <name>role</name>
       <type>Main</type>
       <value>menuitem</value>
-      <webElementGuid>260dc062-faae-4368-b367-e6a757efac61</webElementGuid>
+      <webElementGuid>fa877449-530c-4740-9ced-e58ccde492fa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +44,7 @@
       <name>class</name>
       <type>Main</type>
       <value>block w-full pt-[9px] pb-2 px-3 rounded-md text-start leading-tight cursor-pointer select-none transition-all hover:bg-blue-gray-50 hover:bg-opacity-80 focus:bg-blue-gray-50 focus:bg-opacity-80 active:bg-blue-gray-50 active:bg-opacity-80 hover:text-blue-gray-900 focus:text-blue-gray-900 active:text-blue-gray-900 outline-none</value>
-      <webElementGuid>1c9b6bf3-90c3-4e57-b067-35c411b02739</webElementGuid>
+      <webElementGuid>217668e8-32ac-4ad5-b844-06da741b2a25</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +52,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Home</value>
-      <webElementGuid>42327d18-c31b-4df1-b277-2f7150910263</webElementGuid>
+      <webElementGuid>3b8ae237-a61d-400a-9264-7c8eb1a25f5f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +60,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;:r2:&quot;)/button[@class=&quot;block w-full pt-[9px] pb-2 px-3 rounded-md text-start leading-tight cursor-pointer select-none transition-all hover:bg-blue-gray-50 hover:bg-opacity-80 focus:bg-blue-gray-50 focus:bg-opacity-80 active:bg-blue-gray-50 active:bg-opacity-80 hover:text-blue-gray-900 focus:text-blue-gray-900 active:text-blue-gray-900 outline-none&quot;]</value>
-      <webElementGuid>76b074b3-d14d-4b9c-affc-d18ae917092e</webElementGuid>
+      <webElementGuid>a44878a2-094b-44f2-8d08-eef833e4f828</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -69,7 +68,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id=':r2:']/button</value>
-      <webElementGuid>a78779c6-4639-44d3-a75d-1749877fb1d7</webElementGuid>
+      <webElementGuid>94b3034f-79d8-4d7f-b8f1-8ab60ac1c034</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +76,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Dismiss'])[1]/following::button[1]</value>
-      <webElementGuid>e834a567-8fa1-4d87-b643-4cf7784161aa</webElementGuid>
+      <webElementGuid>813adbcd-1fd3-4af3-b9c5-0ccc9c870d8a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +84,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='| Go to page:'])[1]/following::button[2]</value>
-      <webElementGuid>41d44b06-2223-4700-a1ab-2e59c9ea7ca7</webElementGuid>
+      <webElementGuid>2f193913-cb5b-4fbe-9c8f-1d1d2fc5db64</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +92,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='OPEN for Today'])[1]/preceding::button[1]</value>
-      <webElementGuid>5f33df65-dea9-431a-a9d3-760fa9346eb1</webElementGuid>
+      <webElementGuid>170f7aff-cf18-4687-a077-3a28f0755bf6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +100,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='OPEN for Tomorrow'])[1]/preceding::button[2]</value>
-      <webElementGuid>1b29b477-74b9-470c-81fb-a4b712d28782</webElementGuid>
+      <webElementGuid>cfb8f2a6-17b7-4c36-ac66-a5896504b569</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +108,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Home']/parent::*</value>
-      <webElementGuid>847d2a5f-0964-4cf7-82cf-69ec332f7826</webElementGuid>
+      <webElementGuid>93327176-4685-44e8-a319-5c38966da1a0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +116,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/button</value>
-      <webElementGuid>8fa7e61e-db89-4f2d-b595-5189049b8216</webElementGuid>
+      <webElementGuid>881008ea-76bb-432c-be26-8a42bf2ad047</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,6 +124,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[(text() = 'Home' or . = 'Home')]</value>
-      <webElementGuid>8b1d263c-46e5-4396-bb7b-8878285a1cd0</webElementGuid>
+      <webElementGuid>f32cb628-d18a-48f7-9b84-5317c16eba0d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -11,7 +11,6 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>02f52fe5-26d5-434b-9012-3434ebbdeee9</webElementGuid>
+      <webElementGuid>9c19ae14-b9c9-4abb-ab78-730d65a77c90</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +36,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>1d391118-f14e-4df7-9b4f-cf37de80ce93</webElementGuid>
+      <webElementGuid>7eeeecf6-f16e-40ea-b461-2fa06f314e81</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +44,7 @@
       <name>role</name>
       <type>Main</type>
       <value>menuitem</value>
-      <webElementGuid>d5dd79cc-df29-459d-b23f-bbae02dc3a64</webElementGuid>
+      <webElementGuid>b353bee3-c8a1-4dcd-95e8-535f8ce9be52</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +52,7 @@
       <name>class</name>
       <type>Main</type>
       <value>block w-full pt-[9px] pb-2 px-3 rounded-md text-start leading-tight cursor-pointer select-none transition-all hover:bg-blue-gray-50 hover:bg-opacity-80 focus:bg-blue-gray-50 focus:bg-opacity-80 active:bg-blue-gray-50 active:bg-opacity-80 hover:text-blue-gray-900 focus:text-blue-gray-900 active:text-blue-gray-900 outline-none</value>
-      <webElementGuid>8acacf2f-2d18-494b-a7d1-e1bdc4dfc9a8</webElementGuid>
+      <webElementGuid>7cfa22dd-93c4-4523-9a31-cc63651538eb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +60,7 @@
       <name>text</name>
       <type>Main</type>
       <value>All Holidays</value>
-      <webElementGuid>79b24275-73ef-4c85-9b7c-5918c4dc1fe8</webElementGuid>
+      <webElementGuid>dd1aac75-3c26-4ec0-8928-fad0b1eccea0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +68,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;:r2:&quot;)/button[@class=&quot;block w-full pt-[9px] pb-2 px-3 rounded-md text-start leading-tight cursor-pointer select-none transition-all hover:bg-blue-gray-50 hover:bg-opacity-80 focus:bg-blue-gray-50 focus:bg-opacity-80 active:bg-blue-gray-50 active:bg-opacity-80 hover:text-blue-gray-900 focus:text-blue-gray-900 active:text-blue-gray-900 outline-none&quot;]</value>
-      <webElementGuid>8591a87f-41b9-424b-abdc-664d56a08541</webElementGuid>
+      <webElementGuid>5d07e224-6114-4a75-aa83-52c10d28a28d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -77,7 +76,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id=':r2:']/button[4]</value>
-      <webElementGuid>a32986d2-161f-452a-b30b-fff71ca97db4</webElementGuid>
+      <webElementGuid>0c02f9a6-e9a4-438a-8918-2b4af90cd56c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +84,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='OPEN for Tomorrow'])[1]/following::button[1]</value>
-      <webElementGuid>379cd7a9-efd4-4d6a-8561-8a1da2a782aa</webElementGuid>
+      <webElementGuid>f7519a70-9ebf-42e7-bced-d0f3d03d054b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +92,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='OPEN for Today'])[1]/following::button[2]</value>
-      <webElementGuid>06ece49c-5af2-41e9-b8f1-8a0a888a6ff0</webElementGuid>
+      <webElementGuid>ab167d12-3b6c-449c-9b4b-4aee678ebebf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +100,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Saved Bookmarks'])[1]/preceding::button[1]</value>
-      <webElementGuid>08fdf032-fafd-4cc6-b10e-2e2085dc918c</webElementGuid>
+      <webElementGuid>cef1067d-dda1-41d9-80f2-5dfe8ca38dac</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +108,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Dismiss'])[2]/preceding::button[2]</value>
-      <webElementGuid>80dbb882-4839-494d-a033-2bd28d0e7745</webElementGuid>
+      <webElementGuid>f71fc9ec-2c11-47be-a4b5-17f8ec3a0f10</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +116,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='All Holidays']/parent::*</value>
-      <webElementGuid>88e5daa5-a273-43ce-b803-bf1d0c469824</webElementGuid>
+      <webElementGuid>0d650123-dc6b-4e25-a6c4-da73508adcf4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,7 +124,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/button[4]</value>
-      <webElementGuid>3491aef3-ca3b-4725-9444-1d8c5934dec6</webElementGuid>
+      <webElementGuid>1fa33366-75d5-44ce-911f-00300406a47d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -133,6 +132,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[(text() = 'All Holidays' or . = 'All Holidays')]</value>
-      <webElementGuid>1c4d5a19-1320-4702-9220-7fb37199807c</webElementGuid>
+      <webElementGuid>ffa2f67d-0d61-4abb-97bf-5cf563ae8972</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
