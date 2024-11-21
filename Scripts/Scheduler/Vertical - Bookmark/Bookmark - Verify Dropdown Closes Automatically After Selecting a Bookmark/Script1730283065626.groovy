@@ -32,13 +32,19 @@ WebDriver driver = DriverFactory.getWebDriver()
 Cookie authCookie = new Cookie('sc_auth_token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVyaWNhLkJvcnJvbWVvQHJjbXQuY29tIiwidXNlcklEIjo4LCJpYXQiOjE3MzE5ODYxMDEsImV4cCI6MTczNDU3ODEwMX0.AUWF2TrOJtXoWXnwJaA3MHQJ0iUgTpDUw2YrdjazB_Q')
 
 driver.manage().addCookie(authCookie)
+driver.manage().addCookie(new Cookie('user_email', 'Erica.Borromeo%40rcmt.com'))
+driver.manage().addCookie(new Cookie('user_name', 'Borromeo%2C%20Erica'))
 
 WebUI.refresh()
 
+TestObject horizontalToggle = new TestObject()
+
+horizontalToggle.addProperty('xpath', ConditionType.EQUALS, '//*[@id="root"]/main/div[2]/div/div/label/div')
+
+WebUI.check(horizontalToggle)
+
 TestObject bookmarkIcon = new TestObject()
 bookmarkIcon.addProperty('xpath', ConditionType.EQUALS, '//*[@id=":r3:"]')
-
-// Use the TestObject in WebUI.click()
 WebUI.click(bookmarkIcon)
 
 WebUI.click(findTestObject('Object Repository/Bookmark/Page_Scheduler/button_OPEN for Today'))

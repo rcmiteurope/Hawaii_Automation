@@ -27,13 +27,19 @@ WebUI.navigateToUrl(GlobalVariable.scheduler_url)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-Cookie authCookie = new Cookie('sc_auth_token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVyaWNhLkJvcnJvbWVvQHJjbXQuY29tIiwidXNlcklEIjo4LCJuYW1lIjoiQm9ycm9tZW8sIEVyaWNhIiwiaWF0IjoxNzMyMzIyOTQzLCJleHAiOjE3MzI0MDkzNDN9.O-rfhiClcqq58w4iqwHhiblgHwIttvke0rp2EM50Qb0')
+Cookie authCookie = new Cookie('sc_auth_token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVyaWNhLkJvcnJvbWVvQHJjbXQuY29tIiwidXNlcklEIjo4LCJpYXQiOjE3MzE5ODYxMDEsImV4cCI6MTczNDU3ODEwMX0.AUWF2TrOJtXoWXnwJaA3MHQJ0iUgTpDUw2YrdjazB_Q')
 
 driver.manage().addCookie(authCookie)
 driver.manage().addCookie(new Cookie('user_email', 'Erica.Borromeo%40rcmt.com'))
 driver.manage().addCookie(new Cookie('user_name', 'Borromeo%2C%20Erica'))
 
-WebUI.navigateToUrl(GlobalVariable.scheduler_url)
+WebUI.refresh()
+
+TestObject horizontalToggle = new TestObject()
+
+horizontalToggle.addProperty('xpath', ConditionType.EQUALS, '//*[@id="root"]/main/div[2]/div/div/label/div')
+
+WebUI.check(horizontalToggle)
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Vertical - Bookmark/Page_Scheduler/svg_Kauai_bookmark-icon'), 
     0)
