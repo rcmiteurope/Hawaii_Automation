@@ -44,10 +44,12 @@ horizontalToggle.addProperty('xpath', ConditionType.EQUALS, '//*[@id="root"]/mai
 WebUI.check(horizontalToggle)
 
 TestObject bookmarkIcon = new TestObject()
-bookmarkIcon.addProperty('xpath', ConditionType.EQUALS, '//*[@id=":r3:"]')
+bookmarkIcon.addProperty('xpath', ConditionType.EQUALS, '//*[@id=":r7:"]')
 WebUI.click(bookmarkIcon)
 
-WebUI.click(findTestObject('Object Repository/Bookmark/Page_Scheduler/button_OPEN for Today'))
+TestObject button1 = new TestObject()
+button1.addProperty('xpath', ConditionType.EQUALS, '//*[@id=":r6:"]/button[2]')
+WebUI.click(button1)
 
 WebUI.verifyElementNotPresent(findTestObject('Object Repository/Bookmark/Page_Scheduler/bookmark_dropdown'), 0)
 

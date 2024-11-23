@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 import com.kms.katalon.core.webui.driver.DriverFactory
 import org.openqa.selenium.Cookie
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
 
 // Open browser and navigate to the page
 WebUI.openBrowser('')
@@ -26,33 +28,35 @@ horizontalToggle.addProperty('xpath', ConditionType.EQUALS, '//*[@id="root"]/mai
 
 WebUI.check(horizontalToggle)
 
-TestObject bookmarkIcon = new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id=":r3:"]')
+TestObject bookmarkIcon = new TestObject()
+
+bookmarkIcon.addProperty('xpath', ConditionType.EQUALS, '//*[@id=":r7:"]')
+
 WebUI.click(bookmarkIcon)
 
-TestObject buttonElement = new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id=":r2:"]/button[4]')
-// Fetch all status values from the table column 4
+TestObject buttonElement = new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id=":r6:"]/button[4]')
+
+// Click the button
+WebUI.click(buttonElement)
+
+// Fetch all cells in column 4
 List<WebElement> statusElements = WebUI.findWebElements(
-    new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="vertical-table"]/tbody/tr/td[4]'),
-    10
+	new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="vertical-table"]/tbody/tr/td[4]'),
+	10
 )
 
-// Log all values for debugging
-WebUI.comment('Retrieved values from column 4:')
-statusElements.each { element ->
-    WebUI.comment('Value: ' + element.getText().trim())
+// Log all background colors for debugging
+WebUI.comment('Checking background colors of cells in column 4:')
+boolean anyBlackBackground = statusElements.any { element ->
+	def backgroundColor = element.getCssValue('background-color')
+	WebUI.comment('Cell background color: ' + backgroundColor)
+	backgroundColor == 'rgba(0, 0, 0, 1)' || backgroundColor == 'rgb(0, 0, 0)' // Match "black"
 }
 
-// Check if there are any "Holiday" values in column 4
-boolean anyContainHoliday = statusElements.any { element ->
-    def cellValue = element.getText().trim()
-    WebUI.comment('Checking column 4 value: "' + cellValue + '" for "Holiday".')
-    cellValue.contains('Holiday')
-}
-
-if (anyContainHoliday) {
-    WebUI.comment('✅ At least one value in column 4 contains "Holiday".')
+if (anyBlackBackground) {
+	WebUI.comment('✅ At least one cell in column 4 has a black background.')
 } else {
-    WebUI.comment('⚠️ No values in column 4 contain "Holiday".')
+	WebUI.comment('⚠️ No cells in column 4 have a black background.')
 }
 
 // Close the browser

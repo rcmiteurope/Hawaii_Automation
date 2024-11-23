@@ -9,6 +9,8 @@ import org.openqa.selenium.Cookie
 import java.text.SimpleDateFormat
 import java.util.Date
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
 
 // Open browser and navigate to the page
 WebUI.openBrowser('')
@@ -31,11 +33,11 @@ horizontalToggle.addProperty('xpath', ConditionType.EQUALS, '//*[@id="root"]/mai
 WebUI.check(horizontalToggle)
 
 TestObject bookmarkIcon = new TestObject()
-bookmarkIcon.addProperty('xpath', ConditionType.EQUALS, '//*[@id=":r3:"]')
+bookmarkIcon.addProperty('xpath', ConditionType.EQUALS, '//*[@id=":r7:"]')
 WebUI.click(bookmarkIcon)
 
 
-TestObject buttonElement = new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id=":r2:"]/button[2]')
+TestObject buttonElement = new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id=":r6:"]/button[2]')
 
 // Click the button
 WebUI.click(buttonElement)

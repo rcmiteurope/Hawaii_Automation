@@ -20,6 +20,8 @@ import org.openqa.selenium.Cookie as Cookie
 import com.kms.katalon.core.webui.driver.DriverFactory
 import org.openqa.selenium.WebDriver
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
 
 WebUI.openBrowser('')
 
