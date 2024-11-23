@@ -6,7 +6,7 @@
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description>qa</description>
-      <initValue>'rcmt-timecard.com'</initValue>
+      <initValue>'https://hi-qa.rcmt-timecard.com/'</initValue>
       <name>website</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
