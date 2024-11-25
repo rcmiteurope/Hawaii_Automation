@@ -6,12 +6,11 @@
    <elementGuidId>f967bb86-9dd7-4c31-8742-a18e51839fee</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//tr[@id='tr-main-0']/td[4]/div/p</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//tr[@id='tr-main-0']/td[4]/div/p</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>p</value>
-      <webElementGuid>0c5eaebe-36b5-49b3-8f88-37f56b816e0b</webElementGuid>
+      <webElementGuid>ab243ba0-8cc7-471c-9e3e-9f3bd9d1dc10</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +36,7 @@
       <name>text</name>
       <type>Main</type>
       <value>OPEN</value>
-      <webElementGuid>9d503ef1-8f89-46bc-9790-0d9697187ada</webElementGuid>
+      <webElementGuid>39c72568-835f-4b80-9040-8fc7e27bea66</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +44,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;tr-main-0&quot;)/td[@class=&quot;border-2 border-gray-400 align-middle w-[3em]&quot;]/div[@class=&quot;h-full min-h-4 cursor-pointer text-center align-middle hover:brightness-[1.05] bg-yellow-400 text-red-600 font-semibold&quot;]/p[1]</value>
-      <webElementGuid>513cfd9c-1d4c-42e5-b11f-c0c65b958c2d</webElementGuid>
+      <webElementGuid>8c784df3-6435-4520-86fa-8dd379c4ac0c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -53,7 +52,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//tr[@id='tr-main-0']/td[4]/div/p</value>
-      <webElementGuid>65348413-58f4-4d0a-af56-c191cb8ddae3</webElementGuid>
+      <webElementGuid>85d5aa23-125d-4b8d-89e6-bb7c813940a6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -61,7 +60,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Aina Haina'])[2]/following::p[5]</value>
-      <webElementGuid>a4636a29-fe62-4b43-becf-45502aa72812</webElementGuid>
+      <webElementGuid>f0888c2f-0028-464c-b3c1-a2af7a3370b4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +68,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Aina Haina'])[3]/preceding::p[8]</value>
-      <webElementGuid>baef13e1-a22d-4209-ad39-034c8b577e67</webElementGuid>
+      <webElementGuid>7ab362c7-9d5d-4655-9024-8c0f63961fe0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +76,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='OPEN']/parent::*</value>
-      <webElementGuid>0766a288-74f2-4092-8846-8ddf15648de8</webElementGuid>
+      <webElementGuid>0d33c680-1624-4862-8c71-9f023de730bb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +84,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[4]/div/p</value>
-      <webElementGuid>1c70d217-0c8e-4bcb-bd21-16be0cf48c33</webElementGuid>
+      <webElementGuid>24f2a192-2305-4f1c-8f4e-3005c7bce396</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,6 +92,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//p[(text() = 'OPEN' or . = 'OPEN')]</value>
-      <webElementGuid>e5ae54d0-47e8-47bc-acf0-1f0a3b9b46f5</webElementGuid>
+      <webElementGuid>771a6910-2294-41b1-a0d2-cd54daa3de9b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

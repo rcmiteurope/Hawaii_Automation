@@ -6,6 +6,11 @@ import org.openqa.selenium.By
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.Cookie as Cookie
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.WebDriver
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
 
 def islandID = 1 
 def providerID = null
@@ -60,13 +65,22 @@ try {
     DatabaseConnection.closeConnection(sql)
 }
 
-// Now verify the dropdown has the expected schools
-WebUI.openBrowser('') 
+WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.scheduler_url)
 
-// Get the WebDriver instance
 WebDriver driver = DriverFactory.getWebDriver()
+
+Cookie authCookie = new Cookie('sc_auth_token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVyaWNhLkJvcnJvbWVvQHJjbXQuY29tIiwidXNlcklEIjo4LCJpYXQiOjE3MzE5ODYxMDEsImV4cCI6MTczNDU3ODEwMX0.AUWF2TrOJtXoWXnwJaA3MHQJ0iUgTpDUw2YrdjazB_Q')
+
+driver.manage().addCookie(authCookie)
+
+driver.manage().addCookie(new Cookie('user_email', 'Erica.Borromeo%40rcmt.com'))
+
+driver.manage().addCookie(new Cookie('user_name', 'Borromeo%2C%20Erica'))
+
+WebUI.refresh()
+
 
 // Locate the school filter dropdown using its selector
 WebElement schoolFilterSelect = driver.findElement(By.xpath("//select[@id='school_filter_select']")) 

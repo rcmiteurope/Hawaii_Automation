@@ -6,24 +6,52 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.Cookie as Cookie
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.WebDriver
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
 
 WebUI.openBrowser('')
 
-WebUI.setViewPortSize(GlobalVariable.spreadsheetWidth, GlobalVariable.spreadsheetHeight)
-
-// navigate to website (any dow is fine)  
 WebUI.navigateToUrl(GlobalVariable.scheduler_url)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-// grab the action menu dropdown arrow; can't be directly clicked
-WebElement weActionMenuHandle = driver.findElement(By.xpath('//*[@id="actionmenu-handle"]'))
+Cookie authCookie = new Cookie('sc_auth_token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVyaWNhLkJvcnJvbWVvQHJjbXQuY29tIiwidXNlcklEIjo4LCJpYXQiOjE3MzE5ODYxMDEsImV4cCI6MTczNDU3ODEwMX0.AUWF2TrOJtXoWXnwJaA3MHQJ0iUgTpDUw2YrdjazB_Q')
 
-// convert action menu dropdown element into a test object
-TestObject toActionMenuHandle = WebUI.convertWebElementToTestObject(weActionMenuHandle)
+driver.manage().addCookie(authCookie)
 
-// make sure the action menu dropdown is disabled when the "select all" checkbox is clear
-WebUI.verifyElementNotClickable(toActionMenuHandle)
+driver.manage().addCookie(new Cookie('user_email', 'Erica.Borromeo%40rcmt.com'))
+
+driver.manage().addCookie(new Cookie('user_name', 'Borromeo%2C%20Erica'))
+
+WebUI.refresh()
+
+TestObject horizontalToggle = new TestObject()
+
+horizontalToggle.addProperty('xpath', ConditionType.EQUALS, '//*[@id="root"]/main/div[2]/div/div/label/div')
+
+WebUI.check(horizontalToggle)
+
+WebUI.click(findTestObject('Object Repository/Action Menu/Page_Scheduler/input_Date_select-all-toggle'))
+
+WebUI.click(findTestObject('Object Repository/Action Menu/Page_Scheduler/input_Date_select-all-toggle'))
+
+//WebUI.verifyElementNotClickable(findTestObject(By.xpath('//*[@id="actionmenu-handle"]/svg')))
 
 WebUI.closeBrowser()
 

@@ -131,7 +131,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>['Absent - Notice', 'Absent - NCNS', 'Waiting on Orders', 'Provider Call Out', 'Change Provider', 'Change Supervisor', 'Change Color']</initValue>
+      <initValue>['Absent - Notice', 'Absent - NCNS', 'Waiting on Orders', 'Provider Call Out', 'Edit Provider', 'Edit Supervisor']</initValue>
       <name>actionMenuOptions</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -168,5 +168,10 @@
       <description></description>
       <initValue>0</initValue>
       <name>providerID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>['Honolulu', 'Central', 'Leeward', 'Windward', 'Hilo', 'Kona', 'Maui', 'Molokai', 'Lanai', 'Kauai']</initValue>
+      <name>island</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

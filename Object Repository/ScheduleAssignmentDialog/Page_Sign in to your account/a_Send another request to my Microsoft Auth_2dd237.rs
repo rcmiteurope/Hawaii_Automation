@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Send another request to my Microsoft Auth_2dd237</name>
+   <tag></tag>
+   <elementGuidId>53fe6e96-f140-4c0a-a712-068657e4dc4e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#idA_SAASDS_Resend</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@id='idA_SAASDS_Resend']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot;Send another request to my Microsoft Authenticator app&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>c6964f48-b314-4abc-a50a-a0b24583a509</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>#</value>
+      <webElementGuid>62334a18-5f0a-4c4e-b228-a2063a5ddc81</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-bind</name>
+      <type>Main</type>
+      <value>html: resendText, attr: { id: getId('idA', 'Resend') }, click: resend_onClick</value>
+      <webElementGuid>90ef11c8-0419-40c6-9d5d-7c4126e4b95f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>idA_SAASDS_Resend</value>
+      <webElementGuid>ee0e6993-1cbb-4de9-a691-be507b513843</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Send another request to my Microsoft Authenticator app</value>
+      <webElementGuid>9eafd59c-7086-4ac7-9ec7-b2ba80f536cd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;idA_SAASDS_Resend&quot;)</value>
+      <webElementGuid>e1009879-fe2e-4cb7-9aee-16ab5933c2a7</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//a[@id='idA_SAASDS_Resend']</value>
+      <webElementGuid>102e4aa5-5785-4c0c-8733-8bcb1933b139</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='lightbox']/div[2]/div[2]/div/div[2]/div/div/div[3]/a</value>
+      <webElementGuid>c0b4a6bc-a384-4f8b-b3d4-95cf08f9d3ab</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Send another request to my Microsoft Authenticator app')]</value>
+      <webElementGuid>c03facc8-b64b-4284-ba8e-3c9acb6c0cdf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='We sent an identity verification request to your mobile device, but you denied it.'])[1]/following::a[2]</value>
+      <webElementGuid>f7c9d20e-508d-4c06-8b74-16d228597863</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Having trouble?'])[1]/preceding::a[1]</value>
+      <webElementGuid>f8514e2d-7454-4042-a09a-2972ba9f4ce9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Send another request to my Microsoft Authenticator app']/parent::*</value>
+      <webElementGuid>fb2fe14e-c359-40a1-8b98-48590cd002c2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>(//a[contains(@href, '#')])[2]</value>
+      <webElementGuid>57363f8b-ed4d-4437-8177-83935402da6d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/a</value>
+      <webElementGuid>fbfa8cba-3114-46e9-9a41-b6a8dc842b02</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '#' and @id = 'idA_SAASDS_Resend' and (text() = 'Send another request to my Microsoft Authenticator app' or . = 'Send another request to my Microsoft Authenticator app')]</value>
+      <webElementGuid>f43dbab7-f354-413c-8d3c-51143d165da8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -16,26 +16,50 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.Cookie as Cookie
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.WebDriver
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
 
+// Open browser and navigate to the URL
 WebUI.openBrowser('')
+WebUI.navigateToUrl(GlobalVariable.scheduler_url)
 
-WebUI.navigateToUrl('https://scheduler-qa.rcmt-timecard.com/')
+// Add authentication cookies
+WebDriver driver = DriverFactory.getWebDriver()
+driver.manage().addCookie(new Cookie('sc_auth_token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVyaWNhLkJvcnJvbWVvQHJjbXQuY29tIiwidXNlcklEIjo4LCJpYXQiOjE3MzE5ODYxMDEsImV4cCI6MTczNDU3ODEwMX0.AUWF2TrOJtXoWXnwJaA3MHQJ0iUgTpDUw2YrdjazB_Q'))
+driver.manage().addCookie(new Cookie('user_email', 'Erica.Borromeo%40rcmt.com'))
+driver.manage().addCookie(new Cookie('user_name', 'Borromeo%2C%20Erica'))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Add Workorder/Page_Scheduler/select_Other ActionsAdd SchoolAdd StudentAd_8e5993'), 
+// Refresh to apply cookies
+WebUI.refresh()
+
+// Toggle horizontal view
+TestObject horizontalToggle = new TestObject()
+horizontalToggle.addProperty('xpath', ConditionType.EQUALS, '//*[@id="root"]/main/div[2]/div/div/label/div')
+WebUI.check(horizontalToggle)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/AddProvider/Page_Scheduler/select_Other ActionsAdd SchoolAdd StudentAd_8e5993'), 
     'add-workorder', true)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Add Workorder/Page_Scheduler/input_Search_react-select-3-input'), 
-    0)
+// Verify the presence of input fields
+TestObject inputField1 = new TestObject()
+inputField1.addProperty('xpath', ConditionType.EQUALS, '//*[@id="filter-wrapper"]/div/dialog/div[2]/div[1]/div[1]/div')
+WebUI.verifyElementPresent(inputField1, 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Add Workorder/Page_Scheduler/input_Search_react-select-3-input'), 
-    0)
+TestObject inputField2 = new TestObject()
+inputField2.addProperty('xpath', ConditionType.EQUALS, '//*[@id="filter-wrapper"]/div/dialog/div[2]/div[1]/div[2]/div/div/div[1]/div[2]')
+WebUI.verifyElementPresent(inputField2, 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Add Workorder/Page_Scheduler/input_Date Range_datepicker'), 
-    0)
+TestObject inputField3 = new TestObject()
+inputField3.addProperty('xpath', ConditionType.EQUALS, '//*[@id="filter-wrapper"]/div/dialog/div[2]/div[2]/div/div')
+WebUI.verifyElementPresent(inputField3, 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Add Workorder/Page_Scheduler/button_Submit'), 0)
+// Verify the presence of Submit and Cancel buttons
+TestObject submitCancelDiv = new TestObject()
+submitCancelDiv.addProperty('xpath', ConditionType.EQUALS, '//*[@id="filter-wrapper"]/div/dialog/div[2]/div[3]')
+WebUI.verifyElementPresent(submitCancelDiv, 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Add Workorder/Page_Scheduler/button_Cancel'), 0)
-
+// Close the browser
 WebUI.closeBrowser()
-

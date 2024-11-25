@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Background_w-7 h-7 rounded-lg border-2 _41ce99</name>
+   <tag></tag>
+   <elementGuidId>b0a971f2-c514-4111-9045-0c866522444c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id=':r28:']/div/div[2]/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div >> internal:has-text=/^Background:$/ >> div</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>8081ad94-4266-479a-ae8b-c479f6a3eb44</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>w-7 h-7 rounded-lg border-2 border-gray-300 cursor-pointer</value>
+      <webElementGuid>049b4bae-f167-4fac-ab63-7f0b523dc2ce</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;:r28:&quot;)/div[@class=&quot;h-[100px]&quot;]/div[@class=&quot;flex items-center mb-2 ml-4 relative&quot;]/div[@class=&quot;w-7 h-7 rounded-lg border-2 border-gray-300 cursor-pointer&quot;]</value>
+      <webElementGuid>8ad929db-378a-477d-82bc-0702a31f30ef</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id=':r28:']/div/div[2]/div</value>
+      <webElementGuid>e9e980c7-2d23-43e7-899f-909665d16ac7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div/div/div[2]/div</value>
+      <webElementGuid>1ad613b5-f977-44ce-83aa-8f35297d6685</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

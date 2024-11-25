@@ -6,7 +6,11 @@ import org.openqa.selenium.By
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 import internal.GlobalVariable as GlobalVariable
-
+import org.openqa.selenium.Cookie as Cookie
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.WebDriver
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
 // Establish database connection
 Sql sql = DatabaseConnection.connectToDatabase() // Use your actual database connection method
 
@@ -33,12 +37,21 @@ try {
 	DatabaseConnection.closeConnection(sql)
 }
 
-// Open browser and navigate to the page (replace with your URL)
 WebUI.openBrowser('')
+
 WebUI.navigateToUrl(GlobalVariable.scheduler_url)
 
-// Get the WebDriver instance
 WebDriver driver = DriverFactory.getWebDriver()
+
+Cookie authCookie = new Cookie('sc_auth_token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVyaWNhLkJvcnJvbWVvQHJjbXQuY29tIiwidXNlcklEIjo4LCJpYXQiOjE3MzE5ODYxMDEsImV4cCI6MTczNDU3ODEwMX0.AUWF2TrOJtXoWXnwJaA3MHQJ0iUgTpDUw2YrdjazB_Q')
+
+driver.manage().addCookie(authCookie)
+
+driver.manage().addCookie(new Cookie('user_email', 'Erica.Borromeo%40rcmt.com'))
+
+driver.manage().addCookie(new Cookie('user_name', 'Borromeo%2C%20Erica'))
+
+WebUI.refresh()
 
 // Locate the parent container for location tabs
 WebElement locationsContainer = driver.findElement(By.id("locations"))

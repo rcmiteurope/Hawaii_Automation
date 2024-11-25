@@ -9,23 +9,45 @@ import com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword
  
 import internal.GlobalVariable
  
+import org.openqa.selenium.Cookie as Cookie
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.WebDriver
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
+
 Random random = new Random()
- 
+
 WebUI.openBrowser('')
- 
-WebUI.navigateToUrl((GlobalVariable.scheduler_url))
- 
+
+WebUI.navigateToUrl(GlobalVariable.scheduler_url)
+
 WebDriver driver = DriverFactory.getWebDriver()
- 
-// set the date filter dropdown "Next Week"
-CustomKeywords.'timecardLogin.setOptionSelectedByLabel'('date_filter_select', 'Next Week')
- 
+
+Cookie authCookie = new Cookie('sc_auth_token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVyaWNhLkJvcnJvbWVvQHJjbXQuY29tIiwidXNlcklEIjo4LCJpYXQiOjE3MzE5ODYxMDEsImV4cCI6MTczNDU3ODEwMX0.AUWF2TrOJtXoWXnwJaA3MHQJ0iUgTpDUw2YrdjazB_Q')
+
+driver.manage().addCookie(authCookie)
+
+driver.manage().addCookie(new Cookie('user_email', 'Erica.Borromeo%40rcmt.com'))
+
+driver.manage().addCookie(new Cookie('user_name', 'Borromeo%2C%20Erica'))
+
+WebUI.refresh()
+
+TestObject horizontalToggle = new TestObject()
+horizontalToggle.addProperty('xpath', ConditionType.EQUALS, '//*[@id="root"]/main/div[2]/div/div/label/div')
+WebUI.check(horizontalToggle)
+
 // set the student filter dropdown to random student
 WebElement weStudentDropdown = driver.findElement(By.xpath('//*[@id="student_filter_select"]'))
+WebUI.delay(5)
 TestObject toStudentDropdown = WebUI.convertWebElementToTestObject(weStudentDropdown)
 numberOfStudents = WebUI.getNumberOfTotalOption(toStudentDropdown)
 // debugging code... println numberOfStudents
 CustomKeywords.'timecardLogin.setOptionSelectedByIndex'('student_filter_select', random.nextInt(numberOfStudents))
+ 
+
+// set the date filter dropdown "Next Week"
+CustomKeywords.'timecardLogin.setOptionSelectedByLabel'('date_filter_select', 'Next Week')
  
 // click the select-all-toggle checkbox
 driver.findElement(By.xpath('//*[@id="select-all-toggle"]')).click()
@@ -52,6 +74,12 @@ weRandomProvider.click()
 // validate provider 
 WebElement weMainTable = driver.findElement(By.xpath('//*[@id="root"]/main/div[5]/table'))
  
+TestObject button = new TestObject()
+button.addProperty('xpath', ConditionType.EQUALS, '/html/body/div[5]/div/div[6]/button[1]')
+
+// Click the element
+WebUI.click(button)
+
 // grab all the <tr> rows in the <table>
 List<WebElement> rows = weMainTable.findElements(By.xpath('descendant::tr'))
  
@@ -67,4 +95,5 @@ for (int i=2; i<rows.size(); i++) {
 	WebUI.verifyMatch(cells[4].getText(), randomProviderName, false)
 }
  
+
 WebUI.closeBrowser()

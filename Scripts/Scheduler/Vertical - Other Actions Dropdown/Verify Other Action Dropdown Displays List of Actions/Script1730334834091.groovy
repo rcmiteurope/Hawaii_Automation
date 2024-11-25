@@ -17,3 +17,57 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+import org.openqa.selenium.Cookie as Cookie
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.support.ui.Select
+import com.kms.katalon.core.testobject.ConditionType
+
+// Open browser and navigate to the URL
+WebUI.openBrowser('')
+WebUI.navigateToUrl(GlobalVariable.scheduler_url)
+
+// Add cookies for authentication
+WebDriver driver = DriverFactory.getWebDriver()
+driver.manage().addCookie(new Cookie('sc_auth_token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVyaWNhLkJvcnJvbWVvQHJjbXQuY29tIiwidXNlcklEIjo4LCJpYXQiOjE3MzE5ODYxMDEsImV4cCI6MTczNDU3ODEwMX0.AUWF2TrOJtXoWXnwJaA3MHQJ0iUgTpDUw2YrdjazB_Q'))
+driver.manage().addCookie(new Cookie('user_email', 'Erica.Borromeo%40rcmt.com'))
+driver.manage().addCookie(new Cookie('user_name', 'Borromeo%2C%20Erica'))
+
+// Refresh the page to apply cookies
+WebUI.refresh()
+
+// Define the dropdown using XPath
+TestObject dropdownObject = new TestObject()
+dropdownObject.addProperty('xpath', ConditionType.EQUALS, '//*[@id="filter-wrapper"]/select[5]')
+
+// Click the dropdown to make sure it's focused
+WebUI.click(dropdownObject)
+
+// Get WebDriver and locate the dropdown as a WebElement
+WebElement dropdownElement = WebUI.findWebElement(dropdownObject)
+
+// Use Selenium's Select class to fetch all options
+Select dropdownSelect = new Select(dropdownElement)
+List<String> actualOptions = dropdownSelect.getOptions().collect { it.getText().trim() }
+
+// Define the expected options
+List<String> expectedOptions = [
+    'Add Provider',
+    'Add School',
+    'Add Student',
+    'Add Workorder',
+    'Save Bookmark'
+]
+
+// Verify that the dropdown contains the expected options
+if (actualOptions.containsAll(expectedOptions) && actualOptions.size() == expectedOptions.size()) {
+    WebUI.comment('✅ Dropdown contains all the expected options.')
+} else {
+    WebUI.comment('❌ Dropdown options do not match the expected list.')
+    WebUI.comment('Actual options: ' + actualOptions.toString())
+    WebUI.comment('Expected options: ' + expectedOptions.toString())
+}
+
+// Close the browser
+WebUI.closeBrowser()

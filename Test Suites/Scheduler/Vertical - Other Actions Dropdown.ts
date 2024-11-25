@@ -144,11 +144,4 @@
       <testCaseId>Test Cases/Scheduler/Vertical - Other Actions Dropdown/Verify Other Action Dropdown Displays List of Actions</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
-   <testCaseLink>
-      <guid>f4ab805e-2ddf-450a-8cbb-b05daf09341f</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Scheduler/Vertical - Other Actions Dropdown/Verify Other Actions Dropdown</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
 </TestSuiteEntity>

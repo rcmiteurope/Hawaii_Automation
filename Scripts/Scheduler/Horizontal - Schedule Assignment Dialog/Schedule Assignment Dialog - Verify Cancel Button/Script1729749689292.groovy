@@ -16,19 +16,35 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.Cookie as Cookie
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.WebDriver
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
 
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.scheduler_url)
 
-WebUI.click(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/label_Not found_bg-white w-5 h-5 border bor_cc64be'))
+WebDriver driver = DriverFactory.getWebDriver()
 
-WebUI.click(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/p_OPEN'))
+Cookie authCookie = new Cookie('sc_auth_token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVyaWNhLkJvcnJvbWVvQHJjbXQuY29tIiwidXNlcklEIjo4LCJpYXQiOjE3MzE5ODYxMDEsImV4cCI6MTczNDU3ODEwMX0.AUWF2TrOJtXoWXnwJaA3MHQJ0iUgTpDUw2YrdjazB_Q')
 
-WebUI.click(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/button_Cancel'))
+driver.manage().addCookie(authCookie)
 
-WebUI.verifyElementNotVisibleInViewport(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/dialog_Student  SchoolWellbrock, Haliaaloha_35bc5c'), 
+driver.manage().addCookie(new Cookie('user_email', 'Erica.Borromeo%40rcmt.com'))
+
+driver.manage().addCookie(new Cookie('user_name', 'Borromeo%2C%20Erica'))
+
+WebUI.refresh()
+
+WebUI.selectOptionByLabel(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="date_filter_select"]'),
+	 'Next Week', false)
+
+WebUI.click(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/div_Amelie, Dylan   0800-1415'))
+
+WebUI.click(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/button_Cancel_1'))
+
+WebUI.verifyElementNotPresent(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/dialog_Student  SchoolWellbrock, Haliaaloha_5d52ee'), 
     0)
-
-WebUI.closeBrowser()
 

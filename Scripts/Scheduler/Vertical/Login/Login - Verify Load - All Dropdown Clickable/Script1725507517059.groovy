@@ -10,8 +10,6 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Cookie as Cookie
 
 WebUI.openBrowser('')
-WebUI.setViewPortSize(GlobalVariable.spreadsheetWidth,GlobalVariable.spreadsheetHeight)
-
 
 // navigate to website (any dow is fine)  
 WebUI.navigateToUrl(GlobalVariable.scheduler_url)

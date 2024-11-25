@@ -16,4 +16,70 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.Cookie as Cookie
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.WebDriver
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl(GlobalVariable.scheduler_url)
+
+// Add authentication cookies
+WebDriver driver = DriverFactory.getWebDriver()
+
+driver.manage().addCookie(new Cookie('sc_auth_token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVyaWNhLkJvcnJvbWVvQHJjbXQuY29tIiwidXNlcklEIjo4LCJpYXQiOjE3MzE5ODYxMDEsImV4cCI6MTczNDU3ODEwMX0.AUWF2TrOJtXoWXnwJaA3MHQJ0iUgTpDUw2YrdjazB_Q'))
+
+driver.manage().addCookie(new Cookie('user_email', 'Erica.Borromeo%40rcmt.com'))
+
+driver.manage().addCookie(new Cookie('user_name', 'Borromeo%2C%20Erica'))
+
+// Refresh to apply cookies
+WebUI.refresh()
+
+// Toggle horizontal view
+TestObject horizontalToggle = new TestObject()
+
+horizontalToggle.addProperty('xpath', ConditionType.EQUALS, '//*[@id="root"]/main/div[2]/div/div/label/div')
+
+WebUI.check(horizontalToggle)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/Vertical - Other Actions Dropdown/Page_Scheduler/select_Other ActionsAdd SchoolAdd StudentAd_8e5993'), 
+    'add-workorder', true)
+
+WebUI.click(findTestObject('Object Repository/Vertical - Other Actions Dropdown/Page_Scheduler/svg_Search_css-8mmkcg'))
+
+WebUI.click(findTestObject('Object Repository/Vertical - Other Actions Dropdown/Page_Scheduler/div_Abe, Tyler'))
+
+WebUI.click(findTestObject('Object Repository/Vertical - Other Actions Dropdown/Page_Scheduler/div_Search_css-19bb58m'))
+
+WebUI.click(findTestObject('Object Repository/Vertical - Other Actions Dropdown/Page_Scheduler/div_Aiea High'))
+
+WebUI.click(findTestObject('Object Repository/Vertical - Other Actions Dropdown/Page_Scheduler/input_Date Range_datepicker'))
+
+WebUI.click(findTestObject('Object Repository/Vertical - Other Actions Dropdown/Page_Scheduler/button_25'))
+
+WebUI.click(findTestObject('Object Repository/Vertical - Other Actions Dropdown/Page_Scheduler/button_26'))
+
+WebUI.click(findTestObject('Object Repository/Vertical - Other Actions Dropdown/Page_Scheduler/div_Start Time_css-19bb58m'))
+
+WebUI.click(findTestObject('Object Repository/Vertical - Other Actions Dropdown/Page_Scheduler/div_0600'))
+
+WebUI.click(findTestObject('Object Repository/Vertical - Other Actions Dropdown/Page_Scheduler/div_End Time'))
+
+WebUI.click(findTestObject('Object Repository/Vertical - Other Actions Dropdown/Page_Scheduler/div_0730'))
+
+WebUI.click(findTestObject('Object Repository/Vertical - Other Actions Dropdown/Page_Scheduler/div_Start Time_css-19bb58m_1'))
+
+WebUI.click(findTestObject('Object Repository/Vertical - Other Actions Dropdown/Page_Scheduler/div_0615'))
+
+WebUI.click(findTestObject('Object Repository/Vertical - Other Actions Dropdown/Page_Scheduler/div_End Time_css-19bb58m'))
+
+WebUI.click(findTestObject('Object Repository/Vertical - Other Actions Dropdown/Page_Scheduler/div_0930'))
+
+WebUI.click(findTestObject('Object Repository/Vertical - Other Actions Dropdown/Page_Scheduler/button_Submit'))
+
+// Close the browser
+WebUI.closeBrowser()
 

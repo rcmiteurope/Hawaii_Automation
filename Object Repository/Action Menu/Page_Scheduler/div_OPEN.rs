@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_OPEN</name>
+   <tag></tag>
+   <elementGuidId>fd92ee66-58a7-4e3c-b103-a79bbb88d858</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='tr-main-0']/td[5]/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.providerName.table-cell.cursor-pointer.align-middle</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#tr-main-0 >> internal:text=&quot;OPEN&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>545874ac-f669-4cee-97c9-8b70ff476982</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>providerName table-cell cursor-pointer align-middle</value>
+      <webElementGuid>1582e79e-d943-402c-9f70-b04fc522c209</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>OPEN</value>
+      <webElementGuid>e21cf880-ad0d-4560-b6a2-70793995bdc6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tr-main-0&quot;)/td[@class=&quot;border-stone-700 border-2 px-2  bg-yellow-400 text-red-600 font-semibold&quot;]/div[@class=&quot;providerName table-cell cursor-pointer align-middle&quot;]</value>
+      <webElementGuid>f1304145-ce03-453f-86b2-36f0174e9455</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='tr-main-0']/td[5]/div</value>
+      <webElementGuid>13b60c2c-7f11-4342-84fe-86bd9018e701</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mon, 11/25 08:00 - 14:15'])[1]/following::div[2]</value>
+      <webElementGuid>1a4e68cd-2161-4b9e-a6e5-f64accdcb96e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Jay-Funaki, Nya'])[2]/following::div[2]</value>
+      <webElementGuid>d1625817-66c7-4d37-8d11-082dede1623e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Aina Haina'])[3]/preceding::div[1]</value>
+      <webElementGuid>9013cb28-f374-48ff-b09a-28dc9de3cbb6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Jay-Funaki, Nya'])[3]/preceding::div[1]</value>
+      <webElementGuid>0bc39ee9-d25a-4b4f-8202-4218cf80b4f2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='OPEN']/parent::*</value>
+      <webElementGuid>d415684b-3e7f-40f1-81a2-933b3450a231</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[5]/div</value>
+      <webElementGuid>82d196f8-ac05-4bb7-a2fb-9b610e222738</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'OPEN' or . = 'OPEN')]</value>
+      <webElementGuid>d716bcfa-43c9-42d6-92b4-cf089963cf6a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

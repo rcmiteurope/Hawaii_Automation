@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>81e22385-5ce4-4ed7-b938-c26f00f14182</webElementGuid>
+      <webElementGuid>b23805fa-f890-4881-8906-5865f42843f6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Edit Provider</value>
-      <webElementGuid>2760c5e4-cf3d-4d76-ba7d-39eb84f9a47b</webElementGuid>
+      <webElementGuid>e843b76f-1668-481c-aed6-bd8464234898</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;action-menu-edit-provider&quot;)/div[@class=&quot;flex justify-between&quot;]/span[1]</value>
-      <webElementGuid>a5838922-5efc-40ed-8403-00961631a376</webElementGuid>
+      <webElementGuid>0766abe5-7347-4070-bf05-f015c1c3ea12</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//button[@id='action-menu-edit-provider']/div/span</value>
-      <webElementGuid>852ffa66-c4a4-493f-bf6c-4182faaa92a2</webElementGuid>
+      <webElementGuid>5d8190e9-9bfe-4172-8a2e-422e0fc5c3f3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Provider Call Out'])[1]/following::span[1]</value>
-      <webElementGuid>028ee7c3-2c4c-4e96-babc-ac9b051032e1</webElementGuid>
+      <webElementGuid>1f5b842e-37ff-41bd-8864-c79ba6976cbb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Waiting on Orders'])[1]/following::span[1]</value>
-      <webElementGuid>ac08aed2-5ba0-4901-9e37-a62da93a3631</webElementGuid>
+      <webElementGuid>3c6173da-c73d-422a-a93a-fa8a31199703</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Edit Supervisor'])[1]/preceding::span[4]</value>
-      <webElementGuid>c2450513-0d9a-4670-a27c-2083ac344451</webElementGuid>
+      <webElementGuid>44f0f686-449e-4084-93af-e2d157e3adcd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Change Color'])[1]/preceding::span[5]</value>
-      <webElementGuid>a058cdcf-65b9-4cec-801e-9c2ff7904b3c</webElementGuid>
+      <webElementGuid>57db6bce-26f1-488f-9c2b-87f3a56d93df</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Edit Provider']/parent::*</value>
-      <webElementGuid>530c5304-51e8-44c2-ae04-d3ddbeadeee5</webElementGuid>
+      <webElementGuid>11a239ed-6b15-4901-966e-5b1f263cd766</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//button[5]/div/span</value>
-      <webElementGuid>eed7923f-2a3b-4cc3-b59e-58dc4557e81e</webElementGuid>
+      <webElementGuid>f9972319-8886-4642-820e-ee7acde54ca9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +109,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Edit Provider' or . = 'Edit Provider')]</value>
-      <webElementGuid>3bf896d2-2008-4a30-b0b3-ccb6105ce05a</webElementGuid>
+      <webElementGuid>d309d8ba-d198-4ce8-a2e0-290c1fcaee7a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

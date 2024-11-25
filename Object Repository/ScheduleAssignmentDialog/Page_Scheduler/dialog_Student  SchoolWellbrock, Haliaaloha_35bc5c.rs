@@ -6,12 +6,12 @@
    <elementGuidId>e152a703-4b16-45a2-bae3-bb19f67ee7d4</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/main/dialog</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>dialog.dialog.border-4.border-solid.border-black</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/main/dialog</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>dialog</value>
-      <webElementGuid>acaecb4b-41fd-42cf-b703-8395eff0fef5</webElementGuid>
+      <webElementGuid>0783d1b3-3a6a-4dd8-bc9e-991721874d9b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>dialog border-4 border-solid border-black</value>
-      <webElementGuid>97180926-8693-47e7-9c0e-869fdd819487</webElementGuid>
+      <webElementGuid>5b25ff49-c034-4f0b-8cb3-d0a3971438fc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <type>Main</type>
       <value>Student / SchoolWellbrock, HaliaalohaokalikolehuaAina Haina Monday 10/07Student Absent - Notice 08:00-14:15 Tuesday 10/08Aana, Leslie Ann   08:00-14:15 Wednesday 10/09Student Absent - NCNS  
  ( Adriatico, Ruth Nilda Bejarin )  08:00-13:30 Thursday 10/10OPEN 08:00-14:15 Friday 10/11OPEN 08:00-14:15ProviderSupervisorRemove SupervisorAbsent - NCNSAbsent - NoticeWaiting For OrderOPEN35 OverrideSaveCancel</value>
-      <webElementGuid>77ed89b3-e080-49b6-ad92-e85f6e028ab4</webElementGuid>
+      <webElementGuid>8d039342-5143-4104-84ab-128df3439f3a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/main[@class=&quot;px-3&quot;]/dialog[@class=&quot;dialog border-4 border-solid border-black&quot;]</value>
-      <webElementGuid>f0d85891-c18b-4a81-af1a-e8026328a5be</webElementGuid>
+      <webElementGuid>72cae0f6-caf2-46ab-a610-8f9291119e36</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/main/dialog</value>
-      <webElementGuid>e3982d49-89d9-41bf-a530-795c28982a48</webElementGuid>
+      <webElementGuid>b491e86d-bafb-433f-8c93-da51e2d0fb92</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//dialog</value>
-      <webElementGuid>091e71dd-9649-42ff-a116-8a1e5067cd51</webElementGuid>
+      <webElementGuid>3c24f829-9efc-478a-bb9a-e03b124c25c9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -80,6 +80,6 @@
       <value>//dialog[(text() = 'Student / SchoolWellbrock, HaliaalohaokalikolehuaAina Haina Monday 10/07Student Absent - Notice 08:00-14:15 Tuesday 10/08Aana, Leslie Ann   08:00-14:15 Wednesday 10/09Student Absent - NCNS  
  ( Adriatico, Ruth Nilda Bejarin )  08:00-13:30 Thursday 10/10OPEN 08:00-14:15 Friday 10/11OPEN 08:00-14:15ProviderSupervisorRemove SupervisorAbsent - NCNSAbsent - NoticeWaiting For OrderOPEN35 OverrideSaveCancel' or . = 'Student / SchoolWellbrock, HaliaalohaokalikolehuaAina Haina Monday 10/07Student Absent - Notice 08:00-14:15 Tuesday 10/08Aana, Leslie Ann   08:00-14:15 Wednesday 10/09Student Absent - NCNS  
  ( Adriatico, Ruth Nilda Bejarin )  08:00-13:30 Thursday 10/10OPEN 08:00-14:15 Friday 10/11OPEN 08:00-14:15ProviderSupervisorRemove SupervisorAbsent - NCNSAbsent - NoticeWaiting For OrderOPEN35 OverrideSaveCancel')]</value>
-      <webElementGuid>c6f7c094-7aef-44aa-a948-96816e5fe49c</webElementGuid>
+      <webElementGuid>5e9c507a-ad95-4dae-80c1-f7109f3ad183</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

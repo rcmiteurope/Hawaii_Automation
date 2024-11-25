@@ -10,7 +10,6 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Cookie as Cookie
 
 WebUI.openBrowser('')
-WebUI.setViewPortSize(GlobalVariable.spreadsheetWidth,GlobalVariable.spreadsheetHeight)
 
 //***** WAITING FOR ADDITION OF MISSING ELEMENT ID: date_filter_select 
 

@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>bab4b6af-a9e3-45fe-869b-81ba7b4d97c8</webElementGuid>
+      <webElementGuid>798a8bd0-0153-45b1-8820-1dbf254b5e4d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>id</name>
       <type>Main</type>
       <value>select-all-toggle</value>
-      <webElementGuid>cdd79b14-5786-44f4-9b57-5ced69356107</webElementGuid>
+      <webElementGuid>2e04dd33-8096-4657-a5c8-54ed45e1de86</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>type</name>
       <type>Main</type>
       <value>checkbox</value>
-      <webElementGuid>aba397ae-0265-4137-99d2-279ec6661c0d</webElementGuid>
+      <webElementGuid>4ac0e0c8-2ee7-44f8-84f0-83c700266700</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;select-all-toggle&quot;)</value>
-      <webElementGuid>9c497f10-51b7-4f32-87da-efa6cd3a9e2b</webElementGuid>
+      <webElementGuid>1e631679-725d-4837-bc54-20aab1015579</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='select-all-toggle']</value>
-      <webElementGuid>2619b6b2-fa81-42ba-9b3b-111c4dad0da1</webElementGuid>
+      <webElementGuid>7e6211e0-7786-4a9b-a82c-7d764728121a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='vertical-table']/thead/tr/th[4]/span/span/input</value>
-      <webElementGuid>ae70adca-8209-4918-ad4c-26f280cf67a8</webElementGuid>
+      <webElementGuid>c83d602d-cd84-4d54-be93-db491d6aa6fc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//span/input</value>
-      <webElementGuid>ff4a57ba-4457-4e58-9ddb-bd8ff8da740a</webElementGuid>
+      <webElementGuid>4c1b3840-b66f-4ff5-8281-e0221d18d0a8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,6 +85,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@id = 'select-all-toggle' and @type = 'checkbox']</value>
-      <webElementGuid>6e123e7f-c2a4-437a-a67a-94260f7a7e7d</webElementGuid>
+      <webElementGuid>dcdf24cc-4eeb-4f28-8d25-5eb934dec98c</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

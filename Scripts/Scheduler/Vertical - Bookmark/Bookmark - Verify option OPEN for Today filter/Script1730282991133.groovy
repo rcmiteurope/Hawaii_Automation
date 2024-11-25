@@ -32,6 +32,9 @@ horizontalToggle.addProperty('xpath', ConditionType.EQUALS, '//*[@id="root"]/mai
 
 WebUI.check(horizontalToggle)
 
+WebUI.selectOptionByLabel(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="date_filter_select"]'),
+	 'Next Week', false)
+
 TestObject bookmarkIcon = new TestObject()
 bookmarkIcon.addProperty('xpath', ConditionType.EQUALS, '//*[@id=":r7:"]')
 WebUI.click(bookmarkIcon)

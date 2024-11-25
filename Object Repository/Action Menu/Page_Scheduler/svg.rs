@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>svg</value>
-      <webElementGuid>f5168e4a-1b07-4bc6-aa1d-f80a1b380f4f</webElementGuid>
+      <webElementGuid>c274a495-b208-4dc3-9dde-0d6bf8366f26</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>stroke</name>
       <type>Main</type>
       <value>currentColor</value>
-      <webElementGuid>a3f23f48-c3a8-40cd-9a53-c24ccfe74a2e</webElementGuid>
+      <webElementGuid>aef52e95-c4e1-4ef8-996a-5e0bace50b6b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>fill</name>
       <type>Main</type>
       <value>currentColor</value>
-      <webElementGuid>58ec69cf-e671-47a1-8b98-e667fb25d138</webElementGuid>
+      <webElementGuid>4a354e6a-5201-4c36-88a2-a3312018db49</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>stroke-width</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>46096b44-0b01-4399-8670-bae01d0891ac</webElementGuid>
+      <webElementGuid>db8517c9-fa85-4a15-9950-7c63090b69c9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>viewBox</name>
       <type>Main</type>
       <value>0 0 320 512</value>
-      <webElementGuid>f41ee505-4d98-4916-b37a-b1d8cce136d2</webElementGuid>
+      <webElementGuid>da3f9c40-3ac4-4f34-a8e3-37ae18efdcde</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>height</name>
       <type>Main</type>
       <value>1em</value>
-      <webElementGuid>97303ec1-9239-49ce-8b8a-4dc00ac2b67b</webElementGuid>
+      <webElementGuid>0e2e9b17-5fca-46cb-8693-b5f540279760</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>width</name>
       <type>Main</type>
       <value>1em</value>
-      <webElementGuid>04fa23ac-c893-48b7-abfa-dc5fcaca1fd1</webElementGuid>
+      <webElementGuid>aefd67d2-6c4d-4861-b3d8-961259ec3852</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xmlns</name>
       <type>Main</type>
       <value>http://www.w3.org/2000/svg</value>
-      <webElementGuid>cd6c8ab9-bb11-4b1b-b482-3b8cf92c2830</webElementGuid>
+      <webElementGuid>7a63e1a5-adba-480d-b23b-b816c62d7e3e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;vertical-table&quot;)/thead[@class=&quot;sticky top-0&quot;]/tr[1]/th[@class=&quot;border-stone-700 border-2 font-medium w-[20px] bg-white p-2&quot;]/span[@class=&quot;flex items-center&quot;]/span[@class=&quot;flex justify-center&quot;]/span[@id=&quot;actionmenu-handle&quot;]/svg[1]</value>
-      <webElementGuid>546e04d7-0202-4cd9-87a5-5f6b27f3583a</webElementGuid>
+      <webElementGuid>84ff4644-7e2a-4d70-b545-2094851f8c90</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Date'])[1]/following::*[name()='svg'][1]</value>
-      <webElementGuid>d70fa7ec-5c79-4731-8545-b4d098c2476c</webElementGuid>
+      <webElementGuid>9fa036b7-b70b-4d48-acc8-6ad71f9724af</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Student'])[1]/following::*[name()='svg'][1]</value>
-      <webElementGuid>4f46f787-2dff-4e0c-bfd7-8f2a21aab660</webElementGuid>
+      <webElementGuid>fed7470b-3de0-4dc8-9bcf-b2708305c8f7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +117,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Provider'])[1]/preceding::*[name()='svg'][1]</value>
-      <webElementGuid>06b2880b-966c-4aee-8e82-3fc5146e1bf9</webElementGuid>
+      <webElementGuid>ebdc2d45-c9e5-4e75-b8aa-e7587b82b09d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,6 +125,6 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Aina Haina'])[2]/preceding::*[name()='svg'][1]</value>
-      <webElementGuid>f6cccea8-c948-4463-a6ed-4166a2350333</webElementGuid>
+      <webElementGuid>f4c5c6f2-f3bb-4b8b-be1a-516d5f52af20</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
