@@ -32,6 +32,11 @@ Cookie authCookie = new Cookie('sc_auth_token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6Ikp
 
 driver.manage().addCookie(authCookie)
 
+driver.manage().addCookie(new Cookie('user_email', 'Erica.Borromeo%40rcmt.com'))
+
+driver.manage().addCookie(new Cookie('user_name', 'Borromeo%2C%20Erica'))
+
+
 WebUI.refresh()
 
 // Fetch the list of provider names from the table

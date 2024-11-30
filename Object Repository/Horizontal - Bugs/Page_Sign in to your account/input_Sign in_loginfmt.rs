@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_Sign in_loginfmt</name>
+   <tag></tag>
+   <elementGuidId>635e0722-1624-4014-acd2-d95cb02d9ea5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='i0116']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#i0116</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:attr=[placeholder=&quot;someone@example.com&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>e56f7252-27d6-4de4-8844-4d7447fd9234</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>email</value>
+      <webElementGuid>16e78888-66ff-43b9-a4f5-439892e8daf1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>loginfmt</value>
+      <webElementGuid>128d0a9c-e2bc-4f09-9925-f062d399c180</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>i0116</value>
+      <webElementGuid>d578f755-975d-40c8-a496-9785cf90366c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>maxlength</name>
+      <type>Main</type>
+      <value>113</value>
+      <webElementGuid>faeba807-aecc-4cd8-9649-903d5e6d36f0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>form-control ltr_override input ext-input text-box ext-text-box</value>
+      <webElementGuid>3ffd7a5c-132f-4cc6-83f8-d094acedb857</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-required</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>9dcf0e67-51ed-4b8d-8873-0b1ebe497f95</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-report-event</name>
+      <type>Main</type>
+      <value>Signin_Email_Phone_Skype</value>
+      <webElementGuid>b29144af-94d0-4e13-b3c7-9e5e7bb7be4f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-report-trigger</name>
+      <type>Main</type>
+      <value>click</value>
+      <webElementGuid>5e1ae589-1a76-40f2-a0dd-455ed53a889f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-report-value</name>
+      <type>Main</type>
+      <value>Email_Phone_Skype_Entry</value>
+      <webElementGuid>759b6a95-e4db-4b2a-b963-94a8dcb87da7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-bind</name>
+      <type>Main</type>
+      <value>
+                    attr: { lang: svr.fApplyAsciiRegexOnInput ? null : 'en',
+                            autocomplete: svr.fIsUpdatedAutocompleteEnabled ? 'username' : null },
+                    externalCss: {
+                        'input': true,
+                        'text-box': true,
+                        'has-error': usernameTextbox.error },
+                    ariaLabel: tenantBranding.unsafe_userIdLabel || str['CT_PWD_STR_Username_AriaLabel'],
+                    ariaDescribedBy: 'loginHeader' + (pageDescription &amp;&amp; !svr.fHideLoginDesc ? ' loginDescription usernameError' : ' usernameError'),
+                    textInput: usernameTextbox.value,
+                    hasFocusEx: usernameTextbox.focused,
+                    placeholder: $placeholderText</value>
+      <webElementGuid>0c4f0f10-9dc1-467b-8392-a387aacd48c3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>autocomplete</name>
+      <type>Main</type>
+      <value>username</value>
+      <webElementGuid>a9e33bb8-2892-43d3-b45d-3b2c3331083c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-label</name>
+      <type>Main</type>
+      <value>someone@example.com</value>
+      <webElementGuid>d5c07cb0-b557-4cf2-9906-d6296d7ee049</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-describedby</name>
+      <type>Main</type>
+      <value>loginHeader usernameError</value>
+      <webElementGuid>81e347ce-7178-4b25-b10a-98b25390aa0d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>someone@example.com</value>
+      <webElementGuid>a64b20f9-6486-4688-b37c-120c7f26db8a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;i0116&quot;)</value>
+      <webElementGuid>c57be37b-1985-4f3c-9b1a-8167067e1bdc</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//input[@id='i0116']</value>
+      <webElementGuid>84968fd6-6035-42d3-8590-9e291f2bdf56</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='lightbox']/div[3]/div/div/div/div[2]/div[2]/div/input</value>
+      <webElementGuid>076d4d8e-7b8b-47fb-866e-590c147a41eb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//input</value>
+      <webElementGuid>c4295714-ef80-45d3-84cf-4783b309295c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'email' and @name = 'loginfmt' and @id = 'i0116' and @placeholder = 'someone@example.com']</value>
+      <webElementGuid>e6819eec-42e0-4538-a684-8c62e2bf231f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

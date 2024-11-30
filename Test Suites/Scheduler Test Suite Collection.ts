@@ -4,7 +4,7 @@
    <name>Scheduler Test Suite Collection</name>
    <tag></tag>
    <delayBetweenInstances>4</delayBetweenInstances>
-   <executionMode>PARALLEL</executionMode>
+   <executionMode>SEQUENTIAL</executionMode>
    <maxConcurrentInstances>8</maxConcurrentInstances>
    <testSuiteRunConfigurations>
       <TestSuiteRunConfiguration>

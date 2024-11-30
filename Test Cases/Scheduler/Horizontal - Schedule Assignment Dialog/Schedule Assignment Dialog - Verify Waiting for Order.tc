@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Schedule Assignment Dialog - Verify Waiting for Order</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>26f01b27-8f35-450a-a846-011e35e91c0c</testCaseGuid>
+</TestCaseEntity>

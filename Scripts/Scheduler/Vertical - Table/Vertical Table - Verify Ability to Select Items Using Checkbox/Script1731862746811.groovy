@@ -31,8 +31,21 @@ def driver = DriverFactory.getWebDriver()
 Cookie authCookie = new Cookie('sc_auth_token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVyaWNhLkJvcnJvbWVvQHJjbXQuY29tIiwidXNlcklEIjo4LCJpYXQiOjE3MzE5ODYxMDEsImV4cCI6MTczNDU3ODEwMX0.AUWF2TrOJtXoWXnwJaA3MHQJ0iUgTpDUw2YrdjazB_Q')
 
 driver.manage().addCookie(authCookie)
+
+driver.manage().addCookie(new Cookie('user_email', 'Erica.Borromeo%40rcmt.com'))
+
+driver.manage().addCookie(new Cookie('user_name', 'Borromeo%2C%20Erica'))
+
 WebUI.refresh()
+TestObject horizontalToggle = new TestObject()
 
-WebUI.verifyElementClickable(findTestObject('Object Repository/Vertical Table/Page_Scheduler/input_Mon, 1118 0600 - 0700_master-checkbox_420086'))
+horizontalToggle.addProperty('xpath', ConditionType.EQUALS, '//*[@id="root"]/main/div[2]/div/div/label/div')
 
+WebUI.check(horizontalToggle)
+
+TestObject masterCheckbox = new TestObject()
+masterCheckbox.addProperty('xpath', ConditionType.EQUALS, '//*[@id="master-checkbox-toggle226216"]')
+
+// Verify the element is clickable
+WebUI.verifyElementClickable(masterCheckbox)
 WebUI.closeBrowser();

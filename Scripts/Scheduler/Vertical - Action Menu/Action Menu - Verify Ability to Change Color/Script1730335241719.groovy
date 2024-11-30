@@ -17,15 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.Cookie as Cookie
-import com.kms.katalon.core.webui.driver.DriverFactory
-import org.openqa.selenium.WebDriver
-import com.kms.katalon.core.testobject.ConditionType
-import com.kms.katalon.core.testobject.TestObject
-import org.openqa.selenium.WebElement
-import org.openqa.selenium.By
-import com.kms.katalon.core.webui.driver.DriverFactory
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import org.openqa.selenium.By
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.WebDriver as WebDriver
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
+import org.openqa.selenium.WebElement as WebElement
+import org.openqa.selenium.By as By
 
 WebUI.openBrowser('')
 
@@ -49,25 +45,28 @@ horizontalToggle.addProperty('xpath', ConditionType.EQUALS, '//*[@id="root"]/mai
 
 WebUI.check(horizontalToggle)
 
-WebUI.selectOptionByLabel(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="date_filter_select"]'), 
-    'Next Week', false)
-
-WebUI.click(findTestObject('Object Repository/Action Menu/Page_Scheduler/input_Mon, 1125 0800 - 1415_master-checkbox_5083b2'))
+//WebUI.selectOptionByLabel(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="date_filter_select"]'), 
+//  'Next Week', false)
+WebUI.click(findTestObject('Object Repository/Action Menu/Page_Scheduler/input_Mon, 1125 0800 - 1415_master-checkbox_b9635f'))
 
 WebUI.executeJavaScript('document.getElementById("actionmenu-handle").click();', null)
 
-WebElement changeColor = driver.findElement(By.xpath('//*[@id="actionmenu-handle"]/div/span/span'))	// todo: change xpath
- TestObject toChangeColor = WebUI.convertWebElementToTestObject(changeColor)
- WebUI.click(toChangeColor)
- WebUI.mouseOver(toChangeColor)
- 
-WebUI.click(findTestObject('Object Repository/Action Menu/Page_Scheduler/div_Foreground_w-7 h-7 rounded-lg border-2 _9f7500'))
+WebElement changeColor = driver.findElement(By.xpath('//*[@id="actionmenu-handle"]/div/span/span') // todo: change xpath
+    )
 
-WebUI.click(findTestObject('Object Repository/Action Menu/Page_Scheduler/div'))
+TestObject toChangeColor = WebUI.convertWebElementToTestObject(changeColor)
 
-WebUI.click(findTestObject('Object Repository/Action Menu/Page_Scheduler/div_Background_w-7 h-7 rounded-lg border-2 _41ce99'))
+WebUI.click(toChangeColor)
 
-WebUI.click(findTestObject('Object Repository/Action Menu/Page_Scheduler/div_1'))
+WebUI.mouseOver(toChangeColor)
+
+WebUI.click(findTestObject('Object Repository/Action Menu/Page_Scheduler/div_Foreground_w-7 h-7 rounded-lg border-2 _9f7500_1'))
+
+WebUI.click(findTestObject('Object Repository/Action Menu/Page_Scheduler/div_1_2'))
+
+WebUI.click(findTestObject('Object Repository/Action Menu/Page_Scheduler/div_Background_w-7 h-7 rounded-lg border-2 _41ce99_1'))
+
+WebUI.click(findTestObject('Object Repository/Action Menu/Page_Scheduler/div_1_2_3'))
 
 WebUI.click(findTestObject('Object Repository/Action Menu/Page_Scheduler/button_Apply Changes'))
 

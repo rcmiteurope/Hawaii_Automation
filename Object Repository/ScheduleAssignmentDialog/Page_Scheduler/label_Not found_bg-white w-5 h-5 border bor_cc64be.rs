@@ -6,11 +6,11 @@
    <elementGuidId>1f344a15-a679-4e2b-b46c-6f6ae8fbfe4c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//div[@id='root']/main/div[2]/div/div/label</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -28,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>label</value>
-      <webElementGuid>ad34b1c0-760a-45a4-847e-79f841e6efde</webElementGuid>
+      <webElementGuid>73cfb24a-b41d-4d0d-b83a-8172e8539893</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -36,7 +36,7 @@
       <name>for</name>
       <type>Main</type>
       <value>horizontal_toggle</value>
-      <webElementGuid>7050cc75-45c7-4ac1-ad5b-a21f4a40eb0f</webElementGuid>
+      <webElementGuid>32c48485-9f83-4518-bc9f-2a0b5b3ddd10</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -44,7 +44,7 @@
       <name>class</name>
       <type>Main</type>
       <value>bg-white w-5 h-5 border border-blue-gray-100 rounded-full shadow-md absolute top-2/4 -left-1 -translate-y-2/4 peer-checked:translate-x-full transition-all duration-300 cursor-pointer before:content[''] before:block before:bg-blue-gray-500 before:w-10 before:h-10 before:rounded-full before:absolute before:top-2/4 before:left-2/4 before:-translate-y-2/4 before:-translate-x-2/4 before:transition-opacity before:opacity-0 hover:before:opacity-10 peer-checked:border-gray-900 peer-checked:before:bg-gray-900</value>
-      <webElementGuid>4e125f27-66cb-418f-809f-cae79186d2ca</webElementGuid>
+      <webElementGuid>efbed948-341f-4b05-b56a-a92491aa06f1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -52,7 +52,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/main[@class=&quot;px-3&quot;]/div[2]/div[@class=&quot;inline-flex items-center&quot;]/div[@class=&quot;relative inline-block w-8 h-4 cursor-pointer rounded-full&quot;]/label[@class=&quot;bg-white w-5 h-5 border border-blue-gray-100 rounded-full shadow-md absolute top-2/4 -left-1 -translate-y-2/4 peer-checked:translate-x-full transition-all duration-300 cursor-pointer before:content[''] before:block before:bg-blue-gray-500 before:w-10 before:h-10 before:rounded-full before:absolute before:top-2/4 before:left-2/4 before:-translate-y-2/4 before:-translate-x-2/4 before:transition-opacity before:opacity-0 hover:before:opacity-10 peer-checked:border-gray-900 peer-checked:before:bg-gray-900&quot;]</value>
-      <webElementGuid>d669550f-64c4-4f1e-a224-3b11a53fea35</webElementGuid>
+      <webElementGuid>8a1339f3-e28f-4965-aae2-662df5681f4f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -60,7 +60,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/main/div[2]/div/div/label</value>
-      <webElementGuid>eb0c43c9-0990-4e06-90d9-ac0ef3e1ac4d</webElementGuid>
+      <webElementGuid>01e2eab6-a1e8-4a2d-b3c7-16bd9ae9736e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -68,7 +68,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Not found.'])[1]/following::label[2]</value>
-      <webElementGuid>c3ed38d9-1e60-4744-9dd5-ca46e33c492a</webElementGuid>
+      <webElementGuid>bd853ab9-4407-4a55-894b-cfcec0b8866f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -76,7 +76,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Horizontal'])[1]/preceding::label[1]</value>
-      <webElementGuid>ae29f72f-1a37-4bad-ad73-1a626c91e2b5</webElementGuid>
+      <webElementGuid>5f7c458b-4906-415c-b093-d28e78e7fd24</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -84,7 +84,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Honolulu'])[1]/preceding::label[2]</value>
-      <webElementGuid>16de38e4-9ad5-4dd8-831c-bd3e4d11a48c</webElementGuid>
+      <webElementGuid>a9a8b945-66be-4813-a5b9-72bbf999cf98</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -92,6 +92,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div/label</value>
-      <webElementGuid>0f1c0faf-2a15-4f46-ae3f-64106f9f819b</webElementGuid>
+      <webElementGuid>9b6df0d8-e741-492a-bace-01ef74d0fbd1</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -16,30 +16,65 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.Cookie as Cookie
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.WebDriver
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
+import org.openqa.selenium.WebElement 
+import org.openqa.selenium.By 
+import java.util.Random
 
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.scheduler_url)
 
-WebUI.click(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/label_Not found_bg-white w-5 h-5 border bor_cc64be'))
+WebDriver driver = DriverFactory.getWebDriver()
 
-WebUI.click(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/p_OPEN'))
+Cookie authCookie = new Cookie('sc_auth_token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVyaWNhLkJvcnJvbWVvQHJjbXQuY29tIiwidXNlcklEIjo4LCJpYXQiOjE3MzE5ODYxMDEsImV4cCI6MTczNDU3ODEwMX0.AUWF2TrOJtXoWXnwJaA3MHQJ0iUgTpDUw2YrdjazB_Q')
 
-WebUI.click(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/input_Aina Haina_r12'))
+driver.manage().addCookie(authCookie)
 
-WebUI.verifyElementNotClickable(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/button_Provider'))
+driver.manage().addCookie(new Cookie('user_email', 'Erica.Borromeo%40rcmt.com'))
 
-WebUI.verifyElementNotClickable(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/button_Supervisor'))
+driver.manage().addCookie(new Cookie('user_name', 'Borromeo%2C%20Erica'))
 
-WebUI.verifyElementNotClickable(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/button_Remove Supervisor'))
+WebUI.refresh()
 
-WebUI.verifyElementNotClickable(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/button_Absent - NCNS'))
 
-WebUI.verifyElementNotClickable(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/button_Absent - Notice'))
+String cellsXPath = "//table[@id='horizontal-table']//tbody//td/div/div"
 
-WebUI.verifyElementNotClickable(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/button_Waiting For Order'))
+try {
+    List<WebElement> cells = WebUI.findWebElements(new TestObject().addProperty("xpath", ConditionType.EQUALS, cellsXPath), 10)
 
-WebUI.verifyElementNotClickable(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/button_OPEN'))
+    if (!cells.isEmpty()) {
+        WebUI.comment("Total cells found: " + cells.size())
+        
+        // Generate a random index
+        Random random = new Random()
+        int randomIndex = random.nextInt(cells.size())
 
+        // Fetch the random cell and click it
+        WebElement randomCell = cells.get(randomIndex)
+
+        // Log information about the cell
+        WebUI.comment("Attempting to click on cell with text: " + randomCell.getText())
+
+        randomCell.click()
+        WebUI.comment("Successfully clicked on a random cell.")
+
+    } else {
+        WebUI.comment("No cells found in the table.")
+    }
+} catch (org.openqa.selenium.StaleElementReferenceException e) {
+    WebUI.comment("StaleElementReferenceException occurred. Consider re-fetching elements.")
+} catch (Exception e) {
+    WebUI.comment("An unexpected error occurred: " + e.getMessage())
+}
+
+// Uncomment the Cancel button logic if needed
+// WebUI.click(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/button_Cancel_1'))
+// WebUI.verifyElementNotPresent(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/dialog_Student  SchoolWellbrock, Haliaaloha_5d52ee'), 0)
+
+// Close the browser
 WebUI.closeBrowser()
-

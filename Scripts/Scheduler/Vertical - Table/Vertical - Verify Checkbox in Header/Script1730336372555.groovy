@@ -33,7 +33,17 @@ Cookie authCookie = new Cookie('sc_auth_token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6Ikp
 
 driver.manage().addCookie(authCookie)
 
+driver.manage().addCookie(new Cookie('user_email', 'Erica.Borromeo%40rcmt.com'))
+
+driver.manage().addCookie(new Cookie('user_name', 'Borromeo%2C%20Erica'))
+
+
 WebUI.refresh()
+TestObject horizontalToggle = new TestObject()
+
+horizontalToggle.addProperty('xpath', ConditionType.EQUALS, '//*[@id="root"]/main/div[2]/div/div/label/div')
+
+WebUI.check(horizontalToggle)
 
 WebUI.verifyElementPresent(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="select-all-toggle"]'), 0)
 

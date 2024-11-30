@@ -11,7 +11,6 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>8081ad94-4266-479a-ae8b-c479f6a3eb44</webElementGuid>
+      <webElementGuid>39d723bf-6890-4c60-8fd7-30efc68bba7d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +36,7 @@
       <name>class</name>
       <type>Main</type>
       <value>w-7 h-7 rounded-lg border-2 border-gray-300 cursor-pointer</value>
-      <webElementGuid>049b4bae-f167-4fac-ab63-7f0b523dc2ce</webElementGuid>
+      <webElementGuid>189391d6-babf-4102-b9ea-88864e5e9a5a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +44,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;:r28:&quot;)/div[@class=&quot;h-[100px]&quot;]/div[@class=&quot;flex items-center mb-2 ml-4 relative&quot;]/div[@class=&quot;w-7 h-7 rounded-lg border-2 border-gray-300 cursor-pointer&quot;]</value>
-      <webElementGuid>8ad929db-378a-477d-82bc-0702a31f30ef</webElementGuid>
+      <webElementGuid>1bace1f4-bf69-44fe-810e-dd60bf1455dc</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -53,7 +52,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id=':r28:']/div/div[2]/div</value>
-      <webElementGuid>e9e980c7-2d23-43e7-899f-909665d16ac7</webElementGuid>
+      <webElementGuid>7e2db1c9-7f5d-4e55-b6d1-7c7e7dd05ec3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -61,6 +60,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[4]/div/div/div[2]/div</value>
-      <webElementGuid>1ad613b5-f977-44ce-83aa-8f35297d6685</webElementGuid>
+      <webElementGuid>4c528850-fa60-4cb1-bdd6-1e316b5fad97</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

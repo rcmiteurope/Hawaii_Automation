@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Schedule Assignment Dialog - Verify Checkbox</name>
+   <name>Schedule Assignment Dialog - Verify Add Note</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>87cc2f23-a36a-447f-8232-8c8c2bac6746</testCaseGuid>
+   <testCaseGuid>b480ee24-17ea-4861-bf51-f730444d6041</testCaseGuid>
 </TestCaseEntity>

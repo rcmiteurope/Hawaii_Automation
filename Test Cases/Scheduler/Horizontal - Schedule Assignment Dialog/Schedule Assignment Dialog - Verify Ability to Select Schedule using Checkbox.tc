@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Schedule Assignment Dialog - Verify Ability to Select Schedule using Checkbox</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8b050da7-24e6-4f26-8100-380446d88aef</testCaseGuid>
+</TestCaseEntity>

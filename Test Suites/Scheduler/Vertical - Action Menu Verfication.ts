@@ -19,13 +19,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>1692546e-f8b1-4bfb-9271-578d749250c0</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Scheduler/Vertical - Action Menu/Action Menu - Action Checkboxes - Cleared on Date Change</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>523afe8c-85db-4d10-bd00-76e460312f6b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -65,6 +58,13 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Scheduler/Vertical - Action Menu/Action Menu - Verify Providers Initials Are Displayed When Edit Provider is Selected</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>cd921efb-2db5-48af-babe-2d0533b51dcd</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Scheduler/Vertical - Action Menu/Action Menu - Action Checkboxes - Cleared on Date Change</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

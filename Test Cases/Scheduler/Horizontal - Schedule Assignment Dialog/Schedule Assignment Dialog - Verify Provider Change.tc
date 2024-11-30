@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Schedule Assignment Dialog - Verify Provider Change</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1db42dcb-1ee1-4c0e-a9f6-1290296dc095</testCaseGuid>
+</TestCaseEntity>

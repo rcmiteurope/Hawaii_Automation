@@ -31,8 +31,8 @@ horizontalToggle.addProperty('xpath', ConditionType.EQUALS, '//*[@id="root"]/mai
 
 WebUI.check(horizontalToggle)
 
-WebUI.selectOptionByLabel(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="date_filter_select"]'), 
-    'Next Week', false)
+//WebUI.selectOptionByLabel(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="date_filter_select"]'), 
+   // 'Next Week', false)
 
 TestObject bookmarkIcon = new TestObject()
 bookmarkIcon.addProperty('xpath', ConditionType.EQUALS, '//*[@id=":r7:"]')
@@ -45,14 +45,21 @@ WebUI.click(buttonElement)
 
 // Fetch all status values from the table column 4
 List<WebElement> statusElements = WebUI.findWebElements(
-    new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="vertical-table"]/tbody/tr/td[4]'),
+    new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="vertical-table"]/tbody/tr/td[5]'),
     10
 )
+
+WebUI.comment('Logging all statuses from the table:')
+statusElements.each { element ->
+	def statusText = element.getText().trim()
+	WebUI.comment('Status found: "' + statusText + '"')
+}
+
 
 // Verify all statuses are "OPEN"
 boolean allStatusesOpen = statusElements.every { element ->
     def statusText = element.getText().trim()
-    WebUI.comment('Checking status: "' + statusText + '"')
+    WebUI.comment('Checking status: "' + statusText)
     statusText == 'OPEN'
 }
 

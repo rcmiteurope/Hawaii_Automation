@@ -49,8 +49,8 @@ horizontalToggle.addProperty('xpath', ConditionType.EQUALS, '//*[@id="root"]/mai
 
 WebUI.check(horizontalToggle)
 
-WebUI.selectOptionByLabel(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="date_filter_select"]'), 
-    'Next Week', false)
+//WebUI.selectOptionByLabel(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="date_filter_select"]'), 
+  //  'Next Week', false)
 
 WebUI.click(findTestObject('Object Repository/Action Menu/Page_Scheduler/input_Mon, 1125 0800 - 1415_master-checkbox_5083b2'))
 

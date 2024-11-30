@@ -21,6 +21,9 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 import org.openqa.selenium.WebDriver
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject
+import org.openqa.selenium.WebElement 
+import org.openqa.selenium.By 
+import java.util.Random
 
 WebUI.openBrowser('')
 
@@ -38,13 +41,40 @@ driver.manage().addCookie(new Cookie('user_name', 'Borromeo%2C%20Erica'))
 
 WebUI.refresh()
 
-WebUI.selectOptionByLabel(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="date_filter_select"]'),
-	 'Next Week', false)
 
-WebUI.click(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/div_Amelie, Dylan   0800-1415'))
+String cellsXPath = "//table[@id='horizontal-table']//tbody//td/div/div"
 
-WebUI.click(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/button_Cancel_1'))
+try {
+    List<WebElement> cells = WebUI.findWebElements(new TestObject().addProperty("xpath", ConditionType.EQUALS, cellsXPath), 10)
 
-WebUI.verifyElementNotPresent(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/dialog_Student  SchoolWellbrock, Haliaaloha_5d52ee'), 
-    0)
+    if (!cells.isEmpty()) {
+        WebUI.comment("Total cells found: " + cells.size())
+        
+        // Generate a random index
+        Random random = new Random()
+        int randomIndex = random.nextInt(cells.size())
 
+        // Fetch the random cell and click it
+        WebElement randomCell = cells.get(randomIndex)
+
+        // Log information about the cell
+        WebUI.comment("Attempting to click on cell with text: " + randomCell.getText())
+
+        randomCell.click()
+        WebUI.comment("Successfully clicked on a random cell.")
+
+    } else {
+        WebUI.comment("No cells found in the table.")
+    }
+} catch (org.openqa.selenium.StaleElementReferenceException e) {
+    WebUI.comment("StaleElementReferenceException occurred. Consider re-fetching elements.")
+} catch (Exception e) {
+    WebUI.comment("An unexpected error occurred: " + e.getMessage())
+}
+
+// Uncomment the Cancel button logic if needed
+// WebUI.click(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/button_Cancel_1'))
+// WebUI.verifyElementNotPresent(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/dialog_Student  SchoolWellbrock, Haliaaloha_5d52ee'), 0)
+
+// Close the browser
+WebUI.closeBrowser()

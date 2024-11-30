@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Schedule Assignment Dialog - Verify Supervisor Change</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>eab28625-3223-49f0-90a2-f459fd8e54a5</testCaseGuid>
+</TestCaseEntity>

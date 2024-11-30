@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Provider_css-19bb58m</name>
+   <tag></tag>
+   <elementGuidId>de344d9e-f43c-4e2f-8256-80ace7303a20</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/main/dialog/div[2]/div/div/div[2]/div/div[2]/div/div/div/div[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.css-19bb58m</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>.css-19bb58m >> nth=0</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>a2c68166-39aa-4e12-ba09-e14f5689e6a3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value> css-19bb58m</value>
+      <webElementGuid>97863b99-e4b6-4f8c-ae8c-484b653c026c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[@class=&quot;px-3&quot;]/dialog[@class=&quot;dialog rounded-md&quot;]/div[@class=&quot;min-h-[60vh] min-w-[50vw]&quot;]/div[1]/div[@class=&quot;flex p-8&quot;]/div[@class=&quot;ms-6 mt-7&quot;]/div[@class=&quot;flex w-60 flex-col gap-4&quot;]/div[@class=&quot;false&quot;]/div[@class=&quot;css-b62m3t-container&quot;]/div[@class=&quot;css-t3ipsp-control&quot;]/div[@class=&quot;css-hlgwow&quot;]/div[@class=&quot;css-19bb58m&quot;]</value>
+      <webElementGuid>cd006184-86d4-49d8-ab0c-2db5a756c442</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/dialog/div[2]/div/div/div[2]/div/div[2]/div/div/div/div[2]</value>
+      <webElementGuid>05eba79c-0419-4857-9d36-5fb367952ad0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Provider'])[1]/following::div[6]</value>
+      <webElementGuid>11f136f8-ebb3-4957-bc78-93a2f7cb63d7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Barbers Point'])[1]/following::div[45]</value>
+      <webElementGuid>1a3713aa-6e57-41ad-b9f9-af73dbe36d90</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='AAA, Test123'])[1]/preceding::div[4]</value>
+      <webElementGuid>822ac4e2-1ba3-474c-93c6-a2892aa563b8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ABC, Test Prov Hor'])[1]/preceding::div[5]</value>
+      <webElementGuid>ec39f126-eeba-442e-8505-c089dcf266e7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div[2]/div/div/div/div[2]</value>
+      <webElementGuid>5b5e8e23-d259-4201-af3d-47be1a60c96e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

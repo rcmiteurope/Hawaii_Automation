@@ -45,7 +45,7 @@ horizontalToggle.addProperty('xpath', ConditionType.EQUALS, '//*[@id="root"]/mai
 
 WebUI.check(horizontalToggle)
 
-WebUI.selectOptionByLabel(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="date_filter_select"]'), 'Next Week', false)
+//WebUI.selectOptionByLabel(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="date_filter_select"]'), 'Next Week', false)
  
 // Store the actual text for comparison
 String actualText = WebUI.getText(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="tr-main-0"]/td[5]/div'))
