@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Does Not Repeat Option with Remove Color</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ed42728e-0404-402c-b50a-60a6c90124c2</testCaseGuid>
+</TestCaseEntity>

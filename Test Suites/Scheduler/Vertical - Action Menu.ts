@@ -15,7 +15,7 @@
       <guid>6608a79f-76d2-4614-bd96-44d68954b2d9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Scheduler/Vertical - Action Menu/Action Menu - Verify Ability to Change Color</testCaseId>
+      <testCaseId>Test Cases/Scheduler/Vertical - Action Menu/Action Menu - Action Checkboxes - Cleared on Date Change</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

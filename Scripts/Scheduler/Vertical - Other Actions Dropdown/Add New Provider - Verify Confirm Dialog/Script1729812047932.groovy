@@ -45,8 +45,13 @@ horizontalToggle.addProperty('xpath', ConditionType.EQUALS, '//*[@id="root"]/mai
 
 WebUI.check(horizontalToggle)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/AddProvider/Page_Scheduler/select_Other ActionsAdd SchoolAdd StudentAd_8e5993'), 
-    'add-provider', true)
+WebUI.waitForElementVisible(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="other-actions-dropdown"]'), 10)
+
+// Click the dropdown to expand it
+WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="other-actions-dropdown"]'))
+
+// Select the desired option by value
+WebUI.executeJavaScript("document.getElementById('other-actions-dropdown').value = 'add-provider';", null)
 
 WebUI.setText(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="filter-wrapper"]/div[1]/dialog/div[2]/div[1]/input'),
     'Erica')

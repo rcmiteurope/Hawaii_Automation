@@ -40,8 +40,8 @@ TestObject horizontalToggle = new TestObject()
 horizontalToggle.addProperty('xpath', ConditionType.EQUALS, '//*[@id="root"]/main/div[2]/div/div/label/div')
 WebUI.check(horizontalToggle)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/AddProvider/Page_Scheduler/select_Other ActionsAdd SchoolAdd StudentAd_8e5993'), 
-    'add-provider', true)
+WebUI.selectOptionByValue(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="other-actions-dropdown"]'), 'add-provider', true)
+
 
 // Verify the presence of input fields
 TestObject inputField1 = new TestObject()

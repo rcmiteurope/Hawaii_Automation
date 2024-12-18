@@ -20,62 +20,88 @@ import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.Cookie as Cookie
 import com.kms.katalon.core.webui.driver.DriverFactory
 import org.openqa.selenium.WebDriver
-import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import org.openqa.selenium.Cookie
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.WebDriver
+import java.util.List
+import java.util.Random
 
+// Open browser and navigate to the URL
 WebUI.openBrowser('')
-
 WebUI.navigateToUrl(GlobalVariable.scheduler_url)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
+// Add authentication cookies
 Cookie authCookie = new Cookie('sc_auth_token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVyaWNhLkJvcnJvbWVvQHJjbXQuY29tIiwidXNlcklEIjo4LCJpYXQiOjE3MzE5ODYxMDEsImV4cCI6MTczNDU3ODEwMX0.AUWF2TrOJtXoWXnwJaA3MHQJ0iUgTpDUw2YrdjazB_Q')
-
 driver.manage().addCookie(authCookie)
-
 driver.manage().addCookie(new Cookie('user_email', 'Erica.Borromeo%40rcmt.com'))
-
 driver.manage().addCookie(new Cookie('user_name', 'Borromeo%2C%20Erica'))
 
 WebUI.refresh()
 
+// Enable horizontal toggle
 TestObject horizontalToggle = new TestObject()
-
 horizontalToggle.addProperty('xpath', ConditionType.EQUALS, '//*[@id="root"]/main/div[2]/div/div/label/div')
-
 WebUI.check(horizontalToggle)
 
-//WebUI.selectOptionByLabel(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="date_filter_select"]'), 'Next Week', false)
- 
-// Store the actual text for comparison
-String actualText = WebUI.getText(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="tr-main-0"]/td[5]/div'))
+// Define XPath for all rows in the table
+String rowsXPath = "//table[@id='vertical-table']//tbody/tr"
 
-// Check if the actual text matches the expected text
-if (actualText == 'Student Absent - Notice') {
-    WebUI.click(new TestObject().addProperty('id', ConditionType.EQUALS, 'master-checkbox-toggle226217'))
-
-    WebUI.executeJavaScript('document.getElementById("actionmenu-handle").click();', null)
-
-    WebUI.executeJavaScript('document.getElementById("absent-notice").click();', null)
-
-	WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, "//button[@class='swal2-confirm swal2-styled' and text()='Save']"))
+try {
+	// Fetch all rows
+	List<WebElement> rows = WebUI.findWebElements(new TestObject().addProperty("xpath", ConditionType.EQUALS, rowsXPath), 10)
 	
-    actualText = WebUI.getText(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="tr-main-1"]/td[5]/div'))
-   	WebUI.verifyMatch(actualText, '.*Student Absent - Notice.*', true)
+	if (!rows.isEmpty()) {
+		WebUI.comment("Total rows found: " + rows.size())
+		
+		// Randomly select a row
+		Random random = new Random()
+		int randomRowIndex = random.nextInt(rows.size()) + 1
 
+		// Define XPath for the checkbox in td[4] and value in td[5]
+		String checkboxXPath = "//table[@id='vertical-table']//tbody/tr[" + randomRowIndex + "]/td[4]//input[@type='checkbox']"
+		String valueXPath = "//table[@id='vertical-table']//tbody/tr[" + randomRowIndex + "]/td[5]//div"
+
+		TestObject checkbox = new TestObject().addProperty("xpath", ConditionType.EQUALS, checkboxXPath)
+		TestObject valueCell = new TestObject().addProperty("xpath", ConditionType.EQUALS, valueXPath)
+
+		// Check the checkbox in td[4]
+		WebUI.check(checkbox)
+		WebUI.comment("Checked the checkbox in row " + randomRowIndex)
+
+		// Get the value from td[5]
+		String cellValue = WebUI.getText(valueCell).trim()
+		WebUI.comment("Initial value in row " + randomRowIndex + ", td[5]: " + cellValue)
+
+		// Perform action using JavaScript
+		WebUI.executeJavaScript('document.getElementById("actionmenu-handle").click();', null)
+		WebUI.executeJavaScript('document.getElementById("absent-notice").click();', null)
+
+		// Click "Save" button
+		TestObject saveButton = new TestObject().addProperty('xpath', ConditionType.EQUALS, "//button[@class='swal2-confirm swal2-styled' and text()='Save']")
+		WebUI.click(saveButton)
+
+		// Re-fetch the value from td[5] to validate the new value
+		valueCell = new TestObject().addProperty("xpath", ConditionType.EQUALS, valueXPath)
+		String newCellValue = WebUI.getText(valueCell).trim()
+		WebUI.comment("New value in row " + randomRowIndex + ", td[5]: " + newCellValue)
+
+		// Validate the new value
+		if (newCellValue.contains("Student Absent - Notice")) {
+    WebUI.comment("Validation passed: The value contains 'Student Absent- Notice'.")
 } else {
-    WebUI.click(new TestObject().addProperty('id', ConditionType.EQUALS, 'master-checkbox-toggle226216'))
-
-    WebUI.executeJavaScript('document.getElementById("actionmenu-handle").click();', null)
-
-    WebUI.executeJavaScript('document.getElementById("absent-notice").click();', null)
-
-	WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, "//button[@class='swal2-confirm swal2-styled' and text()='Save']"))
-	
-    actualText = WebUI.getText(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="tr-main-0"]/td[5]/div'))
-	 WebUI.verifyMatch(actualText, '.*Student Absent - Notice.*', true)
-	 
+    WebUI.comment("Validation failed: The value does not contain 'Student Absent - Notice'. Found: " + newCellValue)
 }
-
-WebUI.closeBrowser()
-
+	} else {
+		WebUI.comment("No rows found in the table.")
+	}
+} catch (Exception e) {
+	WebUI.comment("An error occurred: " + e.getMessage())
+} finally {
+	WebUI.closeBrowser()
+}

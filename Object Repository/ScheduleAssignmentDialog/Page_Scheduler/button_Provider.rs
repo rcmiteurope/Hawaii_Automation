@@ -7,10 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@type='button']</value>
+         <value>//button[@id='provider-button']</value>
       </entry>
       <entry>
          <key>CSS</key>
+         <value>#provider-button</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -28,15 +29,23 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>bbb3a614-f72b-4805-bd6a-d8c9d08cf18d</webElementGuid>
+      <webElementGuid>3889366b-c2da-429d-875f-f7c0afec82de</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>provider-button</value>
+      <webElementGuid>1896e6d5-34a6-410f-a104-f0d2e43b5b88</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-2 px-4 rounded-lg border border-gray-900 text-gray-900 hover:opacity-75 focus:ring focus:ring-gray-300 active:opacity-[0.85]</value>
-      <webElementGuid>5b97c8e4-2a1d-43a8-91f8-3b0f2bbe131d</webElementGuid>
+      <value>align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-2 px-4 rounded-lg border border-gray-900 text-gray-900 hover:opacity-75 focus:ring focus:ring-gray-300 active:opacity-[0.85] flex-grow</value>
+      <webElementGuid>47698785-e59a-46da-b11d-1683ac142e98</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -44,7 +53,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>5c0e340d-cf1b-458a-b4e8-346cb43e1770</webElementGuid>
+      <webElementGuid>6444a2b3-a2b3-4a6b-b5b0-d5c7344267fd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -52,23 +61,23 @@
       <name>text</name>
       <type>Main</type>
       <value>Provider</value>
-      <webElementGuid>0202e134-e705-4f4f-ac47-e2b9081e1c03</webElementGuid>
+      <webElementGuid>7c3d475c-3672-44f3-b31b-5e55b6189092</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;root&quot;)/main[@class=&quot;px-3&quot;]/dialog[@class=&quot;dialog border-4 border-solid border-black&quot;]/div[@class=&quot;min-h-[60vh] min-w-[50vw]&quot;]/div[1]/div[@class=&quot;flex p-8&quot;]/div[@class=&quot;ms-6 mt-6&quot;]/div[@class=&quot;flex w-60 flex-col gap-2&quot;]/div[@class=&quot;flex flex-col gap-2&quot;]/button[@class=&quot;align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-2 px-4 rounded-lg border border-gray-900 text-gray-900 hover:opacity-75 focus:ring focus:ring-gray-300 active:opacity-[0.85]&quot;]</value>
-      <webElementGuid>7fda75c0-c536-4735-b287-d49a7fffee2c</webElementGuid>
+      <value>id(&quot;provider-button&quot;)</value>
+      <webElementGuid>6ad815fe-06d9-49b0-b6d0-0ddc665fa454</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//button[@type='button']</value>
-      <webElementGuid>5f24d0cc-e3a0-4d66-8056-3c4bdc883b89</webElementGuid>
+      <value>//button[@id='provider-button']</value>
+      <webElementGuid>adb249b5-dd20-4446-acaa-68c2b6af6b3d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -76,39 +85,39 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/main/dialog/div[2]/div/div/div[2]/div/div/button</value>
-      <webElementGuid>d88bea38-8d23-4a9e-9e69-22c797ddcf6d</webElementGuid>
+      <webElementGuid>7243a5c5-b8a2-46d7-9be3-e4ee92580038</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Aina Haina'])[1]/following::button[1]</value>
-      <webElementGuid>5e8c7ca9-7f7c-493f-ac32-8351452e3008</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Select Options'])[1]/following::button[3]</value>
+      <webElementGuid>4fac9f13-4c89-45b4-8cea-046e70eb2170</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Jay-Funaki, Nya'])[1]/following::button[1]</value>
-      <webElementGuid>98688c42-d588-4245-a1d2-49bedee70802</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Does Not Repeat'])[1]/following::button[3]</value>
+      <webElementGuid>aac136e3-ab33-4bcd-9be4-82cb18e9644c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Supervisor'])[1]/preceding::button[1]</value>
-      <webElementGuid>dc1e2560-8e19-421b-a5f9-d88cf41dc9a0</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Supervisor'])[1]/preceding::button[2]</value>
+      <webElementGuid>42f81485-8a22-405e-bb44-a41d1f85eba2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Remove Supervisor'])[1]/preceding::button[2]</value>
-      <webElementGuid>562e6ade-1ca7-4f84-aba2-907b90501708</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Remove Supervisor'])[1]/preceding::button[4]</value>
+      <webElementGuid>e91c6ec2-3208-44f2-b0d1-b4caa2279366</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -116,22 +125,22 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Provider']/parent::*</value>
-      <webElementGuid>f089ffe8-0803-4c3b-a4d8-d51a3912b008</webElementGuid>
+      <webElementGuid>6be206a9-e84d-404c-b948-27439ad0d7d5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//button</value>
-      <webElementGuid>1dac47b6-6e8a-49f3-9ccd-a88ec1348b87</webElementGuid>
+      <value>//div[2]/div/div/button</value>
+      <webElementGuid>dd22e468-b8b8-4b02-b705-865e2632f4b0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//button[@type = 'button' and (text() = 'Provider' or . = 'Provider')]</value>
-      <webElementGuid>254c4b2d-28f2-4640-8460-2618cc2438d6</webElementGuid>
+      <value>//button[@id = 'provider-button' and @type = 'button' and (text() = 'Provider' or . = 'Provider')]</value>
+      <webElementGuid>23d7c548-35f3-4c5f-980b-0bf2810043f9</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Does Not Repeat Option with Holiday</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>eec36896-8939-4f68-8366-cc9f9adf3131</testCaseGuid>
+</TestCaseEntity>

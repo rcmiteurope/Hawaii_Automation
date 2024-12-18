@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Does Not Repeat Option with Open</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a05d5668-452a-46bf-a1dd-0041ce4c3ffb</testCaseGuid>
+</TestCaseEntity>

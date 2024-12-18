@@ -3,6 +3,7 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -19,51 +20,109 @@ import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.Cookie as Cookie
 import com.kms.katalon.core.webui.driver.DriverFactory
 import org.openqa.selenium.WebDriver
-import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject
 import org.openqa.selenium.WebElement
-import org.openqa.selenium.By
-import com.kms.katalon.core.webui.driver.DriverFactory
+import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import org.openqa.selenium.By
+import org.openqa.selenium.Cookie
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.WebDriver
+import java.util.List
+import java.util.Random
 
+
+// Open browser and navigate to the URL
 WebUI.openBrowser('')
-
 WebUI.navigateToUrl(GlobalVariable.scheduler_url)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
+// Add authentication cookies
 Cookie authCookie = new Cookie('sc_auth_token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVyaWNhLkJvcnJvbWVvQHJjbXQuY29tIiwidXNlcklEIjo4LCJpYXQiOjE3MzE5ODYxMDEsImV4cCI6MTczNDU3ODEwMX0.AUWF2TrOJtXoWXnwJaA3MHQJ0iUgTpDUw2YrdjazB_Q')
-
 driver.manage().addCookie(authCookie)
-
 driver.manage().addCookie(new Cookie('user_email', 'Erica.Borromeo%40rcmt.com'))
-
 driver.manage().addCookie(new Cookie('user_name', 'Borromeo%2C%20Erica'))
 
 WebUI.refresh()
 
+// Enable horizontal toggle
 TestObject horizontalToggle = new TestObject()
-
 horizontalToggle.addProperty('xpath', ConditionType.EQUALS, '//*[@id="root"]/main/div[2]/div/div/label/div')
-
 WebUI.check(horizontalToggle)
 
-//WebUI.selectOptionByLabel(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="date_filter_select"]'), 
-  //  'Next Week', false)
+// Define XPath for all rows in the table
+String rowsXPath = "//table[@id='vertical-table']//tbody/tr"
 
-WebUI.click(findTestObject('Object Repository/Action Menu/Page_Scheduler/input_Mon, 1125 0800 - 1415_master-checkbox_5083b2'))
+try {
+	// Fetch all rows
+	List<WebElement> rows = WebUI.findWebElements(new TestObject().addProperty("xpath", ConditionType.EQUALS, rowsXPath), 10)
+	
+	if (!rows.isEmpty()) {
+		WebUI.comment("Total rows found: " + rows.size())
+		
+		Random random = new Random()
+		boolean foundEnabledButton = false
+		int attempts = 0
 
-WebUI.executeJavaScript('document.getElementById("actionmenu-handle").click();', null)
+		while (attempts < rows.size() && !foundEnabledButton) {
+			attempts++
+			// Randomly select a row
+			int randomRowIndex = random.nextInt(rows.size()) + 1
 
-WebElement weEditProvider = driver.findElement(By.xpath('//*[@id="provider-callout"]'))	// todo: change xpath
-TestObject toEditProvider = WebUI.convertWebElementToTestObject(weEditProvider)
-WebUI.click(toEditProvider)
+			// Define XPath for the checkbox in td[4] and value in td[5]
+			String checkboxXPath = "//table[@id='vertical-table']//tbody/tr[" + randomRowIndex + "]/td[4]//input[@type='checkbox']"
+			String valueXPath = "//table[@id='vertical-table']//tbody/tr[" + randomRowIndex + "]/td[5]//div"
 
-WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, "//button[@class='swal2-confirm swal2-styled' and text()='Save']"))
- 
-String actualText = WebUI.getText(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="tr-main-0"]/td[5]/div'))
-WebUI.verifyMatch(actualText, 'OPEN', true)
+			TestObject checkbox = new TestObject().addProperty("xpath", ConditionType.EQUALS, checkboxXPath)
+			TestObject valueCell = new TestObject().addProperty("xpath", ConditionType.EQUALS, valueXPath)
 
-WebUI.closeBrowser()
+			// Get the value from td[5]
+			String cellValue = WebUI.getText(valueCell).trim()
+			WebUI.comment("Row " + randomRowIndex + " td[5] value: " + cellValue)
 
+			try {
+				// Check the checkbox in td[4]
+				WebUI.check(checkbox)
+				WebUI.comment("Checked the checkbox in row " + randomRowIndex)
+
+				// Perform action using JavaScript
+				WebUI.executeJavaScript('document.getElementById("actionmenu-handle").click();', null)
+				
+				// Check if the `provider-callout` button is enabled
+				boolean isButtonDisabled = WebUI.executeJavaScript('return document.getElementById("provider-callout").disabled;', null)
+				
+				if (!isButtonDisabled) {
+					WebUI.executeJavaScript('document.getElementById("provider-callout").click();', null)
+					foundEnabledButton = true
+					WebUI.comment("Successfully clicked 'provider-callout' button in row " + randomRowIndex)
+
+					// Re-fetch the value from td[5] for validation
+					String newCellValue = WebUI.getText(valueCell).trim()
+					WebUI.comment("New value in row " + randomRowIndex + ", td[5]: " + newCellValue)
+
+					// Validate the new value contains "OPEN"
+					if (newCellValue.contains("OPEN")) {
+						WebUI.comment("Validation passed: The value contains 'OPEN'.")
+					} else {
+						throw new AssertionError("Validation failed: The value does not contain 'OPEN'. Found: " + newCellValue)
+					}
+				} else {
+					WebUI.comment("Button disabled for row " + randomRowIndex + ". Retrying...")
+				}
+			} catch (Exception e) {
+				WebUI.comment("An error occurred while processing row " + randomRowIndex + ": " + e.getMessage())
+			}
+		}
+
+		if (!foundEnabledButton) {
+			throw new AssertionError("No enabled 'provider-callout' button found in the table after " + attempts + " attempts.")
+		}
+	} else {
+		throw new AssertionError("No rows found in the table.")
+	}
+} catch (Exception e) {
+	WebUI.comment("An error occurred: " + e.getMessage())
+	throw e // Rethrow exception to fail the test
+} finally {
+	WebUI.closeBrowser()
+}

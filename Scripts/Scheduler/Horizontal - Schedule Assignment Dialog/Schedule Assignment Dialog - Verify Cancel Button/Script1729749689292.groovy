@@ -72,6 +72,8 @@ try {
     WebUI.comment("An unexpected error occurred: " + e.getMessage())
 }
 
+WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="sched-dialog-cancel"]'))
+ 
 // Uncomment the Cancel button logic if needed
 // WebUI.click(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/button_Cancel_1'))
 // WebUI.verifyElementNotPresent(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/dialog_Student  SchoolWellbrock, Haliaaloha_5d52ee'), 0)

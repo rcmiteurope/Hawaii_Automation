@@ -21,6 +21,11 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import org.openqa.selenium.Cookie as Cookie
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.testobject.ConditionType
+import org.openqa.selenium.WebElement
+import java.util.List
 
 WebUI.openBrowser('')
 
@@ -37,15 +42,39 @@ driver.manage().addCookie(new Cookie('user_email', 'Erica.Borromeo%40rcmt.com'))
 driver.manage().addCookie(new Cookie('user_name', 'Borromeo%2C%20Erica'))
 
 WebUI.refresh()
+
 TestObject horizontalToggle = new TestObject()
 
 horizontalToggle.addProperty('xpath', ConditionType.EQUALS, '//*[@id="root"]/main/div[2]/div/div/label/div')
 
-WebUI.check(horizontalToggle)
+WebUI.click(horizontalToggle)
 
-TestObject masterCheckbox = new TestObject()
-masterCheckbox.addProperty('xpath', ConditionType.EQUALS, '//*[@id="master-checkbox-toggle226216"]')
+String rowsXPath = "//table[@id='vertical-table']//tbody/tr"
 
-// Verify the element is clickable
-WebUI.verifyElementClickable(masterCheckbox)
+try {
+	// Fetch all rows
+	List<WebElement> rows = WebUI.findWebElements(new TestObject().addProperty("xpath", ConditionType.EQUALS, rowsXPath), 10)
+	
+	if (!rows.isEmpty()) {
+		WebUI.comment("Total rows found: " + rows.size())
+		
+		// Loop through all rows and validate checkboxes in the 4th <td>
+		for (int i = 1; i <= rows.size(); i++) {
+			// Define XPath for checkbox in the 4th <td> of the current row
+			String checkboxXPath = "//table[@id='vertical-table']//tbody/tr[" + i + "]/td[4]//input[@type='checkbox']"
+			TestObject checkbox = new TestObject().addProperty("xpath", ConditionType.EQUALS, checkboxXPath)
+			
+			// Check if the checkbox is clickable
+			if (WebUI.verifyElementClickable(checkbox, 5)) {
+				WebUI.comment("Checkbox in row " + i + " is clickable.")
+			} else {
+				WebUI.comment("ERROR: Checkbox in row " + i + " is NOT clickable.")
+			}
+		}
+	} else {
+		WebUI.comment("No rows found in the table.")
+	}
+} catch (Exception e) {
+	WebUI.comment("An error occurred: " + e.getMessage())
+}
 WebUI.closeBrowser();

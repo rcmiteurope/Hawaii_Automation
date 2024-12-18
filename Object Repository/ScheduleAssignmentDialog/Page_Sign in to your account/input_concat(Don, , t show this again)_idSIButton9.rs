@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>2cc15f0d-bf37-45aa-82eb-695bfad7df7a</webElementGuid>
+      <webElementGuid>f5f9b24d-11bc-4ad4-b769-e87aa99eb19b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>type</name>
       <type>Main</type>
       <value>submit</value>
-      <webElementGuid>0f61b9b3-d829-4330-9ae9-b5256db6fba5</webElementGuid>
+      <webElementGuid>e67dc034-63ae-4b8f-828f-6ce484940c31</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>id</name>
       <type>Main</type>
       <value>idSIButton9</value>
-      <webElementGuid>e5f0d35a-f74c-4ffc-9353-2f4dc0452ca5</webElementGuid>
+      <webElementGuid>e03db4cb-8375-4467-9ef9-3d3460054572</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>class</name>
       <type>Main</type>
       <value>win-button button_primary button ext-button primary ext-primary</value>
-      <webElementGuid>352e4087-2e3d-42a8-b5c1-e5055dffbe08</webElementGuid>
+      <webElementGuid>0eb974d3-febd-4e8f-b28b-c5e2eb79bb31</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>data-report-event</name>
       <type>Main</type>
       <value>Signin_Submit</value>
-      <webElementGuid>f4e0ec38-5519-4662-a231-9b46edbd9a8c</webElementGuid>
+      <webElementGuid>80658331-fa24-401c-93f7-159ac609250a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>data-report-trigger</name>
       <type>Main</type>
       <value>click</value>
-      <webElementGuid>f3677ef1-60ee-4f9f-ab89-63243e1673d3</webElementGuid>
+      <webElementGuid>9a9d1070-28c7-42ca-a105-a60e27dfc741</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>data-report-value</name>
       <type>Main</type>
       <value>Submit</value>
-      <webElementGuid>d5dbdc49-a31e-4061-9ef8-d2610db681d6</webElementGuid>
+      <webElementGuid>376cbf3a-73d5-46a3-ba36-f18b4ac5bb0c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -97,7 +97,7 @@
                 enable: isPrimaryButtonEnabled,
                 visible: isPrimaryButtonVisible,
                 preventTabbing: primaryButtonPreventTabbing</value>
-      <webElementGuid>1d81973b-1d9c-4bba-b6e2-24efaaf9c7b6</webElementGuid>
+      <webElementGuid>22b495a5-57fe-413d-ab34-8e85b8a5f8d2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -105,7 +105,7 @@
       <name>aria-describedby</name>
       <type>Main</type>
       <value>KmsiDescription</value>
-      <webElementGuid>428b2376-2884-4ff0-97c7-d9daec6a0c5a</webElementGuid>
+      <webElementGuid>557c6c03-9b92-46ff-8e32-3b83df401af3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -113,7 +113,7 @@
       <name>value</name>
       <type>Main</type>
       <value>Yes</value>
-      <webElementGuid>9d60fdb3-0ae7-40ce-9c57-20466bb6a091</webElementGuid>
+      <webElementGuid>cf11f9c7-6ed4-49dc-9ac0-1554b9d17aa8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -121,7 +121,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;idSIButton9&quot;)</value>
-      <webElementGuid>1f642349-f92b-4c71-9b2a-6539b855a039</webElementGuid>
+      <webElementGuid>7647d449-5305-4561-8d5e-da982c5c6c13</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -129,7 +129,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='idSIButton9']</value>
-      <webElementGuid>974b0917-1e0c-45c2-9ebb-bc67b2b3754d</webElementGuid>
+      <webElementGuid>5bbbee6e-479d-4766-8662-f6549ef041a3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -137,7 +137,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='lightbox']/div[3]/div/div[2]/div/div[3]/div[2]/div/div/div[2]/input</value>
-      <webElementGuid>e4db0e16-f2e6-4952-81c8-0c25336b4b18</webElementGuid>
+      <webElementGuid>ab67477b-5313-4739-82b0-924fe652ad1b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -145,7 +145,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/input</value>
-      <webElementGuid>17f118e0-1b45-4b97-826e-fb3e12898d1f</webElementGuid>
+      <webElementGuid>b08fcaac-8280-4810-96bd-ac3c7c625964</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -153,6 +153,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'submit' and @id = 'idSIButton9']</value>
-      <webElementGuid>2bcd3aed-adff-4201-bc48-bccc7bad8d8b</webElementGuid>
+      <webElementGuid>35d58adf-601b-4418-bf8e-8a743ecf79f2</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

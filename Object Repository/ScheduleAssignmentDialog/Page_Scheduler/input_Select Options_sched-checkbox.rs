@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_Select Options_sched-checkbox</name>
+   <tag></tag>
+   <elementGuidId>e7da726d-65f8-43c4-83eb-b64085c2924b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//input[@id='sched-checkbox'])[5]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div:nth-of-type(5) > div.grid.grid-cols-12 > div.border-stone-700.col-span-10.border-2.text-center.align-middle > div.flex.py-3 > div.inline-flex.items-center > label.relative.flex.items-center.cursor-pointer.p-3.rounded-full > #sched-checkbox</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div:nth-child(5) > .grid > .border-stone-700 > div > .inline-flex > label > #sched-checkbox</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>858d8977-e5f9-41f5-9149-b71ee10149ec</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>sched-checkbox</value>
+      <webElementGuid>8f49eaaa-e324-40cb-9eed-e40199fd3263</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>checkbox</value>
+      <webElementGuid>4eb60203-08e3-4fae-bbfc-d3e56b16c420</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>peer relative appearance-none w-5 h-5 border rounded-md cursor-pointer transition-all before:content[''] before:block before:bg-blue-gray-500 before:w-12 before:h-12 before:rounded-full before:absolute before:top-2/4 before:left-2/4 before:-translate-y-2/4 before:-translate-x-2/4 before:opacity-0 hover:before:opacity-10 before:transition-opacity checked:bg-blue-500 checked:border-blue-500 checked:before:bg-blue-500 border-gray-600</value>
+      <webElementGuid>3a0dc91d-e60d-4ae8-8bc0-6e072f8a2018</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;sched_holder&quot;)/div[5]/div[@class=&quot;grid grid-cols-12&quot;]/div[@class=&quot;border-stone-700 col-span-10 border-2  text-center align-middle&quot;]/div[@class=&quot;flex py-3&quot;]/div[@class=&quot;inline-flex items-center&quot;]/label[@class=&quot;relative flex items-center cursor-pointer p-3 rounded-full&quot;]/input[@id=&quot;sched-checkbox&quot;]</value>
+      <webElementGuid>008ad145-1727-4e55-9746-787cad43e82e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//input[@id='sched-checkbox'])[5]</value>
+      <webElementGuid>7c62e212-b565-49da-8835-0f1a24f6b579</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='sched_holder']/div[5]/div/div[2]/div/div/label/input</value>
+      <webElementGuid>6bb539f7-2be0-4980-b9ae-e419a49a9850</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[5]/div/div[2]/div/div/label/input</value>
+      <webElementGuid>6253f3bf-46e9-46df-87d2-c69f3d941205</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@id = 'sched-checkbox' and @type = 'checkbox']</value>
+      <webElementGuid>83042ab7-3042-4e34-87b5-205f1ee7c3fe</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

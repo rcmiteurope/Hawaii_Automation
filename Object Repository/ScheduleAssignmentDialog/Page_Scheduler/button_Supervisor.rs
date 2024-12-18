@@ -7,10 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@type='button'])[2]</value>
+         <value>//button[@id='supervisor-button']</value>
       </entry>
       <entry>
          <key>CSS</key>
+         <value>#supervisor-button</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -28,15 +29,23 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>650a69bb-5687-4a5b-977f-58c2fb52f18b</webElementGuid>
+      <webElementGuid>ce8de052-ab86-4bde-b9fc-8eb7b77e1ab0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>supervisor-button</value>
+      <webElementGuid>dcfb81f4-e6db-4c96-860f-230d3f518a3d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-2 px-4 rounded-lg border border-gray-900 text-gray-900 hover:opacity-75 focus:ring focus:ring-gray-300 active:opacity-[0.85]</value>
-      <webElementGuid>4f26cf4d-30f1-4d13-a5e2-bb115155db4a</webElementGuid>
+      <value>align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-2 px-4 rounded-lg border border-gray-900 text-gray-900 hover:opacity-75 focus:ring focus:ring-gray-300 active:opacity-[0.85] flex-grow</value>
+      <webElementGuid>eef6b47c-d5cc-46f6-8a7d-8404aec1c51c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -44,7 +53,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>95d8e008-e283-4f92-bf03-1f2d7c1ac193</webElementGuid>
+      <webElementGuid>e0017132-c36f-4650-b1a9-ce7c2cc28943</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -52,63 +61,63 @@
       <name>text</name>
       <type>Main</type>
       <value>Supervisor</value>
-      <webElementGuid>77f64905-21d3-4aee-ae86-5b492d956537</webElementGuid>
+      <webElementGuid>a3815cb6-ed82-426a-bf8d-fcd5671e1f6f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;root&quot;)/main[@class=&quot;px-3&quot;]/dialog[@class=&quot;dialog border-4 border-solid border-black&quot;]/div[@class=&quot;min-h-[60vh] min-w-[50vw]&quot;]/div[1]/div[@class=&quot;flex p-8&quot;]/div[@class=&quot;ms-6 mt-6&quot;]/div[@class=&quot;flex w-60 flex-col gap-2&quot;]/div[@class=&quot;flex flex-col gap-2&quot;]/button[@class=&quot;align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-2 px-4 rounded-lg border border-gray-900 text-gray-900 hover:opacity-75 focus:ring focus:ring-gray-300 active:opacity-[0.85]&quot;]</value>
-      <webElementGuid>140887b6-75ee-496f-ae45-b86c2d76331d</webElementGuid>
+      <value>id(&quot;supervisor-button&quot;)</value>
+      <webElementGuid>fb5844c0-447c-4cc5-b1fb-c3b5f1d91b73</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//button[@type='button'])[2]</value>
-      <webElementGuid>e1697622-24ea-4ea4-9d9a-3010078c04b1</webElementGuid>
+      <value>//button[@id='supervisor-button']</value>
+      <webElementGuid>d80cc852-0cfb-4349-bc92-af4191207c76</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='root']/main/dialog/div[2]/div/div/div[2]/div/div[2]/button</value>
-      <webElementGuid>9751132c-f5ae-4987-93dd-2fb2203cf7b9</webElementGuid>
+      <value>//div[@id='root']/main/dialog/div[2]/div/div/div[2]/div/div[3]/button</value>
+      <webElementGuid>a7a3f473-087d-49dc-a35e-97a13d1ee7db</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Provider'])[1]/following::button[1]</value>
-      <webElementGuid>299cc66f-a19b-4a31-9dda-56a1d8c52d5f</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Search...'])[1]/following::button[1]</value>
+      <webElementGuid>b819a3e0-55f7-44c6-8a5e-a709181540a9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Aina Haina'])[1]/following::button[2]</value>
-      <webElementGuid>bddea966-9f3b-4652-8ec1-54c50bbd650e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Provider'])[1]/following::button[2]</value>
+      <webElementGuid>c2213a40-01ef-4e23-8ede-b0f5cde13113</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Remove Supervisor'])[1]/preceding::button[1]</value>
-      <webElementGuid>9aeb2c41-0192-46ed-9c8b-2a16c0882c1a</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Search...'])[2]/preceding::button[2]</value>
+      <webElementGuid>25cafd49-5e29-4071-b5a4-dbcdb213500d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Absent - NCNS'])[1]/preceding::button[2]</value>
-      <webElementGuid>96cfcaa4-0a61-484c-a1ec-6182355ffcc6</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Remove Supervisor'])[1]/preceding::button[2]</value>
+      <webElementGuid>d1916ce1-c2d1-47d1-a132-ede4d34279dd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -116,22 +125,22 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Supervisor']/parent::*</value>
-      <webElementGuid>cda7f187-9b8e-4d65-a221-d6d28dc659c5</webElementGuid>
+      <webElementGuid>0361bdb3-631f-47de-9ad2-ba51eae5104c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div/div[2]/div/div[2]/button</value>
-      <webElementGuid>f1201957-4286-4797-adcd-02b2b4d6a2da</webElementGuid>
+      <value>//div[3]/button</value>
+      <webElementGuid>e3aa4060-b1f5-458c-b8a1-bcb8615a343c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//button[@type = 'button' and (text() = 'Supervisor' or . = 'Supervisor')]</value>
-      <webElementGuid>e7590a9a-157e-4c00-aafc-ff3e35afe348</webElementGuid>
+      <value>//button[@id = 'supervisor-button' and @type = 'button' and (text() = 'Supervisor' or . = 'Supervisor')]</value>
+      <webElementGuid>cac56a68-7fb7-467a-a77f-f3f39d4d8190</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

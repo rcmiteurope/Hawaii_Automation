@@ -6,11 +6,12 @@
    <elementGuidId>32b74c74-50d7-4e24-b84d-527a2401b83a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>//button[@id='sched-dialog-cancel']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@type='button'])[10]</value>
+         <key>CSS</key>
+         <value>#sched-dialog-cancel</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -28,15 +29,23 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>62493a57-27c6-4200-b621-8a424c11d93f</webElementGuid>
+      <webElementGuid>4a2158f2-5c2c-4b24-9d6c-f770af9d365f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>sched-dialog-cancel</value>
+      <webElementGuid>5c85a44e-0c6c-4f30-904a-e9f1f2692cec</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none</value>
-      <webElementGuid>7c09c412-809a-45da-9e0c-f558d6f2f253</webElementGuid>
+      <value>align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none text-xs</value>
+      <webElementGuid>fd6c2f48-454b-4207-92a2-a38607ccf348</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -44,7 +53,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>c93b6b1e-0f54-4b19-87ea-1e91dc5ed324</webElementGuid>
+      <webElementGuid>d791bf4e-53c5-4f83-9bc1-bbf984d42400</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -52,31 +61,31 @@
       <name>text</name>
       <type>Main</type>
       <value>Cancel</value>
-      <webElementGuid>9f006de3-5ca8-415c-8d56-b5d0bb03dd7a</webElementGuid>
+      <webElementGuid>a7bb98b9-45d0-4309-bf84-7c4a947e0367</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;root&quot;)/main[@class=&quot;px-3&quot;]/dialog[@class=&quot;dialog border-4 border-solid border-black&quot;]/div[@class=&quot;min-h-[60vh] min-w-[50vw]&quot;]/div[1]/div[@class=&quot;flex justify-center gap-5 p-2&quot;]/button[@class=&quot;align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none&quot;]</value>
-      <webElementGuid>83a28795-266b-4829-bb30-eee51964614f</webElementGuid>
+      <value>id(&quot;sched-dialog-cancel&quot;)</value>
+      <webElementGuid>fd73d31c-a2ab-48ab-81a6-fa409d90fbc3</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//button[@type='button'])[10]</value>
-      <webElementGuid>439e63fb-448f-423a-8092-1c3217551205</webElementGuid>
+      <value>//button[@id='sched-dialog-cancel']</value>
+      <webElementGuid>4e45226f-c9db-47e5-bf9a-5a145cff6614</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='root']/main/dialog/div[2]/div/div[2]/button[2]</value>
-      <webElementGuid>72fcc4f9-16dd-409e-b3b3-8a9cea20395c</webElementGuid>
+      <value>//div[@id='root']/main/dialog/div[2]/div/div/div[2]/div/div[5]/button[2]</value>
+      <webElementGuid>c7768dda-02c8-46e9-9b80-940ce80b9e4e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -84,15 +93,15 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/following::button[1]</value>
-      <webElementGuid>b55978f8-65c2-4a80-9a0e-3bba7d35840e</webElementGuid>
+      <webElementGuid>ba29d918-1a1a-4859-a006-898bd5c1569d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='OPEN'])[3]/following::button[3]</value>
-      <webElementGuid>a6d64d87-69b3-499b-9eba-4625e8a09b15</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Remove Color'])[1]/following::button[2]</value>
+      <webElementGuid>4766583e-2ea4-43f1-b7b6-094668249792</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -100,7 +109,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Horizontal'])[1]/preceding::button[1]</value>
-      <webElementGuid>8c281062-4dbb-4756-ae45-8cec34fdf300</webElementGuid>
+      <webElementGuid>ebfb513f-146d-48b5-8998-4a843cf1e361</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -108,7 +117,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Honolulu'])[1]/preceding::button[1]</value>
-      <webElementGuid>a94ecf74-ff32-46a9-94d1-a98077afffbc</webElementGuid>
+      <webElementGuid>ac844f6f-9c6e-42db-8289-e89672e3d38b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -116,22 +125,22 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Cancel']/parent::*</value>
-      <webElementGuid>61cf6fa8-0a6c-461c-a67f-46473ce48a35</webElementGuid>
+      <webElementGuid>84eea00d-114d-41a4-b64c-9769e07133db</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/button[2]</value>
-      <webElementGuid>f87141e6-12cb-4875-a8d0-bec9130d8f8b</webElementGuid>
+      <value>//div[5]/button[2]</value>
+      <webElementGuid>5b1f3654-e31a-4099-83ba-aaf625387716</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//button[@type = 'button' and (text() = 'Cancel' or . = 'Cancel')]</value>
-      <webElementGuid>bc2ea7f9-cc4b-4a93-bf40-3a28fa4f8cdc</webElementGuid>
+      <value>//button[@id = 'sched-dialog-cancel' and @type = 'button' and (text() = 'Cancel' or . = 'Cancel')]</value>
+      <webElementGuid>5d8d39d1-4a13-41e3-9c2f-6db4c5655801</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
