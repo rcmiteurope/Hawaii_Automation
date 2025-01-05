@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Horizontal - Verify Horizontal Toggle Button Enabled</name>
+   <name>Schedule Assignment Dialog - Verify Remove Color</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>86e61a30-7051-4627-98cb-38c0ea9dd2dc</testCaseGuid>
+   <testCaseGuid>4cdbe881-5461-4b73-9786-2f6952f8f3ce</testCaseGuid>
 </TestCaseEntity>

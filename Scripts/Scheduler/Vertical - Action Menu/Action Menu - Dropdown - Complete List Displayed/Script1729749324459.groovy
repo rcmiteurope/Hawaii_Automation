@@ -21,13 +21,13 @@ WebUI.navigateToUrl(GlobalVariable.scheduler_url)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-Cookie authCookie = new Cookie('sc_auth_token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVyaWNhLkJvcnJvbWVvQHJjbXQuY29tIiwidXNlcklEIjo4LCJpYXQiOjE3MzE5ODYxMDEsImV4cCI6MTczNDU3ODEwMX0.AUWF2TrOJtXoWXnwJaA3MHQJ0iUgTpDUw2YrdjazB_Q')
+Cookie authCookie = new Cookie('sc_auth_token', GlobalVariable.sc_auth_token)
 
 driver.manage().addCookie(authCookie)
 
-driver.manage().addCookie(new Cookie('user_email', 'Erica.Borromeo%40rcmt.com'))
+driver.manage().addCookie(new Cookie('user_email', GlobalVariable.user_email))
 
-driver.manage().addCookie(new Cookie('user_name', 'Borromeo%2C%20Erica'))
+driver.manage().addCookie(new Cookie('user_name', GlobalVariable.user_name))
 
 WebUI.refresh()
 

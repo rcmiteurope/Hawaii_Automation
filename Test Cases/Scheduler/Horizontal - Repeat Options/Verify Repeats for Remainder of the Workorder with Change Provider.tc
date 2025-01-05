@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Verify Repeats for Remainder of the Workorder with Change Providerase</name>
+   <name>Verify Repeats for Remainder of the Workorder with Change Provider</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
