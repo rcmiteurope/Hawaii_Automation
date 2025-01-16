@@ -27,11 +27,8 @@ driver.manage().addCookie(new Cookie('user_name', GlobalVariable.user_name))
 
 WebUI.refresh()
 
-// Check Horizontal Toggle
-WebUI.check(new TestObject("dynamicObj").addProperty("xpath", ConditionType.EQUALS, "//*[@id='root']/main/div[2]/div[1]/div[1]/div/div"))
- 
 // Locate the dropdown using the XPath
-WebElement dropdown = driver.findElement(By.id('provider_filter_select'))
+WebElement dropdown = driver.findElement(By.id('date_filter_select'))
 dropdown.click()
 
 // Wait for options to be visible (optional, adjust if necessary)
@@ -41,10 +38,10 @@ dropdown.click()
 List<WebElement> options = dropdown.findElements(By.tagName('option'))
 
 // Define the expected options
-List<String> expectedOptions = ['All Provider', 'OPEN Only', 'Holidays', 'Waiting On Orders', 'Student Absent'] 
+List<String> expectedOptions = ['This Week', 'Next Week', "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"] 
 
 // Collect the text values from the dropdown options
-List<String> dropdownOptions = options.take(5).collect { it.getText().trim() }
+List<String> dropdownOptions = options.collect { it.getText().trim() }
 
 // Log the dropdown options for debugging
 dropdownOptions.each { option ->

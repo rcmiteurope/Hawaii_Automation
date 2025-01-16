@@ -41,11 +41,9 @@ driver.manage().addCookie(new Cookie('user_name', GlobalVariable.user_name))
 
 WebUI.refresh()
 
-TestObject horizontalToggle = new TestObject()
-
-horizontalToggle.addProperty('xpath', ConditionType.EQUALS, '//*[@id="root"]/main/div[2]/div/div/label/div')
-
-WebUI.check(horizontalToggle)
+// Check Horizontal Toggle
+WebUI.check(new TestObject("dynamicObj").addProperty("xpath", ConditionType.EQUALS, "//*[@id='root']/main/div[2]/div[1]/div[1]/div/div"))
+ 
 
 //WebUI.selectOptionByLabel(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="date_filter_select"]'), 
   //  'Next Week', false)

@@ -38,11 +38,10 @@ driver.manage().addCookie(new Cookie('user_email', GlobalVariable.user_email))
 driver.manage().addCookie(new Cookie('user_name', GlobalVariable.user_name))
 
 WebUI.refresh()
-TestObject horizontalToggle = new TestObject()
 
-horizontalToggle.addProperty('xpath', ConditionType.EQUALS, '//*[@id="root"]/main/div[2]/div/div/label/div')
-
-WebUI.check(horizontalToggle)
+// Check Horizontal Toggle
+WebUI.check(new TestObject("dynamicObj").addProperty("xpath", ConditionType.EQUALS, "//*[@id='root']/main/div[2]/div[1]/div[1]/div/div"))
+ 
 
 WebUI.verifyElementPresent(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="select-all-toggle"]'), 0)
 
