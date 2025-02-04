@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Add New Supervisor - Verify user can add new supervisor</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>43a2cca3-3e03-4180-96c3-4728f8bc3b3c</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Add Leave of Absence - Verify user can add new leave of absence</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ada69126-73d8-4da4-b763-dfb86c3a8086</testCaseGuid>
+</TestCaseEntity>
