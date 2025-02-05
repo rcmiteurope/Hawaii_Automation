@@ -71,14 +71,13 @@ WebUI.click(datepicker)
 
 WebUI.setText(datepicker, formattedDate)
 
-WebUI.sendKeys(null, Keys.chord(Keys.ENTER))
-
+WebUI.sendKeys(datepicker, Keys.chord(Keys.ENTER))
 
 WebUI.comment("Set datepicker value: " + formattedDate)
 WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id=\'foreground-holder\']'))
-WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//div[@title=\'#1515ff\']'))
+WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, "//div[@class='github-picker custom-twitter-picker']//span//div//span//div[@title='#1515ff']"))
 WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, "//*[@id='background-holder']"))
-WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, "//div[@title='#D0E3F4']"))
+WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, "//div[@class='github-picker']//div[@title='#D0E3F4']"))
 
 WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, "//*[@id='submit-dialog']"))
 
