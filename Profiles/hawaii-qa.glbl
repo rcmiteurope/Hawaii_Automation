@@ -176,7 +176,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVyaWNhLkJvcnJvbWVvQHJjbXQuY29tIiwidXNlcklEIjo4LCJuYW1lIjoiQm9ycm9tZW8sIEVyaWNhIiwiaWF0IjoxNzM2MDQwMjA2LCJleHAiOjE3MzYxMjY2MDZ9.tGHEV6d2SOzCpEmm0OJOPtc1Ev6idgwpufhB4_tvgP8'</initValue>
+      <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVyaWNhLkJvcnJvbWVvQHJjbXQuY29tIiwidXNlcklEIjo4LCJuYW1lIjoiQm9ycm9tZW8sIEVyaWNhIiwiaWF0IjoxNzM2MzE2NTg4LCJleHAiOjE3NDE1MDA1ODh9.9zioj-qpOXS6lvUsP2374IlH0vuAuQc7lXISUEZYhKE'</initValue>
       <name>sc_auth_token</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

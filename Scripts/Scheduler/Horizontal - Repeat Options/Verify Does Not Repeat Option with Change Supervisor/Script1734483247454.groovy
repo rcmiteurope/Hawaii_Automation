@@ -51,7 +51,7 @@ WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS,
 WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//*[@id=\'provider-button\']'))
 
 
-WebUI.click(findTestObject('Object Repository/Repeat Options/Page_Scheduler/div_Provider_css-19bb58m'))
+WebUI.click((new com.kms.katalon.core.testobject.TestObject('temp')).addProperty('xpath', com.kms.katalon.core.testobject.ConditionType.EQUALS, '//*[@id="react-select-3-live-region"]'))
 
 WebUI.click(findTestObject('Object Repository/Repeat Options/Page_Scheduler/div_Aana, Leslie Ann'))
 

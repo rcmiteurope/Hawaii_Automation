@@ -174,4 +174,19 @@
       <initValue>['Honolulu', 'Central', 'Leeward', 'Windward', 'Outer Island']</initValue>
       <name>islands</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVyaWNhLkJvcnJvbWVvQHJjbXQuY29tIiwidXNlcklEIjoxMywibmFtZSI6IkJvcnJvbWVvLCBFcmljYSIsImlhdCI6MTczNjMxNjc3NCwiZXhwIjoxNzQxNTAwNzc0fQ.mBdumn4JDD_itzlzfFt64dNDYfRtm4G6JzC4ZrELtMA'</initValue>
+      <name>sc_auth_token</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Erica.Borromeo%40rcmt.com'</initValue>
+      <name>user_email</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Borromeo%2C%20Erica'</initValue>
+      <name>user_name</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
