@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Horizontal - Verify Display of Corresponding Data Upon Clicking Kona</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bb4b622f-ee40-4924-afca-574d76564011</testCaseGuid>
+</TestCaseEntity>
