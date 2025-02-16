@@ -22,7 +22,7 @@
       <guid>291a4331-3893-4244-9f9c-1ddcbc529545</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Scheduler/Horizontal - Filter/Filter - Verify OPEN Only filter in the Date Dropdown</testCaseId>
+      <testCaseId>Test Cases/Scheduler/Horizontal - Filter/Filter - Verify OPEN Only filter in the Provider Dropdown</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

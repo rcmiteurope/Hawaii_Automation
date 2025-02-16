@@ -59,9 +59,7 @@ WebUI.setText(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@
 WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//*[@id=\'sched-dialog-save\']'))
 
 //Cell Location
-TestObject dynamicObject = new TestObject('dynamic')
-
-dynamicObject.addProperty('xpath', ConditionType.EQUALS, '//table[@id=\'horizontal-table\']//tbody//tr[4]//td[4]//div')
+TestObject dynamicObject = new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//table[@id=\'horizontal-table\']//tbody//tr[4]//td[4]//div')
 
 //Check Note icon
 

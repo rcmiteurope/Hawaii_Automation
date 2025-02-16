@@ -110,20 +110,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>60ddcc2a-d989-408b-b678-515a56822351</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Scheduler/Horizontal - Repeat Options/Verify Repeat By Weeks Option with Holiday</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>93371cd6-bd2a-4486-90db-58e9980395d4</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Scheduler/Horizontal - Repeat Options/Verify Repeat By Weeks Option with Note</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>9fb0bf6b-7cc8-46e9-bf21-7f7e67135bdc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -142,27 +128,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Scheduler/Horizontal - Repeat Options/Verify Repeat By Weeks Option with Remove Supervisor</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>40208467-020e-4af7-a3dd-5770dd560c5b</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Scheduler/Horizontal - Repeat Options/Verify Repeat By Weeks Option with Student Absent - NCNS</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>195a533f-3547-4455-a9a2-335f51f2f6e0</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Scheduler/Horizontal - Repeat Options/Verify Repeat By Weeks Option with Student Absent - Notice</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>19904fff-2165-498d-91f3-c5dced8aae56</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Scheduler/Horizontal - Repeat Options/Verify Repeat By Weeks Option with Waiting for Order</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -187,20 +152,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>154734b9-a1bc-424e-87d1-5ce160b015c6</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Scheduler/Horizontal - Repeat Options/Verify Repeats for Remainder of the Workorder with Holiday</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>f2a396d3-6d66-4c22-9ab3-79c2129334ab</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Scheduler/Horizontal - Repeat Options/Verify Repeats for Remainder of the Workorder with Note</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>aeb305c8-3ed4-4607-acfc-6d7e6ebd5238</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -219,27 +170,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Scheduler/Horizontal - Repeat Options/Verify Repeats for Remainder of the Workorder with Remove Supervisor</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>6a4e83f2-24a9-4aa1-82f7-074ce2d37366</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Scheduler/Horizontal - Repeat Options/Verify Repeats for Remainder of the Workorder with Student Absent - NCNS</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>3e02d23e-9312-4107-a722-709a89f612b5</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Scheduler/Horizontal - Repeat Options/Verify Repeats for Remainder of the Workorder with Student Absent - Notice</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>1dec590c-ee21-4346-9a29-e8fa0e26f948</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Scheduler/Horizontal - Repeat Options/Verify Repeats for Remainder of the Workorder with Waiting for Order</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

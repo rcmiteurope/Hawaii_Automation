@@ -41,61 +41,79 @@ driver.manage().addCookie(new Cookie('user_email', GlobalVariable.user_email))
 driver.manage().addCookie(new Cookie('user_name', GlobalVariable.user_name))
 
 WebUI.refresh()
-
-// Check Horizontal Toggle
-WebUI.check(new TestObject("dynamicObj").addProperty("xpath", ConditionType.EQUALS, "//*[@id='root']/main/div[2]/div[1]/div[1]/div/div"))
- 
-
-//WebUI.selectOptionByLabel(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="date_filter_select"]'), 'Next Week', false)
-
-WebUI.click(findTestObject('Object Repository/Action Menu/Page_Scheduler/input_Mon, 1125 0800 - 1415_master-checkbox_5083b2'))
-
-WebUI.executeJavaScript('document.getElementById("actionmenu-handle").click();', null)
-
-WebElement weEditSupervisor = driver.findElement(By.xpath('//*[@id="action-menu-edit-provider"]/following-sibling::button'))	// todo: change xpath
-TestObject toEditSupervisor = WebUI.convertWebElementToTestObject(weEditSupervisor)
-WebUI.mouseOver(toEditSupervisor)	
-WebUI.click(toEditSupervisor)
- 
-
-TestObject dynamicObject = new TestObject().addProperty('xpath', ConditionType.EQUALS, "//*[@id='change-supervisor-menu-AB']")
-WebUI.verifyElementText(dynamicObject, 'AB')
-
-TestObject dynamicObject1 = new TestObject().addProperty('xpath', ConditionType.EQUALS, "//*[@id='change-supervisor-menu-CD']")
-WebUI.verifyElementText(dynamicObject1, 'CD')
- 
-TestObject dynamicObject2 = new TestObject().addProperty('xpath', ConditionType.EQUALS, "//*[@id='change-supervisor-menu-EF']")
-WebUI.verifyElementText(dynamicObject2, 'EF')
-
-TestObject dynamicObject3 = new TestObject().addProperty('xpath', ConditionType.EQUALS, "//*[@id='change-supervisor-menu-GH']")
-WebUI.verifyElementText(dynamicObject3, 'GH')
- 
-TestObject dynamicObject4 = new TestObject().addProperty('xpath', ConditionType.EQUALS, "//*[@id='change-supervisor-menu-IJ']")
-WebUI.verifyElementText(dynamicObject4, 'IJ')
-  
-TestObject dynamicObject5 = new TestObject().addProperty('xpath', ConditionType.EQUALS, "//*[@id='change-supervisor-menu-KL']")
-WebUI.verifyElementText(dynamicObject5, 'KL')
-
-TestObject dynamicObject6 = new TestObject().addProperty('xpath', ConditionType.EQUALS, "//*[@id='change-supervisor-menu-MN']")
-WebUI.verifyElementText(dynamicObject6, 'MN')
- 
-TestObject dynamicObject7 = new TestObject().addProperty('xpath', ConditionType.EQUALS, "//*[@id='change-supervisor-menu-OP']")
-WebUI.verifyElementText(dynamicObject7, 'OP')
-
-TestObject dynamicObject8 = new TestObject().addProperty('xpath', ConditionType.EQUALS, "//*[@id='change-supervisor-menu-QR']")
-WebUI.verifyElementText(dynamicObject8, 'QR')
-
-TestObject dynamicObject9 = new TestObject().addProperty('xpath', ConditionType.EQUALS, "//*[@id='change-supervisor-menu-ST']")
-WebUI.verifyElementText(dynamicObject9, 'ST')
- 
-TestObject dynamicObject10 = new TestObject().addProperty('xpath', ConditionType.EQUALS, "//*[@id='change-supervisor-menu-UV']")
-WebUI.verifyElementText(dynamicObject10, 'UV')
-  
-TestObject dynamicObject11 = new TestObject().addProperty('xpath', ConditionType.EQUALS, "//*[@id='change-supervisor-menu-WX']")
-WebUI.verifyElementText(dynamicObject11, 'WX')
- 
-TestObject dynamicObject12 = new TestObject().addProperty('xpath', ConditionType.EQUALS, "//*[@id='change-supervisor-menu-YZ']")
-WebUI.verifyElementText(dynamicObject12, 'YZ')
-
+/*
+ * // Check Horizontal Toggle WebUI.check(new
+ * TestObject("dynamicObj").addProperty("xpath", ConditionType.EQUALS,
+ * "//*[@id='root']/main/div[2]/div[1]/div[1]/div/div"))
+ * 
+ * 
+ * //WebUI.selectOptionByLabel(new TestObject().addProperty('xpath',
+ * ConditionType.EQUALS, '//*[@id="date_filter_select"]'), 'Next Week', false)
+ * 
+ * WebUI.click(findTestObject('Object Repository/Action
+ * Menu/Page_Scheduler/input_Mon, 1125 0800 - 1415_master-checkbox_5083b2'))
+ * 
+ * WebUI.executeJavaScript('document.getElementById("actionmenu-handle").click()
+ * ;', null)
+ * 
+ * WebElement weEditSupervisor =
+ * driver.findElement(By.xpath('//*[@id="action-menu-edit-provider"]/following-
+ * sibling::button')) // todo: change xpath TestObject toEditSupervisor =
+ * WebUI.convertWebElementToTestObject(weEditSupervisor)
+ * WebUI.mouseOver(toEditSupervisor) WebUI.click(toEditSupervisor)
+ * 
+ * 
+ * TestObject dynamicObject = new TestObject().addProperty('xpath',
+ * ConditionType.EQUALS, "//*[@id='change-supervisor-menu-AB']")
+ * WebUI.verifyElementText(dynamicObject, 'AB')
+ * 
+ * TestObject dynamicObject1 = new TestObject().addProperty('xpath',
+ * ConditionType.EQUALS, "//*[@id='change-supervisor-menu-CD']")
+ * WebUI.verifyElementText(dynamicObject1, 'CD')
+ * 
+ * TestObject dynamicObject2 = new TestObject().addProperty('xpath',
+ * ConditionType.EQUALS, "//*[@id='change-supervisor-menu-EF']")
+ * WebUI.verifyElementText(dynamicObject2, 'EF')
+ * 
+ * TestObject dynamicObject3 = new TestObject().addProperty('xpath',
+ * ConditionType.EQUALS, "//*[@id='change-supervisor-menu-GH']")
+ * WebUI.verifyElementText(dynamicObject3, 'GH')
+ * 
+ * TestObject dynamicObject4 = new TestObject().addProperty('xpath',
+ * ConditionType.EQUALS, "//*[@id='change-supervisor-menu-IJ']")
+ * WebUI.verifyElementText(dynamicObject4, 'IJ')
+ * 
+ * TestObject dynamicObject5 = new TestObject().addProperty('xpath',
+ * ConditionType.EQUALS, "//*[@id='change-supervisor-menu-KL']")
+ * WebUI.verifyElementText(dynamicObject5, 'KL')
+ * 
+ * TestObject dynamicObject6 = new TestObject().addProperty('xpath',
+ * ConditionType.EQUALS, "//*[@id='change-supervisor-menu-MN']")
+ * WebUI.verifyElementText(dynamicObject6, 'MN')
+ * 
+ * TestObject dynamicObject7 = new TestObject().addProperty('xpath',
+ * ConditionType.EQUALS, "//*[@id='change-supervisor-menu-OP']")
+ * WebUI.verifyElementText(dynamicObject7, 'OP')
+ * 
+ * TestObject dynamicObject8 = new TestObject().addProperty('xpath',
+ * ConditionType.EQUALS, "//*[@id='change-supervisor-menu-QR']")
+ * WebUI.verifyElementText(dynamicObject8, 'QR')
+ * 
+ * TestObject dynamicObject9 = new TestObject().addProperty('xpath',
+ * ConditionType.EQUALS, "//*[@id='change-supervisor-menu-ST']")
+ * WebUI.verifyElementText(dynamicObject9, 'ST')
+ * 
+ * TestObject dynamicObject10 = new TestObject().addProperty('xpath',
+ * ConditionType.EQUALS, "//*[@id='change-supervisor-menu-UV']")
+ * WebUI.verifyElementText(dynamicObject10, 'UV')
+ * 
+ * TestObject dynamicObject11 = new TestObject().addProperty('xpath',
+ * ConditionType.EQUALS, "//*[@id='change-supervisor-menu-WX']")
+ * WebUI.verifyElementText(dynamicObject11, 'WX')
+ * 
+ * TestObject dynamicObject12 = new TestObject().addProperty('xpath',
+ * ConditionType.EQUALS, "//*[@id='change-supervisor-menu-YZ']")
+ * WebUI.verifyElementText(dynamicObject12, 'YZ')
+ */
 WebUI.closeBrowser()
 

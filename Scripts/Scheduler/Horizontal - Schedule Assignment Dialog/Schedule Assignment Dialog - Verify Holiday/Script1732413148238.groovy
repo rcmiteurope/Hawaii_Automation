@@ -44,7 +44,15 @@ WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS,
 WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//*[@id=\'horizontal_next_btn\']'))
 
 //Click Cell
-WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//table[@id=\'horizontal-table\']//tbody//tr[3]//td[2]//div'))
+WebUI.click(new TestObject('dynamic').addProperty('xpath',ConditionType.EQUALS,"(//table[@id='horizontal-table'])[2]//tbody//tr[4]//td[6]//div"))
+
+//Click action
+WebUI.click(new TestObject().addProperty('xpath',ConditionType.EQUALS, '//*[@id="horizontal-open"]'))
+
+WebUI.click(new TestObject('dynamic').addProperty('xpath',ConditionType.EQUALS, '//*[@id=\'sched-dialog-save\']'))
+
+//Click Cell
+WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, "(//table[@id='horizontal-table'])[2]//tbody//tr[3]//td[2]//div"))
 
 //Click action
 WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//*[@id=\'horizontal-holiday\']'))
@@ -55,13 +63,12 @@ WebUI.setText(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@
 
 WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//button[@type="button" and normalize-space(text())="OK"]'))
 
+WebUI.click(new TestObject().addProperty("xpath", ConditionType.EQUALS, "//button[contains(@class, 'swal2-confirm') and text()='Yes']"))
 
 WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//*[@id=\'sched-dialog-save\']'))
 
 //Cell Location
-TestObject dynamicObject = new TestObject('dynamic')
-
-dynamicObject.addProperty('xpath', ConditionType.EQUALS, '//table[@id=\'horizontal-table\']//tbody//tr[2]//td[2]//div')
+TestObject dynamicObject = new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//table[@id=\'horizontal-table\']//tbody//tr[2]//td[2]//div')
 
 // Get the text of the element
 String elementText = WebUI.getText(dynamicObject)

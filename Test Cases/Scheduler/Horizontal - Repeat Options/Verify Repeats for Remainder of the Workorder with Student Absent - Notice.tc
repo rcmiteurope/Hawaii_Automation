@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Verify Repeats for Remainder of the Workorder with Student Absent - Notice</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>bbb7f960-a306-4885-a52b-9ea394375221</testCaseGuid>
-</TestCaseEntity>

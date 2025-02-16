@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Verify Repeat By Weeks Option with Note</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>357c230f-b36a-4fdf-b4c0-fef98ff36c53</testCaseGuid>
-</TestCaseEntity>

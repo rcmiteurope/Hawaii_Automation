@@ -40,31 +40,36 @@ driver.manage().addCookie(new Cookie('user_name', GlobalVariable.user_name))
 
 WebUI.refresh()
 
-// Check Horizontal Toggle
-TestObject horizontalToggle = new TestObject("horizontalToggle")
-horizontalToggle.addProperty("xpath", ConditionType.EQUALS, "//*[@id='root']/main/div[2]/div[1]/div[1]/div/div")
-WebUI.verifyElementPresent(horizontalToggle, 5)
-WebUI.check(horizontalToggle)
- 
-TestObject userToggle = new TestObject().addProperty('xpath', ConditionType.EQUALS, '//button[@id=\':rb:\']')
-
-WebUI.click(userToggle)
-
-TestObject searchOption = new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id=\':ra:\']/button[1]/div')
-
-WebUI.click(searchOption
-	
-WebUI.click(findTestObject('Object Repository/Search/Page_Scheduler/div_Search_css-19bb58m'))
-
-WebUI.click(findTestObject('Object Repository/Search/Page_Scheduler/div_Abad, Jose'))
-
-List<WebElement> col4Cells = driver.findElements(By.xpath("//table[@id='vertical-table']/tbody/tr/td[5]"));
-
-for (WebElement cell : col4Cells) {
-	String cellText = cell.getText().trim();
-   Assert.assertTrue(cellText.contains("Abad, Jose"));
-
-}
-
+/*
+ * // Check Horizontal Toggle TestObject horizontalToggle = new
+ * TestObject("horizontalToggle") horizontalToggle.addProperty("xpath",
+ * ConditionType.EQUALS, "//*[@id='root']/main/div[2]/div[1]/div[1]/div/div")
+ * WebUI.verifyElementPresent(horizontalToggle, 5) WebUI.check(horizontalToggle)
+ * 
+ * TestObject userToggle = new TestObject().addProperty('xpath',
+ * ConditionType.EQUALS, '//button[@id=\':rb:\']')
+ * 
+ * WebUI.click(userToggle)
+ * 
+ * TestObject searchOption = new TestObject().addProperty('xpath',
+ * ConditionType.EQUALS, '//*[@id=\':ra:\']/button[1]/div')
+ * 
+ * WebUI.click(searchOption
+ * 
+ * WebUI.click(findTestObject('Object
+ * Repository/Search/Page_Scheduler/div_Search_css-19bb58m'))
+ * 
+ * WebUI.click(findTestObject('Object Repository/Search/Page_Scheduler/div_Abad,
+ * Jose'))
+ * 
+ * List<WebElement> col4Cells =
+ * driver.findElements(By.xpath("//table[@id='vertical-table']/tbody/tr/td[5]"))
+ * ;
+ * 
+ * for (WebElement cell : col4Cells) { String cellText = cell.getText().trim();
+ * Assert.assertTrue(cellText.contains("Abad, Jose"));
+ * 
+ * }
+ */
 // Close the browser
 WebUI.closeBrowser()

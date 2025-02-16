@@ -36,7 +36,7 @@ driver.manage().addCookie(new Cookie('user_email', GlobalVariable.user_email))
 driver.manage().addCookie(new Cookie('user_name', GlobalVariable.user_name))
 
 WebUI.refresh()
-String cellsXPath = "//table[@id='horizontal-table']//tbody//td/div/div"
+String cellsXPath = "(//table[@id='horizontal-table'])[2]//tbody//td/div/div"
 try {
     List<WebElement> cells = WebUI.findWebElements(new TestObject().addProperty("xpath", ConditionType.EQUALS, cellsXPath), 10)
     if (!cells.isEmpty()) {

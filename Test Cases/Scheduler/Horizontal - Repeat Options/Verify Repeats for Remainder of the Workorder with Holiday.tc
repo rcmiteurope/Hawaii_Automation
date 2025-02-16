@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Verify Repeats for Remainder of the Workorder with Holiday</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>eda6d2d3-d01f-4dc2-972d-df80c951c16c</testCaseGuid>
-</TestCaseEntity>

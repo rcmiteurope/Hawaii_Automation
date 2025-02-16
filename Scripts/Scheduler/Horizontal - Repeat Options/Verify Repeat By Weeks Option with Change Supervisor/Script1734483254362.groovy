@@ -48,18 +48,16 @@ WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS,
 WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//table[@id=\'horizontal-table\']//tbody//tr[2]//td[3]//div'))
 
 //Repeat By Weeks
-WebUI.click(findTestObject('Object Repository/Repeat Options/Page_Scheduler/button_Does Not Repeat'))
+WebUI.click(new TestObject().addProperty("id", ConditionType.EQUALS, "hsad-select-option"))
 
-WebUI.click(findTestObject('Object Repository/Repeat Options/Page_Scheduler/li_Repeats by Weeks'))
-
-WebUI.click(findTestObject('Object Repository/Repeat Options/Page_Scheduler/svg_Select Options_h-4 w-4'))
+WebUI.click(new TestObject().addProperty("xpath", ConditionType.EQUALS, "//li[@role='option' and text()='Repeats by Weeks']"))
 
 //Click action
 WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//*[@id=\'provider-button\']'))
 
-WebUI.click(findTestObject('Object Repository/Repeat Options/Page_Scheduler/div_Provider_css-19bb58m'))
+WebUI.click(new TestObject().addProperty("id", ConditionType.EQUALS, "provider-search-bar"))
 
-WebUI.click(findTestObject('Object Repository/Repeat Options/Page_Scheduler/div_Aana, Leslie Ann'))
+WebUI.click(new TestObject().addProperty("xpath", ConditionType.EQUALS, "//div[@role='option' and text()='Aana, Leslie Ann']"))
 
 //Confirm Repeat
 WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//button[@type="button" and normalize-space(text())="Confirm"]'))
@@ -70,18 +68,16 @@ WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS,
 WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//table[@id=\'horizontal-table\']//tbody//tr[2]//td[3]//div'))
 
 //Repeat By Weeks
-WebUI.click(findTestObject('Object Repository/Repeat Options/Page_Scheduler/button_Does Not Repeat'))
+WebUI.click(new TestObject().addProperty("id", ConditionType.EQUALS, "hsad-select-option"))
 
-WebUI.click(findTestObject('Object Repository/Repeat Options/Page_Scheduler/li_Repeats by Weeks'))
-
-WebUI.click(findTestObject('Object Repository/Repeat Options/Page_Scheduler/svg_Select Options_h-4 w-4'))
+WebUI.click(new TestObject().addProperty("xpath", ConditionType.EQUALS, "//li[@role='option' and text()='Repeats by Weeks']"))
 
 //Click action
 WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//*[@id=\'supervisor-button\']'))
 
-WebUI.click(findTestObject('Object Repository/Repeat Options/Page_Scheduler/div_Supervisor_css-19bb58m'))
+WebUI.click(new TestObject().addProperty("id", ConditionType.EQUALS, "supervisor-search-bar")) 
 
-WebUI.click(findTestObject('Object Repository/Repeat Options/Page_Scheduler/div_Wakuta, Yvette'))
+WebUI.click(new TestObject().addProperty("xpath", ConditionType.EQUALS, "//div[@role='option' and text()='Wakuta, Yvette']"))
 
 //Confirm Repeat
 WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//button[@type="button" and normalize-space(text())="Confirm"]'))
@@ -89,9 +85,7 @@ WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//butto
 WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//*[@id=\'sched-dialog-save\']'))
 
 //Cell Location
-TestObject dynamicObject = new TestObject('dynamic')
-
-dynamicObject.addProperty('xpath', ConditionType.EQUALS, '//table[@id=\'horizontal-table\']//tbody//tr[2]//td[3]//div')
+TestObject dynamicObject = new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//table[@id=\'horizontal-table\']//tbody//tr[2]//td[3]//div')
 
 // Get the text of the element
 String elementText = WebUI.getText(dynamicObject)
@@ -100,17 +94,10 @@ String elementText = WebUI.getText(dynamicObject)
 String expectedText = 'Wakuta, Yvette' // Replace with your expected text
 
 if (elementText.contains(expectedText)) {
-    println('Text matches: ')
+    println("Text matches: ${elementText}")
 } else {
-    KeywordUtil.markFailedAndStop("Text does not match")
+    KeywordUtil.markFailedAndStop("Text does not match. Expected: ${expectedText}, Found: ${elementText}")
 }
-//Click Next week
-WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//*[@id=\'horizontal_next_btn\']'))
 
-if (elementText.contains(expectedText)) {
-	println('Text matches: ')
-} else {
-	KeywordUtil.markFailedAndStop("Text does not match")
-}
 WebUI.closeBrowser()
 

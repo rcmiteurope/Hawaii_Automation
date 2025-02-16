@@ -45,7 +45,7 @@ WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS,
 WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//*[@id=\'horizontal_next_btn\']'))
 
 //Click Cell
-WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//table[@id=\'horizontal-table\']//tbody//tr[4]//td[2]//div'))
+WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, "(//table[@id='horizontal-table'])[2]//tbody//tr[4]//td[6]//div"))
 
 //Click action
 WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="hori-absent-nncns"]'))
@@ -53,9 +53,7 @@ WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id
 WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//*[@id=\'sched-dialog-save\']'))
 
 //Cell Location
-TestObject dynamicObject = new TestObject('dynamic')
-
-dynamicObject.addProperty('xpath', ConditionType.EQUALS, '//table[@id=\'horizontal-table\']//tbody//tr[4]//td[2]//div')
+TestObject dynamicObject = new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, "(//table[@id='horizontal-table'])[2]//tbody//tr[4]//td[6]//div")
 
 // Get the text of the element
 String elementText = WebUI.getText(dynamicObject)
@@ -64,9 +62,9 @@ String elementText = WebUI.getText(dynamicObject)
 String expectedText = 'Student Absent - NCNS' // Replace with your expected text
 
 if (elementText.contains(expectedText)) {
-    println('Text matches: ')
+    println("Text matches: ${elementText}")
 } else {
-    KeywordUtil.markFailedAndStop("Text does not match")
+    KeywordUtil.markFailedAndStop("Text does not match. Expected: ${expectedText}, Found: ${elementText}")
 }
 
 WebUI.closeBrowser()

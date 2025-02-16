@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Schedule Assignment Dialog - Verify List of Supervisor Displayed when clicking Supervisor button</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>8d3badd3-cfc9-4e30-89c8-36e378a1f11f</testCaseGuid>
-</TestCaseEntity>

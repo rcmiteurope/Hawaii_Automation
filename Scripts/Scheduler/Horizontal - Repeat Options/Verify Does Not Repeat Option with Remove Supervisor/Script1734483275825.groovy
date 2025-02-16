@@ -45,52 +45,50 @@ WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS,
 WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//*[@id=\'horizontal_next_btn\']'))
 
 //Click Cell
-WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//table[@id=\'horizontal-table\']//tbody//tr[2]//td[2]//div'))
+WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, "(//table[@id='horizontal-table'])[2]//tbody//tr[4]//td[6]//div"))
 
 //Click action
 WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//*[@id=\'provider-button\']'))
 
+WebUI.click(new TestObject().addProperty("id", ConditionType.EQUALS, "provider-search-bar"))
 
-WebUI.click(findTestObject('Object Repository/Repeat Options/Page_Scheduler/div_Provider_css-19bb58m'))
+WebUI.click(new TestObject().addProperty("xpath", ConditionType.EQUALS, "//div[@role='option' and text()='Aana, Leslie Ann']"))
+  
+WebUI.click(new TestObject('dynamic').addProperty('xpath',ConditionType.EQUALS, '//*[@id=\'sched-dialog-save\']'))
+  
+//Click Cell 
+WebUI.click(new TestObject('dynamic').addProperty('xpath',ConditionType.EQUALS,"(//table[@id='horizontal-table'])[2]//tbody//tr[4]//td[6]//div"))
+  
+//Click action 
+WebUI.click(new TestObject('dynamic').addProperty('xpath',ConditionType.EQUALS, '//*[@id=\'supervisor-button\']'))
+  
+WebUI.click(new TestObject().addProperty("id", ConditionType.EQUALS, "supervisor-search-bar")) 
 
-WebUI.click(findTestObject('Object Repository/Repeat Options/Page_Scheduler/div_Aana, Leslie Ann'))
-
-WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//*[@id=\'sched-dialog-save\']'))
-
-//Click Cell
-WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//table[@id=\'horizontal-table\']//tbody//tr[2]//td[2]//div'))
-
-//Click action
-WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//*[@id=\'supervisor-button\']'))
-
-WebUI.click(findTestObject('Object Repository/Repeat Options/Page_Scheduler/div_Supervisor_css-19bb58m'))
-
-WebUI.click(findTestObject('Object Repository/Repeat Options/Page_Scheduler/div_Wakuta, Yvette'))
-
-WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//*[@id=\'sched-dialog-save\']'))
- 
-WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//table[@id=\'horizontal-table\']//tbody//tr[2]//td[2]//div'))
-
-WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//*[@id=\'hori-remove-supervisor\']'))
- 
-WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//*[@id=\'sched-dialog-save\']'))
-
-//Cell Location
-TestObject dynamicObject = new TestObject('dynamic')
-
-dynamicObject.addProperty('xpath', ConditionType.EQUALS, '//table[@id=\'horizontal-table\']//tbody//tr[2]//td[2]//div')
-
-// Get the text of the element
-String elementText = WebUI.getText(dynamicObject)
-
-// Check if the text matches the expected value
+WebUI.click(new TestObject().addProperty("xpath", ConditionType.EQUALS, "//div[@role='option' and text()='Wakuta, Yvette']"))
+  
+WebUI.click(new TestObject('dynamic').addProperty('xpath',ConditionType.EQUALS, '//*[@id=\'sched-dialog-save\']'))
+  
+WebUI.click(new TestObject('dynamic').addProperty('xpath',ConditionType.EQUALS,"(//table[@id='horizontal-table'])[2]//tbody//tr[4]//td[6]//div"))
+  
+WebUI.click(new TestObject('dynamic').addProperty('xpath',ConditionType.EQUALS, '//*[@id=\'hori-remove-supervisor\']'))
+  
+WebUI.click(new TestObject('dynamic').addProperty('xpath',ConditionType.EQUALS, '//*[@id=\'sched-dialog-save\']'))
+  
+//Cell Location 
+TestObject dynamicObject = new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS,'//table[@id=\'horizontal-table\']//tbody//tr[2]//td[2]//div')
+  
+// Get the text of the element 
+String elementText =WebUI.getText(dynamicObject)
+  
+ // Check if the text matches the expected value 
 String expectedText = 'Wakuta, Yvette' // Replace with your expected text
-
+  
 if (elementText.contains(expectedText)) {
-	KeywordUtil.markFailedAndStop("Text does not match")
-	} else {
-	println('Text matches: ')	
+    println("Text matches: ${elementText}")
+} else {
+    KeywordUtil.markFailedAndStop("Text does not match. Expected: ${expectedText}, Found: ${elementText}")
 }
 
+ 
 WebUI.closeBrowser()
 
