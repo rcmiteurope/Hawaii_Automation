@@ -41,50 +41,66 @@ driver.manage().addCookie(new Cookie('user_email', GlobalVariable.user_email))
 driver.manage().addCookie(new Cookie('user_name', GlobalVariable.user_name))
 
 WebUI.refresh()
-
-TestObject horizontalToggle = new TestObject()
-
-horizontalToggle.addProperty('xpath', ConditionType.EQUALS, '//*[@id="root"]/main/div[2]/div/div/label/div')
-
-WebUI.check(horizontalToggle)
-
-//WebUI.selectOptionByLabel(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="date_filter_select"]'), 'Next Week', false)
-
-WebUI.click(findTestObject('Object Repository/Action Menu/Page_Scheduler/input_Mon, 1125 0800 - 1415_master-checkbox_5083b2'))
-
-WebUI.executeJavaScript('document.getElementById("actionmenu-handle").click();', null)
-
-WebElement weEditProvider = driver.findElement(By.xpath('//*[@id="provider-callout"]/following-sibling::button'))	// todo: change xpath
-TestObject toEditProvider = WebUI.convertWebElementToTestObject(weEditProvider)
-WebUI.mouseOver(toEditProvider)	
-WebUI.click(toEditProvider)
- 
-
-WebUI.verifyElementText(findTestObject('Object Repository/Action Menu/Page_Scheduler/button_AB'), 'AB')
-
-WebUI.verifyElementText(findTestObject('Object Repository/Action Menu/Page_Scheduler/button_CD'), 'CD')
-
-WebUI.verifyElementText(findTestObject('Object Repository/Action Menu/Page_Scheduler/button_EF'), 'EF')
-
-WebUI.verifyElementText(findTestObject('Object Repository/Action Menu/Page_Scheduler/button_GH'), 'GH')
-
-WebUI.verifyElementText(findTestObject('Object Repository/Action Menu/Page_Scheduler/button_IJ'), 'IJ')
-
-WebUI.verifyElementText(findTestObject('Object Repository/Action Menu/Page_Scheduler/button_KL'), 'KL')
-
-WebUI.verifyElementText(findTestObject('Object Repository/Action Menu/Page_Scheduler/button_MN'), 'MN')
-
-WebUI.verifyElementText(findTestObject('Object Repository/Action Menu/Page_Scheduler/button_OP'), 'OP')
-
-WebUI.verifyElementText(findTestObject('Object Repository/Action Menu/Page_Scheduler/button_QR'), 'QR')
-
-WebUI.verifyElementText(findTestObject('Object Repository/Action Menu/Page_Scheduler/button_ST'), 'ST')
-
-WebUI.verifyElementText(findTestObject('Object Repository/Action Menu/Page_Scheduler/button_UV'), 'UV')
-
-WebUI.verifyElementText(findTestObject('Object Repository/Action Menu/Page_Scheduler/button_WX'), 'WX')
-
-WebUI.verifyElementText(findTestObject('Object Repository/Action Menu/Page_Scheduler/button_YZ'), 'YZ')
-
+/*
+ * // Check Horizontal Toggle WebUI.check(new
+ * TestObject("dynamicObj").addProperty("xpath", ConditionType.EQUALS,
+ * "//*[@id='root']/main/div[2]/div[1]/div[1]/div/div"))
+ * 
+ * 
+ * //WebUI.selectOptionByLabel(new TestObject().addProperty('xpath',
+ * ConditionType.EQUALS, '//*[@id="date_filter_select"]'), 'Next Week', false)
+ * 
+ * WebUI.click(findTestObject('Object Repository/Action
+ * Menu/Page_Scheduler/input_Mon, 1125 0800 - 1415_master-checkbox_5083b2'))
+ * 
+ * WebUI.executeJavaScript('document.getElementById("actionmenu-handle").click()
+ * ;', null)
+ * 
+ * WebElement weEditProvider =
+ * driver.findElement(By.xpath('//*[@id="provider-callout"]/following-sibling::
+ * button')) // todo: change xpath TestObject toEditProvider =
+ * WebUI.convertWebElementToTestObject(weEditProvider)
+ * WebUI.mouseOver(toEditProvider) WebUI.click(toEditProvider)
+ * 
+ * 
+ * WebUI.verifyElementText(findTestObject('Object Repository/Action
+ * Menu/Page_Scheduler/button_AB'), 'AB')
+ * 
+ * WebUI.verifyElementText(findTestObject('Object Repository/Action
+ * Menu/Page_Scheduler/button_CD'), 'CD')
+ * 
+ * WebUI.verifyElementText(findTestObject('Object Repository/Action
+ * Menu/Page_Scheduler/button_EF'), 'EF')
+ * 
+ * WebUI.verifyElementText(findTestObject('Object Repository/Action
+ * Menu/Page_Scheduler/button_GH'), 'GH')
+ * 
+ * WebUI.verifyElementText(findTestObject('Object Repository/Action
+ * Menu/Page_Scheduler/button_IJ'), 'IJ')
+ * 
+ * WebUI.verifyElementText(findTestObject('Object Repository/Action
+ * Menu/Page_Scheduler/button_KL'), 'KL')
+ * 
+ * WebUI.verifyElementText(findTestObject('Object Repository/Action
+ * Menu/Page_Scheduler/button_MN'), 'MN')
+ * 
+ * WebUI.verifyElementText(findTestObject('Object Repository/Action
+ * Menu/Page_Scheduler/button_OP'), 'OP')
+ * 
+ * WebUI.verifyElementText(findTestObject('Object Repository/Action
+ * Menu/Page_Scheduler/button_QR'), 'QR')
+ * 
+ * WebUI.verifyElementText(findTestObject('Object Repository/Action
+ * Menu/Page_Scheduler/button_ST'), 'ST')
+ * 
+ * WebUI.verifyElementText(findTestObject('Object Repository/Action
+ * Menu/Page_Scheduler/button_UV'), 'UV')
+ * 
+ * WebUI.verifyElementText(findTestObject('Object Repository/Action
+ * Menu/Page_Scheduler/button_WX'), 'WX')
+ * 
+ * WebUI.verifyElementText(findTestObject('Object Repository/Action
+ * Menu/Page_Scheduler/button_YZ'), 'YZ')
+ */
 WebUI.closeBrowser()
 

@@ -38,8 +38,7 @@ driver.manage().addCookie(new Cookie('user_name', GlobalVariable.user_name))
 
 WebUI.refresh()
 
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Horizontal/Page_Scheduler/svg_Kauai_bookmark-icon'), 0)
+WebUI.verifyElementPresent(new TestObject().addProperty('xpath', ConditionType.EQUALS, "//*[@aria-haspopup='menu']//*[name()='svg' and @id='bookmark-icon']"), 5)
 
 WebUI.closeBrowser()
 

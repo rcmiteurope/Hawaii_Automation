@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Verify Repeat By Weeks Option with Student Absent - Notice</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>4d68a37e-d1a8-48b5-88b2-453a686c9892</testCaseGuid>
-</TestCaseEntity>

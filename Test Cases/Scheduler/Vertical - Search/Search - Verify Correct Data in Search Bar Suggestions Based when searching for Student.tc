@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Search - Verify Correct Data in Search Bar Suggestions Based when searching for Student</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>3e3ae3e4-1f32-4f66-bad4-0ab6369956e3</testCaseGuid>
-</TestCaseEntity>

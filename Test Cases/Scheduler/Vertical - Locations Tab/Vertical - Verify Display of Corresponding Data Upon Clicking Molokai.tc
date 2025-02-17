@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Vertical - Verify Display of Corresponding Data Upon Clicking Molokai</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f3797e86-d8c9-4a1d-bef2-07a5064e156f</testCaseGuid>
+</TestCaseEntity>

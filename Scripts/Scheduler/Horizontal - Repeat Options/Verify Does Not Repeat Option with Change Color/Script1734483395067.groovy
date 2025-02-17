@@ -43,18 +43,18 @@ WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS,
 WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//*[@id=\'horizontal_next_btn\']'))
 
 //Click cell
-WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//table[@id=\'horizontal-table\']//tbody//tr[2]//td[2]//div'))
+WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, "(//table[@id=\'horizontal-table\'])[2]//tbody//tr[2]//td[6]//div"))
 
 //Click Action
 WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//*[@id=\'hori-change-color\']'))
 
-WebUI.click(findTestObject('Object Repository/Repeat Options/Page_Scheduler/div_Foreground_foreground-holder'))
+WebUI.click(new TestObject().addProperty("id", ConditionType.EQUALS, "foreground-holder"))
 
-WebUI.click(findTestObject('Object Repository/Repeat Options/Page_Scheduler/div'))
+WebUI.click(new TestObject().addProperty("xpath", ConditionType.EQUALS, "//*[@id='color-picker-holder']//div[@title='#1515FF']"))
 
-WebUI.click(findTestObject('Object Repository/Repeat Options/Page_Scheduler/div_Background_h-7 w-7 cursor-pointer round_b9f16a'))
+WebUI.click(new TestObject().addProperty("id", ConditionType.EQUALS, "background-holder"))
 
-WebUI.click(findTestObject('Object Repository/Repeat Options/Page_Scheduler/div_1'))
+WebUI.click(new TestObject().addProperty("xpath", ConditionType.EQUALS, "//*[@id='color-picker-holder']//div[@title='#D0E3F4']"))
 
 WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//*[@id=\'sched-dialog-save\']'))
 

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Add New Supervisor - Verify Popup</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ff2aa379-66b1-4f77-a6c7-ccaa5e5e2cac</testCaseGuid>
+</TestCaseEntity>

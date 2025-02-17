@@ -43,6 +43,5 @@ TestObject dateSelect = new TestObject().addProperty('xpath', ConditionType.EQUA
  
 WebUI.verifyElementPresent(dateSelect, 10)
 
-
 WebUI.closeBrowser()
 

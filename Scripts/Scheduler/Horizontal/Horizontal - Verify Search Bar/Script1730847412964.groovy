@@ -38,7 +38,6 @@ driver.manage().addCookie(new Cookie('user_name', GlobalVariable.user_name))
 
 WebUI.refresh()
 
-
 boolean isPresent = WebUI.verifyElementPresent(new TestObject().addProperty("xpath", ConditionType.EQUALS, "//*[@id='search']"), 5)
 
 WebUI.closeBrowser()

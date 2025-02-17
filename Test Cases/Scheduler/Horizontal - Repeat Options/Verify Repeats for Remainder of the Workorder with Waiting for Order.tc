@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Verify Repeats for Remainder of the Workorder with Waiting for Order</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>359def6c-2c50-4a98-9f9b-a979c73768da</testCaseGuid>
-</TestCaseEntity>

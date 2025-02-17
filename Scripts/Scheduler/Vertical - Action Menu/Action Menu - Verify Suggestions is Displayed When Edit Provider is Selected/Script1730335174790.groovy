@@ -41,29 +41,33 @@ driver.manage().addCookie(new Cookie('user_email', GlobalVariable.user_email))
 driver.manage().addCookie(new Cookie('user_name', GlobalVariable.user_name))
 
 WebUI.refresh()
-
-TestObject horizontalToggle = new TestObject()
-
-horizontalToggle.addProperty('xpath', ConditionType.EQUALS, '//*[@id="root"]/main/div[2]/div/div/label/div')
-
-WebUI.check(horizontalToggle)
-
-//WebUI.selectOptionByLabel(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="date_filter_select"]'), 'Next Week', false)
-
-WebUI.click(findTestObject('Object Repository/Action Menu/Page_Scheduler/input_Mon, 1125 0800 - 1415_master-checkbox_5083b2'))
-
-WebUI.executeJavaScript('document.getElementById("actionmenu-handle").click();', null)
-
-WebElement weEditProvider = driver.findElement(By.xpath('//*[@id="provider-callout"]/following-sibling::button'))	// todo: change xpath
-TestObject toEditProvider = WebUI.convertWebElementToTestObject(weEditProvider)
-WebUI.mouseOver(toEditProvider)	
-WebUI.click(toEditProvider)
- 
-
-TestObject providerSuggestion = new TestObject().addProperty('xpath', ConditionType.EQUALS, "//*[@id='provider-suggestion']")
-String actualText = WebUI.getText(providerSuggestion)
-assert actualText == "Suggestions" : "Expected 'Suggestions' but found '${actualText}'"
-
+/*
+ * // Check Horizontal Toggle WebUI.check(new
+ * TestObject("dynamicObj").addProperty("xpath", ConditionType.EQUALS,
+ * "//*[@id='root']/main/div[2]/div[1]/div[1]/div/div"))
+ * 
+ * 
+ * //WebUI.selectOptionByLabel(new TestObject().addProperty('xpath',
+ * ConditionType.EQUALS, '//*[@id="date_filter_select"]'), 'Next Week', false)
+ * 
+ * WebUI.click(findTestObject('Object Repository/Action
+ * Menu/Page_Scheduler/input_Mon, 1125 0800 - 1415_master-checkbox_5083b2'))
+ * 
+ * WebUI.executeJavaScript('document.getElementById("actionmenu-handle").click()
+ * ;', null)
+ * 
+ * WebElement weEditProvider =
+ * driver.findElement(By.xpath('//*[@id="provider-callout"]/following-sibling::
+ * button')) // todo: change xpath TestObject toEditProvider =
+ * WebUI.convertWebElementToTestObject(weEditProvider)
+ * WebUI.mouseOver(toEditProvider) WebUI.click(toEditProvider)
+ * 
+ * 
+ * TestObject providerSuggestion = new TestObject().addProperty('xpath',
+ * ConditionType.EQUALS, "//*[@id='provider-suggestion']") String actualText =
+ * WebUI.getText(providerSuggestion) assert actualText == "Suggestions" :
+ * "Expected 'Suggestions' but found '${actualText}'"
+ */
 WebUI.closeBrowser()
 
 

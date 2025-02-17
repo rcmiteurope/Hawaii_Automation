@@ -12,56 +12,63 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>ea867564-2a0a-43c2-88a8-f10ec064d78a</testSuiteGuid>
    <testCaseLink>
-      <guid>80feae51-d783-4bac-8be9-4e3ad0041282</guid>
+      <guid>d9c6a5e8-023e-4454-a7e3-33e6fe3c57c5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Scheduler/Vertical - Search/Search - Verify Correct Data in Search Bar Suggestions Based when searching for Provider</testCaseId>
+      <testCaseId>Test Cases/Scheduler/Vertical - Search/Search - Verify Correct Date Filter when searching for Date</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>a4a97384-ab27-4b72-8834-af388f1d11ff</guid>
+      <guid>04ee2b49-8bca-4fb4-b28f-d678afa2ea72</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Scheduler/Vertical - Search/Search - Verify Correct Data in Search Bar Suggestions Based when searching for School</testCaseId>
+      <testCaseId>Test Cases/Scheduler/Vertical - Search/Search - Verify Correct Provider Filter when searching for Provider</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>c1d7d59a-5e53-4e98-8df6-594d476a34dd</guid>
+      <guid>101f2a50-9735-42f8-b4ed-90d522ddbc00</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Scheduler/Vertical - Search/Search - Verify Correct Data in Search Bar Suggestions Based when searching for Student</testCaseId>
+      <testCaseId>Test Cases/Scheduler/Vertical - Search/Search - Verify Correct School Filter when searching for School</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>101f707f-875b-487e-b964-37b41c2f474b</guid>
+      <guid>2c35c3e7-22d7-43b7-8ccc-0b054a3c79b0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Scheduler/Vertical - Search/Search - Verify Correct Data in Search Bar Suggestions Based when searching for Supervisor</testCaseId>
+      <testCaseId>Test Cases/Scheduler/Vertical - Search/Search - Verify Correct Student Filter when searching for Student</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b6b4cdd0-e39d-4a84-b3f3-5fe9d13a1725</guid>
+      <guid>675b9ea3-6eea-4a82-b58a-af861fb1c873</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Scheduler/Vertical - Search/Search - Verify Correct Supervisor Filter when searching for Supervisor</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>899e29f6-03b5-416d-8577-d143c0e3c785</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Scheduler/Vertical - Search/Search - Verify Search Bar</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>781a2dd7-7a7a-40e3-8420-227e45bdbbfd</guid>
+      <guid>271b4afd-245e-4b53-8fbc-614fcfd90352</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Scheduler/Vertical - Search/Search - Verify the Searched Date Filter</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>2820cfee-aebc-41ab-adda-a90e3857e423</guid>
+      <guid>f9024e2c-13b5-442e-b7ae-5c294dfb6f65</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Scheduler/Vertical - Search/Search - Verify User Dropdown Selection</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>42390ee3-7112-4c52-b816-965f1896fa4d</guid>
+      <guid>17fc58ba-93f6-4ce2-8ab6-9abe96323f35</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Scheduler/Vertical - Search/Search - Verify User Icon</testCaseId>

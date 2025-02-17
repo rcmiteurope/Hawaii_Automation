@@ -27,6 +27,9 @@ driver.manage().addCookie(new Cookie('user_name', GlobalVariable.user_name))
 
 WebUI.refresh()
 
+// Check Horizontal Toggle
+WebUI.check(new TestObject("dynamicObj").addProperty("xpath", ConditionType.EQUALS, "//*[@id='root']/main/div[2]/div[1]/div[1]/div/div"))
+ 
 // Locate the dropdown using the XPath
 WebElement dropdown = driver.findElement(By.id('provider_filter_select'))
 dropdown.click()

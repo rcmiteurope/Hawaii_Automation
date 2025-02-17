@@ -86,9 +86,9 @@ for (Integer column : targetColumns) {
 
 WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="provider-button"]'))
 
-WebUI.click(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/div_Provider_css-19bb58m'))
+WebUI.click(new TestObject().addProperty("id", ConditionType.EQUALS, "provider-search-bar"))
 
-WebUI.click(findTestObject('Object Repository/ScheduleAssignmentDialog/Page_Scheduler/div_Abad, Jose'))
+WebUI.click(new TestObject().addProperty("xpath", ConditionType.EQUALS, "//div[@role='option' and text()='Abad, Jose']"))
 
 WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="sched-dialog-save"]'))
 

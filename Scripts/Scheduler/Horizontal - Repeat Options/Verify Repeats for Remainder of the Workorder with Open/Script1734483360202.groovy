@@ -45,19 +45,19 @@ WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS,
 WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//*[@id=\'horizontal_next_btn\']'))
 
 //Click Cell
-WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//table[@id=\'horizontal-table\']//tbody//tr[2]//td[4]//div'))
+WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, "(//table[@id='horizontal-table'])[2]//tbody//tr[4]//td[6]//div"))
 
 //Remainder of Workorder
-WebUI.click(findTestObject('Object Repository/Repeat Options/Page_Scheduler/button_Does Not Repeat'))
+WebUI.click(new TestObject().addProperty("id", ConditionType.EQUALS, "hsad-select-option"))
 
-WebUI.click(findTestObject('Object Repository/Repeat Options/Page_Scheduler/li_Repeats for Remainder of the Workorder'))
+WebUI.click(new TestObject().addProperty("xpath", ConditionType.EQUALS, "//li[@role='option' and text()='Repeats for the Remainder of the Workorder']"))
 
 //Click action
 WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//*[@id=\'provider-button\']'))
 
-WebUI.click(findTestObject('Object Repository/Repeat Options/Page_Scheduler/div_Provider_css-19bb58m'))
+WebUI.click(new TestObject().addProperty("id", ConditionType.EQUALS, "provider-search-bar"))
 
-WebUI.click(findTestObject('Object Repository/Repeat Options/Page_Scheduler/div_Aana, Leslie Ann'))
+WebUI.click(new TestObject().addProperty("xpath", ConditionType.EQUALS, "//div[@role='option' and text()='Aana, Leslie Ann']"))
 
 //Confirm Repeat
 WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//button[@type="button" and normalize-space(text())="Confirm"]'))
@@ -65,12 +65,12 @@ WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//butto
 WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//*[@id=\'sched-dialog-save\']'))
 
 //Click Cell
-WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//table[@id=\'horizontal-table\']//tbody//tr[2]//td[4]//div'))
+WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, "(//table[@id='horizontal-table'])[2]//tbody//tr[4]//td[6]//div"))
 
 //Remainder of Workorder
-WebUI.click(findTestObject('Object Repository/Repeat Options/Page_Scheduler/button_Does Not Repeat'))
+WebUI.click(new TestObject().addProperty("id", ConditionType.EQUALS, "hsad-select-option"))
 
-WebUI.click(findTestObject('Object Repository/Repeat Options/Page_Scheduler/li_Repeats for Remainder of the Workorder'))
+WebUI.click(new TestObject().addProperty("xpath", ConditionType.EQUALS, "//li[@role='option' and text()='Repeats for the Remainder of the Workorder']"))
 
 //Click action
 WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="horizontal-open"]'))
@@ -78,9 +78,7 @@ WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id
 WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//*[@id=\'sched-dialog-save\']'))
 
 //Cell Location
-TestObject dynamicObject = new TestObject('dynamic')
-
-dynamicObject.addProperty('xpath', ConditionType.EQUALS, '//table[@id=\'horizontal-table\']//tbody//tr[2]//td[4]//div')
+TestObject dynamicObject = new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, "(//table[@id='horizontal-table'])[2]//tbody//tr[4]//td[6]//div")
 
 // Get the text of the element
 String elementText = WebUI.getText(dynamicObject)
@@ -89,9 +87,9 @@ String elementText = WebUI.getText(dynamicObject)
 String expectedText = 'OPEN' // Replace with your expected text
 
 if (elementText.contains(expectedText)) {
-    println('Text matches: ')
+    println("Text matches: ${elementText}")
 } else {
-    KeywordUtil.markFailedAndStop("Text does not match")
+    KeywordUtil.markFailedAndStop("Text does not match. Expected: ${expectedText}, Found: ${elementText}")
 }
 
 WebUI.closeBrowser()

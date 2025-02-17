@@ -24,6 +24,11 @@ import com.kms.katalon.core.testobject.TestObject
 import org.openqa.selenium.WebElement 
 import org.openqa.selenium.By 
 import java.util.Random
+import org.openqa.selenium.Keys as Keys
+import org.testng.Assert
+import java.text.SimpleDateFormat
+import java.util.Date
+
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.scheduler_url)
@@ -38,7 +43,35 @@ driver.manage().addCookie(new Cookie('user_name', GlobalVariable.user_name))
 
 WebUI.refresh()
 
+//Click Lanai
+WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//*[@id=\'tab-9\']'))
 
+//Click Bookmark icon
+WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id=":r7:"]'))
+
+WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, "//button[contains(text(), 'Open for this Week')]"))
+
+// Define the XPath for the columns to verify
+String columnXPath = "(//table[@id='horizontal-table'])[2]/tbody/tr/td[position() >= 2 and position() <= 6]"
+
+List<WebElement> tableCells = WebUI.findWebElements(
+	new TestObject().addProperty('xpath', ConditionType.EQUALS, columnXPath), 10
+)
+
+for (WebElement cell : tableCells) {
+	String cellText = cell.getText().trim()
+
+	if (cellText.isEmpty()) {
+		WebUI.comment("Skipped empty cell")
+		continue
+	}
+
+	WebUI.comment("Cell text: " + cellText)
+
+	Assert.assertTrue(
+    cellText.contains("OPEN"),
+    "Cell does not contain 'OPEN'. Actual text: " + cellText);
+}
 
 WebUI.closeBrowser()
 

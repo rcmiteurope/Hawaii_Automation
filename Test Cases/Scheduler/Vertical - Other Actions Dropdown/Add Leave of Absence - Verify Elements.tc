@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Add Leave of Absence - Verify Elements</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>21a10c25-d91e-4f4f-9843-7ad41300adbe</testCaseGuid>
+</TestCaseEntity>

@@ -58,9 +58,7 @@ WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id
 WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//*[@id=\'sched-dialog-save\']'))
 
 //Cell Location
-TestObject dynamicObject = new TestObject('dynamic')
-
-dynamicObject.addProperty('xpath', ConditionType.EQUALS, '//table[@id=\'horizontal-table\']//tbody//tr[4]//td[3]//div')
+TestObject dynamicObject = new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//table[@id=\'horizontal-table\']//tbody//tr[4]//td[3]//div')
 
 // Get the text of the element
 String elementText = WebUI.getText(dynamicObject)

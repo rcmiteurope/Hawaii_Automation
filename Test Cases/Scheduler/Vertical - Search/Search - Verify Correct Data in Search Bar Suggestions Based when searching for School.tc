@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Search - Verify Correct Data in Search Bar Suggestions Based when searching for School</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>48ae95e5-be47-49e9-a606-76c10104c09b</testCaseGuid>
-</TestCaseEntity>

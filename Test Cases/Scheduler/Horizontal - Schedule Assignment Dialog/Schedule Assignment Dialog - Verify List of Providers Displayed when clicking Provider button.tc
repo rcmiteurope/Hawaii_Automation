@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Schedule Assignment Dialog - Verify List of Providers Displayed when clicking Provider button</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>626e364c-22b4-4986-8905-ce7c734b8f35</testCaseGuid>
-</TestCaseEntity>
