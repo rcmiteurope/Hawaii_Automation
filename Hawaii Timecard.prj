@@ -9,44 +9,9 @@
    <freeLicense>false</freeLicense>
    <migratedVersion>5.9.0</migratedVersion>
    <modifiedEdition>ENTERPRISE</modifiedEdition>
-   <modifiedVersion>9.6.0</modifiedVersion>
+   <modifiedVersion>10.0.1</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>/Users/mikerubin/Katalon Studio/Hawaii Timecard/Hawaii Timecard.prj</projectFileLocation>
-   <sourceContent>
-      <sourceFolderList>
-         <sourceFolderConfiguration>
-            <url>Include/scripts/groovy</url>
-         </sourceFolderConfiguration>
-      </sourceFolderList>
-      <systemFolderList>
-         <systemFolderConfiguration>
-            <url>Include/scripts/groovy</url>
-         </systemFolderConfiguration>
-         <systemFolderConfiguration>
-            <url>Include/features</url>
-         </systemFolderConfiguration>
-         <systemFolderConfiguration>
-            <url>Include/config</url>
-         </systemFolderConfiguration>
-      </systemFolderList>
-   </sourceContent>
-   <timeStampInProperties>false</timeStampInProperties>
-   <type>WEBUI</type>
-</Project>
-<?xml version="1.0" encoding="UTF-8"?>
-<Project>
-   <description></description>
-   <name>Hawaii Timecard</name>
-   <tag></tag>
-   <UUID>8c9a0058-54bc-4343-89a9-384c978db62e</UUID>
-   <createdEdition>ENTERPRISE</createdEdition>
-   <createdVersion>9.6.0</createdVersion>
-   <freeLicense>false</freeLicense>
-   <migratedVersion>5.9.0</migratedVersion>
-   <modifiedEdition>ENTERPRISE</modifiedEdition>
-   <modifiedVersion>9.7.2</modifiedVersion>
-   <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>C:\Users\EBorrome\OneDrive - RCM Technologies\Documents\GitHub\Katalon\Hawaii_Automation\Hawaii Timecard.prj</projectFileLocation>
+   <projectFileLocation>C:\Users\JBautist\OneDrive - RCM Technologies\Documents\Repositories\Hawaii_Automation\Hawaii Timecard.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
