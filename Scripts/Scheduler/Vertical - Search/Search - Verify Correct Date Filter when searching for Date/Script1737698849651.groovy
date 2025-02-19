@@ -42,46 +42,36 @@ driver.manage().addCookie(new Cookie('user_name', GlobalVariable.user_name))
 WebUI.refresh()
 
 // Check Horizontal Toggle
-/*
- * TestObject horizontalToggle = new TestObject('horizontalToggle')
- * 
- * horizontalToggle.addProperty('xpath', ConditionType.EQUALS,
- * '//*[@id=\'root\']/main/div[2]/div[1]/div[1]/div/div')
- * 
- * WebUI.verifyElementPresent(horizontalToggle, 5)
- * 
- * WebUI.check(horizontalToggle)
- * 
- * TestObject userToggle = new TestObject().addProperty('xpath',
- * ConditionType.EQUALS, '//button[@id=\':rb:\']')
- * 
- * WebUI.click(userToggle)
- * 
- * TestObject searchOption = new TestObject().addProperty('xpath',
- * ConditionType.EQUALS, '//*[@id=\':ra:\']/button[5]/div')
- * 
- * WebUI.click(searchOption)
- * 
- * WebUI.click(findTestObject('Object
- * Repository/Search/Page_Scheduler/input_Kauai_datepicker'))
- * 
- * WebUI.rightClick(findTestObject('Object
- * Repository/Search/Page_Scheduler/button_31'))
- * 
- * WebUI.click(findTestObject('Object
- * Repository/Search/Page_Scheduler/button_31'))
- * 
- * WebUI.click(findTestObject('Object
- * Repository/Search/Page_Scheduler/button_31'))
- * 
- * List<WebElement> col4Cells =
- * driver.findElements(By.xpath("//table[@id='vertical-table']/tbody/tr/td[3]"))
- * 
- * for (WebElement cell : col4Cells) { String cellText = cell.getText().trim()
- * WebUI.comment("Cell text: " + cellText)
- * 
- * Assert.assertTrue(cellText.contains('1/31')) }
- */
+
+TestObject horizontalToggle = new TestObject('horizontalToggle').addProperty('xpath', ConditionType.EQUALS,'//*[@id=\'root\']/main/div[2]/div[1]/div[1]/div/div')
+
+WebUI.verifyElementPresent(horizontalToggle, 5)
+
+WebUI.check(horizontalToggle)
+
+TestObject userToggle = new TestObject().addProperty('xpath',ConditionType.EQUALS, '//button[@id=\':rb:\']')
+
+WebUI.click(userToggle)
+
+TestObject searchOption = new TestObject().addProperty('xpath',ConditionType.EQUALS, '//*[@id=\':ra:\']/button[5]/div')
+
+WebUI.click(searchOption)
+
+WebUI.click(findTestObject('ObjectRepository/Search/Page_Scheduler/input_Kauai_datepicker'))
+
+WebUI.rightClick(findTestObject('ObjectRepository/Search/Page_Scheduler/button_31'))
+
+WebUI.click(findTestObject('ObjectRepository/Search/Page_Scheduler/button_31'))
+
+WebUI.click(findTestObject('ObjectRepository/Search/Page_Scheduler/button_31'))
+
+List<WebElement> col4Cells = driver.findElements(By.xpath("//table[@id='vertical-table']/tbody/tr/td[3]"))
+
+for (WebElement cell : col4Cells) { String cellText = cell.getText().trim()
+WebUI.comment("Cell text: " + cellText)
+
+Assert.assertTrue(cellText.contains('1/31')) }
+
 
 // Close the browser
 WebUI.closeBrowser()

@@ -16,7 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import org.openqa.selenium.Cookie as Cookie
 import com.kms.katalon.core.webui.driver.DriverFactory
 import org.openqa.selenium.WebDriver
@@ -42,8 +42,21 @@ WebUI.refresh()
 // Check Horizontal Toggle
 //WebUI.check(new TestObject("dynamicObj").addProperty("xpath", ConditionType.EQUALS, "//*[@id='root']/main/div[2]/div[1]/div[1]/div/div"))
  
-WebUI.selectOptionByValue(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="other-actions-dropdown"]'), 'add-leave', true)
 
-WebUI.verifyElementPresent(new TestObject().addProperty('xpath', ConditionType.EQUALS, "//dialog"), 10)
+WebUI.selectOptionByValue(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="other-actions-dropdown"]'), 'add-supervisor', true)
+
+
+WebUI.setText(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="filter-wrapper"]/div[1]/dialog/div[2]/div[1]/input'),
+    'Test')
+
+WebUI.setText(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="filter-wrapper"]/div[1]/dialog/div[2]/div[2]/input'),
+	 'Eri')
+
+WebUI.setText(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="filter-wrapper"]/div[1]/dialog/div[2]/div[3]/input'),
+	 'eri@gmail.com')
+
+WebUI.selectOptionByValue(new TestObject().addProperty('xpath', ConditionType.EQUALS, "//select[@class='min-h-[2em] min-w-[100%] rounded-md border-2 border-black']"), '1', true)
+
+WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, "//*[@id='submit-dialog']"))
 
 WebUI.closeBrowser()

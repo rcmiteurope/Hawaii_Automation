@@ -18,7 +18,7 @@ Sql sql = DatabaseConnection.connectToDatabase()
 List<String> expectedProviders = []
 
 String query = "CALL sp_HTS_GetSchedules(?,?,?,?,?,?,?,?)"
-int island = 5
+int island = 9
 int filter_type = 0
 def status =  null
 LocalDate week_start = LocalDate.now()
@@ -56,10 +56,10 @@ horizontalToggle.addProperty("xpath", ConditionType.EQUALS, "//*[@id='root']/mai
 WebUI.verifyElementPresent(horizontalToggle, 5)
 WebUI.check(horizontalToggle)
 
-// Click on 'Hilo' tab
+// Click on 'Lanai' tab
 WebUI.click(
-	new TestObject("tab5")
-		.addProperty("xpath", ConditionType.EQUALS, "//*[@id='tab-5']")
+	new TestObject("tab9")
+		.addProperty("xpath", ConditionType.EQUALS, "//*[@id='tab-9']")
 )
 
 List<WebElement> rows = driver.findElements(By.xpath("//table[@id='vertical-table']/tbody/tr[position()>1]"))
@@ -87,7 +87,7 @@ expectedRows.eachWithIndex { expectedRow, rowIndex ->
 				String actualEndTime = parts[4]        // "16:15"
 
 				// Extract expected values from the current expectedRow
-				String expectedSchoolName = expectedRow.schoolName.trim()
+			    String expectedSchoolName = expectedRow.schoolName.trim()
                 String expectedStudentName = expectedRow.studentName.trim()
 				String scheduledDate = expectedRow.scheduledDate  // "2025-01-27"
 				String expectedStartTime = expectedRow.startTime

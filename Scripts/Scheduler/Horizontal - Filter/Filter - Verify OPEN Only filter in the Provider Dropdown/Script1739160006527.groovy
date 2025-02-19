@@ -1,3 +1,4 @@
+@ -0,0 +1,78 @@
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.By as By
@@ -27,6 +28,8 @@ import java.util.Date
 
 WebUI.openBrowser('')
 
+WebUI.maximizeWindow()
+
 WebUI.navigateToUrl(GlobalVariable.scheduler_url)
 
 WebDriver driver = DriverFactory.getWebDriver()
@@ -41,20 +44,19 @@ driver.manage().addCookie(new Cookie('user_name', GlobalVariable.user_name))
 
 WebUI.refresh()
 
-//Click Lanai
-WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//*[@id=\'tab-9\']'))
+//Click Molokai
+WebUI.click(new TestObject('dynamic').addProperty('xpath', ConditionType.EQUALS, '//*[@id=\'tab-8\']'))
+
 
 // Locate the dropdown using the XPath
-TestObject dropdownObj = new TestObject().addProperty('id', ConditionType.EQUALS, 'provider_filter_select')
-WebUI.waitForElementClickable(dropdownObj, 10)
-
 WebElement dropdown = driver.findElement(By.id('provider_filter_select'))
+
 dropdown.click()
 
 WebElement selectedOption = dropdown.findElement(By.xpath("//option[text()='OPEN Only']"))
 selectedOption.click()
 
-String columnXPath = "(//table[@id='horizontal-table'])[2]/tbody/tr/td[position() >= 2 and position() <= 6]"
+String columnXPath = '//table[@id="horizontal-table"]/tbody/tr/td[position() >= 2 and position() <= 6]'
 
 List<WebElement> divElements = WebUI.findWebElements(
 	new TestObject().addProperty('xpath', ConditionType.EQUALS, columnXPath), 10
@@ -67,7 +69,7 @@ for (WebElement div : divElements) {
 		continue
 	}
 
-	WebUI.comment("Actual text: " + divText)
+	WebUI.comment("Div text: " + divText)
 
 	Assert.assertTrue(divText.contains("OPEN"))
 }
