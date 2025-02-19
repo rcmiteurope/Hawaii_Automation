@@ -18,7 +18,7 @@ Sql sql = DatabaseConnection.connectToDatabase()
 List<String> expectedProviders = []
 
 String query = "CALL sp_HTS_GetSchedules(?,?,?,?,?,?,?,?)"
-int island = 5
+int island = 7
 int filter_type = 0
 def status =  null
 LocalDate week_start = LocalDate.now()
@@ -56,10 +56,10 @@ horizontalToggle.addProperty("xpath", ConditionType.EQUALS, "//*[@id='root']/mai
 WebUI.verifyElementPresent(horizontalToggle, 5)
 WebUI.check(horizontalToggle)
 
-// Click on 'Hilo' tab
+// Click on 'Maui' tab
 WebUI.click(
 	new TestObject("tab5")
-		.addProperty("xpath", ConditionType.EQUALS, "//*[@id='tab-5']")
+		.addProperty("xpath", ConditionType.EQUALS, "//*[@id='tab-7']")
 )
 
 List<WebElement> rows = driver.findElements(By.xpath("//table[@id='vertical-table']/tbody/tr[position()>1]"))
@@ -127,4 +127,3 @@ expectedRows.eachWithIndex { expectedRow, rowIndex ->
         println("Error processing row ${rowIndex + 1}: ${e.message}")
     }
 }
-WebUI.closeBrowser()

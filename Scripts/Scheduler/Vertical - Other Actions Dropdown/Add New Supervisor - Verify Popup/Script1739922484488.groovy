@@ -38,11 +38,11 @@ driver.manage().addCookie(new Cookie('user_email', GlobalVariable.user_email))
 driver.manage().addCookie(new Cookie('user_name', GlobalVariable.user_name))
 
 WebUI.refresh()
-
 // Check Horizontal Toggle
 //WebUI.check(new TestObject("dynamicObj").addProperty("xpath", ConditionType.EQUALS, "//*[@id='root']/main/div[2]/div[1]/div[1]/div/div"))
  
-WebUI.selectOptionByValue(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="other-actions-dropdown"]'), 'add-leave', true)
+
+WebUI.selectOptionByValue(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="other-actions-dropdown"]'), 'add-supervisor', true)
 
 WebUI.verifyElementPresent(new TestObject().addProperty('xpath', ConditionType.EQUALS, "//dialog"), 10)
 

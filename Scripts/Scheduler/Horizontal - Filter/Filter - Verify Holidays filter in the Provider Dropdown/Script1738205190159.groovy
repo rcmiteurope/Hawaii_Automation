@@ -1,3 +1,4 @@
+@ -0,0 +1,83 @@
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.By as By
@@ -53,7 +54,7 @@ selectedOption.click()
 
 
 // Define the XPath for the columns to verify
-String columnXPath = "(//table[@id='horizontal-table'])[2]/tbody/tr/td[position() >= 2 and position() <= 6]"
+String columnXPath = '//table[@id="horizontal-table"]/tbody/tr/td[position() >= 2 and position() <= 6]'
 
 List<WebElement> tableCells = WebUI.findWebElements(
     new TestObject().addProperty('xpath', ConditionType.EQUALS, columnXPath), 10
@@ -80,4 +81,3 @@ for (WebElement cell : tableCells) {
 }
 
 WebUI.closeBrowser()
-

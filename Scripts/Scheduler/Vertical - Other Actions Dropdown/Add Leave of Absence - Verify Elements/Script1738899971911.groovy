@@ -16,4 +16,53 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.Cookie as Cookie
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.WebDriver
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
 
+// Open browser and navigate to the URL
+WebUI.openBrowser('')
+WebUI.navigateToUrl(GlobalVariable.scheduler_url)
+
+// Add authentication cookies
+WebDriver driver = DriverFactory.getWebDriver()
+
+Cookie authCookie = new Cookie('sc_auth_token', GlobalVariable.sc_auth_token)
+
+driver.manage().addCookie(authCookie)
+
+driver.manage().addCookie(new Cookie('user_email', GlobalVariable.user_email))
+
+driver.manage().addCookie(new Cookie('user_name', GlobalVariable.user_name))
+
+WebUI.refresh()
+
+// Check Horizontal Toggle
+//WebUI.check(new TestObject("dynamicObj").addProperty("xpath", ConditionType.EQUALS, "//*[@id='root']/main/div[2]/div[1]/div[1]/div/div"))
+ 
+
+WebUI.selectOptionByValue(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="other-actions-dropdown"]'), 'add-leave', true)
+
+
+// Verify the presence of input fields
+TestObject inputField1 = new TestObject()
+inputField1.addProperty('xpath', ConditionType.EQUALS, '//*[@id="filter-wrapper"]/div/dialog/div[2]/div[1]/select')
+WebUI.verifyElementPresent(inputField1, 0)
+
+TestObject inputField2 = new TestObject()
+inputField2.addProperty('xpath', ConditionType.EQUALS, '//*[@id="datepicker"]')
+WebUI.verifyElementPresent(inputField2, 0)
+
+TestObject inputField3 = new TestObject()
+inputField3.addProperty('xpath', ConditionType.EQUALS, '//*[@id="color-picker-holder"]')
+WebUI.verifyElementPresent(inputField3, 0)
+
+// Verify the presence of Submit and Cancel buttons
+TestObject submitCancelDiv = new TestObject()
+submitCancelDiv.addProperty('xpath', ConditionType.EQUALS, '//*[@id="filter-wrapper"]/div[1]/dialog/div[2]/div[4]')
+WebUI.verifyElementPresent(submitCancelDiv, 0)
+
+// Close the browser
+WebUI.closeBrowser()

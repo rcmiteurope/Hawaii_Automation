@@ -18,7 +18,7 @@ Sql sql = DatabaseConnection.connectToDatabase()
 List<String> expectedProviders = []
 
 String query = "CALL sp_HTS_GetSchedules(?,?,?,?,?,?,?,?)"
-int island = 5
+int island = 10
 int filter_type = 0
 def status =  null
 LocalDate week_start = LocalDate.now()
@@ -56,10 +56,10 @@ horizontalToggle.addProperty("xpath", ConditionType.EQUALS, "//*[@id='root']/mai
 WebUI.verifyElementPresent(horizontalToggle, 5)
 WebUI.check(horizontalToggle)
 
-// Click on 'Hilo' tab
+// Click on 'Kauai' tab
 WebUI.click(
-	new TestObject("tab5")
-		.addProperty("xpath", ConditionType.EQUALS, "//*[@id='tab-5']")
+	new TestObject("tab10")
+		.addProperty("xpath", ConditionType.EQUALS, "//*[@id='tab-10']")
 )
 
 List<WebElement> rows = driver.findElements(By.xpath("//table[@id='vertical-table']/tbody/tr[position()>1]"))
@@ -112,8 +112,8 @@ expectedRows.eachWithIndex { expectedRow, rowIndex ->
                     println("No match in Row ${rowIndex + 1}")
                 }
 
-                WebUI.verifyMatch(actualSchoolName, expectedSchoolName, false, FailureHandling.CONTINUE_ON_FAILURE)
-                WebUI.verifyMatch(actualStudentName, expectedStudentName, false, FailureHandling.CONTINUE_ON_FAILURE)
+				WebUI.verifyMatch(actualSchoolName, expectedSchoolName, false, FailureHandling.CONTINUE_ON_FAILURE)
+				WebUI.verifyMatch(actualStudentName, expectedStudentName, false, FailureHandling.CONTINUE_ON_FAILURE)
                 WebUI.verifyMatch(actualMD, expectedMD, false, FailureHandling.CONTINUE_ON_FAILURE)
                 WebUI.verifyMatch(actualStartTime, expectedStartTime, false, FailureHandling.CONTINUE_ON_FAILURE)
                 WebUI.verifyMatch(actualEndTime, expectedEndTime, false, FailureHandling.CONTINUE_ON_FAILURE)

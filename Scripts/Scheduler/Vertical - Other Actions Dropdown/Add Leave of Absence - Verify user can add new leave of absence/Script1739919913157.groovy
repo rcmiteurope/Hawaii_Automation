@@ -16,12 +16,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import org.openqa.selenium.Cookie as Cookie
 import com.kms.katalon.core.webui.driver.DriverFactory
 import org.openqa.selenium.WebDriver
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.testobject.ConditionType
 
 WebUI.openBrowser('')
 
@@ -39,11 +44,42 @@ driver.manage().addCookie(new Cookie('user_name', GlobalVariable.user_name))
 
 WebUI.refresh()
 
+// Click on 'Kauai' tab
+WebUI.click(
+	new TestObject("tab10")
+		.addProperty("xpath", ConditionType.EQUALS, "//*[@id='tab-10']")
+)
+
 // Check Horizontal Toggle
 //WebUI.check(new TestObject("dynamicObj").addProperty("xpath", ConditionType.EQUALS, "//*[@id='root']/main/div[2]/div[1]/div[1]/div/div"))
  
 WebUI.selectOptionByValue(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id="other-actions-dropdown"]'), 'add-leave', true)
 
-WebUI.verifyElementPresent(new TestObject().addProperty('xpath', ConditionType.EQUALS, "//dialog"), 10)
+WebUI.selectOptionByLabel(
+    new TestObject().addProperty('xpath', ConditionType.EQUALS, "//*[@id='filter-wrapper']/div/dialog/div[2]/div[1]/select"), 
+    "Aana Leslie Ann", 
+    true
+)
+
+String today = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"))
+
+String formattedDate = today + " - " + today
+
+TestObject datepicker = new TestObject().addProperty('xpath', ConditionType.EQUALS, "//*[@id='datepicker']")
+
+WebUI.click(datepicker)
+
+WebUI.setText(datepicker, formattedDate)
+
+WebUI.sendKeys(null, Keys.chord(Keys.ENTER))
+
+
+WebUI.comment("Set datepicker value: " + formattedDate)
+WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//*[@id=\'foreground-holder\']'))
+WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//div[@title=\'#1515ff\']'))
+WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, "//*[@id='background-holder']"))
+WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, "//div[@title='#D0E3F4']"))
+
+WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS, "//*[@id='submit-dialog']"))
 
 WebUI.closeBrowser()

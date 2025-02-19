@@ -1,3 +1,4 @@
+@ -0,0 +1,130 @@
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.By
@@ -18,7 +19,7 @@ Sql sql = DatabaseConnection.connectToDatabase()
 List<String> expectedProviders = []
 
 String query = "CALL sp_HTS_GetSchedules(?,?,?,?,?,?,?,?)"
-int island = 5
+int island = 8
 int filter_type = 0
 def status =  null
 LocalDate week_start = LocalDate.now()
@@ -56,10 +57,10 @@ horizontalToggle.addProperty("xpath", ConditionType.EQUALS, "//*[@id='root']/mai
 WebUI.verifyElementPresent(horizontalToggle, 5)
 WebUI.check(horizontalToggle)
 
-// Click on 'Hilo' tab
+// Click on 'Molokai' tab
 WebUI.click(
 	new TestObject("tab5")
-		.addProperty("xpath", ConditionType.EQUALS, "//*[@id='tab-5']")
+		.addProperty("xpath", ConditionType.EQUALS, "//*[@id='tab-8']")
 )
 
 List<WebElement> rows = driver.findElements(By.xpath("//table[@id='vertical-table']/tbody/tr[position()>1]"))

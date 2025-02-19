@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Horizontal - Verify Display of Corresponding Data Upon Clicking Maui</name>
+   <name>Verify DB Tables</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>92eabe34-dfd9-4560-820b-f070baaff02b</testCaseGuid>
+   <testCaseGuid>e8dcf7e8-4a8b-4d4f-b005-d00b36a4256d</testCaseGuid>
 </TestCaseEntity>
