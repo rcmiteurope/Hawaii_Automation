@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Login - Verify Load - No Missing End Time</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9d2e6a74-a5f4-463a-ae60-df05a377ac00</testCaseGuid>
+</TestCaseEntity>

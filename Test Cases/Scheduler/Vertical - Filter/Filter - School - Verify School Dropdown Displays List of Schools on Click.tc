@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Filter - School - Verify School Dropdown Displays List of Schools on Click</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d2304872-ea2a-4b4c-95b1-43585a597337</testCaseGuid>
+</TestCaseEntity>

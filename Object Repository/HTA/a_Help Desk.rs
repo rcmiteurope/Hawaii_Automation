@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Help Desk</name>
+   <tag></tag>
+   <elementGuidId>0e7e66b5-df14-4814-bc9a-a3cdc934176c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/main/div/div[2]/div[3]/div[2]/div[2]/a[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot;Help Desk&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>ff7a76d0-fe62-4d84-8252-e10b347694d7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>target</name>
+      <type>Main</type>
+      <value>_blank</value>
+      <webElementGuid>758ee9f3-7bc7-47fb-9802-e323c16137f1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>https://forms.office.com/pages/responsepage.aspx?id=-5iwDg3bDEWrZSM4tDDEV5zLC7dyG9dDigXnLs-fp-5UQkRZR0ozVVFZOTNES1ZLWEc1S01LV05aUi4u</value>
+      <webElementGuid>2e17bcb4-32b8-4407-a441-a62b61ab87a3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>font-semibold</value>
+      <webElementGuid>69565ba7-d311-4867-b10c-90b0b1d5ef70</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Help Desk</value>
+      <webElementGuid>2a84d336-0984-4bdf-a973-e3ffe7f847e7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[@class=&quot;m-2&quot;]/div[@class=&quot;px-3&quot;]/div[2]/div[@class=&quot;mx-auto mb-3 flex max-w-72 flex-col&quot;]/div[@class=&quot;mt-3 flex flex-col gap-3&quot;]/div[@class=&quot;flex justify-between px-3&quot;]/a[@class=&quot;font-semibold&quot;]</value>
+      <webElementGuid>1a4bca08-a6cd-44d5-bcb9-88286604d922</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/div/div[2]/div[3]/div[2]/div[2]/a[2]</value>
+      <webElementGuid>94a5d40d-a08c-419a-85b5-95a773b93d2f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Help Desk')]</value>
+      <webElementGuid>e95a7e4e-7328-4578-86a3-9298179f02fc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Forgot PIN'])[1]/following::a[1]</value>
+      <webElementGuid>0f9647a2-c4e0-4089-a5a4-709d08e0b620</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Login'])[1]/following::a[2]</value>
+      <webElementGuid>ba2b84df-b526-4548-8581-160fc264e6c7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Help Desk']/parent::*</value>
+      <webElementGuid>ec24fa08-0ef1-484b-b773-5d50b8e0d00b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, 'https://forms.office.com/pages/responsepage.aspx?id=-5iwDg3bDEWrZSM4tDDEV5zLC7dyG9dDigXnLs-fp-5UQkRZR0ozVVFZOTNES1ZLWEc1S01LV05aUi4u')]</value>
+      <webElementGuid>4482ec63-bd65-45e1-9f1a-f59c79783bdc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a[2]</value>
+      <webElementGuid>ddfec401-0318-4ee4-a571-005dfc026f6e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = 'https://forms.office.com/pages/responsepage.aspx?id=-5iwDg3bDEWrZSM4tDDEV5zLC7dyG9dDigXnLs-fp-5UQkRZR0ozVVFZOTNES1ZLWEc1S01LV05aUi4u' and (text() = 'Help Desk' or . = 'Help Desk')]</value>
+      <webElementGuid>1854e06b-3c9e-4bba-ae0c-cad65f2d64f1</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

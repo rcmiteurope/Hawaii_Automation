@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_0745</name>
+   <tag></tag>
+   <elementGuidId>3e6b8b87-d20b-4681-be49-c2d52e63a5d7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>td.border-stone-700.border-2.px-2 > span.startTime</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/main/div[3]/table/tbody/tr/td[5]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>td:nth-child(5) > .startTime >> nth=0</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>91854c31-75d9-4799-b9aa-fbfbc0652d03</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>startTime</value>
+      <webElementGuid>2a8e8b12-0192-4ff1-bf6d-32c24d0e86c3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>07:45</value>
+      <webElementGuid>48de995e-cafe-44c2-8210-d12004162e7c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[@class=&quot;px-3&quot;]/div[@class=&quot;w-100 border-stone-700 my-[2em] flex min-h-[55vh] w-[100%] flex-col justify-between border-2&quot;]/table[@class=&quot;w-[100%]&quot;]/tbody[@class=&quot;w-100 h-[80vh] overflow-y-auto&quot;]/tr[@class=&quot;h-[10px]&quot;]/td[@class=&quot;border-stone-700 border-2 px-2&quot;]/span[@class=&quot;startTime&quot;]</value>
+      <webElementGuid>a4385c98-5941-4bf0-bc85-bad257a232e0</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/div[3]/table/tbody/tr/td[5]/span</value>
+      <webElementGuid>49693059-e503-4423-8e1f-b08c6be2c277</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Monday'])[1]/following::span[2]</value>
+      <webElementGuid>a5a79358-dc8f-4d92-a5e8-78d238f2ef01</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Garza-Malagon, Jacqueline'])[1]/following::span[3]</value>
+      <webElementGuid>39e345ed-4694-4af0-aff9-12ba9c2465e3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Aana, Leslie Ann'])[2]/preceding::span[2]</value>
+      <webElementGuid>22a43ecc-de20-4aa6-a4a7-df280a1fc9fb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Konawaena Middle'])[3]/preceding::span[3]</value>
+      <webElementGuid>ac24e495-2c02-4888-829f-cb31a9aaf70a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='07:45']/parent::*</value>
+      <webElementGuid>0f252cff-c381-46d1-81d5-e593e1ebeef1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[5]/span</value>
+      <webElementGuid>5e29472f-56d4-4d2a-ab75-962d3b6cfc31</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = '07:45' or . = '07:45')]</value>
+      <webElementGuid>e4f4a675-309e-4588-9d36-aec1855b276c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Schedule Assignment Dialog - Verify Remove Color</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4cdbe881-5461-4b73-9786-2f6952f8f3ce</testCaseGuid>
+</TestCaseEntity>

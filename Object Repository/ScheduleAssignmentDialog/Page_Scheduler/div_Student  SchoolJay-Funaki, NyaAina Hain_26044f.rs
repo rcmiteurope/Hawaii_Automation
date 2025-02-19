@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Student  SchoolJay-Funaki, NyaAina Hain_26044f</name>
+   <tag></tag>
+   <elementGuidId>eac45447-e625-4c69-9701-ec974f00d5a4</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/main/dialog/div[2]/div/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.mb-3.flex.flex-col</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Student / SchoolJay-Funaki, NyaAina Haina Monday 11/25Abad, Jose 08:00-14:15 Tue&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>6284d84f-1c7c-481a-b6fd-0d98e5001d8c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mb-3 flex flex-col</value>
+      <webElementGuid>20c81a76-0cf0-4010-92d7-486ce08126a7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Student / SchoolJay-Funaki, NyaAina Haina Monday 11/25Abad, Jose   08:00-14:15 Tuesday 11/26OPEN 08:00-14:15 Wednesday 11/27OPEN 08:00-13:30 Thursday 11/28OPEN 08:00-14:15 Friday 11/29OPEN 08:00-14:15</value>
+      <webElementGuid>85fe2f79-cb6e-4d0c-aa80-10382925345a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[@class=&quot;px-3&quot;]/dialog[@class=&quot;dialog rounded-md&quot;]/div[@class=&quot;min-h-[60vh] min-w-[50vw]&quot;]/div[1]/div[@class=&quot;flex p-8&quot;]/div[@class=&quot;mb-3 flex flex-col&quot;]</value>
+      <webElementGuid>1239e84c-5ab4-4490-b93b-cd361a6a6310</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/dialog/div[2]/div/div/div</value>
+      <webElementGuid>336567be-ff6f-4029-8e08-34b664127cd6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div</value>
+      <webElementGuid>4ddb6366-6ca9-45a4-982b-f2034507b613</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Student / SchoolJay-Funaki, NyaAina Haina Monday 11/25Abad, Jose   08:00-14:15 Tuesday 11/26OPEN 08:00-14:15 Wednesday 11/27OPEN 08:00-13:30 Thursday 11/28OPEN 08:00-14:15 Friday 11/29OPEN 08:00-14:15' or . = 'Student / SchoolJay-Funaki, NyaAina Haina Monday 11/25Abad, Jose   08:00-14:15 Tuesday 11/26OPEN 08:00-14:15 Wednesday 11/27OPEN 08:00-13:30 Thursday 11/28OPEN 08:00-14:15 Friday 11/29OPEN 08:00-14:15')]</value>
+      <webElementGuid>f3a50f32-755a-47f6-861b-bc1548c39e9d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

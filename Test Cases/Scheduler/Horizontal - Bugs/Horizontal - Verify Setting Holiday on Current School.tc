@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Horizontal - Verify Setting Holiday on Current School</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d00b5094-168a-40a9-ac38-529a504a03a7</testCaseGuid>
+</TestCaseEntity>

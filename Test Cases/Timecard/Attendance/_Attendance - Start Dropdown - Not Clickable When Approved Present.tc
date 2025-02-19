@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>_Attendance - Start Dropdown - Not Clickable When Approved Present</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>78a933ef-373b-4920-a5a3-b7399286b935</testCaseGuid>
+</TestCaseEntity>

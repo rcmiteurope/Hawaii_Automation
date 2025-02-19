@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Search - Verify Correct Provider Filter when searching for Provider</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bddbfb00-c4f8-4952-b2af-8003d6124998</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Filter - Student - Verify All Student Dropdown</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0f75cad1-9e25-4ed6-983d-ec597f2798d8</testCaseGuid>
+</TestCaseEntity>

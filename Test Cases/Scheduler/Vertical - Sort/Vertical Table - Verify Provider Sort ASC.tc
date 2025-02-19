@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Vertical Table - Verify Provider Sort ASC</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f938b0ff-2325-4ec5-8244-8d840ca4d8cb</testCaseGuid>
+</TestCaseEntity>

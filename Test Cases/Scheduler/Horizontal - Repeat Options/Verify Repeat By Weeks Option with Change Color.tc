@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Repeat By Weeks Option with Change Color</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0d673d0a-0b44-418e-a5ef-d2afd3798c98</testCaseGuid>
+</TestCaseEntity>

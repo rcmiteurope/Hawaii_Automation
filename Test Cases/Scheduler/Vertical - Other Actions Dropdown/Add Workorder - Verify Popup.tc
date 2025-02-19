@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Add Workorder - Verify Popup</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f11fbd19-02df-4ec6-acb8-0655b230ca45</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Approval - Multi School - School Name matches selection</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7414c78e-3145-4af5-893c-21c14fc2390b</testCaseGuid>
+</TestCaseEntity>

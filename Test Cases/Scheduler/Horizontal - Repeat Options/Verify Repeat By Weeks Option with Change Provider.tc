@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Repeat By Weeks Option with Change Provider</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>fe2cb10f-6b73-47c3-a3c7-828a8d9acf3f</testCaseGuid>
+</TestCaseEntity>

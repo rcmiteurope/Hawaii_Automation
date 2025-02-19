@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Edit Provider</name>
+   <tag></tag>
+   <elementGuidId>5a6f8da5-7f97-49a8-bbde-5caab0a2500a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//span[@id='action-menu-edit-provider']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#action-menu-edit-provider</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=menuitem[name=&quot;Edit Provider&quot;s]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>5babafc9-a5cf-427a-b100-562ddff4150d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>action-menu-edit-provider</value>
+      <webElementGuid>0926aa7b-8f36-4a6d-8589-8a2d8bcac828</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Edit Provider</value>
+      <webElementGuid>bd62ae6b-8a65-4b75-b61e-eebefcb8ead2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;action-menu-edit-provider&quot;)</value>
+      <webElementGuid>e5867944-c26e-462b-ba71-906d7c68bacd</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//span[@id='action-menu-edit-provider']</value>
+      <webElementGuid>e8ef0db8-3336-4e13-8c02-ba3850c3ba20</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id=':r23:']/div/span</value>
+      <webElementGuid>4e1b59b7-8074-4272-99e9-c16795bb05ae</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Provider Call Out'])[1]/following::span[1]</value>
+      <webElementGuid>3e60945a-77ff-4c8d-9f7b-d5474e29a429</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Waiting on Orders'])[1]/following::span[1]</value>
+      <webElementGuid>0526e38a-b4d0-4f80-8d4f-c65e69504c61</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Edit Supervisor'])[1]/preceding::span[4]</value>
+      <webElementGuid>1df302fa-a669-4d6e-90cf-672036771d15</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Change Color'])[1]/preceding::span[5]</value>
+      <webElementGuid>78bd6de3-9df1-4818-b41e-23594408d749</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Edit Provider']/parent::*</value>
+      <webElementGuid>71751bfb-28d1-449d-9ccc-afb595ef968f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//button[5]/div/span</value>
+      <webElementGuid>43d6d469-c1b1-4755-bacd-28aefc94ebe6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@id = 'action-menu-edit-provider' and (text() = 'Edit Provider' or . = 'Edit Provider')]</value>
+      <webElementGuid>c3a01a9f-3278-4b2d-a508-2f7ae9390d54</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

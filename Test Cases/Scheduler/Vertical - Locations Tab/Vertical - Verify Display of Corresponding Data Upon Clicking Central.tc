@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Vertical - Verify Display of Corresponding Data Upon Clicking Central</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f434465c-8891-4225-9498-248c4fced7f3</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Filter - Provider - Verify All Provider Dropdown</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1ca4a9b5-428e-4b7e-95cc-ba082b3a2931</testCaseGuid>
+</TestCaseEntity>

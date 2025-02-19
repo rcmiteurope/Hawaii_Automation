@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Bookmark - Verify option OPEN for Today filter</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f09510e5-e40c-4003-a523-e3484335bd3a</testCaseGuid>
+</TestCaseEntity>

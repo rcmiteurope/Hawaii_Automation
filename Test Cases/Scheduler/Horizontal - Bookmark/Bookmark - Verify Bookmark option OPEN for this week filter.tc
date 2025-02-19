@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Bookmark - Verify Bookmark option OPEN for this week filter</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8721162d-d92c-487d-a5db-d8af15bce838</testCaseGuid>
+</TestCaseEntity>

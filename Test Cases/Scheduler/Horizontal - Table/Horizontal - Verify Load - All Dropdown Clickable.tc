@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Horizontal - Verify Load - All Dropdown Clickable</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f325d6dc-b3ce-4b81-8036-ec7da7c14ad0</testCaseGuid>
+</TestCaseEntity>

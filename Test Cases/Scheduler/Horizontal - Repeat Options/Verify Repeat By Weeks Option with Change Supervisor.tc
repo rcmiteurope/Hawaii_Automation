@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Repeat By Weeks Option with Change Supervisor</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9229b229-6612-4430-a851-72a5e3df7d16</testCaseGuid>
+</TestCaseEntity>

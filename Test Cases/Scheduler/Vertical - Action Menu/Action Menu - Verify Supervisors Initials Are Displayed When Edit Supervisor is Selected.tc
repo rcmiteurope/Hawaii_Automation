@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Action Menu - Verify Supervisors Initials Are Displayed When Edit Supervisor is Selected</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9de7fc20-5fdd-4166-ad7d-51271a48ea0e</testCaseGuid>
+</TestCaseEntity>

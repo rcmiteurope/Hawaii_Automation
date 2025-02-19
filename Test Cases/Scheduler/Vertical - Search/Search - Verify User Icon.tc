@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Search - Verify User Icon</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>029d227f-7812-4f62-8db5-675f1726d3b8</testCaseGuid>
+</TestCaseEntity>

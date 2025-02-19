@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Repeats for Remainder of the Workorder with Change Provider</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8279dfb1-d6df-475f-afce-af645d5e95f1</testCaseGuid>
+</TestCaseEntity>

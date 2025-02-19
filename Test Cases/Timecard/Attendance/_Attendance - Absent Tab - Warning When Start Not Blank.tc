@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>_Attendance - Absent Tab - Warning When Start Not Blank</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>58987393-34f9-401f-8a45-0092df89e045</testCaseGuid>
+</TestCaseEntity>

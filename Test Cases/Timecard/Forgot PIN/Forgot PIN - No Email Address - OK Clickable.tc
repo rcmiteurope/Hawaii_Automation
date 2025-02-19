@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>When I request a new PIN, but do not enter an email address, the OK button on the popup must be clickable</description>
+   <name>Forgot PIN - No Email Address - OK Clickable</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>830b05d4-9d8f-416d-be8a-40dd81e68eb6</testCaseGuid>
+</TestCaseEntity>

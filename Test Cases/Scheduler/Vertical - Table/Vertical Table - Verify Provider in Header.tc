@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Vertical Table - Verify Provider in Header</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cc4aa9e9-0817-4286-b1cf-0ae9a9be6594</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Horizontal - Verify Horizontal Toggle Button</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3f6cdff0-154b-4ff8-9810-d59141eef6a7</testCaseGuid>
+</TestCaseEntity>

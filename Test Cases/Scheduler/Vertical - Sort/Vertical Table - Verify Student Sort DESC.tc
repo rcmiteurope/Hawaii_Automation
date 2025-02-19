@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Vertical Table - Verify Student Sort DESC</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c03e91cf-dc07-4663-8bd1-1acae7f405f6</testCaseGuid>
+</TestCaseEntity>

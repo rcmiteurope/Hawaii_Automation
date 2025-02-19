@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Vertical - Verify Checkbox in Header</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3d01209d-980f-48b1-b1d3-c9b674b4882e</testCaseGuid>
+</TestCaseEntity>

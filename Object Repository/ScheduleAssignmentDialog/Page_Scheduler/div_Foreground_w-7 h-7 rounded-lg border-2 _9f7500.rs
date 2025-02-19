@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Foreground_w-7 h-7 rounded-lg border-2 _9f7500</name>
+   <tag></tag>
+   <elementGuidId>a1ebf461-d0c0-4d2c-9969-0d0f40357b9a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/main/dialog/div[2]/div/div/div[2]/div/div[5]/div/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.w-7.h-7.rounded-lg.border-2.border-gray-300.cursor-pointer</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div >> internal:has-text=/^Foreground:$/ >> div</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>b224d0f8-bf66-46f7-a8bb-fc9248d9a57f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>w-7 h-7 rounded-lg border-2 border-gray-300 cursor-pointer</value>
+      <webElementGuid>f6485790-8e31-46b5-a755-e25ce24dd96b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[@class=&quot;px-3&quot;]/dialog[@class=&quot;dialog rounded-md&quot;]/div[@class=&quot;min-h-[60vh] min-w-[50vw]&quot;]/div[1]/div[@class=&quot;flex p-8&quot;]/div[@class=&quot;ms-6 mt-7&quot;]/div[@class=&quot;flex w-60 flex-col gap-4&quot;]/div[@class=&quot;mt-2 flex flex-col gap-4&quot;]/div[@class=&quot;h-[100px]&quot;]/div[@class=&quot;flex items-center mb-2 ml-4 relative&quot;]/div[@class=&quot;w-7 h-7 rounded-lg border-2 border-gray-300 cursor-pointer&quot;]</value>
+      <webElementGuid>cb5b6828-6eee-4794-841c-bddb237eda2a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/dialog/div[2]/div/div/div[2]/div/div[5]/div/div/div</value>
+      <webElementGuid>bdcefda4-43b6-486e-9014-1275f3282b46</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div[5]/div/div/div</value>
+      <webElementGuid>ff3cfb25-91ca-480d-9b40-57e0e38fa1e8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

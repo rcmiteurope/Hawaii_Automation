@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Filter - Date - Verify Tomorrow filter in the Date Dropdown</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>766b7ec9-12fe-4fda-a1cf-eb5673770182</testCaseGuid>
+</TestCaseEntity>

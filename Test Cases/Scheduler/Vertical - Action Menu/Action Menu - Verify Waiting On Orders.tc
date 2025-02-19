@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Action Menu - Verify Waiting On Orders</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>40e138ad-2d95-4597-8fbc-f72985e389d8</testCaseGuid>
+</TestCaseEntity>

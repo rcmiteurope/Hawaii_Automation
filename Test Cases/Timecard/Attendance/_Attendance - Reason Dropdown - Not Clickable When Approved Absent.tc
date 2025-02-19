@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>_Attendance - Reason Dropdown - Not Clickable When Approved Absent</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>70bc9573-e5df-4b79-bc6f-6d01c771ba75</testCaseGuid>
+</TestCaseEntity>

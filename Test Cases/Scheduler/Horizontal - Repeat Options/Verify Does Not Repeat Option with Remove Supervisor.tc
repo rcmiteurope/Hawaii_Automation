@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Does Not Repeat Option with Remove Supervisor</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4ab5e6c0-2671-493c-a68b-b400c89cf5f0</testCaseGuid>
+</TestCaseEntity>

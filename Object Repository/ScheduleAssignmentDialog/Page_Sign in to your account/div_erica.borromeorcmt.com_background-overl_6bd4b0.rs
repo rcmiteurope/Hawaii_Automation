@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_erica.borromeorcmt.com_background-overl_6bd4b0</name>
+   <tag></tag>
+   <elementGuidId>62676a8b-242c-479b-8e1c-ade88c68ee42</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='verticalSplitBackgroundContainer']/div/div[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.background-overlay.ext-background-overlay</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#verticalSplitBackgroundContainer div >> nth=2</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>e864a5b3-d626-4f8e-af56-ef1706a5cad2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-bind</name>
+      <type>Main</type>
+      <value>externalCss: { 'background-overlay': true }</value>
+      <webElementGuid>59cdf1b2-f22e-4394-9756-35d441434e5c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>background-overlay ext-background-overlay</value>
+      <webElementGuid>1eca9fb6-666e-47bb-b23b-009028fd05af</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;verticalSplitBackgroundContainer&quot;)/div[@class=&quot;background-image-holder&quot;]/div[@class=&quot;background-overlay ext-background-overlay&quot;]</value>
+      <webElementGuid>5e904b08-21d0-4316-883c-e5cf04ae99bf</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='verticalSplitBackgroundContainer']/div/div[2]</value>
+      <webElementGuid>db43cbd1-bea9-428f-9350-fced6c6b3867</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div/div/div/div/div/div/div[2]</value>
+      <webElementGuid>4161f9c6-3c5e-405c-8684-02fd6299591b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

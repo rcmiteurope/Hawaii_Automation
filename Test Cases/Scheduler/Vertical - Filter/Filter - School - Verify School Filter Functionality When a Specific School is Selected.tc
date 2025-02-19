@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Filter - School - Verify School Filter Functionality When a Specific School is Selected</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>582cc6a0-33f1-420b-b294-c5f0d5844a6f</testCaseGuid>
+</TestCaseEntity>

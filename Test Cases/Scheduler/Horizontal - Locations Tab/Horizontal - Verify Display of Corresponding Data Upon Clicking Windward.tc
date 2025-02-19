@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Horizontal - Verify Display of Corresponding Data Upon Clicking Windward</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2d8ee3fa-1234-489d-9364-18ed95c51dca</testCaseGuid>
+</TestCaseEntity>

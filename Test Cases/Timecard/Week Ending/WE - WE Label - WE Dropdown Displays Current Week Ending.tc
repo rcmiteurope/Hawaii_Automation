@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WE - WE Label - WE Dropdown Displays Current Week Ending</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7810dc4e-885a-4600-9206-9c9b3f00687b</testCaseGuid>
+</TestCaseEntity>

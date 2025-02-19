@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_StudentAvatarContainer</name>
+   <tag></tag>
+   <elementGuidId>e6b7a93c-11f2-46a5-a8fa-17f6da75a0dd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//main/div/div[2]/div[2]/div
+</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#avatarsContainer > div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#avatarsContainer > div >> nth=0</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>7928bd3b-2f13-4b5e-afc7-d4ba195e52d3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;avatarsContainer&quot;)/div[1]</value>
+      <webElementGuid>a5dcd71a-0c5b-4a7c-a2a6-bb16805be2c6</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='avatarsContainer']
+</value>
+      <webElementGuid>efeaf11b-59c4-4766-8177-e5d648b3f0c5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='End Time:'])[1]/following::div[8]</value>
+      <webElementGuid>22cf1615-96da-42a0-8929-f714e64c167c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Start Time:'])[1]/following::div[15]</value>
+      <webElementGuid>4e8b9354-da24-4735-b9bb-59073cb9e2d1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/preceding::div[28]</value>
+      <webElementGuid>e1e535a0-506a-4c63-be0f-6f22a74f6762</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='V1.0.10'])[1]/preceding::div[30]</value>
+      <webElementGuid>d2ae80d9-78ed-4215-acde-b30294256c3a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//main/div/div[2]/div[2]/div
+</value>
+      <webElementGuid>0ffd029c-288d-4eb1-9eeb-255ef3d1ffe8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

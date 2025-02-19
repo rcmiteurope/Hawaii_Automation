@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Login - Verify Load - Provider Dropdown Clickable</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>57caf2b5-7d58-4b65-9c0c-b0223ef6779c</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Forgot PIN - Send Email - OK Clickable</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8e0963e1-4c6e-41cc-bc42-7c8b53a9b61d</testCaseGuid>
+</TestCaseEntity>

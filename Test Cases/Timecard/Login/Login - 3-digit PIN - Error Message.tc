@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>When I enter an PIN with fewer than 6 digits, I must receive a '6 digit PIN required' error message</description>
+   <name>Login - 3-digit PIN - Error Message</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b6fa2a02-5118-4442-8396-14464ba86d7f</testCaseGuid>
+</TestCaseEntity>

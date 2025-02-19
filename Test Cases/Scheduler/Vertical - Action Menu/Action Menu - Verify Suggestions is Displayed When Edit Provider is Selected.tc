@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Action Menu - Verify Suggestions is Displayed When Edit Provider is Selected</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ccf4509b-39f1-4725-9a2e-1478742e7add</testCaseGuid>
+</TestCaseEntity>

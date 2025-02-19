@@ -1,0 +1,93 @@
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.By as By
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.WebElement as WebElement
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Cookie as Cookie
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import org.openqa.selenium.Keys as Keys
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl(GlobalVariable.scheduler_url)
+
+WebDriver driver = DriverFactory.getWebDriver()
+
+Cookie authCookie = new Cookie('sc_auth_token', GlobalVariable.sc_auth_token)
+
+driver.manage().addCookie(authCookie)
+
+driver.manage().addCookie(new Cookie('user_email', GlobalVariable.user_email))
+
+driver.manage().addCookie(new Cookie('user_name', GlobalVariable.user_name))
+
+WebUI.refresh()
+
+// Check Horizontal Toggle
+WebUI.check(new TestObject("dynamicObj").addProperty("xpath", ConditionType.EQUALS, "//*[@id='root']/main/div[2]/div[1]/div[1]/div/div"))
+ 
+// Locate the dropdown using the XPath
+WebElement dropdown = driver.findElement(By.id('date_filter_select'))
+
+dropdown.click()
+
+// Wait for options to be visible (optional, adjust if necessary)
+// WebUI.delay(1)
+// Get the dropdown options (assuming they are <option> tags within a <select>)
+List<WebElement> options = dropdown.findElements(By.tagName('option'))
+
+// Define the expected options
+List<WebElement> expectedOptions = ['Today', 'Tomorrow', 'This Week', 'Next Week', 'Monday', 'Tuesday', 'Wednesday', 'Thursday'
+    , 'Friday']
+
+// Collect the text values from the dropdown options
+List<WebElement> dropdownOptions = options.collect({ 
+        it.getText().trim()
+    })
+
+// Log the dropdown options for debugging
+dropdownOptions.each({ def option ->
+        WebUI.comment('Option found in dropdown: ' + option)
+    })
+
+// Verify that all expected options are present
+boolean allOptionsExist = true
+
+List<WebElement> missingOptions = []
+
+for (String expectedOption : expectedOptions) {
+    if (!(dropdownOptions.contains(expectedOption))) {
+        allOptionsExist = false
+
+        missingOptions.add(expectedOption)
+    }
+}
+
+// Log results
+if (allOptionsExist) {
+    WebUI.comment('Dropdown contains all the expected options.')
+} else {
+    WebUI.comment('Dropdown is missing the following options: ' + missingOptions)
+
+    throw new Exception('Test Failed: Dropdown is missing the following options: ' + missingOptions)
+}
+
+// Close the browser
+WebUI.closeBrowser()
+
+

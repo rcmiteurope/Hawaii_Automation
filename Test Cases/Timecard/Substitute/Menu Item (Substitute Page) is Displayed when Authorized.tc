@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>From the Timecard Summary page and changing the Week Ending date to a future date, I should be able to click the Timecard breadcrumb to return to the current Week Ending period. Validate both the Week Ending period dropdown, the Ready for Approval tab is opened, and the correct data is being displayed</description>
+   <name>Menu Item (Substitute Page) is Displayed when Authorized</name>
+   <tag>#breadcrumb</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>fad3be71-0a60-43ec-96d6-941fec07678b</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>800cb3af-7a53-43e8-ab1d-5cde2ad21ad0</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'July 27, 2024'</defaultValue>
+      <description></description>
+      <id>800cb3af-7a53-43e8-ab1d-5cde2ad21ad0</id>
+      <masked>false</masked>
+      <name>we_july_27</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Action Menu - Verify Supervisor is Removed When Remove Supervisor is Clicked</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e5497083-6aee-44ec-9201-7e8c16155427</testCaseGuid>
+</TestCaseEntity>

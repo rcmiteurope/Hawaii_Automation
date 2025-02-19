@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Background_h-7 w-7 cursor-pointer round_b9f16a</name>
+   <tag></tag>
+   <elementGuidId>79911147-b570-44a4-bbff-fc063cf14e3c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='color-picker-holder']/div[2]/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div >> internal:has-text=/^Background:$/ >> div</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>3cbc4d1b-83bb-41ba-b8ee-40444270c752</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>h-7 w-7 cursor-pointer rounded-lg border-2 border-gray-300</value>
+      <webElementGuid>af027b20-c2bf-4987-a0f6-41b1048620be</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;color-picker-holder&quot;)/div[@class=&quot;relative mb-2 ml-4 flex items-center&quot;]/div[@class=&quot;h-7 w-7 cursor-pointer rounded-lg border-2 border-gray-300&quot;]</value>
+      <webElementGuid>7958ff18-5c9a-4b91-83fb-a81e4368efad</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='color-picker-holder']/div[2]/div</value>
+      <webElementGuid>80e56238-8187-4261-9253-c20522d3c9b8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div[5]/div/div[2]/div</value>
+      <webElementGuid>2b132afe-2453-4628-9ee7-f500a04b8e3c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

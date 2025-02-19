@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Filter - School - Verify All Schools Filter When a All Schools is Selected</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2a3679b5-c772-4013-8dba-0d6f0adb86ae</testCaseGuid>
+</TestCaseEntity>

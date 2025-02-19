@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Filter - Date - Verify Date Filter When a Specific Month is Selected</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c844ab7b-8892-4781-a19a-5e62aa040012</testCaseGuid>
+</TestCaseEntity>

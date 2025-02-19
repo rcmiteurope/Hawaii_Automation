@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Add New Workorder - Verify user can add new Workorder</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>991e53dd-0b7c-4d7e-a4e9-ddb87843faa8</testCaseGuid>
+</TestCaseEntity>

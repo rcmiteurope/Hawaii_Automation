@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Horizontal - Verify Display of Corresponding Data Upon Clicking Lanai</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6be8728e-09d4-4d77-a555-09f06f36523a</testCaseGuid>
+</TestCaseEntity>

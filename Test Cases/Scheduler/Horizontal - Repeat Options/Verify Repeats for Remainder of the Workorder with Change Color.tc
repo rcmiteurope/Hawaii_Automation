@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Repeats for Remainder of the Workorder with Change Color</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5e83c284-339a-4890-8bb6-7f9c358e9c17</testCaseGuid>
+</TestCaseEntity>

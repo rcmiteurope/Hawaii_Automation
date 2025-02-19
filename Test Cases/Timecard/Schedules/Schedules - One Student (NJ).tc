@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Schedules - One Student (NJ)</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>dfa76ee4-30f4-4740-ad34-cf1bcf97d6bc</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d15c60e1-1ae7-4d66-bb61-71d4a3a21d24</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'http://rcmt-timecard.com/login'</defaultValue>
+      <description></description>
+      <id>d15c60e1-1ae7-4d66-bb61-71d4a3a21d24</id>
+      <masked>false</masked>
+      <name>website</name>
+   </variable>
+</TestCaseEntity>

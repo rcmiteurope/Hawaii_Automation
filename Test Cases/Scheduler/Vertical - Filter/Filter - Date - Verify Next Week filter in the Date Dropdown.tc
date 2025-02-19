@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Filter - Date - Verify Next Week filter in the Date Dropdown</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1de9af3a-932f-4720-8dec-d43bae93d71b</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>when logging on saturday or sunday, the monday bubble needs to be selected</description>
+   <name>WE - WE Dropdown - Sun-Sat Correct WE Date is Selected</name>
+   <tag>#bubble</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e7a1b3f3-382e-4971-b5ce-dd7a2c0d518e</testCaseGuid>
+</TestCaseEntity>

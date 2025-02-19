@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>When a student's attendance is already approved, I should not be able to click the present button</description>
+   <name>_Attendance - Present Tab - Not Clickable When Approved Absent</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f50b622a-fc53-46d5-84fd-14c7beeef5b9</testCaseGuid>
+</TestCaseEntity>

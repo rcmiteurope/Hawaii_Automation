@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Approval - Single School - Timecard Summary visible</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b9d634a0-f92a-4c6b-90b4-4724838d88cb</testCaseGuid>
+</TestCaseEntity>

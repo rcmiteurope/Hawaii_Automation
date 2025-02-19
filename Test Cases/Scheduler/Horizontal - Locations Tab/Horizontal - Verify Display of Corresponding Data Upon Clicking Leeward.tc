@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Horizontal - Verify Display of Corresponding Data Upon Clicking Leeward</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e76ac149-d6cd-495b-bee4-d7d5e4836ade</testCaseGuid>
+</TestCaseEntity>

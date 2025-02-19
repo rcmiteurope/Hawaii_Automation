@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Repeats for Remainder of the Workorder with Remove Supervisor</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b200ccaf-5537-4e93-88ab-47bfa361b42e</testCaseGuid>
+</TestCaseEntity>

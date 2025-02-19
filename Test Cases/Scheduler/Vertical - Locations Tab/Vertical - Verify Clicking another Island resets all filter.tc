@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Vertical - Verify Clicking another Island resets all filter</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0abe6093-49a9-4fc9-bff5-de658e641327</testCaseGuid>
+</TestCaseEntity>

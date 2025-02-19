@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Repeat By Weeks Option with Remove Supervisor</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ba29f1b8-e8d6-412e-afa7-5584074ec46f</testCaseGuid>
+</TestCaseEntity>

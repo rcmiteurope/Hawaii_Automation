@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Approval - Multi School - Select School visible</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>efa9e75b-7c59-4527-b7ad-e4fc2d134894</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Add New Provider - Verify Popup</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8489f5b9-7826-4e51-8e2a-0a2aa72cd4b5</testCaseGuid>
+</TestCaseEntity>

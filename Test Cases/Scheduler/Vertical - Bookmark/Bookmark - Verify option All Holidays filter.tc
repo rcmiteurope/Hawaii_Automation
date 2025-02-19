@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Bookmark - Verify option All Holidays filter</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6b16e390-29f2-4bf2-893d-b783b85d63ae</testCaseGuid>
+</TestCaseEntity>

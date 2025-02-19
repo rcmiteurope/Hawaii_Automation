@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Login - Verify Load - Search Clickable</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>274f8db3-81dc-491d-92f4-cadc31cd816a</testCaseGuid>
+</TestCaseEntity>

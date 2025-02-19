@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Search - Verify User Dropdown Selection</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e3acd383-46a6-4365-87de-66029d582a0c</testCaseGuid>
+</TestCaseEntity>

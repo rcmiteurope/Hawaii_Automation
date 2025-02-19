@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_Test Holiday_1</name>
+   <tag></tag>
+   <elementGuidId>49303032-0d66-48a6-833c-b2f371e15483</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='tr-main-1']/td[5]/div/div/p</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#tr-main-1 >> internal:text=&quot;Test Holiday&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>ceecbf18-7cb8-48ff-8d22-b49f1d1cea75</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Test Holiday</value>
+      <webElementGuid>b7055d94-a4b2-4ff1-8e1f-0e4a1fbbe44a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tr-main-1&quot;)/td[@class=&quot;border-2 border-gray-200 align-middle w-[3em]&quot;]/div[1]/div[@class=&quot;relative h-full min-h-4 cursor-pointer text-center align-middle hover:brightness-[1.05] bg-gray-900 text-white p-2&quot;]/p[1]</value>
+      <webElementGuid>108f3ac6-a273-4671-bdcf-2f6d2df48d72</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='tr-main-1']/td[5]/div/div/p</value>
+      <webElementGuid>801e39a6-5fee-41b9-96f0-cf35a8317708</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Aina Haina'])[4]/following::p[7]</value>
+      <webElementGuid>ad43c26d-5009-45c0-9ea5-c4d0fd264e5f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Aliiolani Elementary'])[2]/preceding::p[3]</value>
+      <webElementGuid>bd3eff1a-2c7c-4b6e-9359-46c341d7f1e9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[3]/td[5]/div/div/p</value>
+      <webElementGuid>bc7d7a04-7bd8-472c-89db-cebe03a678e2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[(text() = 'Test Holiday' or . = 'Test Holiday')]</value>
+      <webElementGuid>f8505af1-ee01-4fd8-aa45-922f7b07ebb4</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

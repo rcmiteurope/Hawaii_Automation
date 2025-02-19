@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>when logging on saturday or sunday, the monday bubble needs to be selected</description>
+   <name>Schedules - Nothing Scheduled</name>
+   <tag>#bubble</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>84ab844c-29b8-4d10-a775-2b85d0875f47</testCaseGuid>
+</TestCaseEntity>

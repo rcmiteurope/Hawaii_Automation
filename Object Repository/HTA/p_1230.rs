@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_1230</name>
+   <tag></tag>
+   <elementGuidId>1ed368e0-97a9-40bc-81db-112598c8724e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>p.pt-1.text-sm.font-semibold</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/main/div[4]/div/div[2]/div/div/div/p</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>p >> internal:has-text=&quot;12:30&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>3947ff83-6b22-4ee1-9c35-84b613025e25</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pt-1 text-sm font-semibold</value>
+      <webElementGuid>777dd64d-be3a-4127-b3db-c1649d742261</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>12:30</value>
+      <webElementGuid>2c91864e-c411-471e-8b87-7b43ad519ec7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[@class=&quot;font my-2 px-3&quot;]/div[@class=&quot;flex flex-col gap-3&quot;]/div[@class=&quot;mt-2 flex flex-col gap-y-4&quot;]/div[@class=&quot;ms-4 flex flex-col gap-y-5&quot;]/div[@class=&quot;flex&quot;]/div[1]/div[@class=&quot;me-5 flex flex-col items-end justify-end gap-3&quot;]/p[@class=&quot;pt-1 text-sm font-semibold&quot;]</value>
+      <webElementGuid>aeb265f9-77e7-4e95-b8d5-656530b9d0b5</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/div[4]/div/div[2]/div/div/div/p</value>
+      <webElementGuid>7635ad5a-2963-4884-8534-2af9e1ff2efc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Absent'])[1]/following::p[1]</value>
+      <webElementGuid>26707cb8-2356-4053-885d-ae6cf2369836</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Present'])[1]/following::p[1]</value>
+      <webElementGuid>92cf5e76-17a9-4d04-bc0e-fa5ea354e089</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Start Time:'])[1]/preceding::p[1]</value>
+      <webElementGuid>9ca066e2-40df-4ff5-9763-4f9e978e4af3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='End Time:'])[1]/preceding::p[2]</value>
+      <webElementGuid>3b6be516-7639-425b-ac4d-ebc141b6fcdb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='12:30']/parent::*</value>
+      <webElementGuid>522885e9-5310-494e-9b70-ab096a62a2d3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div/p</value>
+      <webElementGuid>5c9b2c5b-428a-4cb0-9943-9a07f49e4518</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[(text() = '12:30' or . = '12:30')]</value>
+      <webElementGuid>adcf9426-6a04-42b1-bc6e-bf602ac9bc8e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

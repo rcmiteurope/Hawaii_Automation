@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>svg_Aina Haina_size-5</name>
+   <tag></tag>
+   <elementGuidId>f9483e09-2c4b-4d45-b9d9-37c36002ad16</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Aina Haina'])[4]/following::*[name()='svg'][1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>svg.size-5</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=row[name=&quot;Wellbrock, Haliaalohaokalikolehua /Aina Haina OPEN 08:00-14:15 OPEN 08:00-14:15 OPEN 08:00-13:30 OPEN 08:00-14:15 OPEN 08:00-14:15&quot;i] >> internal:role=img</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>svg</value>
+      <webElementGuid>7902d311-e788-4fc9-817a-022c5e91ae10</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xmlns</name>
+      <type>Main</type>
+      <value>http://www.w3.org/2000/svg</value>
+      <webElementGuid>d42becf5-8a6a-4923-84b2-bcf7a5cab9d3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>fill</name>
+      <type>Main</type>
+      <value>none</value>
+      <webElementGuid>f96ed6af-86e6-4d14-95e3-7c0d50775f10</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>viewBox</name>
+      <type>Main</type>
+      <value>0 0 24 24</value>
+      <webElementGuid>59c022b5-03ce-482a-beca-cff040c91463</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>stroke-width</name>
+      <type>Main</type>
+      <value>1.5</value>
+      <webElementGuid>cf0e5f04-11b7-4a40-8e04-56be4f60311a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>stroke</name>
+      <type>Main</type>
+      <value>currentColor</value>
+      <webElementGuid>db7cc1d5-37e9-4cc1-8226-37f1a44b8299</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>size-5</value>
+      <webElementGuid>b5c1ebfc-d214-4f29-a100-e5a59ee1bb8d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-describedby</name>
+      <type>Main</type>
+      <value>:rl:</value>
+      <webElementGuid>f7743c55-a7de-46a5-833a-1ff8430f81fe</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tr-main-1&quot;)/td[@class=&quot;border-2 border-gray-200 align-middle w-[3em]&quot;]/div[1]/div[@class=&quot;relative h-full min-h-4 cursor-pointer text-center align-middle hover:brightness-[1.05] bg-yellow-400 text-red-600 font-semibold p-2&quot;]/div[@class=&quot;absolute right-1 top-1 flex flex-col items-end gap-1&quot;]/svg[@class=&quot;size-5&quot;]</value>
+      <webElementGuid>77813709-1af8-4d06-a55e-488e332bf8d8</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Aina Haina'])[4]/following::*[name()='svg'][1]</value>
+      <webElementGuid>4abd28f7-87ba-4e3b-a9fc-00eba6e1f9ea</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Aliiolani Elementary'])[2]/preceding::*[name()='svg'][1]</value>
+      <webElementGuid>86c9563a-5ff1-4b23-a987-0534785d3202</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

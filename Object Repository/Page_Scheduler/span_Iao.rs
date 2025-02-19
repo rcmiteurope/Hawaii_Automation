@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Iao</name>
+   <tag></tag>
+   <elementGuidId>c215b08b-f46b-449d-9138-dafc161bac86</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='tr-main-13']/td/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.schoolName.cursor-pointer</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=cell[name=&quot;Iao&quot;s] >> span</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>cb62bc0b-a277-47a3-82e1-c819e308de57</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>schoolName cursor-pointer</value>
+      <webElementGuid>0a613731-20e9-4ef0-b313-e22c51940e49</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Iao</value>
+      <webElementGuid>f6a8a00d-2915-478e-a69a-17d9e51085fc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tr-main-13&quot;)/td[@class=&quot;border-stone-700 border-2 px-2&quot;]/span[@class=&quot;schoolName cursor-pointer&quot;]</value>
+      <webElementGuid>a9b60778-f6f1-4f74-bc83-667940d0d843</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='tr-main-13']/td/span</value>
+      <webElementGuid>3986c455-c74a-43f5-9a1e-b283b6832ba8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Search...'])[1]/following::span[3]</value>
+      <webElementGuid>5425bb61-c68e-47e4-962e-edea8f444f66</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Outer Island'])[1]/following::span[5]</value>
+      <webElementGuid>052b24c9-c759-4379-8378-3134e429b370</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nava, Rylee'])[2]/preceding::span[1]</value>
+      <webElementGuid>63a4ccfc-9250-4c18-a72e-1173acb8cfef</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td/span</value>
+      <webElementGuid>3c950669-18e7-43b7-afb1-1687ee851f95</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Iao' or . = 'Iao')]</value>
+      <webElementGuid>0db526ea-44ed-4908-b683-1e2332f6800f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

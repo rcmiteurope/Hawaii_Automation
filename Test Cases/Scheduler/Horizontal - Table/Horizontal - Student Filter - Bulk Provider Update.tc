@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Horizontal - Student Filter - Bulk Provider Update</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>362b984c-f1c1-4aab-b168-cfa01f3a827e</testCaseGuid>
+</TestCaseEntity>

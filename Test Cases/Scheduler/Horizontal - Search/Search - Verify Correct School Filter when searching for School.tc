@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Search - Verify Correct School Filter when searching for School</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3ef721f3-3404-412a-afe0-61e1db1abb2e</testCaseGuid>
+</TestCaseEntity>

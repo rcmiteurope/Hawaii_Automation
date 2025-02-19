@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Approval - Single School - Already Approved (X)</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>81bf6c28-e043-4e27-9125-ce97a14c09cc</testCaseGuid>
+</TestCaseEntity>

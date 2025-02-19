@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>_Attendance - Absent Tab - Not Clickable When Approved Present</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>83ac6bab-fc67-48e3-b7c8-767109c9bfa5</testCaseGuid>
+</TestCaseEntity>

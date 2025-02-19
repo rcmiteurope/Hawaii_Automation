@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Correct List of Providers on Leave</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ce4f70c5-c16b-461c-800f-23836e35a30c</testCaseGuid>
+</TestCaseEntity>

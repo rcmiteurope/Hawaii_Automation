@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_Abad, Jose   o Faith, Jessica 0800-1415</name>
+   <tag></tag>
+   <elementGuidId>7bb41d4c-069c-48c2-bf89-ac1fe21cc884</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='tr-main-0']/td[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=cell[name=&quot;Abad, Jose 'o' Faith, Jessica 08:00-14:15&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>4aa9747d-7386-4579-b704-94669a8e64d0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>border-2 border-gray-400 align-middle w-[3em]</value>
+      <webElementGuid>25eecaf0-80db-4586-b0b9-2cb110562be7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>align</name>
+      <type>Main</type>
+      <value>center</value>
+      <webElementGuid>d102943c-73e6-41cf-aa11-427f71e92aca</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Abad, Jose   'o' Faith, Jessica 08:00-14:15</value>
+      <webElementGuid>8671778c-37c2-423e-88a4-5ab89749298f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tr-main-0&quot;)/td[@class=&quot;border-2 border-gray-400 align-middle w-[3em]&quot;]</value>
+      <webElementGuid>5001075f-92d3-44f9-85de-9ca998b509c2</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='tr-main-0']/td[2]</value>
+      <webElementGuid>f96f72a1-9661-4793-a1ed-301dba5bcf6a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Aina Haina'])[2]/following::td[1]</value>
+      <webElementGuid>e7631232-f7c2-407b-9afc-cf70f7916144</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Aina Haina'])[3]/preceding::td[5]</value>
+      <webElementGuid>198bf7a1-bf49-4187-9754-02763ce7eb7e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[2]</value>
+      <webElementGuid>36e70362-7f31-4f48-83cc-f3315fb11ac5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = concat(&quot;Abad, Jose   &quot; , &quot;'&quot; , &quot;o&quot; , &quot;'&quot; , &quot; Faith, Jessica 08:00-14:15&quot;) or . = concat(&quot;Abad, Jose   &quot; , &quot;'&quot; , &quot;o&quot; , &quot;'&quot; , &quot; Faith, Jessica 08:00-14:15&quot;))]</value>
+      <webElementGuid>d67e1767-8a34-4d46-b43b-d93cda0f7ea3</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

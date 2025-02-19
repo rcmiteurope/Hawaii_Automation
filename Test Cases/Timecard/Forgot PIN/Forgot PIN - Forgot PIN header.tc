@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>When I click 'Forgot Pin,' I must see the 'Forgot PIN' page</description>
+   <name>Forgot PIN - Forgot PIN header</name>
+   <tag>#pin</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>28148de8-e435-4d34-817c-c39fe5fc77fa</testCaseGuid>
+</TestCaseEntity>

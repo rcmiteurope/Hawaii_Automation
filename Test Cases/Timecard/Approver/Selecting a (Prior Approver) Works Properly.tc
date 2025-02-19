@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Selecting a (Prior Approver) Works Properly</name>
+   <tag>#approval</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>df371f74-1cda-4819-8075-a0cdc5eed02c</testCaseGuid>
+</TestCaseEntity>

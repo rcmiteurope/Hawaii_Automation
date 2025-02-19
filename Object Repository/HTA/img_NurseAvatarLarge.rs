@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>img_NurseAvatarLarge</name>
+   <tag></tag>
+   <elementGuidId>a12e128c-c903-4248-b0c4-f61e7ffa2f2b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>img.w-10</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//img[@src = '/images/nurse-avatars/1314916808-06.jpg']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link >> nth=2</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>3bcecde6-0544-4431-abee-2c1b36c2a6fa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>/images/nurse-avatars/1314916808-06.jpg</value>
+      <webElementGuid>9bc0fff3-557b-4829-971a-3cc4e61373f4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>w-10</value>
+      <webElementGuid>6d89783e-ccc8-494a-ac65-67ca3f0c3d65</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[@class=&quot;font mt-2 px-3&quot;]/div[@class=&quot;flex justify-center&quot;]/div[@class=&quot;flex&quot;]/a[1]/img[@class=&quot;w-10&quot;]</value>
+      <webElementGuid>109e7da8-de5a-45c1-ac57-41cbc438ecb7</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/div/div[2]/a/img</value>
+      <webElementGuid>ced9c913-3960-479e-948b-8aa6ec0cdc0b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/a/img</value>
+      <webElementGuid>fa05570e-2d28-4f5d-9a95-b7b8339a6bcd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = '/images/nurse-avatars/1314916808-06.jpg']</value>
+      <webElementGuid>3ee9e4f2-9f11-4d15-b0e9-0c34df0622c6</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

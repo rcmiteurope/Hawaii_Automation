@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Does Not Repeat Option with Waiting for Order</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9be2bd25-f7ad-447a-b8d0-71fa3d0b345c</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Action Menu - Verify Provider Call Out</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b6b3d5c7-3dfb-4a28-b863-17ace9d375db</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Approver - Prior Approver - Name Displayed</name>
+   <tag>#approval</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bf1d5651-d9cb-4264-b1d6-bd18ae620d60</testCaseGuid>
+</TestCaseEntity>

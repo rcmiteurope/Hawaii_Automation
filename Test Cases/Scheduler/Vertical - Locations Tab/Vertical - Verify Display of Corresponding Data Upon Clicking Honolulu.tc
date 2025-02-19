@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Vertical - Verify Display of Corresponding Data Upon Clicking Honolulu</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>32c5036c-e15d-4e50-ae8c-a9f95074387a</testCaseGuid>
+</TestCaseEntity>

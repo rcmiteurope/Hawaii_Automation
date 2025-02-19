@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>dialog_Student  SchoolWellbrock, Haliaaloha_5d52ee</name>
+   <tag></tag>
+   <elementGuidId>c7f26c26-72dd-4983-a31d-3e6ed2f30df9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>dialog.dialog.rounded-md</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/main/dialog</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=dialog</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>dialog</value>
+      <webElementGuid>a6df0694-438f-44bf-b955-0fc66e3414b0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dialog rounded-md</value>
+      <webElementGuid>e813067f-04d7-4d70-ac8b-e9590d13c229</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Student / SchoolWellbrock, HaliaalohaokalikolehuaAina Haina Monday 11/25Amelie, Dylan   08:00-14:15 Tuesday 11/26Amelie, Dylan   08:00-14:15 Wednesday 11/27Amelie, Dylan   08:00-13:30 Thursday 11/28Amelie, Dylan   08:00-14:15 Friday 11/29Amelie, Dylan   08:00-14:15ProviderSupervisorRemove SupervisorAbsent - NCNSAbsent - NoticeWaiting For OrderOPENHolidayNote35 OverrideChange ColorSaveCancel</value>
+      <webElementGuid>b0aecb51-0882-4de0-957b-797693fac652</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[@class=&quot;px-3&quot;]/dialog[@class=&quot;dialog rounded-md&quot;]</value>
+      <webElementGuid>fcec3bb4-422f-48f5-b92b-957b28317087</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/dialog</value>
+      <webElementGuid>1435e341-4e05-4b3e-961b-0700352630e8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//dialog</value>
+      <webElementGuid>4560c73e-0614-4d78-9f83-2c91be7b28ea</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//dialog[(text() = 'Student / SchoolWellbrock, HaliaalohaokalikolehuaAina Haina Monday 11/25Amelie, Dylan   08:00-14:15 Tuesday 11/26Amelie, Dylan   08:00-14:15 Wednesday 11/27Amelie, Dylan   08:00-13:30 Thursday 11/28Amelie, Dylan   08:00-14:15 Friday 11/29Amelie, Dylan   08:00-14:15ProviderSupervisorRemove SupervisorAbsent - NCNSAbsent - NoticeWaiting For OrderOPENHolidayNote35 OverrideChange ColorSaveCancel' or . = 'Student / SchoolWellbrock, HaliaalohaokalikolehuaAina Haina Monday 11/25Amelie, Dylan   08:00-14:15 Tuesday 11/26Amelie, Dylan   08:00-14:15 Wednesday 11/27Amelie, Dylan   08:00-13:30 Thursday 11/28Amelie, Dylan   08:00-14:15 Friday 11/29Amelie, Dylan   08:00-14:15ProviderSupervisorRemove SupervisorAbsent - NCNSAbsent - NoticeWaiting For OrderOPENHolidayNote35 OverrideChange ColorSaveCancel')]</value>
+      <webElementGuid>da839422-b5d1-4269-84b5-a1a94be50278</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

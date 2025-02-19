@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Search - Verify Correct Student Filter when searching for Student</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1a8a22f1-47b0-430a-bdd3-3c19a924e613</testCaseGuid>
+</TestCaseEntity>

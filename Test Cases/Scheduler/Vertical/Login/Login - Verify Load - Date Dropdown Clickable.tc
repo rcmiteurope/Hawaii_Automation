@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Login - Verify Load - Date Dropdown Clickable</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>fb1feb9e-2c38-493e-9cc8-2cabb34b2258</testCaseGuid>
+</TestCaseEntity>

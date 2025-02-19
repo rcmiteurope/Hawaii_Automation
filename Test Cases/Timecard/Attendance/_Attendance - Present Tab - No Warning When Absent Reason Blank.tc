@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>_Attendance - Present Tab - No Warning When Absent Reason Blank</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>df3e5411-1dfa-4a9d-b23a-6928fbc401a2</testCaseGuid>
+</TestCaseEntity>

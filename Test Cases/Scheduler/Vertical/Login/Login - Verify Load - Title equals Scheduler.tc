@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Login - Verify Load - Title equals Scheduler</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d216423a-d4b0-4958-8ef1-b073b6d509e5</testCaseGuid>
+</TestCaseEntity>
