@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Tables in Dev Environment</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4aa1ae69-c203-4560-8fa8-75e22d83977e</testCaseGuid>
+</TestCaseEntity>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Verify DB Tables</name>
+   <name>Verify Tables in QA Environment</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>e8dcf7e8-4a8b-4d4f-b005-d00b36a4256d</testCaseGuid>
+   <testCaseGuid>2789a72e-c92f-4210-ace0-67342ecb579c</testCaseGuid>
 </TestCaseEntity>

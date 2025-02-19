@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify SPs in Staging Environment</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9be3b331-f839-4c07-bc4f-bf84ab1ef4f8</testCaseGuid>
+</TestCaseEntity>

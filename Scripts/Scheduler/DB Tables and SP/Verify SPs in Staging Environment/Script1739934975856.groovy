@@ -3,8 +3,13 @@ import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.testdata.ExcelData
 import com.kms.katalon.core.testdata.reader.ExcelFactory
 import databaseConnection.DatabaseConnection
+import com.kms.katalon.core.configuration.RunConfiguration
 
-String excelFilePath = "C:\\Users\\EBorrome\\OneDrive - RCM Technologies\\Documents\\GitHub\\Katalon\\Hawaii_Automation\\Data Files\\db_client_services_qa.xlsx"
+// Get project directory dynamically
+String projectDir = RunConfiguration.getProjectDir()
+
+// Use a relative path from the project root
+String excelFilePath = projectDir + "/Data Files/db_client_services_qa.xlsx"
 
 ExcelData excelData = ExcelFactory.getExcelDataWithDefaultSheet(excelFilePath, "sp_list", true)
 
@@ -17,26 +22,25 @@ String spName = excelData.getValue(1, row)
     }
 }
 
+KeywordUtil.logInfo("Stored Procedures from Excel: " + expectedSPs)
+
 // Connect to the database
 Sql sql = DatabaseConnection.connectToDatabase()
 
 // Fetch stored procedures from the database
 List<String> actualSPs = []
 try {
-    def results = sql.rows("SELECT ROUTINE_NAME FROM INFORMATION_SCHEMA.ROUTINES WHERE ROUTINE_TYPE = 'PROCEDURE' AND ROUTINE_SCHEMA = 'client_services_qa' ORDER BY ROUTINE_NAME;")
+    def results = sql.rows("SELECT ROUTINE_NAME FROM INFORMATION_SCHEMA.ROUTINES WHERE ROUTINE_TYPE = 'PROCEDURE' AND ROUTINE_SCHEMA = 'client_services' ORDER BY ROUTINE_NAME;")
     results.each { row ->
         actualSPs.add(row.ROUTINE_NAME)
     }
     
     // Print all stored procedures found in the database
-    KeywordUtil.logInfo("Stored Procedures found in DB: " + actualSPs)
+    KeywordUtil.logInfo("Stored Procedures found in Staging DB: " + actualSPs)
     
 } catch (Exception e) {
     KeywordUtil.markFailed("Database Query Failed: " + e.message)
 }
-
-KeywordUtil.logInfo("Stored Procedures from Excel: " + expectedSPs)
-KeywordUtil.logInfo("Stored Procedures from DB: " + actualSPs)
 
 // Find missing stored procedures (expected but not found in DB)
 List<String> missingSPs = expectedSPs - actualSPs
@@ -48,12 +52,16 @@ List<String> extraSPs = actualSPs - expectedSPs
 if (missingSPs.isEmpty() && extraSPs.isEmpty()) {
     KeywordUtil.markPassed("All stored procedures match the expected list.")
 } else {
+   String errorMessage = ""
+
     if (!missingSPs.isEmpty()) {
-        KeywordUtil.markFailed("Missing Stored Procedures: " + missingSPs)
+        errorMessage += "Missing Stored Procedures in Staging: " + missingSPs + "\n"
     }
     if (!extraSPs.isEmpty()) {
-        KeywordUtil.markWarning("Extra Stored Procedures Found in DB: " + extraSPs)
+        errorMessage += "Extra Stored Procedures Found in Staging DB: " + extraSPs + "\n"
     }
+
+    KeywordUtil.markFailed(errorMessage)
 }
 
 
