@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Data Validation on Eweb</description>
+   <name>get_schedule</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d75c02ca-7705-49af-ab52-62bfb2e143e2</testCaseGuid>
+</TestCaseEntity>
