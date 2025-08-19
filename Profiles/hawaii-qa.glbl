@@ -189,4 +189,19 @@
       <initValue>'Borromeo%2C%20Erica'</initValue>
       <name>user_name</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Ikppcm9tZS5CYXV0aXN0YUByY210LmNvbSIsInVzZXJJRCI6NCwibmFtZSI6IkJhdXRpc3RhLCBKaXJvbWUiLCJpYXQiOjE3NTUwNjIxNzYsImV4cCI6MTc1NTE0ODU3Nn0.63cCNBWdVjj182DEiIiuBDfB1hvK5F8fM3d5E6qkUUo'</initValue>
+      <name>sc_auth_token_jirome</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Jirome.Bautista%40rcmt.com'</initValue>
+      <name>user_email_jirome</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Jirome.Bautista%40rcmt.com'</initValue>
+      <name>user_name_jirome</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
