@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_Brooklyn</name>
+   <tag></tag>
+   <elementGuidId>8b755ad2-62a1-42f7-b1eb-b4bf7e8346f7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>p.schedule-borough</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='P370K@ I237'])[1]/following::p[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Brooklyn&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>ac4e39a9-65ec-4417-bae8-6e05d0abd732</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>schedule-borough</value>
+      <webElementGuid>480fa8cc-351f-4a20-9353-34149e4bc326</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Brooklyn</value>
+      <webElementGuid>93a85804-7215-4a05-9f54-e17664764bb0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[@class=&quot;__className_e8ce0c&quot;]/div[@class=&quot;group/sidebar-wrapper flex min-h-svh w-full has-[[data-variant=inset]]:bg-sidebar&quot;]/main[@class=&quot;relative flex min-h-svh flex-1 flex-col bg-background peer-data-[variant=inset]:min-h-[calc(100svh-theme(spacing.4))] md:peer-data-[variant=inset]:m-2 md:peer-data-[state=collapsed]:peer-data-[variant=inset]:ml-2 md:peer-data-[variant=inset]:ml-0 md:peer-data-[variant=inset]:rounded-xl md:peer-data-[variant=inset]:shadow&quot;]/main[@class=&quot;px-4&quot;]/div[@class=&quot;flex flex-col gap-4 mb-4&quot;]/div[@class=&quot;flex flex-col gap-3&quot;]/div[@class=&quot;bg-[#D9D9D9] px-4 py-2 border rounded flex flex-col h-34 gap-1 items-center shadow-lg justify-center relative open-schedule-widget&quot;]/div[@class=&quot;text-center flex flex-col gap-1&quot;]/div[@class=&quot;text-sm&quot;]/p[@class=&quot;schedule-borough&quot;]</value>
+      <webElementGuid>0fa0b209-7391-4054-9197-25e3f119f9a1</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='P370K@ I237'])[1]/following::p[2]</value>
+      <webElementGuid>0ab59820-3f49-4ec9-bdba-1799de2aae82</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='August 20th, 2025'])[1]/following::p[2]</value>
+      <webElementGuid>f38f12e8-465c-4c87-b984-72e4044c2d84</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Request'])[1]/preceding::p[3]</value>
+      <webElementGuid>2b9bbecf-f197-4d43-a724-4bedf970e935</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Brooklyn']/parent::*</value>
+      <webElementGuid>0eaa4841-59c2-4653-ba80-dfc8fb6f7b5e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//p[2]</value>
+      <webElementGuid>e084d907-1836-4f6c-8dc6-1d0785391d73</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[(text() = 'Brooklyn' or . = 'Brooklyn')]</value>
+      <webElementGuid>11c48eb4-0c23-4399-b987-12a8ec12541d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
