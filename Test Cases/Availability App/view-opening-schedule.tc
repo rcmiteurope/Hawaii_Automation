@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>view-opening-schedule</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0a25ed4a-3dcd-4c30-8f9d-eefc7cc354eb</testCaseGuid>
+</TestCaseEntity>

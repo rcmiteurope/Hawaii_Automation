@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>Availability App-QA</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description>QA</description>
+      <initValue>'https://rap-qa.rcmt.app/'</initValue>
+      <name>availability_app_url</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uVG9rZW4iOiI0NjRhMmYyZjkxNmM2YjdhOGVlZTI2ZTJjNTkxYzc0MSIsIm5hbWUiOiJTaW5keSIsImlhdCI6MTc1NTY1MTMwOCwiZXhwIjoxNzU1NzM3NzA4fQ.QvG0a0nWHUnZ5SnVgKR6dBT_TPjLQT5qqaWHdVWHqZE'</initValue>
+      <name>auth_token</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'s%3APCp0sVuESoboUXt6Ye87s1MVJLzfthL0.Jrc3aBN7TrYGurzTa%2FVjiaWGVxqHwkxTqKNCuBN%2FMnc'</initValue>
+      <name>connect_sid</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'sbertrand'</initValue>
+      <name>username</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'dTwv7znA8CWgYCGH6TCeuA=='</initValue>
+      <name>password</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://rap-qa.rcmt.app/'</initValue>
+      <name>view_sched_url</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>
