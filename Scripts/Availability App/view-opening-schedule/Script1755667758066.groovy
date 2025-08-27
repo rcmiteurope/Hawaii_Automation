@@ -10,14 +10,17 @@ import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.text.SimpleDateFormat
+import java.util.Date
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.testobject.ConditionType
 
-WebUI.openBrowser('')
+
 
 WebUI.openBrowser('')
 
@@ -38,19 +41,28 @@ WebUI.waitForPageLoad(10)
 String currentUrl = WebUI.getUrl()
 WebUI.verifyMatch(currentUrl, GlobalVariable.view_sched_url, true)
 
+
+
+// Format should match how the date appears in your app
+Date today = new Date()
+SimpleDateFormat sdf = new SimpleDateFormat("EEEE, MMMM d") // Example: Wednesday, August 20
+String currentDate = sdf.format(today)
+
+// Sometimes apps prefix with "Today, " → handle that too
+String todayLabel = "Today, " + currentDate
+
+// Create a dynamic XPath using the current date
+TestObject dynamicDate = new TestObject("dynamicDate")
+dynamicDate.addProperty("xpath", ConditionType.EQUALS, "//p[text()='" + todayLabel + "']")
+
 WebUI.waitForPageLoad(10)
 
-WebUI.click(findTestObject('Object Repository/Availability-app-test/opening-schedule/Page_/p_Today, Wednesday, August 20'))
+WebUI.click(dynamicDate) 
 
 WebUI.click(findTestObject('Object Repository/Availability-app-test/opening-schedule/Page_/h1_Not Scheduled'))
 
 WebUI.click(findTestObject('Object Repository/Availability-app-test/opening-schedule/Page_/button_View Openings'))
 
-WebUI.click(findTestObject('Object Repository/Availability-app-test/opening-schedule/Page_/h1_P370K I237'))
-
-WebUI.click(findTestObject('Object Repository/Availability-app-test/opening-schedule/Page_/p_830 AM - 230 PM'))
-
-WebUI.click(findTestObject('Object Repository/Availability-app-test/opening-schedule/Page_/p_Brooklyn'))
 
 WebUI.delay(5)
 
