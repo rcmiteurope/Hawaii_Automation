@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Split Schedule</description>
-   <name>Split Schedule</name>
+   <description>split</description>
+   <name>split</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>34533758-bbe0-4c6d-904d-1f57d620938c</testCaseGuid>
+   <testCaseGuid>3d203f0c-8ebd-49af-9df9-f777c4af9c84</testCaseGuid>
 </TestCaseEntity>
