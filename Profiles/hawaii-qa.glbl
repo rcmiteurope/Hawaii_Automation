@@ -191,7 +191,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Ikppcm9tZS5CYXV0aXN0YUByY210LmNvbSIsInVzZXJJRCI6NCwibmFtZSI6IkJhdXRpc3RhLCBKaXJvbWUiLCJpYXQiOjE3NTUwNjIxNzYsImV4cCI6MTc1NTE0ODU3Nn0.63cCNBWdVjj182DEiIiuBDfB1hvK5F8fM3d5E6qkUUo'</initValue>
+      <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Ikppcm9tZS5CYXV0aXN0YUByY210LmNvbSIsInVzZXJJRCI6NCwibmFtZSI6IkJhdXRpc3RhLCBKaXJvbWUiLCJpYXQiOjE3NTY4ODU1MjYsImV4cCI6MTc1Njk3MTkyNn0.uYlH2dDQ_Li9ZB8JaR5FRym3cXIaTqat1XhwzBl7yZ8'</initValue>
       <name>sc_auth_token_jirome</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -201,7 +201,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Jirome.Bautista%40rcmt.com'</initValue>
+      <initValue>'Bautista%2C%20Jirome'</initValue>
       <name>user_name_jirome</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://scheduler-qa.rcmt-timecard.com/api/schedules/get-schedules?island=1&amp;filter_type=0&amp;week_start=2025-08-24&amp;week_end=2025-08-30&amp;month=null&amp;viewType=horizontal&amp;day=null&amp;status=&amp;providerID=null&amp;supervisorID=null'</initValue>
+      <name>get_schedule</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
