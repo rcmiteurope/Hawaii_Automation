@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verfiy dropdown values</description>
+   <name>Verfiy dropdown</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>88a49ce5-f00f-4f8d-a758-5679c87044d2</testCaseGuid>
+</TestCaseEntity>
