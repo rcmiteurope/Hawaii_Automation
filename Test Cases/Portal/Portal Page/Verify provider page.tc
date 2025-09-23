@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify provider page</description>
+   <name>Verify provider page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>346ca00c-e809-4980-96e8-122881ab948e</testCaseGuid>
+</TestCaseEntity>
