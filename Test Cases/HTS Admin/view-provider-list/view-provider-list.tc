@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>view-provider-list</description>
+   <name>view-provider-list</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9a285c58-0ff4-4395-812b-7c40a0505f03</testCaseGuid>
+</TestCaseEntity>
