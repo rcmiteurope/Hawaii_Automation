@@ -38,8 +38,6 @@ String formattedDate = weekEndingDate.format(formatter) + "00:00:00"
 // Step 4: Build dynamic API URL
 String apiUrl = "https://timecard-portal-qa.rcmt-timecard.com/api/v1/providers?page=1&weekEnding=${formattedDate}&providerName="
 
-// Debug log
-println("API URL: " + apiUrl)
 
 // Step 5: Call API with dynamic date
 RequestObject request = new RequestObject()
