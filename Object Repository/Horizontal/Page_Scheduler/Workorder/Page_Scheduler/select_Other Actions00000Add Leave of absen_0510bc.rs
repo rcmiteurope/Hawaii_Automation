@@ -1,27 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_Other ActionsAdd SchoolAdd StudentAd_8e5993</name>
+   <name>select_Other Actions00000Add Leave of absen_0510bc</name>
    <tag></tag>
-   <elementGuidId>1c9da766-8577-464d-92bf-6a91161864d5</elementGuidId>
+   <elementGuidId>11feab11-39d5-464e-9d27-74a355289597</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='filter-wrapper']/select[5]</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = 'Other ActionsAdd SchoolAdd StudentAdd ProviderAdd WorkorderSave Bookmark' or . = 'Other ActionsAdd SchoolAdd StudentAdd ProviderAdd WorkorderSave Bookmark')]</value>
+         <value>//select[@id='other-actions-dropdown']</value>
       </entry>
       <entry>
          <key>CSS</key>
+         <value>#other-actions-dropdown</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>#filter-wrapper >> internal:role=combobox >> nth=4</value>
+         <value>#other-actions-dropdown</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -32,7 +29,15 @@
       <name>tag</name>
       <type>Main</type>
       <value>select</value>
-      <webElementGuid>20397796-a6a8-4060-824d-52ed9fb49a97</webElementGuid>
+      <webElementGuid>0467cf47-b187-4422-8393-61080083f214</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>other-actions-dropdown</value>
+      <webElementGuid>b4bba6dd-259b-4cb5-ac7d-4699ed23314a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -40,31 +45,39 @@
       <name>class</name>
       <type>Main</type>
       <value>border-stone-700 w-[100%] border-4 p-2</value>
-      <webElementGuid>b7dc5a1f-96f8-496a-8331-40ff19aa9eef</webElementGuid>
+      <webElementGuid>d518eb7a-f7cf-4808-8554-b7ec16167cec</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Other ActionsAdd SchoolAdd StudentAdd ProviderAdd WorkorderSave Bookmark</value>
-      <webElementGuid>54257780-1f19-4c2c-a3e1-4367b479e42f</webElementGuid>
+      <value>Other Actions00000Add Leave of absenceProviders Schools Student Details OSCER Work Orders Save Bookmark</value>
+      <webElementGuid>9fa691d7-4ddd-4282-bc95-f9e99e00fe19</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;filter-wrapper&quot;)/select[@class=&quot;border-stone-700 w-[100%] border-4 p-2&quot;]</value>
-      <webElementGuid>500fa798-0f82-4d9d-b7e7-8d211cb14963</webElementGuid>
+      <value>id(&quot;other-actions-dropdown&quot;)</value>
+      <webElementGuid>6c02f947-1ea6-4996-9918-7513737b8aa8</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//select[@id='other-actions-dropdown']</value>
+      <webElementGuid>a48f5427-40d3-4bf4-9d22-532854bdf2ba</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='filter-wrapper']/select[5]</value>
-      <webElementGuid>37935893-ffa1-4154-a749-4c4b72121cc0</webElementGuid>
+      <webElementGuid>141a328b-8fc7-4e2b-81cf-46cd6c1e0d9b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -72,31 +85,31 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Search...'])[1]/following::select[5]</value>
-      <webElementGuid>44f572d6-e161-4e85-a221-cdc3e532aca7</webElementGuid>
+      <webElementGuid>3e16921e-a6fb-4425-b94a-427081304136</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Outer Island'])[1]/following::select[5]</value>
-      <webElementGuid>050529b3-99a7-42a9-830b-99a06bd17f5a</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Kauai'])[1]/following::select[5]</value>
+      <webElementGuid>17632f8b-fa78-4e2d-a6e5-35e8f6a80ced</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='School'])[1]/preceding::select[1]</value>
-      <webElementGuid>bf071fd3-205c-4480-912c-5d23f432ca37</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='School / Student'])[1]/preceding::select[1]</value>
+      <webElementGuid>fa815380-678b-4e6c-8d05-c46cf7eeaff9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Student'])[1]/preceding::select[1]</value>
-      <webElementGuid>b3d51cb2-6d68-45ed-ad26-ae7de09e9549</webElementGuid>
+      <value>//*/text()[normalize-space(.)='0']/parent::*</value>
+      <webElementGuid>347a1551-1f0c-4175-aad2-ca8203c67012</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -104,14 +117,14 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//select[5]</value>
-      <webElementGuid>2d199677-a86a-4733-a836-8253f58628f3</webElementGuid>
+      <webElementGuid>e616e6a7-7ff5-4b4f-9db1-76119c3a9f7e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//select[(text() = 'Other ActionsAdd SchoolAdd StudentAdd ProviderAdd WorkorderSave Bookmark' or . = 'Other ActionsAdd SchoolAdd StudentAdd ProviderAdd WorkorderSave Bookmark')]</value>
-      <webElementGuid>8006326e-3987-4ca4-9192-8fe38c54c6f8</webElementGuid>
+      <value>//select[@id = 'other-actions-dropdown' and (text() = 'Other Actions00000Add Leave of absenceProviders Schools Student Details OSCER Work Orders Save Bookmark' or . = 'Other Actions00000Add Leave of absenceProviders Schools Student Details OSCER Work Orders Save Bookmark')]</value>
+      <webElementGuid>e22dbd39-65fd-4eb0-b8a2-1c89d15f2af7</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

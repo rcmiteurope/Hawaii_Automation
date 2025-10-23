@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Pass if it catches the required fields</description>
+   <name>Invalid date range</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>466b3dfe-423a-4d00-814b-d88531c2c9e2</testCaseGuid>
+</TestCaseEntity>

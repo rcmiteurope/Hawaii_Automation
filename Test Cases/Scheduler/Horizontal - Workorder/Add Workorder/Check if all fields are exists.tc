@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check if all fields are exists</description>
+   <name>Check if all fields are exists</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>09fa5065-a6c3-49dd-9233-8512f565a283</testCaseGuid>
+</TestCaseEntity>
