@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Add Tuesday</name>
+   <name>Add Friday</name>
    <tag></tag>
-   <elementGuidId>ad6e3e52-3e54-43c6-8bcd-e7151d401bfb</elementGuidId>
+   <elementGuidId>d20c1cac-24b7-4350-87d5-2ae56ada7bbc</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='btn-add-slot-Tue-0']</value>
+         <value>//button[@id=&quot;btn-add-slot-Fri-0&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

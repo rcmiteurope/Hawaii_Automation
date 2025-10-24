@@ -7,7 +7,7 @@ import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.util.KeywordUtil
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 
-WebUI.callTestCase(findTestCase('Test Cases/Scheduler/Horizontal - Workorder/Add Workorder/Open Web App'),[:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Cases/HTS Settings/OSCER Work Order/Add Workorder/Open Web App'),[:], FailureHandling.STOP_ON_FAILURE)
 
 // =================== DECLARE TEST OBJECTS ===================
 
@@ -21,19 +21,25 @@ TestObject inputUnitType = findTestObject('Object Repository/Horizontal/Page_Sch
 TestObject checkBoxSupplemental = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Supplemental')
 TestObject inputWorkorderType = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Workorder Type')
 TestObject inputNotes = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Notes')
-TestObject btnAddMon = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Add Monday')
-TestObject btnAddTue = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Add Tuesday')
-TestObject btnAddWed = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Add Wednesday')
-TestObject btnAddThu = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Add Thursday')
-TestObject btnAddFri = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Add Friday')
-TestObject btnRemMon = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Remove Monday')
+
+TestObject btnAddMon = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Schedule Details/Add Monday')
+TestObject btnAddTue = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Schedule Details/Add Tuesday')
+TestObject btnAddWed = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Schedule Details/Add Wednesday')
+TestObject btnAddThu = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Schedule Details/Add Thursday')
+TestObject btnAddFri = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Schedule Details/Add Friday')
+TestObject btnRemMon = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Schedule Details/Remove Monday')
 TestObject btnRemTue = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Remove Tueday')
-TestObject btnRemWed = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Remove Wednesday')
-TestObject btnRemThu = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Remove Thursday')
-TestObject btnRemFri = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Remove Friday')
+TestObject btnRemWed = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Schedule Details/Remove Wednesday')
+TestObject btnRemThu = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Schedule Details/Remove Thursday')
+TestObject btnRemFri = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Schedule Details/Remove Friday')
 TestObject btnCancel = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Cancel Button')
 TestObject btnCreate = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Create Button')
 
+TestObject inputStartMon = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Schedule Details/Start Time Mon')
+TestObject inputStartTue = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Schedule Details/Start Time Tue')
+TestObject inputStartWed = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Schedule Details/Start Time Wed')
+TestObject inputStartThu = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Schedule Details/Start Time Thu')
+TestObject inputStartFri = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Schedule Details/Start Time Fri')
 
 
 WebUI.delay(1)
@@ -70,7 +76,12 @@ List<TestObject> requiredFields = [
 	btnRemThu,
 	btnRemFri,
 	btnCancel,
-	btnCreate
+	btnCreate,
+    inputStartMon,
+    inputStartTue,
+    inputStartWed,
+    inputStartThu,
+    inputStartFri
 ]
 
 List<String> missingFields = []
@@ -87,9 +98,9 @@ for (TestObject field : requiredFields) {
 	String shortName = fullName.tokenize('/').last()  // get last part only (e.g., “Select School”)
 
 	if (WebUI.verifyElementPresent(field, 5, FailureHandling.OPTIONAL)) {
-		println("✅ Field exists: " + shortName)
+		println("Field exists: " + shortName)
 	} else {
-		println("❌ Field missing: " + shortName)
+		println("Field missing: " + shortName)
 		missingFields.add(shortName)
 	}
 }
@@ -99,7 +110,7 @@ if (missingFields.isEmpty()) {
 } else {
 	println("Missing fields detected:")
 	missingFields.each { println("   - " + it) }
-	KeywordUtil.markFailed("❌ Test failed. Missing fields: " + missingFields.join(', '))
+	KeywordUtil.markFailed("Test failed. Missing fields: " + missingFields.join(', '))
 }
 //
 WebUI.delay(2)

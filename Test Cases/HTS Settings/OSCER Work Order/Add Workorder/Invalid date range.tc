@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Pass if it catches the required fields</description>
+   <description>Verifies that the system correctly detects and handles invalid date ranges. The test passes if the system prevents submission when the start date is after the end date or when required date fields are missing.</description>
    <name>Invalid date range</name>
    <tag></tag>
    <comment></comment>

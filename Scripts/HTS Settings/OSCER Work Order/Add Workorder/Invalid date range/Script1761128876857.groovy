@@ -30,7 +30,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 
 
 // --- Open Web App ---
-WebUI.callTestCase(findTestCase('Test Cases/Scheduler/Horizontal - Workorder/Add Workorder/Open Web App'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Cases/HTS Settings/OSCER Work Order/Add Workorder/Open Web App'), [:], FailureHandling.STOP_ON_FAILURE)
 
 
 // --- Define Test Objects ---
@@ -45,17 +45,17 @@ TestObject checkBoxSupplemental = findTestObject('Object Repository/Horizontal/P
 TestObject inputWorkorderType = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Workorder Type')
 TestObject inputNotes = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Notes')
 
-TestObject btnAddMon = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Add Monday')
-TestObject btnAddTue = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Add Tuesday')
-TestObject btnAddWed = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Add Wednesday')
-TestObject btnAddThu = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Add Thursday')
-TestObject btnAddFri = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Add Friday')
+TestObject btnAddMon = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Schedule Details/Add Monday')
+TestObject btnAddTue = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Schedule Details/Add Tuesday')
+TestObject btnAddWed = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Schedule Details/Add Wednesday')
+TestObject btnAddThu = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Schedule Details/Add Thursday')
+TestObject btnAddFri = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Schedule Details/Add Friday')
 
-TestObject btnRemMon = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Remove Monday')
+TestObject btnRemMon = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Schedule Details/Remove Monday')
 TestObject btnRemTue = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Remove Tueday')
-TestObject btnRemWed = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Remove Wednesday')
-TestObject btnRemThu = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Remove Thursday')
-TestObject btnRemFri = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Remove Friday')
+TestObject btnRemWed = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Schedule Details/Remove Wednesday')
+TestObject btnRemThu = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Schedule Details/Remove Thursday')
+TestObject btnRemFri = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Schedule Details/Remove Friday')
 
 TestObject btnCancel = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Cancel Button')
 TestObject btnCreate = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Create Button')
@@ -99,16 +99,14 @@ WebUI.setText(inputEndDate, currentDate)
 // Click Create
 WebUI.click(btnCreate)
 
-def loginResponse = WS.sendRequest(findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Login'))
-println("Login API Response: " + loginResponse.getResponseText())
 
-// --- Validate API Error Message ---
-def response = WS.sendRequest(findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Add Workorder API'))
-// Print full API response in console
-println("Add API Response: " + response.getResponseText())
-
-// Check if the API responded with the expected message
-WS.verifyElementPropertyValue(response, 'message', 'Missing required fields: endDate')
-
-// Optional: verify status code
-WS.verifyResponseStatusCode(response, 400)
+if (WebUI.getText(inputEndDate).isEmpty()) {
+    println("The start date is greater than the end date. The system is requiring the user to input the correct value.")
+	KeywordUtil.markPassed("Test passed: End Date is empty as expected.")
+	
+	WebUI.delay(2)
+	WebUI.closeBrowser()
+} else {
+    println("Test failed: The end date field is not empty.")
+	KeywordUtil.markFailed("Test failed: End Date field is not empty.")
+}

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Remove Tuesday</name>
+   <name>Start Time Wed</name>
    <tag></tag>
-   <elementGuidId>1c0f3c8e-40e8-4130-a807-392dbd317b98</elementGuidId>
+   <elementGuidId>e3751115-64c4-4331-94c1-a2eaecbdebc3</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//button[@id='btn-remove-slot-Tue-0']</value>
-      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='select-start-Wed-0']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
