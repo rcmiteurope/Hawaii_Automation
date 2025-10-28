@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verifies that the system does not allow a schedule to pass validation when no day has both a start and end time. The test ensures that at least one day must include valid start and end times for the schedule to be considered valid.</description>
+   <name>Schedule Day Without Time Validation</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b2eec25f-9ee1-4e82-910c-18140c5441c1</testCaseGuid>
+</TestCaseEntity>

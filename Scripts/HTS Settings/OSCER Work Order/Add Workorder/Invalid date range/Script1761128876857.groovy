@@ -34,31 +34,32 @@ WebUI.callTestCase(findTestCase('Test Cases/HTS Settings/OSCER Work Order/Add Wo
 
 
 // --- Define Test Objects ---
-TestObject search = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/View Workorder/search')
-TestObject addWorkorderBtn = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/View Workorder/add_Workorder_Button')
-TestObject inputSchool = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Select School')
-TestObject inputStartDate = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Start Date')
-TestObject inputEndDate = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/End Date')
-TestObject inputSchedule = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Schedule')
-TestObject inputUnitType = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Unit Type')
-TestObject checkBoxSupplemental = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Supplemental')
-TestObject inputWorkorderType = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Workorder Type')
-TestObject inputNotes = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Notes')
+TestObject search = findTestObject('Object Repository/HTS Settings/OSCER Workorder/View Workorder/search')
+TestObject addWorkorderBtn = findTestObject('Object Repository/HTS Settings/OSCER Workorder/View Workorder/add_Workorder_button')
 
-TestObject btnAddMon = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Schedule Details/Add Monday')
-TestObject btnAddTue = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Schedule Details/Add Tuesday')
-TestObject btnAddWed = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Schedule Details/Add Wednesday')
-TestObject btnAddThu = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Schedule Details/Add Thursday')
-TestObject btnAddFri = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Schedule Details/Add Friday')
+TestObject inputSchool = findTestObject('Object Repository/HTS Settings/OSCER Workorder/Add Workorder/Select School')
+TestObject inputStartDate = findTestObject('Object Repository/HTS Settings/OSCER Workorder/Add Workorder/Start Date')
+TestObject inputEndDate = findTestObject('Object Repository/HTS Settings/OSCER Workorder/Add Workorder/End Date')
+TestObject inputSchedule = findTestObject('Object Repository/HTS Settings/OSCER Workorder/Add Workorder/Schedule')
+TestObject inputUnitType = findTestObject('Object Repository/HTS Settings/OSCER Workorder/Add Workorder/Unit Type')
+TestObject checkBoxSupplemental = findTestObject('Object Repository/HTS Settings/OSCER Workorder/Add Workorder/Supplemental')
+TestObject inputWorkorderType = findTestObject('Object Repository/HTS Settings/OSCER Workorder/Add Workorder/Workorder Type')
+TestObject inputNotes = findTestObject('Object Repository/HTS Settings/OSCER Workorder/Add Workorder/Notes')
 
-TestObject btnRemMon = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Schedule Details/Remove Monday')
+TestObject btnAddMon = findTestObject('Object Repository/HTS Settings/OSCER Workorder/Add Workorder/Schedule Details/Add Monday')
+TestObject btnAddTue = findTestObject('Object Repository/HTS Settings/OSCER Workorder/Add Workorder/Schedule Details/Add Tuesday')
+TestObject btnAddWed = findTestObject('Object Repository/HTS Settings/OSCER Workorder/Add Workorder/Schedule Details/Add Wednesday')
+TestObject btnAddThu = findTestObject('Object Repository/HTS Settings/OSCER Workorder/Add Workorder/Schedule Details/Add Thursday')
+TestObject btnAddFri = findTestObject('Object Repository/HTS Settings/OSCER Workorder/Add Workorder/Schedule Details/Add Friday')
+
+TestObject btnRemMon = findTestObject('Object Repository/HTS Settings/OSCER Workorder/Add Workorder/Schedule Details/Remove Monday')
 TestObject btnRemTue = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Remove Tueday')
-TestObject btnRemWed = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Schedule Details/Remove Wednesday')
-TestObject btnRemThu = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Schedule Details/Remove Thursday')
-TestObject btnRemFri = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Schedule Details/Remove Friday')
+TestObject btnRemWed = findTestObject('Object Repository/HTS Settings/OSCER Workorder/Add Workorder/Schedule Details/Remove Wednesday')
+TestObject btnRemThu = findTestObject('Object Repository/HTS Settings/OSCER Workorder/Add Workorder/Schedule Details/Remove Thursday')
+TestObject btnRemFri = findTestObject('Object Repository/HTS Settings/OSCER Workorder/Add Workorder/Schedule Details/Remove Friday')
 
-TestObject btnCancel = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Cancel Button')
-TestObject btnCreate = findTestObject('Object Repository/Horizontal/Page_Scheduler/Workorder/Add Workorder/Create Button')
+TestObject btnCancel = findTestObject('Object Repository/HTS Settings/OSCER Workorder/Add Workorder/Cancel Button')
+TestObject btnCreate = findTestObject('Object Repository/HTS Settings/OSCER Workorder/Add Workorder/Create Button')
 
 // --- Workflow Execution ---
 WebUI.delay(1)

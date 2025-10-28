@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Select a student to view their work ord_dccf16</name>
+   <tag></tag>
+   <elementGuidId>65f383db-bfbf-463a-a820-acb59398b4de</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.ant-card-body</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/main/div[2]/div/main/div[2]/div[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#root div >> internal:has-text=&quot;Select a student to view their work order scheduleLuqmansaad Abdules-Salaam Scho&quot;i >> nth=3</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>38992b18-95af-47b8-a9ec-1879e86c1493</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ant-card-body</value>
+      <webElementGuid>36b12ce4-7ff3-43dc-83fc-ae798c1f7c0a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Select a student to view their work order scheduleLuqmansaad Abdules-Salaam School:SchoolIsland:Start Date:End Date:Schedule:Select ScheduleUnit Type:Select Unit TypeWork Order Type:Supplemental?Select Work Order TypeNotes:Schedule DetailsDayStart TimeEnd TimeActionsMondayTuesdayWednesdayThursdayFridayCancelCreate</value>
+      <webElementGuid>9e93c1ff-17ef-4ff7-af30-ad10488fe6ed</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[@class=&quot;px-3&quot;]/div[@class=&quot;ant-layout ant-layout-has-sider -ml-3 -mr-2.5 h-screen min-h-screen css-pjilya&quot;]/div[@class=&quot;ant-layout h-screen css-pjilya&quot;]/main[@class=&quot;ant-layout-content mx-4 flex h-full flex-col css-pjilya&quot;]/div[@class=&quot;ant-card ant-card-bordered mb-4 flex-1 overflow-hidden [&amp;_.ant-card-body]:h-[calc(100%-57px)] [&amp;_.ant-card-body]:overflow-auto [&amp;_.ant-card-body]:p-6 css-pjilya&quot;]/div[@class=&quot;ant-card-body&quot;]</value>
+      <webElementGuid>a4d477bb-7c5d-4238-a8f0-50d6b6d0cc63</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/div[2]/div/main/div[2]/div[2]</value>
+      <webElementGuid>bcd0dff6-0cc5-4314-bbc2-ef9f9ca2116c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Add Workorder'])[1]/following::div[1]</value>
+      <webElementGuid>d5d94420-95bf-45fb-87df-bd81ec697bca</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Workorders'])[1]/following::div[5]</value>
+      <webElementGuid>6753ddc6-b131-403c-8d8e-67f73c66dc24</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div[2]</value>
+      <webElementGuid>7467fa2d-74ea-49c4-8928-98652e2b8076</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Select a student to view their work order scheduleLuqmansaad Abdules-Salaam School:SchoolIsland:Start Date:End Date:Schedule:Select ScheduleUnit Type:Select Unit TypeWork Order Type:Supplemental?Select Work Order TypeNotes:Schedule DetailsDayStart TimeEnd TimeActionsMondayTuesdayWednesdayThursdayFridayCancelCreate' or . = 'Select a student to view their work order scheduleLuqmansaad Abdules-Salaam School:SchoolIsland:Start Date:End Date:Schedule:Select ScheduleUnit Type:Select Unit TypeWork Order Type:Supplemental?Select Work Order TypeNotes:Schedule DetailsDayStart TimeEnd TimeActionsMondayTuesdayWednesdayThursdayFridayCancelCreate')]</value>
+      <webElementGuid>7fe37e39-4e01-49ca-83ce-9adf72137c8b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
