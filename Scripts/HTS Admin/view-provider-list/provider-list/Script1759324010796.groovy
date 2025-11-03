@@ -30,13 +30,13 @@ WebUI.navigateToUrl('https://scheduler-qa.rcmt-timecard.com/')
 
 // Wait for dropdown to be present
 WebUI.waitForElementVisible(
-    findTestObject('Object Repository/HTS-Admin/view-provider-list/provider-list/Page_Scheduler/select_Other Actions00000Add Leave of absen_0510bc'), 
+    findTestObject('Object Repository/HTS-Settings/view-provider-list/provider-list/Page_Scheduler/select_Other Actions00000Add Leave of absen_0510bc'), 
     20
 )
 
 // Select "Providers" option by label (handles spaces)
 WebUI.selectOptionByValue(
-    findTestObject('Object Repository/HTS-Admin/view-provider-list/provider-list/Page_Scheduler/select_Other Actions00000Add Leave of absen_0510bc'),
+    findTestObject('Object Repository/HTS-Settings/view-provider-list/provider-list/Page_Scheduler/select_Other Actions00000Add Leave of absen_0510bc'),
     'providers',
     false
 )
@@ -49,7 +49,7 @@ Set<Cookie> cookies = driver.manage().getCookies()
 String cookieHeader = cookies.collect { it.getName() + "=" + it.getValue() }.join("; ")
 
 // 🔑 Clone API request object and inject cookies
-def apiRequest = findTestObject('HTS-Admin/provider-list')
+def apiRequest = findTestObject('HTS-Settings/provider-list')
 apiRequest.getHttpHeaderProperties().add(
 	new com.kms.katalon.core.testobject.TestObjectProperty("Cookie",
 		com.kms.katalon.core.testobject.ConditionType.EQUALS,
@@ -85,21 +85,21 @@ def normalize = { s ->
 }
 
 String firstNameUI = WebUI.getText(
-    findTestObject('HTS-Admin/view-provider-list/Page_Scheduler/td_FirstName')
+    findTestObject('HTS-Settings/view-provider-list/Page_Scheduler/td_FirstName')
 )
 
 assert normalize(firstNameUI) == normalize(providerList[0].firstname)
 
-String lastNameUI = WebUI.getText(findTestObject('Object Repository/HTS-Admin/view-provider-list/Page_Scheduler/td_LastName'))
+String lastNameUI = WebUI.getText(findTestObject('Object Repository/HTS-Settings/view-provider-list/Page_Scheduler/td_LastName'))
 
 assert lastNameUI == providerList[0].lastname
 
 // Check Sorting by ID
-WebUI.click(findTestObject('Object Repository/HTS-Admin/view-provider-list/Page_Scheduler/th_ID'))
+WebUI.click(findTestObject('null'))
 
 // Add logic here: capture first row ID again and validate ascending/descending order
 // Check Sorting by First Name
-WebUI.click(findTestObject('Object Repository/HTS-Admin/view-provider-list/Page_Scheduler/th_First Name'))
+WebUI.click(findTestObject('null'))
 
 // Close browser
 WebUI.closeBrowser()

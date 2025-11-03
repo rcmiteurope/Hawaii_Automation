@@ -29,13 +29,13 @@ driver.manage().addCookie(new Cookie('user_email', GlobalVariable.user_email_jir
 
 driver.manage().addCookie(new Cookie('user_name', GlobalVariable.user_name_jirome))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/HTS-Admin/view-provider-list/Page_Scheduler/select_Other Actions00000Add Leave of absen_0510bc'), 
+WebUI.selectOptionByValue(findTestObject('Object Repository/HTS-Settings/view-provider-list/Page_Scheduler/select_Other Actions00000Add Leave of absen_0510bc'), 
     'workorders', true)
 
-WebUI.click(findTestObject('Object Repository/HTS-Admin/view-provider-list/Page_Scheduler/span_Providers'))
+WebUI.click(findTestObject('Object Repository/HTS-Settings/view-provider-list/Page_Scheduler/span_Providers'))
 
 // Call API to get provider list
-ResponseObject response = WS.sendRequest(findTestObject('HTS-Admin/provider-list'))
+ResponseObject response = WS.sendRequest(findTestObject('HTS-Settings/provider-list'))
 
 WS.verifyResponseStatusCode(response, 200)
 
@@ -56,20 +56,20 @@ assert providerList[0].firstname == 'A\'Taizha'
 assert providerList[0].lastname == 'Wells'
 
 // Validate UI Table against API Data
-String firstNameUI = WebUI.getText(findTestObject('Object Repository/HTS-Admin/view-provider-list/Page_Scheduler/td_FirstName'))
+String firstNameUI = WebUI.getText(findTestObject('Object Repository/HTS-Settings/view-provider-list/Page_Scheduler/td_FirstName'))
 
 assert firstNameUI == providerList[0].firstname
 
-String lastNameUI = WebUI.getText(findTestObject('Object Repository/HTS-Admin/view-provider-list/Page_Scheduler/td_LastName'))
+String lastNameUI = WebUI.getText(findTestObject('Object Repository/HTS-Settings/view-provider-list/Page_Scheduler/td_LastName'))
 
 assert lastNameUI == providerList[0].lastname
 
 // Check Sorting by ID
-WebUI.click(findTestObject('Object Repository/HTS-Admin/view-provider-list/Page_Scheduler/th_ID'))
+WebUI.click(findTestObject('null'))
 
 // Add logic here: capture first row ID again and validate ascending/descending order
 // Check Sorting by First Name
-WebUI.click(findTestObject('Object Repository/HTS-Admin/view-provider-list/Page_Scheduler/th_First Name'))
+WebUI.click(findTestObject('null'))
 
 // Close browser
 WebUI.closeBrowser()

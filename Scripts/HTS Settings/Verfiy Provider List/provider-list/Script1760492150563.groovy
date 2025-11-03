@@ -38,75 +38,40 @@ driver.manage().addCookie(new Cookie('user_email', GlobalVariable.user_email_jir
 driver.manage().addCookie(new Cookie('user_name', GlobalVariable.user_name_jirome))
 
 WebUI.delay(3)
-//WebUI.selectOptionByValue(findTestObject('Object Repository/HTS-Admin/view-provider-list/Page_Scheduler/select_Other Actions00000Add Leave of absen_0510bc'), 
+//WebUI.selectOptionByValue(findTestObject('Object Repository/HTS-Settings/view-provider-list/Page_Scheduler/select_Other Actions00000Add Leave of absen_0510bc'), 
 //    'providers', true)
 
-TestObject dropdown = findTestObject('HTS-Admin/view-provider-list/Page_Scheduler/select_Other Actions00000Add Leave of absen_0510bc')
+TestObject dropdown = findTestObject('HTS-Settings/view-provider-list/Page_Scheduler/select_Other Actions00000Add Leave of absen_0510bc')
 
 // Wait until the element is present and visible
 WebUI.waitForElementVisible(dropdown, 10)
 WebUI.waitForElementClickable(dropdown, 10)
 WebUI.selectOptionByValue(dropdown, 'providers', false)
 
-//WebUI.click(findTestObject('Object Repository/HTS-Admin/view-provider-list/Page_Scheduler/span_Providers'))
-//WebUI.delay(2)
-//
-//// Call API to get provider list
-//ResponseObject response = WS.sendRequest(findTestObject('HTS-Admin/provider-list'))
-//
-//WS.verifyResponseStatusCode(response, 200)
-//
-//// Parse JSON
-//def providerList = new JsonSlurper().parseText(response.getResponseText())
-//
-//println('Response text: ' + response.getResponseText())
-//
-//println('Status code: ' + response.getStatusCode())
-//
-//println('Response body: ' + response.getResponseText())
-//
-//
-//// Validate UI Table against API Data
-//String firstNameUI = WebUI.getText(findTestObject('Object Repository/HTS-Admin/view-provider-list/Page_Scheduler/td_FirstName'))
-//
-//assert firstNameUI == providerList[0].firstname
-//
-//String lastNameUI = WebUI.getText(findTestObject('Object Repository/HTS-Admin/view-provider-list/Page_Scheduler/td_LastName'))
-//
-//assert lastNameUI == providerList[0].lastname
-//
-//// Check Sorting by ID
-//WebUI.click(findTestObject('Object Repository/HTS-Admin/view-provider-list/Page_Scheduler/th_ID'))
-//
-//// Add logic here: capture first row ID again and validate ascending/descending order
-//// Check Sorting by First Name
-//WebUI.click(findTestObject('Object Repository/HTS-Admin/view-provider-list/Page_Scheduler/th_First Name'))
-
-// === Navigate to Providers Page ===
 // --- Normalize helper ---
 def normalize = { s ->
     return s == null ? '' : s.trim().replaceAll("\\s+", " ").replaceAll("[’‘]", "'")
 }
 
 // --- Go to Providers page ---
-WebUI.waitForElementVisible(findTestObject('HTS-Admin/view-provider-list/Page_Scheduler/span_Providers'), 10)
-WebUI.click(findTestObject('HTS-Admin/view-provider-list/Page_Scheduler/span_Providers'))
+WebUI.waitForElementVisible(findTestObject('HTS-Settings/view-provider-list/Page_Scheduler/span_Providers'), 10)
+WebUI.click(findTestObject('HTS-Settings/view-provider-list/Page_Scheduler/span_Providers'))
 WebUI.delay(5)
 
 // --- Get API Data ---
-ResponseObject response = WS.sendRequest(findTestObject('HTS-Admin/provider-list'))
+ResponseObject response = WS.sendRequest(findTestObject('HTS-Settings/provider-list'))
 WS.verifyResponseStatusCode(response, 200)
 
 def providerList = new JsonSlurper().parseText(response.getResponseText())
-println "✅ API returned ${providerList.size()} provider records."
+println "API returned ${providerList.size()} provider records."
 
 // --- Wait for the table ---
-WebUI.waitForElementVisible(findTestObject('HTS-Admin/view-provider-list/Page_Scheduler/td_FirstName'), 15)
+WebUI.waitForElementVisible(findTestObject('HTS-Settings/view-provider-list/Page_Scheduler/td_FirstName'), 15)
 WebUI.delay(2)
 
 // --- Get all UI table rows ---
 List<WebElement> rows = driver.findElements(By.xpath("//table/tbody/tr"))
-println "🔍 Found ${rows.size()} rows in UI."
+println "${rows.size()}"
 
 // --- Counters ---
 int matched = 0
@@ -139,14 +104,14 @@ rows.eachWithIndex { row, i ->
 // --- Summary Report ---
 println "--------------------------------------------"
 println "Validation Summary:"
-println "✅ Matched: ${matched}"
-println "❌ Not Found: ${notFoundList.size()}"
+println "Matched: ${matched}"
+println "Not Found: ${notFoundList.size()}"
 println "Total UI Rows: ${rows.size()}"
 println "--------------------------------------------"
 
 // --- Log all not found entries ---
 if (notFoundList.size() > 0) {
-    println "❌ Providers NOT found in API:"
+    println "Providers NOT found in API:"
     notFoundList.each { println it }
 }
 

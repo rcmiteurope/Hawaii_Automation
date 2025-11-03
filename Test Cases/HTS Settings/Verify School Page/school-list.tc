@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>school-list</description>
+   <name>school-list</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4890d81a-8271-4215-896e-b77763d106a4</testCaseGuid>
+</TestCaseEntity>

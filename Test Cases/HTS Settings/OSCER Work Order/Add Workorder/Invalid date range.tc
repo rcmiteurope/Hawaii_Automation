@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verifies that the system correctly detects and handles invalid date ranges. The test passes if the system prevents submission when the start date is after the end date or when required date fields are missing.</description>
+   <name>Invalid date range</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>466b3dfe-423a-4d00-814b-d88531c2c9e2</testCaseGuid>
+</TestCaseEntity>
