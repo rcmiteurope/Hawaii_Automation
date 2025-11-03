@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>th_Island</name>
+   <name>td_School Name</name>
    <tag></tag>
-   <elementGuidId>695f4658-aa40-42a6-99e4-73c24f8e5fad</elementGuidId>
+   <elementGuidId>f6467fea-d1e0-4414-8bc4-fe6b42939358</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/main/div[2]/div/main/div[2]/div[2]/div/div[2]/div/div/div/div/div/table/thead/tr/th[6]</value>
+         <key>CSS</key>
+         <value>th.h-12.border-0.bg-gray-200.px-8.py-4.text-left.text-sm.font-semibold.text-gray-800</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@id='root']//table/tbody/tr/td[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:role=columnheader[name=&quot;Island&quot;i]</value>
+         <value>internal:role=columnheader[name=&quot;School Name&quot;i]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>91cb4ad0-49a9-454a-9927-1ebf1ff17798</webElementGuid>
+      <webElementGuid>776f0724-81f5-4ada-b81e-29c690fc7d46</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>h-12 border-0 bg-gray-200 px-8 py-4 text-left text-sm font-semibold text-gray-800</value>
-      <webElementGuid>90ca9b37-6d87-4e77-853e-27f07af28f77</webElementGuid>
+      <webElementGuid>431d1087-db90-4110-a247-09c06b16256d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,15 +45,15 @@
       <name>scope</name>
       <type>Main</type>
       <value>col</value>
-      <webElementGuid>36d7c5f4-66ef-4cf1-9269-360f516cafbe</webElementGuid>
+      <webElementGuid>b85cfa8c-5d9e-48cc-ac5c-895c33583b80</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Island</value>
-      <webElementGuid>fdb44501-3026-48ef-9054-190cd8f0ab6f</webElementGuid>
+      <value>School Name</value>
+      <webElementGuid>2eb88409-6d83-43a1-94ae-e2ebd587e363</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,62 +61,62 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/main[@class=&quot;px-3&quot;]/div[@class=&quot;ant-layout ant-layout-has-sider -ml-3 -mr-2.5 h-screen min-h-screen css-pjilya&quot;]/div[@class=&quot;ant-layout h-screen css-pjilya&quot;]/main[@class=&quot;ant-layout-content mx-4 flex h-full flex-col css-pjilya&quot;]/div[@class=&quot;ant-card ant-card-bordered mb-4 flex-1 overflow-hidden [&amp;_.ant-card-body]:h-[calc(100%-57px)] [&amp;_.ant-card-body]:overflow-auto [&amp;_.ant-card-body]:p-6 css-pjilya&quot;]/div[@class=&quot;ant-card-body&quot;]/div[@class=&quot;space-y-6 p-4&quot;]/div[@class=&quot;ant-table-wrapper overflow-hidden css-pjilya&quot;]/div[@class=&quot;ant-spin-nested-loading css-pjilya&quot;]/div[@class=&quot;ant-spin-container&quot;]/div[@class=&quot;ant-table ant-table-middle css-pjilya ant-table-scroll-horizontal&quot;]/div[@class=&quot;ant-table-container&quot;]/div[@class=&quot;ant-table-content&quot;]/table[1]/thead[@class=&quot;ant-table-thead&quot;]/tr[1]/th[@class=&quot;h-12 border-0 bg-gray-200 px-8 py-4 text-left text-sm font-semibold text-gray-800&quot;]</value>
-      <webElementGuid>b1689fbc-171b-4fa3-9fbd-e9ffddecfe9f</webElementGuid>
+      <webElementGuid>bb79f84d-b562-4ad2-9eec-4c0cc5916034</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='root']/main/div[2]/div/main/div[2]/div[2]/div/div[2]/div/div/div/div/div/table/thead/tr/th[6]</value>
-      <webElementGuid>4d4275b9-3cf2-4de5-adb3-e9dc8bbfeec9</webElementGuid>
+      <value>//div[@id='root']/main/div[2]/div/main/div[2]/div[2]/div/div[2]/div/div/div/div/div/table/thead/tr/th</value>
+      <webElementGuid>c73008ac-e921-4858-a562-a7a6502d6a0f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pin Code'])[1]/following::th[1]</value>
-      <webElementGuid>e7f01123-2382-44e9-8c68-001b7777aecb</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Schools'])[3]/following::th[1]</value>
+      <webElementGuid>34252fc9-3499-4f6a-ab1d-3b24dc7ddd90</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Email'])[1]/following::th[2]</value>
-      <webElementGuid>ac2e2b8b-8bc0-4ee7-add3-a0baed9377a2</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Island'])[1]/preceding::th[1]</value>
+      <webElementGuid>74b91fb4-127c-4b21-b5ed-095a6d738c63</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Wells'])[1]/preceding::th[1]</value>
-      <webElementGuid>633946f5-0cfd-4aca-9925-d557f873aeeb</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ahuimanu'])[1]/preceding::th[2]</value>
+      <webElementGuid>d92a0c19-46a2-4b32-adf5-3cc93117dc79</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Island']/parent::*</value>
-      <webElementGuid>599c392f-dad5-481f-b47f-78848728d8a4</webElementGuid>
+      <value>//*/text()[normalize-space(.)='School Name']/parent::*</value>
+      <webElementGuid>df11fcdc-04cd-4cce-92f5-6b8995143d4e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//th[6]</value>
-      <webElementGuid>420166e3-3f19-4855-bbab-689556a35fed</webElementGuid>
+      <value>//th</value>
+      <webElementGuid>3e0e6761-ad99-4ed3-b82e-eb1581db7794</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//th[(text() = 'Island' or . = 'Island')]</value>
-      <webElementGuid>0fbe28d9-519e-4a0c-ba14-9813e3358a59</webElementGuid>
+      <value>//th[(text() = 'School Name' or . = 'School Name')]</value>
+      <webElementGuid>7aa12d43-fe47-416f-9b44-bd3de4ed191a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
