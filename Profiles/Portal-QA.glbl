@@ -9,4 +9,14 @@
       <initValue>'https://timecard-portal-qa.rcmt-timecard.com/providers'</initValue>
       <name>portal_url</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'jirome.bautista@rcmt.com'</initValue>
+      <name>portalUsername</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'U83JPl/FLVSDiOSBikDkoA=='</initValue>
+      <name>portalPassword</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
