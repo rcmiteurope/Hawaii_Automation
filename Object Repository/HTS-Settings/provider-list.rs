@@ -18,7 +18,7 @@
       <matchCondition>equals</matchCondition>
       <name>Cookie</name>
       <type>Main</type>
-      <value>connect.sid=s%3AWIgG864H5vZPSFT3twczl4OkFNmIUdu4.Ay%2BPFTBSzj0Zepltv5vzY7DApHxfO8DffhzU8MCvebk</value>
+      <value>connect.sid=s%3A5XjRqW4ngISisGy56Q1wZmEqeqxgnmhd.1iMvtQD%2BbVKn46tDUsGoSPeGDhutQw2nQXi3jYez%2FYU</value>
       <webElementGuid>cb0db513-1f16-4bbe-ac90-96552464d2fe</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>10.0.1</katalonVersion>
