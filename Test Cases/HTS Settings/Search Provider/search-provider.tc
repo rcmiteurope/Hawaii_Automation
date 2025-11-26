@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Search functionality on Provider's Page</description>
+   <name>search-provider</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cf822391-3667-412b-8358-1c7f3208371a</testCaseGuid>
+</TestCaseEntity>
