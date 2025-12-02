@@ -8,7 +8,7 @@
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
    <autoUpdateContent>true</autoUpdateContent>
-   <connectionTimeout>-1</connectionTimeout>
+   <connectionTimeout>0</connectionTimeout>
    <followRedirects>true</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent></httpBodyContent>
@@ -18,22 +18,22 @@
       <matchCondition>equals</matchCondition>
       <name>Cookie</name>
       <type>Main</type>
-      <value>connect.sid=s%3A4XT1jUFbVH50W3urHThIlkdb_nTwiidb.DDEAYOM4BZYF0RePwE%2BnBGIMQBIfKtwwOEjWdZixD0s</value>
+      <value>connect.sid=s%3AUWj1Ljgw4isPLZbmJisHDV-5JdWJGAOl.%2FI%2BP04zNhBdNeUAAnsH9nmB9XiVSZdlDNnmx9gcRq%2B4</value>
       <webElementGuid>d0f65537-05b4-40eb-a11c-f5b51ceac7b5</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>10.0.1</katalonVersion>
-   <maxResponseSize>-1</maxResponseSize>
+   <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://hts-admin-dev.rcmt-timecard.com/api/school/list</restUrl>
+   <restUrl>https://hts-admin-qa.rcmt-timecard.com/api/school/list</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
-   <socketTimeout>-1</socketTimeout>
+   <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

@@ -64,7 +64,7 @@ TestObject searchBox = findTestObject('Object Repository/HTS-Settings/Search Pro
 
 // --- VALIDATE TEST OBJECTS ---
 if (searchBox == null) {
-	assert false : "❌ TestObject searchBox is NULL. Check the OR path: input_Providers"
+	assert false : "TestObject searchBox is NULL. Check the OR path: input_Providers"
 }
 
 // --- WAIT FOR SEARCH BOX ---
