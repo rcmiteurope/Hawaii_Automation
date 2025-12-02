@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_Schools_ant-input css-pjilya_1_2</name>
+   <tag></tag>
+   <elementGuidId>6ec11ce2-c2f9-40e9-963d-04a1e13d13dc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@value='Ai']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>input.ant-input.css-pjilya</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:attr=[placeholder=&quot;Search schools (e.g., School, Island)&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>289bf1d5-a690-492b-867c-2b4ea3009abd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Search schools (e.g., School, Island)</value>
+      <webElementGuid>170291b9-57e8-43bb-bb9e-7c4286e827ca</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ant-input css-pjilya</value>
+      <webElementGuid>7b554028-bd20-4b49-b9df-da6bcaeab9a9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
+      <webElementGuid>66b34bd5-83ff-4146-af60-8c40b8d14531</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>Ai</value>
+      <webElementGuid>edd167e2-3c70-4b4c-b37e-baefacc57f99</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[@class=&quot;px-3&quot;]/div[@class=&quot;ant-layout ant-layout-has-sider -ml-3 -mr-2.5 h-screen min-h-screen css-pjilya&quot;]/div[@class=&quot;ant-layout h-screen css-pjilya&quot;]/main[@class=&quot;ant-layout-content mx-4 flex h-full flex-col css-pjilya&quot;]/div[@class=&quot;ant-card ant-card-bordered mb-4 flex-1 overflow-hidden [&amp;_.ant-card-body]:h-[calc(100%-57px)] [&amp;_.ant-card-body]:overflow-auto [&amp;_.ant-card-body]:p-6 css-pjilya&quot;]/div[@class=&quot;ant-card-body&quot;]/div[@class=&quot;space-y-6 p-4&quot;]/div[@class=&quot;w-full&quot;]/span[@class=&quot;ant-input-affix-wrapper ant-input-affix-wrapper-focused css-pjilya ant-input-outlined w-full rounded-md border-gray-300&quot;]/input[@class=&quot;ant-input css-pjilya&quot;]</value>
+      <webElementGuid>84e1f652-5c55-4ac0-90d4-e0320f1f97f8</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//input[@value='Ai']</value>
+      <webElementGuid>e0a4bfa5-21c3-4ea9-a8ec-7c8debb2dd49</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/div[2]/div/main/div[2]/div[2]/div/div/span/input</value>
+      <webElementGuid>02162b56-947e-4eb2-aa16-69a21fea76a8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//input</value>
+      <webElementGuid>1d55da65-228f-4b7e-aeec-4520b5c29810</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@placeholder = 'Search schools (e.g., School, Island)' and @type = 'text']</value>
+      <webElementGuid>b0a51f90-843e-4b1a-b1d1-dd224e2737df</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
